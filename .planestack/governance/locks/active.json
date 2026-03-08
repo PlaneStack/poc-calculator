@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "active_lock_set_ref": ".planestack/governance/locks/lockset-s95-001.json",
+  "active_dev_ai_contract_ref": ".planestack/governance/locks/lockset-dev-ai-contract-v1.json",
+  "updated_at": "2026-03-07T21:00:00Z"
+}

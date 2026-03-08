@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "lockset_id": "lockset-s95-001",
+  "generated_at": "2026-03-07T20:45:00Z",
+  "locks": [
+    {
+      "lock_id": "filesystem_roots_v1",
+      "rule": "filesystem_roots_v1",
+      "violation_behavior": "fail",
+      "scope": "ai.run",
+      "requirements": {
+        "brief_must_declare": [
+          "project_root",
+          "bridge_root"
+        ],
+        "evidence_write_root": "project_root/.planestack/**",
+        "workspace_write_root": "bridge_root/**",
+        "no_writes_outside_roots": true
+      }
+    }
+  ],
+  "notes": [
+    "Root separation invariant lock for customer project execution"
+  ]
+}

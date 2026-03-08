@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "sprint": "S96",
+  "pack_path": ".planestack/sprints/S96/pack.md",
+  "generated_at": "2026-03-08T00:00:00Z",
+  "referenced_artifacts": [
+    {
+      "artifact_id": "98d3eafa-7d9c-4555-9612-b1983f028f00",
+      "artifact_type": "doc",
+      "version": 1,
+      "path_hint": ".planestack/sprints/S96/pack.md"
+    },
+    {
+      "artifact_id": "10a890ce-0600-440e-b15d-2879a1502033",
+      "artifact_type": "doc",
+      "version": 1,
+      "path_hint": ".planestack/sprints/S96/runlog.md"
+    },
+    {
+      "artifact_id": "b0db1457-214c-424c-ad93-c86ccfb60a39",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/sprints/S96/evidence.json"
+    },
+    {
+      "artifact_id": "c40724eb-1b7d-4a22-ab42-9de710098d57",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/metrics/ownership.json"
+    },
+    {
+      "artifact_id": "50ee9bfb-5c27-4339-b056-0f2f89f3e18a",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/evidence/s96/reporting/metrics-sot.json"
+    },
+    {
+      "artifact_id": "60096de9-3808-43b0-8201-43094f2d0940",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/evidence/s96/reporting/ownership-lint.json"
+    },
+    {
+      "artifact_id": "d6c94069-7baa-4374-8a15-885d42a24377",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/evidence/s96/reporting/ui-sot-smoke.json"
+    },
+    {
+      "artifact_id": "8ff495d4-40f4-419c-8a54-7297221b4730",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/evidence/s96/chronicle/rollups/operate-trends.json"
+    },
+    {
+      "artifact_id": "8b9ad8e2-8b7e-467c-9a3b-f16c240d17ca",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/evidence/s96/chronicle/compare/20260308T183356Z_9982a284.json"
+    },
+    {
+      "artifact_id": "2432733a-77ef-443e-81bd-64a8f70514f0",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/evidence/s96/chronicle/export/20260308T183356Z_6c154f4d.json"
+    },
+    {
+      "artifact_id": "937a07d2-3b2c-412c-93a2-fdaf077abce8",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/evidence/s96/reporting/no-data-insufficient-data.json"
+    },
+    {
+      "artifact_id": "7aa4ee1b-3e37-40b4-bd4f-03de93cb583a",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/evidence/s96/reporting/blocked-flows.json"
+    },
+    {
+      "artifact_id": "c38a145f-d830-46a5-a3c5-1916e08c4440",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/evidence/s96/archive.json"
+    },
+    {
+      "artifact_id": "e3ad4ff7-58bc-4cb4-957b-05498947c63f",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/evidence/s96/lock-check.json"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "capsule_id": "capsule-s95-001.json",
+  "generated_at": "2026-03-07T20:45:00Z",
+  "objective": "Filesystem root separation invariant for project mirror vs bridge scratch.",
+  "filesystem_roots": {
+    "project_root_definition": {
+      "path": "/Users/mklein/_Ventures/PlaneStack/repos/poc-calculator",
+      "mirror_path": "/Users/mklein/_Ventures/PlaneStack/repos/poc-calculator/.planestack"
+    },
+    "bridge_root_definition": {
+      "path": "/Users/mklein/_Ventures/PlaneStack/bridge_root",
+      "subdirs": [
+        "workspaces",
+        "caches",
+        "logs",
+        "tmp"
+      ]
+    },
+    "evidence_vs_scratch_rule": "Evidence intended for audit MUST go to project_root/.planestack/**; execution scratch MUST go to bridge_root/**."
+  }
+}

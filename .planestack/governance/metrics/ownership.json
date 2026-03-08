@@ -1,0 +1,38 @@
+{
+  "schema_version": 2,
+  "canonical_endpoint": "GET /api/v1/ou/:ouKey/p/:projectKey/metrics",
+  "enforced_families": [
+    "operate",
+    "chronicle",
+    "rc",
+    "parity",
+    "incidents"
+  ],
+  "families": {
+    "operate": {
+      "owner": "operate",
+      "consuming_surfaces": ["operate", "chronicle", "insights"],
+      "source": "operate runs evidence"
+    },
+    "chronicle": {
+      "owner": "chronicle",
+      "consuming_surfaces": ["chronicle", "insights", "center"],
+      "source": "chronicle event timelines"
+    },
+    "rc": {
+      "owner": "review",
+      "consuming_surfaces": ["review", "insights"],
+      "source": "release-candidate evaluations"
+    },
+    "parity": {
+      "owner": "governance",
+      "consuming_surfaces": ["insights", "center"],
+      "source": "parity evidence artifacts"
+    },
+    "incidents": {
+      "owner": "operate",
+      "consuming_surfaces": ["operate", "chronicle", "insights"],
+      "source": "incident evidence timelines"
+    }
+  }
+}

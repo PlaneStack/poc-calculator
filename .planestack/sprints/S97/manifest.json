@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "sprint": "S97",
+  "pack_path": ".planestack/sprints/S97/pack.md",
+  "generated_at": "2026-03-08T00:00:00Z",
+  "referenced_artifacts": [
+    {
+      "artifact_id": "e376b002-bdd9-4903-8a6b-a4953a9906ea",
+      "artifact_type": "doc",
+      "version": 1,
+      "path_hint": ".planestack/sprints/S97/pack.md"
+    },
+    {
+      "artifact_id": "1d5bcf74-c8f6-4fee-8edd-79e00d48f5a8",
+      "artifact_type": "doc",
+      "version": 1,
+      "path_hint": ".planestack/sprints/S97/runlog.md"
+    },
+    {
+      "artifact_id": "3951b638-11ef-49ad-9c05-3135a8263e80",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/sprints/S97/evidence.json"
+    },
+    {
+      "artifact_id": "e19f678e-e1c8-45f5-9f37-cfa02359308d",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/operate/environments.json"
+    },
+    {
+      "artifact_id": "ec63be0d-23d4-4bd7-b8b2-bde5296770b9",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/operate/auth-profiles.json"
+    },
+    {
+      "artifact_id": "077aaa09-99ca-4060-b97b-02c50c4c1d19",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/evidence/s97/operate/environment-profiles.json"
+    },
+    {
+      "artifact_id": "ed02e45e-e5ba-48f6-a84f-f85d5ae6212e",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/evidence/s97/operate/auth-profiles.json"
+    },
+    {
+      "artifact_id": "3d06758b-2040-491a-99b7-016b8bfc5d78",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/evidence/s97/operate/remote-readiness.json"
+    },
+    {
+      "artifact_id": "ce412fd7-b2de-447c-ab26-3c32eefa6f59",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/evidence/s97/operate/blocked-flows.json"
+    },
+    {
+      "artifact_id": "341ca622-9933-42ee-9d70-72ab9b4ad6f2",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/evidence/s97/operate/objective-evaluation.json"
+    },
+    {
+      "artifact_id": "fa45cad3-23f0-4d4d-becc-4b98ffe83185",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/evidence/s97/chronicle/managed-env-rollups.json"
+    },
+    {
+      "artifact_id": "27eb59f2-3c54-4b0b-8fd5-cfe73f838ad2",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/evidence/s97/chronicle/managed-env-events.json"
+    },
+    {
+      "artifact_id": "bdd5fca1-b6ea-473d-b26c-517747c5cf51",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/evidence/s97/admin/mfa-status-sync.json"
+    },
+    {
+      "artifact_id": "6170cb7a-7180-45aa-a031-251ba9d3fc29",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/evidence/s97/admin/external-reviewer-access.json"
+    },
+    {
+      "artifact_id": "1ce6848d-df7a-46c0-8139-5c2c6f3ab620",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/evidence/s97/ui/capture-authenticated.json"
+    },
+    {
+      "artifact_id": "e7d761f7-4102-4b65-ba86-38058664a823",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/evidence/s97/ui/capture-safe-summary.json"
+    },
+    {
+      "artifact_id": "86c5f79c-ba8d-4ce8-b99f-e4066ca02c3b",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/evidence/s97/operate/ui-operator-smoke.json"
+    },
+    {
+      "artifact_id": "c22f3f35-1524-4a06-900f-49a0a4413cc8",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/evidence/s97/operate/ui-state-taxonomy.json"
+    },
+    {
+      "artifact_id": "dc166f04-d27c-44c2-b59a-34edf74d9712",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/evidence/s97/archive.json"
+    }
+  ]
+}

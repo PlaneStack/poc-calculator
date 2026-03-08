@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "updated_at": "2026-03-07T20:45:00Z",
+  "invariant_id": "invariant.project_root_vs_bridge_root",
+  "title": "Project Root vs Bridge Root Invariant",
+  "project_root_definition": {
+    "path": "/Users/mklein/_Ventures/PlaneStack/repos/poc-calculator",
+    "mirror_path": "/Users/mklein/_Ventures/PlaneStack/repos/poc-calculator/.planestack",
+    "rule": "For each PlaneStack project, the portable Project Library mirror lives inside the project repository at ./.planestack/** and is the only project-scoped filesystem location PlaneStack writes that is intended to be versioned and shared."
+  },
+  "bridge_root_definition": {
+    "path": "/Users/mklein/_Ventures/PlaneStack/bridge_root",
+    "subdirs": [
+      "workspaces",
+      "caches",
+      "logs",
+      "tmp"
+    ],
+    "rule": "Local execution capability is provided by a separate client-side bridge installed outside the project repo (or in a dedicated tooling directory). The bridge may read/write ephemeral local files, but it does not replace or relocate the project's ./.planestack/** mirror."
+  },
+  "root_separation_lock": {
+    "project_root": "project_root/.planestack/** (versioned/auditable)",
+    "bridge_root": "ephemeral workspaces/caches/logs (not committed)",
+    "rule": "Evidence intended for audit MUST go to project_root; execution scratch MUST go to bridge_root."
+  }
+}

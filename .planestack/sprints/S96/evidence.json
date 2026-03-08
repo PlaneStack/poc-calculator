@@ -1,0 +1,185 @@
+{
+  "sprint": "S96",
+  "date": "2026-03-08",
+  "artifacts": {
+    "pack": "Sprint96-Pack.md",
+    "runlog": "S96-runlog.md",
+    "manifest": ".planestack/sprints/S96/manifest.json"
+  },
+  "commits": {
+    "ps-contracts": [],
+    "ps-api": [],
+    "ps-dev": [],
+    "ps-web": []
+  },
+  "tests": [
+    {
+      "name": "governance-lock-check",
+      "command": "export SPRINT_CODE=S96 && export PS_WORK_PRODUCING=1 && make -C ps-dev governance-lock-check",
+      "result": "pass",
+      "counts": {
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    {
+      "name": "contract-test-docker",
+      "command": "make -C ps-dev contract-test-docker",
+      "result": "pass",
+      "counts": {
+        "passed": 51,
+        "failed": 0
+      }
+    },
+    {
+      "name": "sprint96-validate",
+      "command": "make -C ps-dev sprint96-validate",
+      "result": "pass",
+      "counts": {
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    {
+      "name": "e2e-gate",
+      "command": "make -C ps-dev e2e-gate",
+      "result": "pass",
+      "counts": {
+        "passed": 6,
+        "failed": 0
+      }
+    },
+    {
+      "name": "metrics-ownership-lint",
+      "command": "make -C ps-dev metrics-ownership-lint",
+      "result": "pass",
+      "counts": {
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    {
+      "name": "metrics-endpoint-guard",
+      "command": "make -C ps-dev metrics-endpoint-guard",
+      "result": "pass",
+      "counts": {
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    {
+      "name": "metrics-sot-smoke",
+      "command": "make -C ps-dev metrics-sot-smoke",
+      "result": "pass",
+      "counts": {
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    {
+      "name": "chronicle-compare-smoke",
+      "command": "make -C ps-dev chronicle-compare-smoke",
+      "result": "pass",
+      "counts": {
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    {
+      "name": "chronicle-export-smoke",
+      "command": "make -C ps-dev chronicle-export-smoke",
+      "result": "pass",
+      "counts": {
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    {
+      "name": "chronicle-operate-rollups-smoke",
+      "command": "make -C ps-dev chronicle-operate-rollups-smoke",
+      "result": "pass",
+      "counts": {
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    {
+      "name": "reporting-ui-smoke",
+      "command": "make -C ps-dev reporting-ui-smoke",
+      "result": "pass",
+      "counts": {
+        "passed": 1,
+        "failed": 0
+      }
+    }
+  ],
+  "required_evidence_artifacts": [
+    {
+      "path": ".planestack/governance/metrics/ownership.json",
+      "artifact_id": "c40724eb-1b7d-4a22-ab42-9de710098d57"
+    },
+    {
+      "path": ".planestack/governance/evidence/s96/reporting/metrics-sot.json",
+      "artifact_id": "50ee9bfb-5c27-4339-b056-0f2f89f3e18a"
+    },
+    {
+      "path": ".planestack/governance/evidence/s96/reporting/ownership-lint.json",
+      "artifact_id": "60096de9-3808-43b0-8201-43094f2d0940"
+    },
+    {
+      "path": ".planestack/governance/evidence/s96/reporting/ui-sot-smoke.json",
+      "artifact_id": "d6c94069-7baa-4374-8a15-885d42a24377"
+    },
+    {
+      "path": ".planestack/governance/evidence/s96/chronicle/rollups/operate-trends.json",
+      "artifact_id": "8ff495d4-40f4-419c-8a54-7297221b4730"
+    },
+    {
+      "path": ".planestack/governance/evidence/s96/chronicle/compare/20260308T183356Z_9982a284.json",
+      "artifact_id": "8b9ad8e2-8b7e-467c-9a3b-f16c240d17ca"
+    },
+    {
+      "path": ".planestack/governance/evidence/s96/chronicle/export/20260308T183356Z_6c154f4d.json",
+      "artifact_id": "2432733a-77ef-443e-81bd-64a8f70514f0"
+    },
+    {
+      "path": ".planestack/governance/evidence/s96/reporting/no-data-insufficient-data.json",
+      "artifact_id": "937a07d2-3b2c-412c-93a2-fdaf077abce8"
+    },
+    {
+      "path": ".planestack/governance/evidence/s96/reporting/blocked-flows.json",
+      "artifact_id": "7aa4ee1b-3e37-40b4-bd4f-03de93cb583a"
+    },
+    {
+      "path": ".planestack/governance/evidence/s96/archive.json",
+      "artifact_id": "c38a145f-d830-46a5-a3c5-1916e08c4440"
+    },
+    {
+      "path": ".planestack/governance/evidence/s96/lock-check.json",
+      "artifact_id": "e3ad4ff7-58bc-4cb4-957b-05498947c63f"
+    }
+  ],
+  "notes": [
+    "Governance preflight is required before any work-producing run: export SPRINT_CODE=S96, export PS_WORK_PRODUCING=1, then make -C ps-dev governance-lock-check.",
+    "project_root vs bridge_root separation is mandatory: governed evidence writes under project_root; scratch/caches/logs remain under bridge_root.",
+    "Covered metric families for Sprint 96 v1 are operate, chronicle, rc, parity, and incidents; lint applies only to families declared in .planestack/governance/metrics/ownership.json.",
+    "No new overlapping metrics endpoints are allowed; sprint96-validate must fail if a new endpoint overlaps covered metric scopes. Only extension of GET /api/v1/ou/:ouKey/p/:projectKey/metrics is allowed; /chronicle/metrics/overview remains alias-only.",
+    "UI smoke proof artifact .planestack/governance/evidence/s96/reporting/ui-sot-smoke.json must include route_tested, requests_observed(method/path), series_count, and no_data_state where applicable.",
+    "Compare/export artifact ids use deterministic format YYYYMMDDThhmmssZ_<6-8hex>.",
+    "Sprint 96 is an enforcement-and-expansion sprint over the Sprint 95 reporting substrate, not a new reporting architecture sprint.",
+    "Canonical metrics endpoint remains GET /api/v1/ou/:ouKey/p/:projectKey/metrics; /chronicle/metrics/overview remains alias-only.",
+    "Ownership remains governed by the single canonical file .planestack/governance/metrics/ownership.json.",
+    "Compare/export are Chronicle-owned operations and must produce evidence-grade artifacts with source_refs and integrity using the S95 hash rule.",
+    "UI aggregation is forbidden for covered metric families; lint and UI smoke proof are required.",
+    "sprint96-validate and e2e-gate are both required and remain independent.",
+    "Non-blocking infra observation: e2e clean-slate emitted transient docker compose cleanup noise (volume/network still in use) but gate completed successfully."
+  ],
+  "archive_ids": {
+    "pack_id": "98d3eafa-7d9c-4555-9612-b1983f028f00",
+    "runlog_id": "10a890ce-0600-440e-b15d-2879a1502033",
+    "evidence_id": "b0db1457-214c-424c-ad93-c86ccfb60a39",
+    "manifest_id": "b3690083-befd-4ca7-9aea-8b777a456d8e",
+    "writeback_id": "bc145556-5826-42ac-9456-a1d1424e29a2",
+    "writeback_artifact_id": "475b3204-d417-4942-a828-0861a05fa81e"
+  }
+}

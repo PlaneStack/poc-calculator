@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "sprint": "S96",
+  "status": "pass",
+  "gates": {
+    "governance_lock_check": "pass",
+    "contract_test_docker": "pass",
+    "sprint96_validate": "pass",
+    "e2e_gate": "pass"
+  },
+  "archive_ids": {
+    "pack_id": "98d3eafa-7d9c-4555-9612-b1983f028f00",
+    "runlog_id": "10a890ce-0600-440e-b15d-2879a1502033",
+    "evidence_id": "b0db1457-214c-424c-ad93-c86ccfb60a39",
+    "manifest_id": "b3690083-befd-4ca7-9aea-8b777a456d8e",
+    "writeback_id": "bc145556-5826-42ac-9456-a1d1424e29a2",
+    "writeback_artifact_id": "475b3204-d417-4942-a828-0861a05fa81e"
+  },
+  "notes": [
+    "Non-blocking infra observation: transient compose cleanup noise observed; gate run completed successfully."
+  ]
+}

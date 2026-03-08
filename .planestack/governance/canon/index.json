@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "updated_at": "2026-03-07T20:45:00Z",
+  "current_context_capsule_ref": ".planestack/governance/context/latest.json",
+  "active_lock_set_ref": ".planestack/governance/locks/active.json",
+  "filesystem_roots_invariant_ref": ".planestack/governance/specs/filesystem-roots-v1.json",
+  "dev_ai_contract_ref": ".planestack/governance/locks/lockset-dev-ai-contract-v1.json",
+  "invariants": [
+    {
+      "name": "invariant.project_root_vs_bridge_root",
+      "ref": ".planestack/governance/specs/filesystem-roots-v1.json"
+    },
+    {
+      "name": "invariant.dev_ai_contract_v1",
+      "ref": ".planestack/governance/locks/lockset-dev-ai-contract-v1.json"
+    }
+  ],
+  "runbooks": [
+    {
+      "name": "retrieval-protocol",
+      "ref": ".planestack/governance/runbooks/retrieval-protocol.md"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "lockset_id": "lockset-dev-ai-contract-v1",
+  "generated_at": "2026-03-07T21:00:00Z",
+  "title": "Code-Gen AI Directives (PlaneStack Development Contract)",
+  "roots": {
+    "project_root": "/Users/mklein/_Ventures/PlaneStack/repos/poc-calculator",
+    "project_mirror_root": "/Users/mklein/_Ventures/PlaneStack/repos/poc-calculator/.planestack",
+    "bridge_root": "/Users/mklein/_Ventures/PlaneStack/bridge_root",
+    "bridge_subdirs": [
+      "workspaces",
+      "caches",
+      "logs",
+      "tmp"
+    ],
+    "hard_rule": {
+      "evidence_write_root": "project_root/.planestack/**",
+      "scratch_write_root": "bridge_root/**"
+    }
+  },
+  "directives": [
+    {
+      "id": "roots_separation_v1",
+      "rule": "Treat project_root and bridge_root as different worlds; never swap Evidence vs Scratch paths.",
+      "violation_behavior": "fail"
+    },
+    {
+      "id": "customer_repo_assumption_v1",
+      "rule": "Do not assume end users have ps-api/ps-web/ps-dev repos. Customer flows must target project_root + bridge tool only.",
+      "violation_behavior": "fail"
+    },
+    {
+      "id": "no_placeholder_evidence_v1",
+      "rule": "Never seed fake evidence to satisfy a grader; regenerate real evidence or update refs/contracts.",
+      "violation_behavior": "fail"
+    },
+    {
+      "id": "pre_deployment_posture_v1",
+      "rule": "Do not add deployment/CI vendor coupling unless explicitly requested.",
+      "violation_behavior": "fail"
+    },
+    {
+      "id": "litmus_project_v1",
+      "rule": "Primary litmus project is poc-calculator. Demo projects are optional fixtures and must be marked is_demo=true.",
+      "violation_behavior": "fail"
+    },
+    {
+      "id": "run_provenance_required_v1",
+      "rule": "Work-producing runs must include context_capsule_ref, lock_set_ref, task_brief_ref, project_root_ref, and bridge_root_ref.",
+      "violation_behavior": "fail"
+    },
+    {
+      "id": "save_publish_audit_v1",
+      "rule": "Save operations in governed UX must publish with version + audit metadata and preserve history.",
+      "violation_behavior": "fail"
+    },
+    {
+      "id": "thrash_control_3_strikes_v1",
+      "rule": "On 3 failed attempts for same blocker: stop changes, run 5-Why, create incident evidence bundle, escalate.",
+      "violation_behavior": "fail"
+    },
+    {
+      "id": "external_boundary_v1",
+      "rule": "Externally shared users must not infer .planestack content (no listing/search/counts/breadcrumb leakage).",
+      "violation_behavior": "fail"
+    },
+    {
+      "id": "design_system_primitives_v1",
+      "rule": "Use design-system primitives; avoid ad-hoc page CSS and hardcoded chart colors.",
+      "violation_behavior": "fail"
+    },
+    {
+      "id": "sprint_done_requirements_v1",
+      "rule": "Done requires deterministic fixtures, contract pass, e2e gate pass, evidence artifacts, mirrored sprint docs, and closeout evidence.",
+      "violation_behavior": "fail"
+    },
+    {
+      "id": "change_scope_safety_v1",
+      "rule": "No unrelated file churn or broad refactors unless explicitly scoped. Contract changes must update OpenAPI, tests, and evidence expectations.",
+      "violation_behavior": "fail"
+    },
+    {
+      "id": "preflight_sequence_v1",
+      "rule": "Before coding: identify sprint evidence paths, confirm roots, confirm repo scope, and confirm validation commands.",
+      "violation_behavior": "fail"
+    },
+    {
+      "id": "sprint_evidence_routing_v1",
+      "rule": "Work-producing runs require SPRINT_CODE and must write evidence under .planestack/governance/evidence/<sprint_code>/**. Ad-hoc diagnostics without SPRINT_CODE must use s99 and set reason=adhoc_no_sprint_code.",
+      "violation_behavior": "fail"
+    }
+  ]
+}

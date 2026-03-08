@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "sprint": "S95",
+  "pack_path": ".planestack/sprints/S95/pack.md",
+  "generated_at": "2026-03-07T00:00:00Z",
+  "referenced_artifacts": [
+    {
+      "artifact_id": "22896405-f3e4-4b1a-9d71-a997ffeaff39",
+      "artifact_type": "doc",
+      "version": 1,
+      "path_hint": ".planestack/sprints/S95/pack.md"
+    },
+    {
+      "artifact_id": "bfb69125-2488-425f-a180-2e421ee8dee2",
+      "artifact_type": "doc",
+      "version": 1,
+      "path_hint": ".planestack/sprints/S95/runlog.md"
+    },
+    {
+      "artifact_id": "07624839-f89d-4620-8bdb-3ec6d5890bcb",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/sprints/S95/evidence.json"
+    },
+    {
+      "artifact_id": "fb326d05-7c44-4631-a441-389e1ff6556d",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/operate/objectives.json"
+    },
+    {
+      "artifact_id": "2d7b48b9-1c64-474c-9b12-d77ce36f1351",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/operate/escalation-policy.json"
+    },
+    {
+      "artifact_id": "c40724eb-1b7d-4a22-ab42-9de710098d57",
+      "artifact_type": "code.file",
+      "version": 1,
+      "path_hint": ".planestack/governance/metrics/ownership.json"
+    }
+  ]
+}

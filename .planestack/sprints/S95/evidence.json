@@ -1,0 +1,136 @@
+{
+  "sprint": "S95",
+  "date": "2026-03-07",
+  "artifacts": {
+    "pack": "Sprint95-Pack.md",
+    "runlog": "S95-runlog.md",
+    "manifest": ".planestack/sprints/S95/manifest.json"
+  },
+  "commits": {
+    "ps-contracts": [
+      "4ce3f8e",
+      "0fbb144"
+    ],
+    "ps-api": [
+      "8e91953",
+      "928ee4b"
+    ],
+    "ps-dev": [
+      "d8742dc",
+      "e5858cd",
+      "b4b005b"
+    ],
+    "ps-web": [
+      "84fbdcf",
+      "e699675",
+      "624f249",
+      "d8e6a56",
+      "5a800d3",
+      "aac6bb3"
+    ]
+  },
+  "tests": [
+    {
+      "name": "contract-test-docker",
+      "command": "make -C ps-dev contract-test-docker",
+      "result": "fail",
+      "counts": {
+        "passed": 0,
+        "failed": 1
+      }
+    },
+    {
+      "name": "e2e-gate",
+      "command": "make -C ps-dev e2e-gate",
+      "result": "pass",
+      "counts": {
+        "passed": 6,
+        "failed": 0
+      }
+    },
+    {
+      "name": "sprint95-validate",
+      "command": "make -C ps-dev sprint95-validate",
+      "result": "pass",
+      "counts": {
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    {
+      "name": "governance-grade-domains",
+      "command": "make -C ps-dev governance-grade-domains",
+      "result": "fail",
+      "counts": {
+        "passed": 0,
+        "failed": 1
+      }
+    }
+  ],
+  "required_evidence_artifacts": [
+    {
+      "path": ".planestack/governance/operate/objectives.json",
+      "artifact_id": "fb326d05-7c44-4631-a441-389e1ff6556d"
+    },
+    {
+      "path": ".planestack/governance/operate/escalation-policy.json",
+      "artifact_id": "2d7b48b9-1c64-474c-9b12-d77ce36f1351"
+    },
+    {
+      "path": ".planestack/governance/metrics/ownership.json",
+      "artifact_id": "c40724eb-1b7d-4a22-ab42-9de710098d57"
+    },
+    {
+      "path": ".planestack/governance/evidence/s95/operate/objectives-eval.json",
+      "artifact_id": "b92144be-1b41-483e-a582-626f76006b0f"
+    },
+    {
+      "path": ".planestack/governance/evidence/s95/operate/escalation-evidence.json",
+      "artifact_id": "83c253bd-dd23-4ce1-b433-30b16954ef95"
+    },
+    {
+      "path": ".planestack/governance/evidence/s95/operate/run-compare.json",
+      "artifact_id": "9dedb792-4981-417f-a637-dd61052d7421"
+    },
+    {
+      "path": ".planestack/governance/evidence/s95/operate/export.json",
+      "artifact_id": "b5f8e0e2-70be-4e29-bdb6-2c2ec5428375"
+    },
+    {
+      "path": ".planestack/governance/evidence/s95/metrics/metrics-sot.json",
+      "artifact_id": "f3c83ad2-dd9c-45b8-ab4d-b264f4ebbc0b"
+    },
+    {
+      "path": ".planestack/governance/evidence/s95/chronicle/operate-events.json",
+      "artifact_id": "f83db445-5c14-4cb4-ad26-501c3858d87f"
+    },
+    {
+      "path": ".planestack/governance/evidence/s95/canon/refs.json",
+      "artifact_id": "0b9fe924-abaf-43ce-a34c-bae6540306cd"
+    },
+    {
+      "path": ".planestack/governance/evidence/s95/ai-brief-operate.md",
+      "artifact_id": "b7cb394f-5cd3-44c1-a217-c4150720095d"
+    },
+    {
+      "path": ".planestack/governance/evidence/s95/ai-brief-operate.json",
+      "artifact_id": "65914fd5-8c02-4cf2-8c91-b90699405eae"
+    },
+    {
+      "path": ".planestack/governance/evidence/s95/lock-check.json",
+      "artifact_id": "2a2a4b3e-29fd-4513-9e6c-782a4ea5eae8"
+    }
+  ],
+  "notes": [
+    "Sprint 95 upgrades Operate to v2 with objectives, escalation policy, shared metrics SOT, chronicle hooks, compare/export, and canon + AI brief integration.",
+    "All scope items are REQUIRED and must be proven via sprint95-validate."
+  ],
+  "archive_ids": {
+    "pack_id": "22896405-f3e4-4b1a-9d71-a997ffeaff39",
+    "runlog_id": "bfb69125-2488-425f-a180-2e421ee8dee2",
+    "evidence_id": "07624839-f89d-4620-8bdb-3ec6d5890bcb",
+    "manifest_id": "cf9a8bc3-1b4d-4a6e-a58a-897d8d120dc9",
+    "writeback_id": "bc9df396-2bf2-4f6d-b63f-9a6a5f18cbd8",
+    "writeback_artifact_id": "f9f733c5-2546-4ae2-9cfa-59d99573dfd8"
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "sprint": "S97",
+  "date": "2026-03-08",
+  "artifacts": {
+    "pack": "Sprint97-Pack.md",
+    "runlog": "S97-runlog.md",
+    "manifest": ".planestack/sprints/S97/manifest.json"
+  },
+  "commits": {
+    "ps-contracts": [
+      "a6e8ef4"
+    ],
+    "ps-api": [
+      "79c4db3"
+    ],
+    "ps-dev": [
+      "a383c18"
+    ],
+    "ps-web": [
+      "ec62455"
+    ]
+  },
+  "tests": [
+    {
+      "name": "governance-lock-check",
+      "command": "export SPRINT_CODE=S97 && export PS_WORK_PRODUCING=1 && make -C ps-dev governance-lock-check",
+      "result": "PASS",
+      "counts": {
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    {
+      "name": "sprint97-validate",
+      "command": "make -C ps-dev sprint97-validate",
+      "result": "PASS",
+      "counts": {
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    {
+      "name": "contract-test-docker",
+      "command": "make -C ps-dev contract-test-docker",
+      "result": "PASS",
+      "counts": {
+        "passed": 52,
+        "failed": 0
+      }
+    },
+    {
+      "name": "e2e-gate",
+      "command": "make -C ps-dev e2e-gate",
+      "result": "PASS",
+      "counts": {
+        "passed": 6,
+        "failed": 0
+      }
+    },
+    {
+      "name": "managed-environments-smoke",
+      "command": "make -C ps-dev managed-environments-smoke",
+      "result": "PASS",
+      "counts": {
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    {
+      "name": "remote-readiness-smoke",
+      "command": "make -C ps-dev remote-readiness-smoke",
+      "result": "PASS",
+      "counts": {
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    {
+      "name": "operate-blocked-flows-smoke",
+      "command": "make -C ps-dev operate-blocked-flows-smoke",
+      "result": "PASS",
+      "counts": {
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    {
+      "name": "managed-env-chronicle-smoke",
+      "command": "make -C ps-dev managed-env-chronicle-smoke",
+      "result": "PASS",
+      "counts": {
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    {
+      "name": "mfa-status-smoke",
+      "command": "make -C ps-dev mfa-status-smoke",
+      "result": "PASS",
+      "counts": {
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    {
+      "name": "external-reviewer-access-smoke",
+      "command": "make -C ps-dev external-reviewer-access-smoke",
+      "result": "PASS",
+      "counts": {
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    {
+      "name": "ui-capture-authenticated-smoke",
+      "command": "make -C ps-dev ui-capture-authenticated-smoke",
+      "result": "PASS",
+      "counts": {
+        "passed": 1,
+        "failed": 0
+      }
+    },
+    {
+      "name": "operator-ui-smoke",
+      "command": "make -C ps-dev operator-ui-smoke",
+      "result": "PASS",
+      "counts": {
+        "passed": 1,
+        "failed": 0
+      }
+    }
+  ],
+  "required_evidence_artifacts": [
+    {
+      "path": ".planestack/governance/evidence/s97/lock-check.json",
+      "artifact_id": "03df0bdd-b413-4711-b244-0a4e697951cf"
+    },
+    {
+      "path": ".planestack/governance/operate/environments.json",
+      "artifact_id": "e19f678e-e1c8-45f5-9f37-cfa02359308d"
+    },
+    {
+      "path": ".planestack/governance/operate/auth-profiles.json",
+      "artifact_id": "ec63be0d-23d4-4bd7-b8b2-bde5296770b9"
+    },
+    {
+      "path": ".planestack/governance/evidence/s97/operate/environment-profiles.json",
+      "artifact_id": "077aaa09-99ca-4060-b97b-02c50c4c1d19"
+    },
+    {
+      "path": ".planestack/governance/evidence/s97/operate/auth-profiles.json",
+      "artifact_id": "ed02e45e-e5ba-48f6-a84f-f85d5ae6212e"
+    },
+    {
+      "path": ".planestack/governance/evidence/s97/operate/remote-readiness.json",
+      "artifact_id": "3d06758b-2040-491a-99b7-016b8bfc5d78"
+    },
+    {
+      "path": ".planestack/governance/evidence/s97/operate/blocked-flows.json",
+      "artifact_id": "ce412fd7-b2de-447c-ab26-3c32eefa6f59"
+    },
+    {
+      "path": ".planestack/governance/evidence/s97/operate/objective-evaluation.json",
+      "artifact_id": "341ca622-9933-42ee-9d70-72ab9b4ad6f2"
+    },
+    {
+      "path": ".planestack/governance/evidence/s97/chronicle/managed-env-rollups.json",
+      "artifact_id": "fa45cad3-23f0-4d4d-becc-4b98ffe83185"
+    },
+    {
+      "path": ".planestack/governance/evidence/s97/chronicle/managed-env-events.json",
+      "artifact_id": "27eb59f2-3c54-4b0b-8fd5-cfe73f838ad2"
+    },
+    {
+      "path": ".planestack/governance/evidence/s97/admin/mfa-status-sync.json",
+      "artifact_id": "bdd5fca1-b6ea-473d-b26c-517747c5cf51"
+    },
+    {
+      "path": ".planestack/governance/evidence/s97/admin/external-reviewer-access.json",
+      "artifact_id": "6170cb7a-7180-45aa-a031-251ba9d3fc29"
+    },
+    {
+      "path": ".planestack/governance/evidence/s97/ui/capture-authenticated.json",
+      "artifact_id": "1ce6848d-df7a-46c0-8139-5c2c6f3ab620"
+    },
+    {
+      "path": ".planestack/governance/evidence/s97/ui/capture-safe-summary.json",
+      "artifact_id": "e7d761f7-4102-4b65-ba86-38058664a823"
+    },
+    {
+      "path": ".planestack/governance/evidence/s97/operate/ui-operator-smoke.json",
+      "artifact_id": "86c5f79c-ba8d-4ce8-b99f-e4066ca02c3b"
+    },
+    {
+      "path": ".planestack/governance/evidence/s97/operate/ui-state-taxonomy.json",
+      "artifact_id": "c22f3f35-1524-4a06-900f-49a0a4413cc8"
+    },
+    {
+      "path": ".planestack/governance/evidence/s97/archive.json",
+      "artifact_id": "dc166f04-d27c-44c2-b59a-34edf74d9712"
+    }
+  ],
+  "notes": [
+    "Sprint 97 progresses the management / production aspect by adding managed environments and remote-readonly readiness while remaining pre-deployment.",
+    "Governance preflight is required before any work-producing run: export SPRINT_CODE=S97, export PS_WORK_PRODUCING=1, then make -C ps-dev governance-lock-check.",
+    "project_root vs bridge_root separation remains mandatory: governed evidence under project_root, scratch/caches/logs under bridge_root.",
+    "Managed environments are governed by .planestack/governance/operate/environments.json; auth profiles are governed by .planestack/governance/operate/auth-profiles.json.",
+    "Remote mode is read-only only in Sprint 97. No deployments, remote writeback, or mutable production actions are allowed.",
+    "Operate remains the execution cockpit; Chronicle remains the reporting substrate. No duplicate reporting engine may be introduced.",
+    "Authenticated capture is limited to allowlisted targets with vaulted auth-profile references and SSRF blocking.",
+    "No anonymous access is allowed; external access remains invite-only and authenticated.",
+    "MFA status surfaces must cover privileged and external users with explainable blocked states.",
+    "Blank or ambiguous UI states are forbidden on managed-environment surfaces. Explicit states include healthy, at_risk, breached, insufficient_data, blocked, auth_failed, unreachable, and disabled.",
+    "All new evidence artifacts reuse the integrity rule: sha256 of canonical JSON excluding generated_at and integrity.",
+    "sprint97-validate, contract-test-docker, and e2e-gate are all blocking and independent."
+  ],
+  "archive": {
+    "pack_id": "e376b002-bdd9-4903-8a6b-a4953a9906ea",
+    "runlog_id": "1d5bcf74-c8f6-4fee-8edd-79e00d48f5a8",
+    "evidence_id": "3951b638-11ef-49ad-9c05-3135a8263e80",
+    "manifest_id": "047ff199-4b73-41e4-aa0a-b77179612ef2",
+    "writeback_id": "02750521-6f9f-4397-909b-a542b94136ac",
+    "writeback_artifact_id": "6ed217fb-0d08-4418-939e-927ef642227e"
+  }
+}
