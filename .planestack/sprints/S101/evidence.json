@@ -1,0 +1,313 @@
+{
+  "sprint": 101,
+  "theme": "Operate v7 \u2014 Environment-Aware Runbook Library + Guided Diagnostics",
+  "status": "pass",
+  "date": "2026-03-09",
+  "gates": {
+    "governance_lock_check": {
+      "required": true,
+      "status": "pass",
+      "artifact": ".planestack/governance/evidence/s101/lock-check.json"
+    },
+    "sprint101_validate": {
+      "required": true,
+      "status": "pass",
+      "artifact": ".planestack/governance/evidence/s101/sprint101-validate.json"
+    },
+    "contract_test_docker": {
+      "required": true,
+      "status": "pass",
+      "artifact": ".planestack/governance/evidence/s101/contract-test-docker.json"
+    },
+    "e2e_gate": {
+      "required": true,
+      "status": "pass",
+      "artifact": ".planestack/governance/evidence/s101/e2e-gate.json"
+    }
+  },
+  "required_artifacts": [
+    {
+      "key": "lock_check",
+      "path": ".planestack/governance/evidence/s101/lock-check.json",
+      "required": true
+    },
+    {
+      "key": "resources_catalog",
+      "path": ".planestack/governance/evidence/s101/operate/resources-catalog.json",
+      "required": true
+    },
+    {
+      "key": "runbook_library_catalog",
+      "path": ".planestack/governance/evidence/s101/runbooks/library-catalog.json",
+      "required": true
+    },
+    {
+      "key": "runbook_detail_proof",
+      "path": ".planestack/governance/evidence/s101/runbooks/runbook-detail-proof.json",
+      "required": true
+    },
+    {
+      "key": "environment_applicability_summary",
+      "path": ".planestack/governance/evidence/s101/runbooks/environment-applicability-summary.json",
+      "required": true
+    },
+    {
+      "key": "template_catalog",
+      "path": ".planestack/governance/evidence/s101/templates/catalog.json",
+      "required": true
+    },
+    {
+      "key": "template_publish_summary",
+      "path": ".planestack/governance/evidence/s101/templates/publish-summary.json",
+      "required": true
+    },
+    {
+      "key": "template_install_summary",
+      "path": ".planestack/governance/evidence/s101/templates/install-summary.json",
+      "required": true
+    },
+    {
+      "key": "blocked_template_scope",
+      "path": ".planestack/governance/evidence/s101/templates/blocked-scope.json",
+      "required": true
+    },
+    {
+      "key": "diagnostics_taxonomy_validate",
+      "path": ".planestack/governance/evidence/s101/diagnostics/taxonomy-validate.json",
+      "required": true
+    },
+    {
+      "key": "runbook_execution_runs",
+      "path_pattern": ".planestack/governance/evidence/s101/operate/runbooks/<run_id>/runbook-run.json",
+      "required": true,
+      "notes": "At least one successful direct run, one successful template-derived run, and two diagnostic/failure runs must each produce a run directory with runbook-run.json, steps/*, diagnostics.json, and logs.txt."
+    },
+    {
+      "key": "calculator_gold_library_summary",
+      "path": ".planestack/governance/evidence/s101/runbooks/calculator-gold-library-summary.json",
+      "required": true
+    },
+    {
+      "key": "calculator_failure_proof_1",
+      "path": ".planestack/governance/evidence/s101/diagnostics/calculator-failure-proof-1.json",
+      "required": true
+    },
+    {
+      "key": "calculator_failure_proof_2",
+      "path": ".planestack/governance/evidence/s101/diagnostics/calculator-failure-proof-2.json",
+      "required": true
+    },
+    {
+      "key": "runbook_library_ui_smoke",
+      "path": ".planestack/governance/evidence/s101/ui/runbook-library-smoke.json",
+      "required": true
+    },
+    {
+      "key": "runbook_detail_ui_smoke",
+      "path": ".planestack/governance/evidence/s101/ui/runbook-detail-smoke.json",
+      "required": true
+    },
+    {
+      "key": "template_install_ui_smoke",
+      "path": ".planestack/governance/evidence/s101/ui/template-install-smoke.json",
+      "required": true
+    },
+    {
+      "key": "diagnostics_panel_ui_smoke",
+      "path": ".planestack/governance/evidence/s101/ui/diagnostics-panel-smoke.json",
+      "required": true
+    },
+    {
+      "key": "environment_detail_ui_smoke",
+      "path": ".planestack/governance/evidence/s101/ui/environment-detail-smoke.json",
+      "required": true
+    },
+    {
+      "key": "archive",
+      "path": ".planestack/governance/evidence/s101/archive.json",
+      "required": true
+    },
+    {
+      "key": "closeout_summary",
+      "path": ".planestack/governance/evidence/s101/closeout-summary.json",
+      "required": true
+    }
+  ],
+  "commands": [
+    "export SPRINT_CODE=S101",
+    "export PS_WORK_PRODUCING=1",
+    "make -C ps-dev governance-lock-check",
+    "make -C ps-contracts check",
+    "make -C ps-api test",
+    "make -C ps-web test",
+    "make -C ps-dev sprint101-validate",
+    "make -C ps-dev contract-test-docker",
+    "make -C ps-dev e2e-gate"
+  ],
+  "notes": [
+    "Operate remains the plane; do not introduce a new top-level mode.",
+    "Environment applicability is derived from environment bindings; do not create a second persisted binding source.",
+    "Template publish/install remains current-project only in Sprint 101; no cross-project, cross-OU, or public distribution.",
+    "Guided diagnostics are required outputs for failed, blocked, or waiting-manual runs.",
+    "Runbook execution remains bounded by command_ref allowlists from resources.json; no arbitrary shell execution.",
+    "Missing required artifacts is a closeout failure even if tests pass.",
+    "Calculator is the mandatory litmus project and the gold reference library for Sprint 101.",
+    "Final validation complete: sprint101-validate PASS, contract-test-docker PASS (54/54), e2e-gate PASS (6/6)."
+  ],
+  "results": {
+    "governance_lock_check": {
+      "status": "pass",
+      "artifact": ".planestack/governance/evidence/s101/lock-check.json"
+    },
+    "sprint101_validate": {
+      "status": "pass",
+      "artifact": ".planestack/governance/evidence/s101/sprint101-validate.json"
+    },
+    "contract_test_docker": {
+      "status": "pass",
+      "tests": 54,
+      "failed": 0,
+      "artifact": ".planestack/governance/evidence/s101/contract-test-docker.json"
+    },
+    "e2e_gate": {
+      "status": "pass",
+      "tests": 6,
+      "failed": 0,
+      "artifact": ".planestack/governance/evidence/s101/e2e-gate.json"
+    },
+    "archive_pack": {
+      "status": "pass",
+      "pack_id": "fd036be7-416d-449a-a9eb-123c69211386",
+      "runlog_id": "39e153c9-4092-4b3c-a3dc-33d22031e28e",
+      "evidence_id": "f0b2b522-b693-4487-b6d1-e31d74af7c86",
+      "manifest_id": "79a184f2-a2c6-4f53-a61e-40b74ebb760e",
+      "writeback_id": "743d71e9-f464-4917-a4f0-3fb734ef13c7",
+      "writeback_artifact_id": "e4b99699-9ad5-44ea-964d-ab1707f90d23"
+    }
+  },
+  "required_evidence_artifacts": [
+    {
+      "key": "lock_check",
+      "path": ".planestack/governance/evidence/s101/lock-check.json",
+      "artifact_id": "43149bf2-3ad0-49af-bd97-9b859bb36a4e"
+    },
+    {
+      "key": "resources_catalog",
+      "path": ".planestack/governance/evidence/s101/operate/resources-catalog.json",
+      "artifact_id": "f32cda48-2bc1-4aa1-b308-799c0eeb22b1"
+    },
+    {
+      "key": "runbook_library_catalog",
+      "path": ".planestack/governance/evidence/s101/runbooks/library-catalog.json",
+      "artifact_id": "f1339b67-fd5b-486b-a175-0b917f13acc1"
+    },
+    {
+      "key": "runbook_detail_proof",
+      "path": ".planestack/governance/evidence/s101/runbooks/runbook-detail-proof.json",
+      "artifact_id": "1d8e9a39-9662-476c-8c3e-738c1dac09ad"
+    },
+    {
+      "key": "environment_applicability_summary",
+      "path": ".planestack/governance/evidence/s101/runbooks/environment-applicability-summary.json",
+      "artifact_id": "1c8b2841-4bbf-421c-86ca-234d89d01715"
+    },
+    {
+      "key": "template_catalog",
+      "path": ".planestack/governance/evidence/s101/templates/catalog.json",
+      "artifact_id": "4c82e7e2-4593-47f9-93cf-3758ac716b77"
+    },
+    {
+      "key": "template_publish_summary",
+      "path": ".planestack/governance/evidence/s101/templates/publish-summary.json",
+      "artifact_id": "1c31c768-1d12-4cdb-82ac-73e4355615a4"
+    },
+    {
+      "key": "template_install_summary",
+      "path": ".planestack/governance/evidence/s101/templates/install-summary.json",
+      "artifact_id": "932fdf9c-0b7b-4496-9251-186aaf0e2e37"
+    },
+    {
+      "key": "blocked_template_scope",
+      "path": ".planestack/governance/evidence/s101/templates/blocked-scope.json",
+      "artifact_id": "5bf38b23-603a-4814-bcdd-c5b813c2b08f"
+    },
+    {
+      "key": "diagnostics_taxonomy_validate",
+      "path": ".planestack/governance/evidence/s101/diagnostics/taxonomy-validate.json",
+      "artifact_id": "12d848f6-f32a-44f3-abec-a47b8f2bfccd"
+    },
+    {
+      "key": "calculator_gold_library_summary",
+      "path": ".planestack/governance/evidence/s101/runbooks/calculator-gold-library-summary.json",
+      "artifact_id": "57e505ab-5a23-4899-924d-6a5d9ed40193"
+    },
+    {
+      "key": "calculator_failure_proof_1",
+      "path": ".planestack/governance/evidence/s101/diagnostics/calculator-failure-proof-1.json",
+      "artifact_id": "94717b47-6c19-40c7-a415-6152d87b9ca1"
+    },
+    {
+      "key": "calculator_failure_proof_2",
+      "path": ".planestack/governance/evidence/s101/diagnostics/calculator-failure-proof-2.json",
+      "artifact_id": "c462708c-f296-4ad3-a061-3ed30cae53d1"
+    },
+    {
+      "key": "runbook_library_ui_smoke",
+      "path": ".planestack/governance/evidence/s101/ui/runbook-library-smoke.json",
+      "artifact_id": "c898ef24-8866-4170-8404-7582aff82f97"
+    },
+    {
+      "key": "runbook_detail_ui_smoke",
+      "path": ".planestack/governance/evidence/s101/ui/runbook-detail-smoke.json",
+      "artifact_id": "935a6e8a-10ae-40b6-b461-51ec35101910"
+    },
+    {
+      "key": "template_install_ui_smoke",
+      "path": ".planestack/governance/evidence/s101/ui/template-install-smoke.json",
+      "artifact_id": "71411722-db4c-4e7a-93ea-0019b75a548e"
+    },
+    {
+      "key": "diagnostics_panel_ui_smoke",
+      "path": ".planestack/governance/evidence/s101/ui/diagnostics-panel-smoke.json",
+      "artifact_id": "97c53d89-e1e5-4630-8c47-f3042f595900"
+    },
+    {
+      "key": "environment_detail_ui_smoke",
+      "path": ".planestack/governance/evidence/s101/ui/environment-detail-smoke.json",
+      "artifact_id": "302e0ba0-1d2b-4796-b132-eff1b1bfe838"
+    },
+    {
+      "key": "archive",
+      "path": ".planestack/governance/evidence/s101/archive.json",
+      "artifact_id": "5432def6-df3e-4280-b011-97335fba3b78"
+    },
+    {
+      "key": "closeout_summary",
+      "path": ".planestack/governance/evidence/s101/closeout-summary.json",
+      "artifact_id": "39b1dcbb-731d-4698-8715-eb4b3bda51e0"
+    },
+    {
+      "key": "sprint101_validate",
+      "path": ".planestack/governance/evidence/s101/sprint101-validate.json",
+      "artifact_id": "199d47dd-7800-41fb-a6d7-5c675f762f0c"
+    },
+    {
+      "key": "contract_test_docker",
+      "path": ".planestack/governance/evidence/s101/contract-test-docker.json",
+      "artifact_id": "d7df9acf-22cc-479b-8760-02fe5e9b6975"
+    },
+    {
+      "key": "e2e_gate",
+      "path": ".planestack/governance/evidence/s101/e2e-gate.json",
+      "artifact_id": "692bacea-831b-42e8-826f-b825244628ed"
+    }
+  ],
+  "archive_ids": {
+    "pack_id": "fd036be7-416d-449a-a9eb-123c69211386",
+    "runlog_id": "39e153c9-4092-4b3c-a3dc-33d22031e28e",
+    "evidence_id": "f0b2b522-b693-4487-b6d1-e31d74af7c86",
+    "manifest_id": "79a184f2-a2c6-4f53-a61e-40b74ebb760e",
+    "writeback_id": "743d71e9-f464-4917-a4f0-3fb734ef13c7",
+    "writeback_artifact_id": "e4b99699-9ad5-44ea-964d-ab1707f90d23"
+  }
+}
