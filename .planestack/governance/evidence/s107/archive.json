@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-10T22:11:43Z",
+  "sprint": "S107",
+  "status": "pass",
+  "archive_receipt": {
+    "pack_id": "684729c1-46b0-414d-8dab-eab48b96c1e5",
+    "runlog_id": "4dfc4ff4-8304-4c26-9b7d-17a7611ff829",
+    "evidence_id": "a3aa00fe-eba4-4f8c-b83c-6a1206aa5f9b",
+    "manifest_id": "2a68c096-05c4-4359-937b-cd4d3a0874d9",
+    "writeback_id": "fb71ed25-6230-40ca-b48d-4c50ac95695e",
+    "writeback_artifact_id": "49f4d5e7-91ff-47f5-b4b8-7f9f077b11d5"
+  }
+}
