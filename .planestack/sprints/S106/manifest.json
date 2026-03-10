@@ -1,0 +1,40 @@
+{
+  "sprint": 106,
+  "pack_title": "PlaneStack Sprint 106 Pack",
+  "theme": "Design-to-Operate Blueprints",
+  "status": "complete",
+  "date": "2026-03-10",
+  "files": [
+    "Sprint106-Pack.md",
+    "S106-runlog.md",
+    "S106-evidence.json",
+    "manifest.json"
+  ],
+  "mirrors": [
+    ".planestack/sprints/S106/pack.md",
+    ".planestack/sprints/S106/runlog.md",
+    ".planestack/sprints/S106/evidence.json",
+    ".planestack/sprints/S106/manifest.json"
+  ],
+  "evidence_root": ".planestack/governance/evidence/s106",
+  "tranche_commits": {
+    "ps-contracts": "ba8c3ab",
+    "ps-api": "1500bef",
+    "ps-web": "433b075",
+    "ps-dev": "0d5a51f"
+  },
+  "gates": {
+    "sprint106_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass",
+    "archive_pack": "pass"
+  },
+  "archive_receipt": {
+    "pack_id": "2b086efc-f8f6-4576-8ca6-35b7aa080c5e",
+    "runlog_id": "a8d0a56c-d3bb-4993-81f6-33c66aa5961b",
+    "evidence_id": "67707f60-3659-4c71-8710-4d3c364e58a1",
+    "manifest_id": "d40d2629-0e7b-4ae6-9521-c893110e8ef0",
+    "writeback_id": "34b37302-dfa4-4cc8-ac56-e60871336c55",
+    "writeback_artifact_id": "fbe02642-cfd8-4c1b-8478-4198d5f6549b"
+  }
+}
