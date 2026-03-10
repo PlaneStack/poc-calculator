@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-03-08T21:11:16Z",
+  "generated_at": "2026-03-10T05:14:53Z",
   "operation": "governance-lock-check",
-  "runner": "bash",
+  "runner": "{tok}}\nout={}\nfor p in paths:\n    u=api+urllib.parse.quote(p,safe=)\n    rr=requests.get(u,headers=headers)\n    try:j=rr.json()\n    except: j={}\n    items=j.get(items) if isinstance(j,dict) else None\n    aid=items[0][id] if isinstance(items,list) and items else None\n    out[p]=aid\nprint(json.dumps(out,indent=2))\nPY",
   "status": "passed",
   "sprint_code": "S90",
   "work_producing": true,

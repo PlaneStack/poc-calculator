@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-03-08T14:00:45Z",
+  "generated_at": "2026-03-10T05:08:57Z",
   "operation": "governance-lock-check",
-  "runner": "s95-ai-brief-operate.sh",
+  "runner": "governance-lock-check.sh",
   "status": "passed",
   "sprint_code": "S95",
   "work_producing": true,
   "bucket_used": "s95",
   "reason": null,
-  "project_root": "/work/project",
-  "bridge_root": "/work/bridge_root",
+  "project_root": "/Users/mklein/_Ventures/PlaneStack/repos/poc-calculator",
+  "bridge_root": "/Users/mklein/_Ventures/PlaneStack/bridge_root",
   "evidence_targets": [
     ".planestack/governance/evidence"
   ],
   "scratch_targets": [
-    "/work/bridge_root/workspaces",
-    "/work/bridge_root/tmp",
-    "/work/bridge_root/caches",
-    "/work/bridge_root/logs"
+    "/Users/mklein/_Ventures/PlaneStack/bridge_root/workspaces",
+    "/Users/mklein/_Ventures/PlaneStack/bridge_root/tmp",
+    "/Users/mklein/_Ventures/PlaneStack/bridge_root/caches",
+    "/Users/mklein/_Ventures/PlaneStack/bridge_root/logs"
   ],
   "errors": []
 }

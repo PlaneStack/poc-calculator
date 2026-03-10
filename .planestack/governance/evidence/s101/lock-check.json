@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-03-09T10:32:51Z",
+  "generated_at": "2026-03-10T04:58:50Z",
   "operation": "governance-lock-check",
-  "runner": "governance-lock-check.sh",
+  "runner": "s101-run-diagnostics-smoke.sh",
   "status": "passed",
   "sprint_code": "S101",
   "work_producing": true,
