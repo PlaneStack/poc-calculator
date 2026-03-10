@@ -1,0 +1,7 @@
+{
+  "generated_at": "2026-03-09T00:08:04Z",
+  "operation": "operator-ui-smoke",
+  "result": "pass",
+  "schema_version": 1,
+  "source_path": ".planestack/governance/evidence/s98/operate/ui-operator-smoke.json"
+}

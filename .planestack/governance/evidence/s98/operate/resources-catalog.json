@@ -1,0 +1,11 @@
+{
+  "categories": [
+    "command",
+    "repository"
+  ],
+  "generated_at": "2026-03-09T00:05:23Z",
+  "operation": "s98-resource-inventory-smoke",
+  "resource_count": 2,
+  "schema_version": 1,
+  "status": "passed"
+}

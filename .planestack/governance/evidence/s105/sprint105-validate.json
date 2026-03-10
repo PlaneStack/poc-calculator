@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-10T03:59:58Z",
+  "status": "pass",
+  "sprint": "S105",
+  "chain": [
+    "governance-lock-check",
+    "contract-test-docker",
+    "s105-work-operate-recommendations-smoke",
+    "s105-actions-smoke",
+    "s105-operate-ui-smoke",
+    "s100-environment-selector-smoke",
+    "s101-runbook-library-ui-smoke",
+    "s102-overlay-resolution-smoke",
+    "s103-setup-state-smoke",
+    "s104-center-auth-context-smoke"
+  ]
+}

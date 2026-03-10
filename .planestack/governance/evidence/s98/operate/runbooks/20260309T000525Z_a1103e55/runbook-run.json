@@ -1,0 +1,57 @@
+{
+  "checks": [
+    {
+      "assertions": [
+        {
+          "actual": true,
+          "expected": true,
+          "name": "step_executed",
+          "ok": true
+        }
+      ],
+      "check_key": "step-1",
+      "check_type": "command",
+      "duration_ms": 1,
+      "message": "ok",
+      "status": "passed"
+    }
+  ],
+  "checks_failed": 0,
+  "checks_passed": 1,
+  "checks_total": 1,
+  "env_key": "local",
+  "evidence": {
+    "assertions_json_path": ".planestack/governance/evidence/s98/operate/runbooks/20260309T000525Z_a1103e55/assertions.json",
+    "run_json_path": ".planestack/governance/evidence/s98/operate/runbooks/20260309T000525Z_a1103e55/runbook-run.json",
+    "runlog_path": ".planestack/governance/evidence/s98/operate/runbooks/20260309T000525Z_a1103e55/logs.txt"
+  },
+  "finished_at": "2026-03-09T00:05:25.521Z",
+  "idempotency_key": "s98-1773014725-13360",
+  "incident": {
+    "created": false,
+    "incident_key": null,
+    "reason": "no_3_strike_trigger"
+  },
+  "integrity": {
+    "algo": "sha256",
+    "hash": "a30eec64cab825b6f15f535169ffb1d27d35ebe37f4176cc691cd5aa27138ffa"
+  },
+  "plan_hash": "15c2329fd2861efffc862cb210bcb7ad054e8a17b5d6e2ce83d96e1bfee0aaa0",
+  "requested_check": "runbook:calculator.readiness.local",
+  "run_id": "20260309T000525Z_a1103e55",
+  "runbook_ref": {
+    "artifact_id": "6688dd45-6adb-4cb6-952a-f18fde53454d",
+    "integrity_hash": "ec064b79deebcc9a04063257d58707b57991f0431d1a5566b1f7b62b79edfb48",
+    "key": "calculator.readiness.local",
+    "version": 2
+  },
+  "source_refs": [
+    {
+      "id": "6688dd45-6adb-4cb6-952a-f18fde53454d",
+      "path": ".planestack/runbooks/operate/calculator.readiness.local.runbook.json",
+      "type": "artifact"
+    }
+  ],
+  "started_at": "2026-03-09T00:05:25.504Z",
+  "status": "completed_pass"
+}

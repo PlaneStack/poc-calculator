@@ -1,0 +1,448 @@
+{
+  "sprint": 103,
+  "theme": "Operate v10 \u2014 Guided Local Setup + Remediation",
+  "status": "pass",
+  "date": "2026-03-09",
+  "gates": {
+    "governance_lock_check": {
+      "required": true,
+      "status": "pass",
+      "artifact": ".planestack/governance/evidence/s103/lock-check.json"
+    },
+    "sprint103_validate": {
+      "required": true,
+      "status": "pass",
+      "artifact": ".planestack/governance/evidence/s103/sprint103-validate.json"
+    },
+    "contract_test_docker": {
+      "required": true,
+      "status": "pass",
+      "artifact": ".planestack/governance/evidence/s103/contract-test-docker.json"
+    },
+    "e2e_gate": {
+      "required": true,
+      "status": "pass",
+      "artifact": ".planestack/governance/evidence/s103/e2e-gate.json"
+    }
+  },
+  "required_artifacts": [
+    {
+      "key": "lock_check",
+      "path": ".planestack/governance/evidence/s103/lock-check.json",
+      "required": true,
+      "artifact_id": "340c9f1f-99ed-4060-9e62-acbcbc660109"
+    },
+    {
+      "key": "setup_state_local",
+      "path": ".planestack/governance/evidence/s103/operate/setup-state-local.json",
+      "required": true,
+      "artifact_id": "6c7fddd5-27e9-4c99-87e4-5d9dfcdd5392"
+    },
+    {
+      "key": "setup_state_custom",
+      "path": ".planestack/governance/evidence/s103/operate/setup-state-custom.json",
+      "required": true,
+      "artifact_id": "d627a2a5-d786-4fa0-a603-f65578f41b5b"
+    },
+    {
+      "key": "effective_config_compare_last_success",
+      "path": ".planestack/governance/evidence/s103/operate/effective-config-compare-last-success.json",
+      "required": true,
+      "artifact_id": "c1561994-9147-4c19-b0f2-af5554532fb4"
+    },
+    {
+      "key": "calculator_guided_setup_summary",
+      "path": ".planestack/governance/evidence/s103/operate/calculator-guided-setup-summary.json",
+      "required": true,
+      "artifact_id": "891b9503-01a4-40f6-a9e8-43c2898d9c78"
+    },
+    {
+      "key": "user_local_overlay_proof",
+      "path": ".planestack/governance/evidence/s103/overlays/user-local-overlay-proof.json",
+      "required": true,
+      "artifact_id": "c86c4175-5032-41f1-b754-cd9734da47a2"
+    },
+    {
+      "key": "overlay_clear_proof",
+      "path": ".planestack/governance/evidence/s103/overlays/overlay-clear-proof.json",
+      "required": true,
+      "artifact_id": "cedc02d5-cb15-4a50-a99d-e826c7775709"
+    },
+    {
+      "key": "overlay_redaction_proof",
+      "path": ".planestack/governance/evidence/s103/overlays/overlay-redaction-proof.json",
+      "required": true,
+      "artifact_id": "6c869ead-3285-4e42-b46d-fc2409061fd4"
+    },
+    {
+      "key": "toolchain_discovery",
+      "path": ".planestack/governance/evidence/s103/discovery/toolchain-discovery.json",
+      "required": true,
+      "artifact_id": "a0b3c8d1-6591-430f-a6c9-892f488219f4"
+    },
+    {
+      "key": "port_probe",
+      "path": ".planestack/governance/evidence/s103/discovery/port-probe.json",
+      "required": true,
+      "artifact_id": "c2b37614-ac8d-4ef8-bc31-b03f321f2a11"
+    },
+    {
+      "key": "path_probe",
+      "path": ".planestack/governance/evidence/s103/discovery/path-probe.json",
+      "required": true,
+      "artifact_id": "87fd86cf-1821-4f7e-9368-7fd98080aa57"
+    },
+    {
+      "key": "prereq_file_check",
+      "path": ".planestack/governance/evidence/s103/discovery/prereq-file-check.json",
+      "required": true,
+      "artifact_id": "7899a047-6cc3-46d7-b0b1-5fe1c2731a3f"
+    },
+    {
+      "key": "executable_bind_preview",
+      "path": ".planestack/governance/evidence/s103/remediation/executable-path-bind-preview.json",
+      "required": true,
+      "artifact_id": "3a1b642c-c08e-4b8c-94da-9c7524780e0a"
+    },
+    {
+      "key": "executable_bind_apply",
+      "path": ".planestack/governance/evidence/s103/remediation/executable-path-bind-apply.json",
+      "required": true,
+      "artifact_id": "4238a0e2-f55c-47f0-ae22-6f647cdf5b99"
+    },
+    {
+      "key": "port_remediation_preview",
+      "path": ".planestack/governance/evidence/s103/remediation/port-remediation-preview.json",
+      "required": true,
+      "artifact_id": "881f1a80-5dbc-4538-9c6a-8f9eee893417"
+    },
+    {
+      "key": "port_remediation_apply",
+      "path": ".planestack/governance/evidence/s103/remediation/port-remediation-apply.json",
+      "required": true,
+      "artifact_id": "199d362c-6606-4658-9587-113bcf76f40d"
+    },
+    {
+      "key": "workspace_fix_preview",
+      "path": ".planestack/governance/evidence/s103/remediation/workspace-fix-preview.json",
+      "required": true,
+      "artifact_id": "845ed3a2-2a60-4a98-8c8b-1e2447f33240"
+    },
+    {
+      "key": "workspace_fix_apply",
+      "path": ".planestack/governance/evidence/s103/remediation/workspace-fix-apply.json",
+      "required": true,
+      "artifact_id": "cd1afd96-1c8d-461e-be73-4a89cf00217a"
+    },
+    {
+      "key": "executable_missing_proof",
+      "path": ".planestack/governance/evidence/s103/diagnostics/executable-missing-proof.json",
+      "required": true,
+      "artifact_id": "0fc2375a-8988-4abf-a122-ff773164a990"
+    },
+    {
+      "key": "port_collision_proof",
+      "path": ".planestack/governance/evidence/s103/diagnostics/port-collision-proof.json",
+      "required": true,
+      "artifact_id": "85a9463c-8d33-419a-9f53-01fe01ba9633"
+    },
+    {
+      "key": "workspace_invalid_proof",
+      "path": ".planestack/governance/evidence/s103/diagnostics/workspace-invalid-proof.json",
+      "required": true,
+      "artifact_id": "4a4e8804-0bfe-48d6-895f-1bb0056beae9"
+    },
+    {
+      "key": "protected_override_denial",
+      "path": ".planestack/governance/evidence/s103/diagnostics/protected-override-denial.json",
+      "required": true,
+      "artifact_id": "064657ad-9d4a-4a4f-82d0-a9579491f05a"
+    },
+    {
+      "key": "runbook_execution_runs",
+      "path_pattern": ".planestack/governance/evidence/s103/operate/runbooks/<run_id>/runbook-run.json",
+      "required": true,
+      "notes": "At least one first-run success after guided setup, one success after executable remediation, one success after port remediation, and deterministic failure proofs must each produce a run directory with resolved-plan.json, resolved-values.json, runbook-run.json, steps/*, diagnostics.json, and logs.txt."
+    },
+    {
+      "key": "setup_panel_smoke",
+      "path": ".planestack/governance/evidence/s103/ui/setup-panel-smoke.json",
+      "required": true,
+      "artifact_id": "acf9b027-5c3c-41db-9880-2369bc3cc93f"
+    },
+    {
+      "key": "remediation_cards_smoke",
+      "path": ".planestack/governance/evidence/s103/ui/remediation-cards-smoke.json",
+      "required": true,
+      "artifact_id": "469b2b22-d975-4fb5-a747-d0871528a93c"
+    },
+    {
+      "key": "effective_config_compare_smoke",
+      "path": ".planestack/governance/evidence/s103/ui/effective-config-compare-smoke.json",
+      "required": true,
+      "artifact_id": "7fc40bd9-9abd-4429-aebb-fb6ab87095ad"
+    },
+    {
+      "key": "diagnostics_next_actions_smoke",
+      "path": ".planestack/governance/evidence/s103/ui/diagnostics-next-actions-smoke.json",
+      "required": true,
+      "artifact_id": "2a41569f-1c6d-46f3-9367-90661819f087"
+    },
+    {
+      "key": "overlay_editor_smoke",
+      "path": ".planestack/governance/evidence/s103/ui/overlay-editor-smoke.json",
+      "required": true,
+      "artifact_id": "2e9a9142-79eb-4cb5-8425-3990c5c49180"
+    },
+    {
+      "key": "run_after_remediation_smoke",
+      "path": ".planestack/governance/evidence/s103/ui/run-after-remediation-smoke.json",
+      "required": true,
+      "artifact_id": "4368a57d-3a8e-4fae-af76-bccd5cfa84a5"
+    },
+    {
+      "key": "archive",
+      "path": ".planestack/governance/evidence/s103/archive.json",
+      "required": true,
+      "artifact_id": "ac0ff0c8-d654-4426-bb4a-0bd84e0b37af"
+    },
+    {
+      "key": "closeout_summary",
+      "path": ".planestack/governance/evidence/s103/closeout-summary.json",
+      "required": true,
+      "artifact_id": "1726bc6c-921f-4c61-aa0d-4087936caec4"
+    }
+  ],
+  "commands": [
+    "export SPRINT_CODE=S103",
+    "export PS_WORK_PRODUCING=1",
+    "make -C ps-dev governance-lock-check",
+    "make -C ps-contracts check",
+    "make -C ps-api test",
+    "make -C ps-web test",
+    "make -C ps-dev sprint103-validate",
+    "make -C ps-dev contract-test-docker",
+    "make -C ps-dev e2e-gate"
+  ],
+  "notes": [
+    "Project-level execution truth is authoritative; user-local remediation is local-only and never a replacement.",
+    "Sprint 103 must get a real user from incomplete local state to successful run through guided setup and remediation.",
+    "Protected slots must reject user-local remediation with explicit reason code and evidence.",
+    "Preview is zero-side-effect and remains mandatory before any local_mutate remediation/run.",
+    "Effective-config compare must label source provenance and highlight only meaningful changes.",
+    "Missing required artifacts is a closeout failure even if tests pass.",
+    "Calculator is the mandatory litmus project and gold proof bundle for Sprint 103."
+  ],
+  "results": {
+    "validated_at": "2026-03-09",
+    "commands": {
+      "sprint103_validate": "pass",
+      "contract_test_docker": "pass (56/56)",
+      "e2e_gate": "pass (6/6)"
+    },
+    "commit_shas": {
+      "ps_contracts": "25053ce",
+      "ps_api": "0bdd126",
+      "ps_web": "4bf4354",
+      "ps_dev": "82c17ee"
+    },
+    "operational_notes": [
+      "Cleared one stale e2e-gate single-flight lock before successful rerun."
+    ]
+  },
+  "required_evidence_artifacts": [
+    {
+      "key": "lock_check",
+      "path": ".planestack/governance/evidence/s103/lock-check.json",
+      "artifact_id": "340c9f1f-99ed-4060-9e62-acbcbc660109",
+      "required": true
+    },
+    {
+      "key": "setup_state_local",
+      "path": ".planestack/governance/evidence/s103/operate/setup-state-local.json",
+      "artifact_id": "6c7fddd5-27e9-4c99-87e4-5d9dfcdd5392",
+      "required": true
+    },
+    {
+      "key": "setup_state_custom",
+      "path": ".planestack/governance/evidence/s103/operate/setup-state-custom.json",
+      "artifact_id": "d627a2a5-d786-4fa0-a603-f65578f41b5b",
+      "required": true
+    },
+    {
+      "key": "effective_config_compare_last_success",
+      "path": ".planestack/governance/evidence/s103/operate/effective-config-compare-last-success.json",
+      "artifact_id": "c1561994-9147-4c19-b0f2-af5554532fb4",
+      "required": true
+    },
+    {
+      "key": "calculator_guided_setup_summary",
+      "path": ".planestack/governance/evidence/s103/operate/calculator-guided-setup-summary.json",
+      "artifact_id": "891b9503-01a4-40f6-a9e8-43c2898d9c78",
+      "required": true
+    },
+    {
+      "key": "user_local_overlay_proof",
+      "path": ".planestack/governance/evidence/s103/overlays/user-local-overlay-proof.json",
+      "artifact_id": "c86c4175-5032-41f1-b754-cd9734da47a2",
+      "required": true
+    },
+    {
+      "key": "overlay_clear_proof",
+      "path": ".planestack/governance/evidence/s103/overlays/overlay-clear-proof.json",
+      "artifact_id": "cedc02d5-cb15-4a50-a99d-e826c7775709",
+      "required": true
+    },
+    {
+      "key": "overlay_redaction_proof",
+      "path": ".planestack/governance/evidence/s103/overlays/overlay-redaction-proof.json",
+      "artifact_id": "6c869ead-3285-4e42-b46d-fc2409061fd4",
+      "required": true
+    },
+    {
+      "key": "toolchain_discovery",
+      "path": ".planestack/governance/evidence/s103/discovery/toolchain-discovery.json",
+      "artifact_id": "a0b3c8d1-6591-430f-a6c9-892f488219f4",
+      "required": true
+    },
+    {
+      "key": "port_probe",
+      "path": ".planestack/governance/evidence/s103/discovery/port-probe.json",
+      "artifact_id": "c2b37614-ac8d-4ef8-bc31-b03f321f2a11",
+      "required": true
+    },
+    {
+      "key": "path_probe",
+      "path": ".planestack/governance/evidence/s103/discovery/path-probe.json",
+      "artifact_id": "87fd86cf-1821-4f7e-9368-7fd98080aa57",
+      "required": true
+    },
+    {
+      "key": "prereq_file_check",
+      "path": ".planestack/governance/evidence/s103/discovery/prereq-file-check.json",
+      "artifact_id": "7899a047-6cc3-46d7-b0b1-5fe1c2731a3f",
+      "required": true
+    },
+    {
+      "key": "executable_bind_preview",
+      "path": ".planestack/governance/evidence/s103/remediation/executable-path-bind-preview.json",
+      "artifact_id": "3a1b642c-c08e-4b8c-94da-9c7524780e0a",
+      "required": true
+    },
+    {
+      "key": "executable_bind_apply",
+      "path": ".planestack/governance/evidence/s103/remediation/executable-path-bind-apply.json",
+      "artifact_id": "4238a0e2-f55c-47f0-ae22-6f647cdf5b99",
+      "required": true
+    },
+    {
+      "key": "port_remediation_preview",
+      "path": ".planestack/governance/evidence/s103/remediation/port-remediation-preview.json",
+      "artifact_id": "881f1a80-5dbc-4538-9c6a-8f9eee893417",
+      "required": true
+    },
+    {
+      "key": "port_remediation_apply",
+      "path": ".planestack/governance/evidence/s103/remediation/port-remediation-apply.json",
+      "artifact_id": "199d362c-6606-4658-9587-113bcf76f40d",
+      "required": true
+    },
+    {
+      "key": "workspace_fix_preview",
+      "path": ".planestack/governance/evidence/s103/remediation/workspace-fix-preview.json",
+      "artifact_id": "845ed3a2-2a60-4a98-8c8b-1e2447f33240",
+      "required": true
+    },
+    {
+      "key": "workspace_fix_apply",
+      "path": ".planestack/governance/evidence/s103/remediation/workspace-fix-apply.json",
+      "artifact_id": "cd1afd96-1c8d-461e-be73-4a89cf00217a",
+      "required": true
+    },
+    {
+      "key": "executable_missing_proof",
+      "path": ".planestack/governance/evidence/s103/diagnostics/executable-missing-proof.json",
+      "artifact_id": "0fc2375a-8988-4abf-a122-ff773164a990",
+      "required": true
+    },
+    {
+      "key": "port_collision_proof",
+      "path": ".planestack/governance/evidence/s103/diagnostics/port-collision-proof.json",
+      "artifact_id": "85a9463c-8d33-419a-9f53-01fe01ba9633",
+      "required": true
+    },
+    {
+      "key": "workspace_invalid_proof",
+      "path": ".planestack/governance/evidence/s103/diagnostics/workspace-invalid-proof.json",
+      "artifact_id": "4a4e8804-0bfe-48d6-895f-1bb0056beae9",
+      "required": true
+    },
+    {
+      "key": "protected_override_denial",
+      "path": ".planestack/governance/evidence/s103/diagnostics/protected-override-denial.json",
+      "artifact_id": "064657ad-9d4a-4a4f-82d0-a9579491f05a",
+      "required": true
+    },
+    {
+      "key": "runbook_execution_runs",
+      "path": null,
+      "required": true
+    },
+    {
+      "key": "setup_panel_smoke",
+      "path": ".planestack/governance/evidence/s103/ui/setup-panel-smoke.json",
+      "artifact_id": "acf9b027-5c3c-41db-9880-2369bc3cc93f",
+      "required": true
+    },
+    {
+      "key": "remediation_cards_smoke",
+      "path": ".planestack/governance/evidence/s103/ui/remediation-cards-smoke.json",
+      "artifact_id": "469b2b22-d975-4fb5-a747-d0871528a93c",
+      "required": true
+    },
+    {
+      "key": "effective_config_compare_smoke",
+      "path": ".planestack/governance/evidence/s103/ui/effective-config-compare-smoke.json",
+      "artifact_id": "7fc40bd9-9abd-4429-aebb-fb6ab87095ad",
+      "required": true
+    },
+    {
+      "key": "diagnostics_next_actions_smoke",
+      "path": ".planestack/governance/evidence/s103/ui/diagnostics-next-actions-smoke.json",
+      "artifact_id": "2a41569f-1c6d-46f3-9367-90661819f087",
+      "required": true
+    },
+    {
+      "key": "overlay_editor_smoke",
+      "path": ".planestack/governance/evidence/s103/ui/overlay-editor-smoke.json",
+      "artifact_id": "2e9a9142-79eb-4cb5-8425-3990c5c49180",
+      "required": true
+    },
+    {
+      "key": "run_after_remediation_smoke",
+      "path": ".planestack/governance/evidence/s103/ui/run-after-remediation-smoke.json",
+      "artifact_id": "4368a57d-3a8e-4fae-af76-bccd5cfa84a5",
+      "required": true
+    },
+    {
+      "key": "archive",
+      "path": ".planestack/governance/evidence/s103/archive.json",
+      "required": true,
+      "artifact_id": "ac0ff0c8-d654-4426-bb4a-0bd84e0b37af"
+    },
+    {
+      "key": "closeout_summary",
+      "path": ".planestack/governance/evidence/s103/closeout-summary.json",
+      "artifact_id": "1726bc6c-921f-4c61-aa0d-4087936caec4",
+      "required": true
+    }
+  ],
+  "archive_ids": {
+    "pack_id": "5d5c873b-f13c-4569-ab8c-64fc51a96685",
+    "runlog_id": "da41da96-d044-4713-b9d0-344afa2e29e7",
+    "evidence_id": "e26351a3-6559-4dc0-aad5-8550b5c3da44",
+    "manifest_id": "5735fa16-3a7b-4358-95c8-de1e4114fe94",
+    "writeback_id": "4bc869dd-82ca-41b0-a2d8-dc6943801475",
+    "writeback_artifact_id": "2afb583b-2596-4197-9c01-9498a20629f5"
+  }
+}

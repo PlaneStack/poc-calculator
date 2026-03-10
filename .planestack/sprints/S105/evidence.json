@@ -1,0 +1,502 @@
+{
+  "sprint": 105,
+  "theme": "Operate v12 \u2014 Governed Local Delivery Loop",
+  "status": "pass",
+  "date": "2026-03-10",
+  "gates": {
+    "governance_lock_check": {
+      "required": true,
+      "status": "pass",
+      "artifact": ".planestack/governance/evidence/s105/lock-check.json"
+    },
+    "sprint105_validate": {
+      "required": true,
+      "status": "pass",
+      "artifact": ".planestack/governance/evidence/s105/sprint105-validate.json"
+    },
+    "contract_test_docker": {
+      "required": true,
+      "status": "pass",
+      "artifact": ".planestack/governance/evidence/s105/contract-test-docker.json"
+    },
+    "e2e_gate": {
+      "required": true,
+      "status": "pass",
+      "artifact": ".planestack/governance/evidence/s105/e2e-gate.json"
+    }
+  },
+  "required_artifacts": [
+    {
+      "key": "lock_check",
+      "path": ".planestack/governance/evidence/s105/lock-check.json",
+      "required": true,
+      "artifact_id": "d9146081-b1e7-4c05-a168-3282de8f1931"
+    },
+    {
+      "key": "work_operate_recommendations",
+      "path": ".planestack/governance/evidence/s105/operate/recommendations/work-operate-recommendations.json",
+      "required": true,
+      "artifact_id": "ed4d1eb1-260a-4dc1-90a3-ebd55c49db9d"
+    },
+    {
+      "key": "calculator_work_context",
+      "path": ".planestack/governance/evidence/s105/operate/recommendations/calculator-work-context.json",
+      "required": true,
+      "artifact_id": "555d5ab3-1ecc-478a-9dd1-e1dd3cdbf675"
+    },
+    {
+      "key": "action_catalog",
+      "path": ".planestack/governance/evidence/s105/operate/actions/action-catalog.json",
+      "required": true,
+      "artifact_id": "f0e74c7f-3d5b-4122-a1a7-5cd34dde7081"
+    },
+    {
+      "key": "action_preview_install",
+      "path": ".planestack/governance/evidence/s105/operate/actions/action-preview-install.json",
+      "required": true,
+      "artifact_id": "e66f415d-f10b-4470-967d-2ddfcfd808a2"
+    },
+    {
+      "key": "action_preview_build",
+      "path": ".planestack/governance/evidence/s105/operate/actions/action-preview-build.json",
+      "required": true,
+      "artifact_id": "8ee17544-b4a3-4b67-bedd-44de6d133600"
+    },
+    {
+      "key": "action_preview_test",
+      "path": ".planestack/governance/evidence/s105/operate/actions/action-preview-test.json",
+      "required": true,
+      "artifact_id": "c0d20884-0e68-4a52-84c0-93171bd0a7a2"
+    },
+    {
+      "key": "action_run_install",
+      "path": ".planestack/governance/evidence/s105/operate/actions/action-run-install.json",
+      "required": true,
+      "artifact_id": "d22f1afb-f1a1-4f8e-98ff-8134710fa261"
+    },
+    {
+      "key": "action_run_seed_reset",
+      "path": ".planestack/governance/evidence/s105/operate/actions/action-run-seed-reset.json",
+      "required": true,
+      "artifact_id": "a1a88077-5937-49e4-ab57-9977f3f11322"
+    },
+    {
+      "key": "action_run_build",
+      "path": ".planestack/governance/evidence/s105/operate/actions/action-run-build.json",
+      "required": true,
+      "artifact_id": "b9bcee75-fe91-4aa2-a3e7-cb6de20df2b1"
+    },
+    {
+      "key": "action_run_test",
+      "path": ".planestack/governance/evidence/s105/operate/actions/action-run-test.json",
+      "required": true,
+      "artifact_id": "0d91f73a-33d2-4bde-87d2-2943bfed107a"
+    },
+    {
+      "key": "action_run_watch",
+      "path": ".planestack/governance/evidence/s105/operate/actions/action-run-watch.json",
+      "required": true,
+      "artifact_id": "c31f7e76-cc9e-4b23-bd43-10d1ab5aa776"
+    },
+    {
+      "key": "action_run_verify",
+      "path": ".planestack/governance/evidence/s105/operate/actions/action-run-verify.json",
+      "required": true,
+      "artifact_id": "04fea390-d66b-4753-a97a-561cdc8f1946"
+    },
+    {
+      "key": "session_action_binding",
+      "path": ".planestack/governance/evidence/s105/operate/actions/session-action-binding.json",
+      "required": true,
+      "artifact_id": "9af521cd-f59b-4b46-a78a-6c927df509f2"
+    },
+    {
+      "key": "session_start",
+      "path": ".planestack/governance/evidence/s105/operate/sessions/session-start.json",
+      "required": true,
+      "artifact_id": "26aabbf7-1810-46d6-8d3d-4559aca186eb"
+    },
+    {
+      "key": "session_state_summary",
+      "path": ".planestack/governance/evidence/s105/operate/sessions/session-state-summary.json",
+      "required": true,
+      "artifact_id": "e5964e4e-24e6-433a-b757-25a748f19d85"
+    },
+    {
+      "key": "service_state_summary",
+      "path": ".planestack/governance/evidence/s105/operate/sessions/service-state-summary.json",
+      "required": true,
+      "artifact_id": "90066484-c15f-4a80-9238-d99bfbbecd63"
+    },
+    {
+      "key": "plan_current",
+      "path": ".planestack/governance/evidence/s105/operate/plans/current-effective-plan.json",
+      "required": true,
+      "artifact_id": "2e54bfca-064d-4a2c-bcdf-dcc3f4acd1c4"
+    },
+    {
+      "key": "plan_compare_last_success",
+      "path": ".planestack/governance/evidence/s105/operate/plans/compare-last-success.json",
+      "required": true,
+      "artifact_id": "f9836f46-40e1-408b-a208-fd68e92f1539"
+    },
+    {
+      "key": "plan_value_sources",
+      "path": ".planestack/governance/evidence/s105/operate/plans/value-source-summary.json",
+      "required": true,
+      "artifact_id": "97b759c4-a0de-45e1-853e-8a435453c03a"
+    },
+    {
+      "key": "diagnostics_local_fix",
+      "path": ".planestack/governance/evidence/s105/operate/diagnostics/local-fix-diagnostics.json",
+      "required": true,
+      "artifact_id": "4295045a-89b7-440b-81c8-e9d5948edbe2"
+    },
+    {
+      "key": "diagnostics_project_fix_required",
+      "path": ".planestack/governance/evidence/s105/operate/diagnostics/project-fix-required.json",
+      "required": true,
+      "artifact_id": "65fdad70-4346-4a60-ac46-a94aae925a15"
+    },
+    {
+      "key": "remediation_apply_preview",
+      "path": ".planestack/governance/evidence/s105/operate/remediation/remediation-apply-preview.json",
+      "required": true,
+      "artifact_id": "4774fb55-3b45-4543-937d-51e30264d1e2"
+    },
+    {
+      "key": "remediation_apply_run",
+      "path": ".planestack/governance/evidence/s105/operate/remediation/remediation-apply-run.json",
+      "required": true,
+      "artifact_id": "b24f0e01-cf02-4ada-aad2-a016d43208f4"
+    },
+    {
+      "key": "rerun_after_remediation",
+      "path": ".planestack/governance/evidence/s105/operate/remediation/rerun-after-remediation.json",
+      "required": true,
+      "artifact_id": "c9cbfe23-de78-4bcb-9b39-105f6a65927e"
+    },
+    {
+      "key": "failure_port_collision",
+      "path": ".planestack/governance/evidence/s105/operate/failures/port-collision.json",
+      "required": true,
+      "artifact_id": "12b61626-88a6-4b3c-8bf3-f4a414adebde"
+    },
+    {
+      "key": "failure_missing_executable",
+      "path": ".planestack/governance/evidence/s105/operate/failures/missing-executable.json",
+      "required": true,
+      "artifact_id": "7ceeaf6c-80cd-4d5f-bb1f-4fc7e467f129"
+    },
+    {
+      "key": "failure_dependency_unhealthy",
+      "path": ".planestack/governance/evidence/s105/operate/failures/dependency-unhealthy.json",
+      "required": true,
+      "artifact_id": "7214b2ea-3094-4604-92de-84e3d30dad5f"
+    },
+    {
+      "key": "calculator_gold_bundle",
+      "path": ".planestack/governance/evidence/s105/operate/calculator/calculator-gold-bundle.json",
+      "required": true,
+      "artifact_id": "339305fe-0f5b-455b-88d7-38090c8d6173"
+    },
+    {
+      "key": "calculator_delivery_loop",
+      "path": ".planestack/governance/evidence/s105/operate/calculator/calculator-delivery-loop.json",
+      "required": true,
+      "artifact_id": "f3664a5a-7733-4dd9-bbf3-ed3e0d060985"
+    },
+    {
+      "key": "ui_smoke",
+      "path": ".planestack/governance/evidence/s105/operate/ui/operate-ui-smoke.json",
+      "required": true,
+      "artifact_id": "ba8680a5-8c16-499e-a78f-e784fbc65e0f"
+    },
+    {
+      "key": "blocked_flows",
+      "path": ".planestack/governance/evidence/s105/operate/blocked-flows.json",
+      "required": true,
+      "artifact_id": "4a765de8-1483-435f-ab22-d878e0f1252b"
+    },
+    {
+      "key": "sprint105_validate",
+      "path": ".planestack/governance/evidence/s105/sprint105-validate.json",
+      "required": true,
+      "artifact_id": "ae6f8d75-3efe-4943-9fd7-911eefcc3a5e"
+    },
+    {
+      "key": "contract_test_docker",
+      "path": ".planestack/governance/evidence/s105/contract-test-docker.json",
+      "required": true,
+      "artifact_id": "0719ff18-d057-4f3a-9457-a1bb605e6be0"
+    },
+    {
+      "key": "e2e_gate",
+      "path": ".planestack/governance/evidence/s105/e2e-gate.json",
+      "required": true,
+      "artifact_id": "4360220e-b405-444f-9c0c-ed335ec29ef7"
+    },
+    {
+      "key": "archive",
+      "path": ".planestack/governance/evidence/s105/archive.json",
+      "required": true,
+      "artifact_id": "b484cc45-94f4-4c28-bd00-35d6098df49b"
+    },
+    {
+      "key": "closeout_summary",
+      "path": ".planestack/governance/evidence/s105/closeout-summary.json",
+      "required": true,
+      "artifact_id": "4995012c-199a-4a1b-917a-efdcf80d1e4f"
+    }
+  ],
+  "execution": {
+    "validated_at": "2026-03-10",
+    "commits": {
+      "ps-contracts": "d1f15de",
+      "ps-api": "e9458db",
+      "ps-web": "d76966f",
+      "ps-dev": "364a733"
+    },
+    "gate_summary": {
+      "sprint105_validate": "pass",
+      "contract_test_docker": "pass",
+      "e2e_gate": "pass"
+    },
+    "archive_receipt": {
+      "pack_id": "630061b6-6cd0-444c-bd13-af971c6a2b0d",
+      "runlog_id": "b843e2b8-56db-4be8-b83d-865353451b47",
+      "evidence_id": "ddd51d21-c622-4058-8750-5ca213587503",
+      "manifest_id": "4ec1e292-d17e-43e2-a3ff-ce599a0ac08a",
+      "writeback_id": "452109aa-b725-48ce-8037-3282e11a75f3",
+      "writeback_artifact_id": "f4d44334-b920-4dbd-bcfe-e717cf2e2359"
+    },
+    "tags": {
+      "pass": "sprint105-pass-2026-03-10",
+      "evidence": "sprint105-evidence-2026-03-10"
+    }
+  },
+  "required_evidence_artifacts": [
+    {
+      "key": "lock_check",
+      "path": ".planestack/governance/evidence/s105/lock-check.json",
+      "required": true,
+      "artifact_id": "d9146081-b1e7-4c05-a168-3282de8f1931"
+    },
+    {
+      "key": "work_operate_recommendations",
+      "path": ".planestack/governance/evidence/s105/operate/recommendations/work-operate-recommendations.json",
+      "required": true,
+      "artifact_id": "ed4d1eb1-260a-4dc1-90a3-ebd55c49db9d"
+    },
+    {
+      "key": "calculator_work_context",
+      "path": ".planestack/governance/evidence/s105/operate/recommendations/calculator-work-context.json",
+      "required": true,
+      "artifact_id": "555d5ab3-1ecc-478a-9dd1-e1dd3cdbf675"
+    },
+    {
+      "key": "action_catalog",
+      "path": ".planestack/governance/evidence/s105/operate/actions/action-catalog.json",
+      "required": true,
+      "artifact_id": "f0e74c7f-3d5b-4122-a1a7-5cd34dde7081"
+    },
+    {
+      "key": "action_preview_install",
+      "path": ".planestack/governance/evidence/s105/operate/actions/action-preview-install.json",
+      "required": true,
+      "artifact_id": "e66f415d-f10b-4470-967d-2ddfcfd808a2"
+    },
+    {
+      "key": "action_preview_build",
+      "path": ".planestack/governance/evidence/s105/operate/actions/action-preview-build.json",
+      "required": true,
+      "artifact_id": "8ee17544-b4a3-4b67-bedd-44de6d133600"
+    },
+    {
+      "key": "action_preview_test",
+      "path": ".planestack/governance/evidence/s105/operate/actions/action-preview-test.json",
+      "required": true,
+      "artifact_id": "c0d20884-0e68-4a52-84c0-93171bd0a7a2"
+    },
+    {
+      "key": "action_run_install",
+      "path": ".planestack/governance/evidence/s105/operate/actions/action-run-install.json",
+      "required": true,
+      "artifact_id": "d22f1afb-f1a1-4f8e-98ff-8134710fa261"
+    },
+    {
+      "key": "action_run_seed_reset",
+      "path": ".planestack/governance/evidence/s105/operate/actions/action-run-seed-reset.json",
+      "required": true,
+      "artifact_id": "a1a88077-5937-49e4-ab57-9977f3f11322"
+    },
+    {
+      "key": "action_run_build",
+      "path": ".planestack/governance/evidence/s105/operate/actions/action-run-build.json",
+      "required": true,
+      "artifact_id": "b9bcee75-fe91-4aa2-a3e7-cb6de20df2b1"
+    },
+    {
+      "key": "action_run_test",
+      "path": ".planestack/governance/evidence/s105/operate/actions/action-run-test.json",
+      "required": true,
+      "artifact_id": "0d91f73a-33d2-4bde-87d2-2943bfed107a"
+    },
+    {
+      "key": "action_run_watch",
+      "path": ".planestack/governance/evidence/s105/operate/actions/action-run-watch.json",
+      "required": true,
+      "artifact_id": "c31f7e76-cc9e-4b23-bd43-10d1ab5aa776"
+    },
+    {
+      "key": "action_run_verify",
+      "path": ".planestack/governance/evidence/s105/operate/actions/action-run-verify.json",
+      "required": true,
+      "artifact_id": "04fea390-d66b-4753-a97a-561cdc8f1946"
+    },
+    {
+      "key": "session_action_binding",
+      "path": ".planestack/governance/evidence/s105/operate/actions/session-action-binding.json",
+      "required": true,
+      "artifact_id": "9af521cd-f59b-4b46-a78a-6c927df509f2"
+    },
+    {
+      "key": "session_start",
+      "path": ".planestack/governance/evidence/s105/operate/sessions/session-start.json",
+      "required": true,
+      "artifact_id": "26aabbf7-1810-46d6-8d3d-4559aca186eb"
+    },
+    {
+      "key": "session_state_summary",
+      "path": ".planestack/governance/evidence/s105/operate/sessions/session-state-summary.json",
+      "required": true,
+      "artifact_id": "e5964e4e-24e6-433a-b757-25a748f19d85"
+    },
+    {
+      "key": "service_state_summary",
+      "path": ".planestack/governance/evidence/s105/operate/sessions/service-state-summary.json",
+      "required": true,
+      "artifact_id": "90066484-c15f-4a80-9238-d99bfbbecd63"
+    },
+    {
+      "key": "plan_current",
+      "path": ".planestack/governance/evidence/s105/operate/plans/current-effective-plan.json",
+      "required": true,
+      "artifact_id": "2e54bfca-064d-4a2c-bcdf-dcc3f4acd1c4"
+    },
+    {
+      "key": "plan_compare_last_success",
+      "path": ".planestack/governance/evidence/s105/operate/plans/compare-last-success.json",
+      "required": true,
+      "artifact_id": "f9836f46-40e1-408b-a208-fd68e92f1539"
+    },
+    {
+      "key": "plan_value_sources",
+      "path": ".planestack/governance/evidence/s105/operate/plans/value-source-summary.json",
+      "required": true,
+      "artifact_id": "97b759c4-a0de-45e1-853e-8a435453c03a"
+    },
+    {
+      "key": "diagnostics_local_fix",
+      "path": ".planestack/governance/evidence/s105/operate/diagnostics/local-fix-diagnostics.json",
+      "required": true,
+      "artifact_id": "4295045a-89b7-440b-81c8-e9d5948edbe2"
+    },
+    {
+      "key": "diagnostics_project_fix_required",
+      "path": ".planestack/governance/evidence/s105/operate/diagnostics/project-fix-required.json",
+      "required": true,
+      "artifact_id": "65fdad70-4346-4a60-ac46-a94aae925a15"
+    },
+    {
+      "key": "remediation_apply_preview",
+      "path": ".planestack/governance/evidence/s105/operate/remediation/remediation-apply-preview.json",
+      "required": true,
+      "artifact_id": "4774fb55-3b45-4543-937d-51e30264d1e2"
+    },
+    {
+      "key": "remediation_apply_run",
+      "path": ".planestack/governance/evidence/s105/operate/remediation/remediation-apply-run.json",
+      "required": true,
+      "artifact_id": "b24f0e01-cf02-4ada-aad2-a016d43208f4"
+    },
+    {
+      "key": "rerun_after_remediation",
+      "path": ".planestack/governance/evidence/s105/operate/remediation/rerun-after-remediation.json",
+      "required": true,
+      "artifact_id": "c9cbfe23-de78-4bcb-9b39-105f6a65927e"
+    },
+    {
+      "key": "failure_port_collision",
+      "path": ".planestack/governance/evidence/s105/operate/failures/port-collision.json",
+      "required": true,
+      "artifact_id": "12b61626-88a6-4b3c-8bf3-f4a414adebde"
+    },
+    {
+      "key": "failure_missing_executable",
+      "path": ".planestack/governance/evidence/s105/operate/failures/missing-executable.json",
+      "required": true,
+      "artifact_id": "7ceeaf6c-80cd-4d5f-bb1f-4fc7e467f129"
+    },
+    {
+      "key": "failure_dependency_unhealthy",
+      "path": ".planestack/governance/evidence/s105/operate/failures/dependency-unhealthy.json",
+      "required": true,
+      "artifact_id": "7214b2ea-3094-4604-92de-84e3d30dad5f"
+    },
+    {
+      "key": "calculator_gold_bundle",
+      "path": ".planestack/governance/evidence/s105/operate/calculator/calculator-gold-bundle.json",
+      "required": true,
+      "artifact_id": "339305fe-0f5b-455b-88d7-38090c8d6173"
+    },
+    {
+      "key": "calculator_delivery_loop",
+      "path": ".planestack/governance/evidence/s105/operate/calculator/calculator-delivery-loop.json",
+      "required": true,
+      "artifact_id": "f3664a5a-7733-4dd9-bbf3-ed3e0d060985"
+    },
+    {
+      "key": "ui_smoke",
+      "path": ".planestack/governance/evidence/s105/operate/ui/operate-ui-smoke.json",
+      "required": true,
+      "artifact_id": "ba8680a5-8c16-499e-a78f-e784fbc65e0f"
+    },
+    {
+      "key": "blocked_flows",
+      "path": ".planestack/governance/evidence/s105/operate/blocked-flows.json",
+      "required": true,
+      "artifact_id": "4a765de8-1483-435f-ab22-d878e0f1252b"
+    },
+    {
+      "key": "sprint105_validate",
+      "path": ".planestack/governance/evidence/s105/sprint105-validate.json",
+      "required": true,
+      "artifact_id": "ae6f8d75-3efe-4943-9fd7-911eefcc3a5e"
+    },
+    {
+      "key": "contract_test_docker",
+      "path": ".planestack/governance/evidence/s105/contract-test-docker.json",
+      "required": true,
+      "artifact_id": "0719ff18-d057-4f3a-9457-a1bb605e6be0"
+    },
+    {
+      "key": "e2e_gate",
+      "path": ".planestack/governance/evidence/s105/e2e-gate.json",
+      "required": true,
+      "artifact_id": "4360220e-b405-444f-9c0c-ed335ec29ef7"
+    },
+    {
+      "key": "archive",
+      "path": ".planestack/governance/evidence/s105/archive.json",
+      "required": true,
+      "artifact_id": "b484cc45-94f4-4c28-bd00-35d6098df49b"
+    },
+    {
+      "key": "closeout_summary",
+      "path": ".planestack/governance/evidence/s105/closeout-summary.json",
+      "required": true,
+      "artifact_id": "4995012c-199a-4a1b-917a-efdcf80d1e4f"
+    }
+  ]
+}

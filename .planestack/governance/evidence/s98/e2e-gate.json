@@ -1,0 +1,10 @@
+{
+  "counts": {
+    "failed": 0,
+    "passed": 6
+  },
+  "generated_at": "2026-03-09T00:08:04Z",
+  "operation": "e2e-gate",
+  "result": "pass",
+  "schema_version": 1
+}

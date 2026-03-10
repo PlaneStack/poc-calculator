@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-03-09T00:05:24Z",
+  "operation": "s98-runbook-schema-smoke",
+  "runbook_count": 5,
+  "runbook_keys": [
+    "calculator.bootstrap.local",
+    "calculator.diagnose.common-failure",
+    "calculator.readiness.local",
+    "calculator.reset-recover.local",
+    "calculator.test-and-evidence.local"
+  ],
+  "schema_version": 1,
+  "status": "passed"
+}

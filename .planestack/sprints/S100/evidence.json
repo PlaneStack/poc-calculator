@@ -1,0 +1,165 @@
+{
+  "sprint": 100,
+  "theme": "Operate v6 \u2014 User-Defined Environments",
+  "status": "pass",
+  "date": "2026-03-09",
+  "gates": {
+    "governance_lock_check": {
+      "required": true,
+      "status": "pass",
+      "artifact": ".planestack/governance/evidence/s100/lock-check.json"
+    },
+    "sprint100_validate": {
+      "required": true,
+      "status": "pass",
+      "artifact": ".planestack/governance/evidence/s100/sprint100-validate.json"
+    },
+    "contract_test_docker": {
+      "required": true,
+      "status": "pass",
+      "artifact": ".planestack/governance/evidence/s100/contract-test-docker.json"
+    },
+    "e2e_gate": {
+      "required": true,
+      "status": "pass",
+      "artifact": ".planestack/governance/evidence/s100/e2e-gate.json"
+    }
+  },
+  "required_artifacts": [
+    {
+      "key": "lock_check",
+      "path": ".planestack/governance/evidence/s100/lock-check.json",
+      "required": true
+    },
+    {
+      "key": "local_default",
+      "path": ".planestack/governance/evidence/s100/operate/environments/local-default.json",
+      "required": true
+    },
+    {
+      "key": "environment_list",
+      "path": ".planestack/governance/evidence/s100/operate/environments/environment-list.json",
+      "required": true
+    },
+    {
+      "key": "environment_create",
+      "path": ".planestack/governance/evidence/s100/operate/environments/environment-create.json",
+      "required": true
+    },
+    {
+      "key": "environment_activate",
+      "path": ".planestack/governance/evidence/s100/operate/environments/environment-activate.json",
+      "required": true
+    },
+    {
+      "key": "environment_archive",
+      "path": ".planestack/governance/evidence/s100/operate/environments/environment-archive.json",
+      "required": true
+    },
+    {
+      "key": "runbook_binding",
+      "path": ".planestack/governance/evidence/s100/operate/environments/runbook-binding.json",
+      "required": true
+    },
+    {
+      "key": "blocked_flows",
+      "path": ".planestack/governance/evidence/s100/operate/environments/blocked-flows.json",
+      "required": true
+    },
+    {
+      "key": "environment_selector_proof",
+      "path": ".planestack/governance/evidence/s100/runbooks/environment-selector-proof.json",
+      "required": true
+    },
+    {
+      "key": "environment_management_ui_smoke",
+      "path": ".planestack/governance/evidence/s100/ui/environment-management-smoke.json",
+      "required": true
+    },
+    {
+      "key": "environment_selector_ui_smoke",
+      "path": ".planestack/governance/evidence/s100/ui/environment-selector-smoke.json",
+      "required": true
+    },
+    {
+      "key": "environment_archive_ui_smoke",
+      "path": ".planestack/governance/evidence/s100/ui/environment-archive-smoke.json",
+      "required": true
+    },
+    {
+      "key": "environment_blocked_flow_ui_smoke",
+      "path": ".planestack/governance/evidence/s100/ui/environment-blocked-flow-smoke.json",
+      "required": true
+    },
+    {
+      "key": "archive",
+      "path": ".planestack/governance/evidence/s100/archive.json",
+      "required": true
+    },
+    {
+      "key": "closeout_summary",
+      "path": ".planestack/governance/evidence/s100/closeout-summary.json",
+      "required": true
+    }
+  ],
+  "commands": [
+    "export SPRINT_CODE=S100",
+    "export PS_WORK_PRODUCING=1",
+    "make -C ps-dev governance-lock-check",
+    "make -C ps-contracts check",
+    "make -C ps-api test",
+    "make -C ps-web test",
+    "make -C ps-dev sprint100-validate",
+    "make -C ps-dev contract-test-docker",
+    "make -C ps-dev e2e-gate"
+  ],
+  "notes": [
+    "Operate remains the plane; do not introduce a new top-level mode.",
+    "Canonical environments live in .planestack/governance/operate/environments.json.",
+    "Local is seeded, real, and protected; static placeholder environments are forbidden.",
+    "UI must read environments from canonical project data/APIs only; no hard-coded fallback arrays.",
+    "Custom environments are create/activate/archive only; no hard delete in Sprint 100.",
+    "Missing required artifacts is a closeout failure even if tests pass.",
+    "poc-calculator is the mandatory litmus project for Sprint 100.",
+    "Final validation complete: sprint100-validate PASS, contract-test-docker PASS (54/54), e2e-gate PASS (6/6)."
+  ],
+  "results": {
+    "governance_lock_check": {
+      "status": "pass",
+      "artifact": ".planestack/governance/evidence/s100/lock-check.json"
+    },
+    "sprint100_validate": {
+      "status": "pass",
+      "artifact": ".planestack/governance/evidence/s100/sprint100-validate.json"
+    },
+    "contract_test_docker": {
+      "status": "pass",
+      "tests": 54,
+      "failed": 0,
+      "artifact": ".planestack/governance/evidence/s100/contract-test-docker.json"
+    },
+    "e2e_gate": {
+      "status": "pass",
+      "tests": 6,
+      "failed": 0,
+      "artifact": ".planestack/governance/evidence/s100/e2e-gate.json"
+    },
+    "archive_pack": {
+      "status": "pass",
+      "pack_id": "eda0c1c9-0282-47fb-a7b1-d218c7e7402a",
+      "runlog_id": "6dd6a0be-cb72-40d8-b2bb-488948b4a61b",
+      "evidence_id": "27fee788-2ea3-4a7f-b41e-76bac64dedaf",
+      "manifest_id": "6c2eb1f0-cbe6-4211-bf69-ef18361b4d63",
+      "writeback_id": "2959c3ea-68b6-42f7-90ae-844c9f082c2c",
+      "writeback_artifact_id": "a7f6b852-8f75-4ce8-a0cc-3b5ae031e020"
+    }
+  },
+  "archive_ids": {
+    "pack_id": "eda0c1c9-0282-47fb-a7b1-d218c7e7402a",
+    "runlog_id": "6dd6a0be-cb72-40d8-b2bb-488948b4a61b",
+    "evidence_id": "27fee788-2ea3-4a7f-b41e-76bac64dedaf",
+    "manifest_id": "6c2eb1f0-cbe6-4211-bf69-ef18361b4d63",
+    "writeback_id": "2959c3ea-68b6-42f7-90ae-844c9f082c2c",
+    "writeback_artifact_id": "a7f6b852-8f75-4ce8-a0cc-3b5ae031e020"
+  }
+}

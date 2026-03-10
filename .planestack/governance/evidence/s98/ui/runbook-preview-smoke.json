@@ -1,0 +1,9 @@
+{
+  "generated_at": "2026-03-09T00:05:39Z",
+  "operation": "s98-runbook-preview-ui-smoke",
+  "schema_version": 1,
+  "specs": [
+    "tests/sprint98.runbooks-ui-smoke.spec.js"
+  ],
+  "status": "passed"
+}

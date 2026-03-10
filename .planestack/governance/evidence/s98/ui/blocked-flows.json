@@ -1,0 +1,12 @@
+{
+  "authz_or_missing": {
+    "preview_unknown_runbook_status": 404
+  },
+  "generated_at": "2026-03-09T00:05:51Z",
+  "operation": "s98-blocked-flows-smoke",
+  "schema_version": 1,
+  "status": "passed",
+  "validation_rejections": {
+    "run_missing_plan_or_token_status": 400
+  }
+}

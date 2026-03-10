@@ -1,0 +1,12 @@
+{
+  "evidence_id": "171ba928-e00d-4643-a01c-e2a9ecb15f48",
+  "generated_at": "2026-03-09T00:10:54Z",
+  "manifest_id": "2e7390e1-c0d7-444c-978c-17f8b0621e76",
+  "operation": "library:archive_pack",
+  "pack_id": "245ee4de-09c7-4a37-887f-65aca14c04b8",
+  "runlog_id": "7bbcb259-9ddd-43f9-8a15-3b68f8c58959",
+  "schema_version": 1,
+  "status": "pass",
+  "writeback_artifact_id": "5433d3a3-dedf-4b07-905e-7ac8458b973e",
+  "writeback_id": "27ba2ffa-90ea-48d2-8dce-35d7ac7e9b38"
+}

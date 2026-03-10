@@ -1,0 +1,544 @@
+{
+  "sprint": 104,
+  "theme": "Operate v11 \u2014 Bridge Session Orchestration + Startup Profiles",
+  "status": "passed",
+  "date": "2026-03-09",
+  "gates": {
+    "governance_lock_check": {
+      "required": true,
+      "status": "passed",
+      "artifact": ".planestack/governance/evidence/s104/lock-check.json"
+    },
+    "sprint104_validate": {
+      "required": true,
+      "status": "passed",
+      "artifact": ".planestack/governance/evidence/s104/sprint104-validate.json"
+    },
+    "contract_test_docker": {
+      "required": true,
+      "status": "passed",
+      "artifact": ".planestack/governance/evidence/s104/contract-test-docker.json"
+    },
+    "e2e_gate": {
+      "required": true,
+      "status": "passed",
+      "artifact": ".planestack/governance/evidence/s104/e2e-gate.json"
+    }
+  },
+  "required_artifacts": [
+    {
+      "key": "lock_check",
+      "path": ".planestack/governance/evidence/s104/lock-check.json",
+      "required": true,
+      "artifact_id": "8d24da96-46a0-42c1-87b2-c27bd4b2f955"
+    },
+    {
+      "key": "startup_profiles_list",
+      "path": ".planestack/governance/evidence/s104/operate/startup-profiles/list.json",
+      "required": true
+    },
+    {
+      "key": "calculator_dev_minimal_profile",
+      "path": ".planestack/governance/evidence/s104/operate/startup-profiles/calculator-dev-minimal.json",
+      "required": true
+    },
+    {
+      "key": "calculator_dev_full_profile",
+      "path": ".planestack/governance/evidence/s104/operate/startup-profiles/calculator-dev-full.json",
+      "required": true
+    },
+    {
+      "key": "profile_preview_minimal",
+      "path": ".planestack/governance/evidence/s104/operate/startup-profiles/profile-preview-minimal.json",
+      "required": true
+    },
+    {
+      "key": "profile_preview_full",
+      "path": ".planestack/governance/evidence/s104/operate/startup-profiles/profile-preview-full.json",
+      "required": true
+    },
+    {
+      "key": "profile_activation",
+      "path": ".planestack/governance/evidence/s104/operate/startup-profiles/profile-activation.json",
+      "required": true
+    },
+    {
+      "key": "session_start_minimal",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/session-start-minimal.json",
+      "required": true
+    },
+    {
+      "key": "session_start_full",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/session-start-full.json",
+      "required": true
+    },
+    {
+      "key": "session_stop",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/session-stop.json",
+      "required": true
+    },
+    {
+      "key": "session_restart",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/session-restart.json",
+      "required": true
+    },
+    {
+      "key": "service_restart",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/service-restart.json",
+      "required": true
+    },
+    {
+      "key": "session_state_summary",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/session-state-summary.json",
+      "required": true
+    },
+    {
+      "key": "service_state_summary",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/service-state-summary.json",
+      "required": true
+    },
+    {
+      "key": "compare_last_success",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/compare-last-success.json",
+      "required": true
+    },
+    {
+      "key": "poll_enable",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/poll-enable.json",
+      "required": true
+    },
+    {
+      "key": "poll_disable",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/poll-disable.json",
+      "required": true
+    },
+    {
+      "key": "poll_status",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/poll-status.json",
+      "required": true
+    },
+    {
+      "key": "log_summary",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/log-summary.json",
+      "required": true
+    },
+    {
+      "key": "degraded_detection",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/degraded-detection.json",
+      "required": true
+    },
+    {
+      "key": "partial_failure_recovery",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/partial-failure-recovery.json",
+      "required": true
+    },
+    {
+      "key": "final_success_after_recovery",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/final-success-after-recovery.json",
+      "required": true
+    },
+    {
+      "key": "bridge_session_supervisor",
+      "path": ".planestack/governance/evidence/s104/bridge/session-supervisor-proof.json",
+      "required": true
+    },
+    {
+      "key": "bridge_supervisor_stale_lock",
+      "path": ".planestack/governance/evidence/s104/bridge/session-supervisor-stale-lock-proof.json",
+      "required": true
+    },
+    {
+      "key": "bridge_poller",
+      "path": ".planestack/governance/evidence/s104/bridge/poller-proof.json",
+      "required": true
+    },
+    {
+      "key": "bridge_runtime_redaction",
+      "path": ".planestack/governance/evidence/s104/bridge/runtime-redaction-proof.json",
+      "required": true
+    },
+    {
+      "key": "diag_service_start_failed",
+      "path": ".planestack/governance/evidence/s104/diagnostics/service-start-failed.json",
+      "required": true
+    },
+    {
+      "key": "diag_service_healthcheck_failed",
+      "path": ".planestack/governance/evidence/s104/diagnostics/service-healthcheck-failed.json",
+      "required": true
+    },
+    {
+      "key": "diag_service_port_not_listening",
+      "path": ".planestack/governance/evidence/s104/diagnostics/service-port-not-listening.json",
+      "required": true
+    },
+    {
+      "key": "diag_session_partial_failure",
+      "path": ".planestack/governance/evidence/s104/diagnostics/session-partial-failure.json",
+      "required": true
+    },
+    {
+      "key": "rem_service_restart_preview",
+      "path": ".planestack/governance/evidence/s104/remediation/service-restart-preview.json",
+      "required": true
+    },
+    {
+      "key": "rem_service_restart_apply",
+      "path": ".planestack/governance/evidence/s104/remediation/service-restart-apply.json",
+      "required": true
+    },
+    {
+      "key": "rem_session_restart_preview",
+      "path": ".planestack/governance/evidence/s104/remediation/session-restart-preview.json",
+      "required": true
+    },
+    {
+      "key": "rem_session_restart_apply",
+      "path": ".planestack/governance/evidence/s104/remediation/session-restart-apply.json",
+      "required": true
+    },
+    {
+      "key": "rem_port_fix_preview",
+      "path": ".planestack/governance/evidence/s104/remediation/port-fix-preview.json",
+      "required": true
+    },
+    {
+      "key": "rem_port_fix_apply",
+      "path": ".planestack/governance/evidence/s104/remediation/port-fix-apply.json",
+      "required": true
+    },
+    {
+      "key": "rem_dependency_fix_preview",
+      "path": ".planestack/governance/evidence/s104/remediation/dependency-fix-preview.json",
+      "required": true
+    },
+    {
+      "key": "rem_dependency_fix_apply",
+      "path": ".planestack/governance/evidence/s104/remediation/dependency-fix-apply.json",
+      "required": true
+    },
+    {
+      "key": "ui_startup_profiles_smoke",
+      "path": ".planestack/governance/evidence/s104/ui/startup-profiles-smoke.json",
+      "required": true
+    },
+    {
+      "key": "ui_active_session_smoke",
+      "path": ".planestack/governance/evidence/s104/ui/active-session-smoke.json",
+      "required": true
+    },
+    {
+      "key": "ui_service_cards_smoke",
+      "path": ".planestack/governance/evidence/s104/ui/service-cards-smoke.json",
+      "required": true
+    },
+    {
+      "key": "ui_polling_controls_smoke",
+      "path": ".planestack/governance/evidence/s104/ui/polling-controls-smoke.json",
+      "required": true
+    },
+    {
+      "key": "ui_log_panel_smoke",
+      "path": ".planestack/governance/evidence/s104/ui/log-panel-smoke.json",
+      "required": true
+    },
+    {
+      "key": "ui_session_remediation_smoke",
+      "path": ".planestack/governance/evidence/s104/ui/session-remediation-smoke.json",
+      "required": true
+    },
+    {
+      "key": "ui_session_compare_smoke",
+      "path": ".planestack/governance/evidence/s104/ui/session-compare-smoke.json",
+      "required": true
+    },
+    {
+      "key": "ui_center_auth_context_regression",
+      "path": ".planestack/governance/evidence/s104/ui/center-auth-context-regression.json",
+      "required": true
+    },
+    {
+      "key": "archive",
+      "path": ".planestack/governance/evidence/s104/archive.json",
+      "required": true
+    },
+    {
+      "key": "closeout_summary",
+      "path": ".planestack/governance/evidence/s104/closeout-summary.json",
+      "required": true
+    }
+  ],
+  "commands": [
+    "export SPRINT_CODE=S104",
+    "export PS_WORK_PRODUCING=1",
+    "make -C ps-dev governance-lock-check",
+    "make -C ps-contracts check",
+    "make -C ps-api test",
+    "make -C ps-web test",
+    "make -C ps-dev sprint104-validate",
+    "make -C ps-dev contract-test-docker",
+    "make -C ps-dev e2e-gate"
+  ],
+  "notes": [
+    "Bridge owns local process control and health polling; PlaneStack service owns project truth, plans, runs, and evidence.",
+    "Startup profiles are governed project-level execution guides; user-local overlays remain local-only and may never silently rewrite project truth.",
+    "Preview is zero-side-effect; local_mutate actions require preview binding and confirmation.",
+    "Raw bridge runtime data stays in bridge_root; project_root evidence stores bounded summaries and proofs only.",
+    "Missing required artifacts is a closeout failure even if all tests pass.",
+    "Calculator is the mandatory litmus project and gold proof bundle for Sprint 104."
+  ],
+  "required_evidence_artifacts": [
+    {
+      "key": "lock_check",
+      "path": ".planestack/governance/evidence/s104/lock-check.json",
+      "required": true,
+      "artifact_id": "8d24da96-46a0-42c1-87b2-c27bd4b2f955"
+    },
+    {
+      "key": "startup_profiles_list",
+      "path": ".planestack/governance/evidence/s104/operate/startup-profiles/list.json",
+      "required": true
+    },
+    {
+      "key": "calculator_dev_minimal_profile",
+      "path": ".planestack/governance/evidence/s104/operate/startup-profiles/calculator-dev-minimal.json",
+      "required": true
+    },
+    {
+      "key": "calculator_dev_full_profile",
+      "path": ".planestack/governance/evidence/s104/operate/startup-profiles/calculator-dev-full.json",
+      "required": true
+    },
+    {
+      "key": "profile_preview_minimal",
+      "path": ".planestack/governance/evidence/s104/operate/startup-profiles/profile-preview-minimal.json",
+      "required": true
+    },
+    {
+      "key": "profile_preview_full",
+      "path": ".planestack/governance/evidence/s104/operate/startup-profiles/profile-preview-full.json",
+      "required": true
+    },
+    {
+      "key": "profile_activation",
+      "path": ".planestack/governance/evidence/s104/operate/startup-profiles/profile-activation.json",
+      "required": true
+    },
+    {
+      "key": "session_start_minimal",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/session-start-minimal.json",
+      "required": true
+    },
+    {
+      "key": "session_start_full",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/session-start-full.json",
+      "required": true
+    },
+    {
+      "key": "session_stop",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/session-stop.json",
+      "required": true
+    },
+    {
+      "key": "session_restart",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/session-restart.json",
+      "required": true
+    },
+    {
+      "key": "service_restart",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/service-restart.json",
+      "required": true
+    },
+    {
+      "key": "session_state_summary",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/session-state-summary.json",
+      "required": true
+    },
+    {
+      "key": "service_state_summary",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/service-state-summary.json",
+      "required": true
+    },
+    {
+      "key": "compare_last_success",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/compare-last-success.json",
+      "required": true
+    },
+    {
+      "key": "poll_enable",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/poll-enable.json",
+      "required": true
+    },
+    {
+      "key": "poll_disable",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/poll-disable.json",
+      "required": true
+    },
+    {
+      "key": "poll_status",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/poll-status.json",
+      "required": true
+    },
+    {
+      "key": "log_summary",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/log-summary.json",
+      "required": true
+    },
+    {
+      "key": "degraded_detection",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/degraded-detection.json",
+      "required": true
+    },
+    {
+      "key": "partial_failure_recovery",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/partial-failure-recovery.json",
+      "required": true
+    },
+    {
+      "key": "final_success_after_recovery",
+      "path": ".planestack/governance/evidence/s104/operate/sessions/final-success-after-recovery.json",
+      "required": true
+    },
+    {
+      "key": "bridge_session_supervisor",
+      "path": ".planestack/governance/evidence/s104/bridge/session-supervisor-proof.json",
+      "required": true
+    },
+    {
+      "key": "bridge_supervisor_stale_lock",
+      "path": ".planestack/governance/evidence/s104/bridge/session-supervisor-stale-lock-proof.json",
+      "required": true
+    },
+    {
+      "key": "bridge_poller",
+      "path": ".planestack/governance/evidence/s104/bridge/poller-proof.json",
+      "required": true
+    },
+    {
+      "key": "bridge_runtime_redaction",
+      "path": ".planestack/governance/evidence/s104/bridge/runtime-redaction-proof.json",
+      "required": true
+    },
+    {
+      "key": "diag_service_start_failed",
+      "path": ".planestack/governance/evidence/s104/diagnostics/service-start-failed.json",
+      "required": true
+    },
+    {
+      "key": "diag_service_healthcheck_failed",
+      "path": ".planestack/governance/evidence/s104/diagnostics/service-healthcheck-failed.json",
+      "required": true
+    },
+    {
+      "key": "diag_service_port_not_listening",
+      "path": ".planestack/governance/evidence/s104/diagnostics/service-port-not-listening.json",
+      "required": true
+    },
+    {
+      "key": "diag_session_partial_failure",
+      "path": ".planestack/governance/evidence/s104/diagnostics/session-partial-failure.json",
+      "required": true
+    },
+    {
+      "key": "rem_service_restart_preview",
+      "path": ".planestack/governance/evidence/s104/remediation/service-restart-preview.json",
+      "required": true
+    },
+    {
+      "key": "rem_service_restart_apply",
+      "path": ".planestack/governance/evidence/s104/remediation/service-restart-apply.json",
+      "required": true
+    },
+    {
+      "key": "rem_session_restart_preview",
+      "path": ".planestack/governance/evidence/s104/remediation/session-restart-preview.json",
+      "required": true
+    },
+    {
+      "key": "rem_session_restart_apply",
+      "path": ".planestack/governance/evidence/s104/remediation/session-restart-apply.json",
+      "required": true
+    },
+    {
+      "key": "rem_port_fix_preview",
+      "path": ".planestack/governance/evidence/s104/remediation/port-fix-preview.json",
+      "required": true
+    },
+    {
+      "key": "rem_port_fix_apply",
+      "path": ".planestack/governance/evidence/s104/remediation/port-fix-apply.json",
+      "required": true
+    },
+    {
+      "key": "rem_dependency_fix_preview",
+      "path": ".planestack/governance/evidence/s104/remediation/dependency-fix-preview.json",
+      "required": true
+    },
+    {
+      "key": "rem_dependency_fix_apply",
+      "path": ".planestack/governance/evidence/s104/remediation/dependency-fix-apply.json",
+      "required": true
+    },
+    {
+      "key": "ui_startup_profiles_smoke",
+      "path": ".planestack/governance/evidence/s104/ui/startup-profiles-smoke.json",
+      "required": true
+    },
+    {
+      "key": "ui_active_session_smoke",
+      "path": ".planestack/governance/evidence/s104/ui/active-session-smoke.json",
+      "required": true
+    },
+    {
+      "key": "ui_service_cards_smoke",
+      "path": ".planestack/governance/evidence/s104/ui/service-cards-smoke.json",
+      "required": true
+    },
+    {
+      "key": "ui_polling_controls_smoke",
+      "path": ".planestack/governance/evidence/s104/ui/polling-controls-smoke.json",
+      "required": true
+    },
+    {
+      "key": "ui_log_panel_smoke",
+      "path": ".planestack/governance/evidence/s104/ui/log-panel-smoke.json",
+      "required": true
+    },
+    {
+      "key": "ui_session_remediation_smoke",
+      "path": ".planestack/governance/evidence/s104/ui/session-remediation-smoke.json",
+      "required": true
+    },
+    {
+      "key": "ui_session_compare_smoke",
+      "path": ".planestack/governance/evidence/s104/ui/session-compare-smoke.json",
+      "required": true
+    },
+    {
+      "key": "ui_center_auth_context_regression",
+      "path": ".planestack/governance/evidence/s104/ui/center-auth-context-regression.json",
+      "required": true
+    },
+    {
+      "key": "archive",
+      "path": ".planestack/governance/evidence/s104/archive.json",
+      "required": true
+    },
+    {
+      "key": "closeout_summary",
+      "path": ".planestack/governance/evidence/s104/closeout-summary.json",
+      "required": true
+    }
+  ],
+  "closeout": {
+    "archive": {
+      "pack_id": "a7033422-2bc2-4c26-b633-6e60b5122755",
+      "runlog_id": "eb6c8d91-c5e5-48a4-a0dc-98a0943e949b",
+      "evidence_id": "d8a1e5f7-8c03-4a5b-9b7c-0c23bd561226",
+      "manifest_id": "7d437637-a1a3-431e-8b78-cb69e105b155",
+      "writeback_id": "39bd4d81-aff1-4fdd-b7fb-247e054680e6",
+      "writeback_artifact_id": "ee73dd94-64e2-42fe-80d6-7a621b0ab414"
+    },
+    "completed_at": "2026-03-10T02:54:51Z"
+  }
+}

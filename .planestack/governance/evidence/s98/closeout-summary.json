@@ -1,0 +1,30 @@
+{
+  "archive_ids": {
+    "evidence_id": "171ba928-e00d-4643-a01c-e2a9ecb15f48",
+    "manifest_id": "2e7390e1-c0d7-444c-978c-17f8b0621e76",
+    "pack_id": "245ee4de-09c7-4a37-887f-65aca14c04b8",
+    "runlog_id": "7bbcb259-9ddd-43f9-8a15-3b68f8c58959",
+    "writeback_artifact_id": "5433d3a3-dedf-4b07-905e-7ac8458b973e",
+    "writeback_id": "27ba2ffa-90ea-48d2-8dce-35d7ac7e9b38"
+  },
+  "commit_shas": {
+    "ps-api": "2bba035",
+    "ps-contracts": "08db6cf",
+    "ps-dev": "694ca79",
+    "ps-web": "2b77325"
+  },
+  "gates": {
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass",
+    "governance_lock_check": "pass",
+    "sprint98_validate": "pass"
+  },
+  "generated_at": "2026-03-09T00:10:54Z",
+  "schema_version": 1,
+  "sprint": "S98",
+  "status": "closed",
+  "tags": [
+    "sprint98-pass-2026-03-09",
+    "sprint98-evidence-2026-03-09"
+  ]
+}

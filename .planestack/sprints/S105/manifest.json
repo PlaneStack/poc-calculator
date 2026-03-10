@@ -1,0 +1,43 @@
+{
+  "sprint": 105,
+  "theme": "Operate v12 \u2014 Governed Local Delivery Loop",
+  "status": "complete",
+  "date": "2026-03-10",
+  "files": [
+    "project-management/planestack-s105-pack/Sprint105-Pack.md",
+    "project-management/planestack-s105-pack/S105-runlog.md",
+    "project-management/planestack-s105-pack/S105-evidence.json",
+    "project-management/planestack-s105-pack/manifest.json",
+    "project-management/planestack-s105-pack/screenshots/README.md",
+    ".planestack/sprints/S105/pack.md",
+    ".planestack/sprints/S105/runlog.md",
+    ".planestack/sprints/S105/evidence.json",
+    ".planestack/sprints/S105/manifest.json"
+  ],
+  "litmus_project": "poc-calculator",
+  "governance_preflight": {
+    "SPRINT_CODE": "S105",
+    "PS_WORK_PRODUCING": "1",
+    "command": "make -C ps-dev governance-lock-check",
+    "evidence_artifact": ".planestack/governance/evidence/s105/lock-check.json"
+  },
+  "tranche_commits": {
+    "ps-contracts": "d1f15de",
+    "ps-api": "e9458db",
+    "ps-web": "d76966f",
+    "ps-dev": "364a733"
+  },
+  "validation": {
+    "sprint105_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "archive": {
+    "pack_id": "630061b6-6cd0-444c-bd13-af971c6a2b0d",
+    "runlog_id": "b843e2b8-56db-4be8-b83d-865353451b47",
+    "evidence_id": "ddd51d21-c622-4058-8750-5ca213587503",
+    "manifest_id": "4ec1e292-d17e-43e2-a3ff-ce599a0ac08a",
+    "writeback_id": "452109aa-b725-48ce-8037-3282e11a75f3",
+    "writeback_artifact_id": "f4d44334-b920-4dbd-bcfe-e717cf2e2359"
+  }
+}

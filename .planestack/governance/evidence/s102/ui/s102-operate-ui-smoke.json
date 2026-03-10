@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-03-09T17:10:00Z",
+  "operation": "s102-operate-ui-smoke",
+  "required_testids": [
+    "operate-surface-resources",
+    "operate-surface-runbooks",
+    "operate-runbook-preview",
+    "operate-run-detail-diagnostics"
+  ],
+  "schema_version": 1,
+  "specs": [
+    "tests/sprint102.operate.overlay-resources.spec.js"
+  ],
+  "status": "passed"
+}

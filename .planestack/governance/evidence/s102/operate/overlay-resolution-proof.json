@@ -1,0 +1,53 @@
+{
+  "env_key": "qa",
+  "generated_at": "2026-03-09T17:09:54Z",
+  "operation": "s102-overlay-resolution-smoke",
+  "overlay_idempotent_replay": true,
+  "preview": {
+    "blocker_count": 0,
+    "confirm_token_present": true,
+    "plan_hash": "c057d7826a4f32bf3d098e9fd33157b809a1fb4e71c30d728678ecd25a4d2f8f",
+    "resolved_sources": [
+      {
+        "redaction": {
+          "action": "normalized",
+          "field_class": "slot_value",
+          "rule": "normalized"
+        },
+        "slot_key": "api_base_url",
+        "source_kind": "environment",
+        "source_ref": "environment"
+      },
+      {
+        "redaction": {
+          "action": "normalized",
+          "field_class": "machine_local",
+          "rule": "normalized"
+        },
+        "slot_key": "calculator_port",
+        "source_kind": "run_override",
+        "source_ref": "run_override"
+      }
+    ]
+  },
+  "protected_override_denied": false,
+  "redaction_metadata": {
+    "machine_local_absolute_paths": "hidden",
+    "ports": "not_redacted_by_default",
+    "secrets": "hidden"
+  },
+  "run_idempotent_replay": true,
+  "run_ref": {
+    "run_id": "20260309T170953Z_3c0c28b4",
+    "runbook_ref": {
+      "artifact_id": "dc4b993a-499e-4fad-8ec0-defa34d4f3a0",
+      "integrity_hash": "b65ba4a942fa9f06e8c432814c9abb70f2dbea032b8bea24bfde02409cbe960b",
+      "key": "calculator-overlay-proof",
+      "version": 2
+    },
+    "status": "completed_fail"
+  },
+  "runbook_key": "calculator-overlay-proof",
+  "schema_version": 1,
+  "status": "passed"
+}

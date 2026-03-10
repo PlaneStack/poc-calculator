@@ -1,0 +1,12 @@
+{
+  "chain": [
+    "governance-lock-check",
+    "contract-test-docker",
+    "s102-overlay-resolution-smoke",
+    "s102-operate-ui-smoke"
+  ],
+  "generated_at": "2026-03-09T17:10:00Z",
+  "schema_version": 1,
+  "sprint": "S102",
+  "status": "passed"
+}

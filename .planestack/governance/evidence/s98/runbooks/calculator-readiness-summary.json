@@ -1,0 +1,18 @@
+{
+  "activation_lifecycle": "active",
+  "generated_at": "2026-03-09T00:05:25Z",
+  "operation": "s98-runbook-execution-smoke",
+  "preview": {
+    "blockers": 0,
+    "plan_hash": "15c2329fd2861efffc862cb210bcb7ad054e8a17b5d6e2ce83d96e1bfee0aaa0",
+    "warnings": 0
+  },
+  "run": {
+    "checks_total": 1,
+    "run_id": "20260309T000525Z_a1103e55",
+    "status": "completed_pass"
+  },
+  "runbook_key": "calculator.readiness.local",
+  "schema_version": 1,
+  "status": "passed"
+}

@@ -1,0 +1,15 @@
+{
+  "chain": [
+    "s98-resource-inventory-smoke",
+    "s98-runbook-schema-smoke",
+    "s98-runbook-execution-smoke",
+    "s98-ai-runbook-draft-smoke",
+    "s98-runbook-preview-ui-smoke",
+    "operator-ui-smoke",
+    "s98-blocked-flows-smoke"
+  ],
+  "generated_at": "2026-03-09T00:05:51Z",
+  "schema_version": 1,
+  "sprint": "S98",
+  "status": "passed"
+}

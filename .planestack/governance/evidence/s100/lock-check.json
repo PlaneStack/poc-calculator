@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-10T04:55:05Z",
+  "operation": "governance-lock-check",
+  "runner": "s100-environment-selector-smoke.sh",
+  "status": "passed",
+  "sprint_code": "S100",
+  "work_producing": true,
+  "bucket_used": "s100",
+  "reason": null,
+  "project_root": "/Users/mklein/_Ventures/PlaneStack/repos/poc-calculator",
+  "bridge_root": "/Users/mklein/_Ventures/PlaneStack/bridge_root",
+  "evidence_targets": [
+    ".planestack/governance/evidence"
+  ],
+  "scratch_targets": [
+    "/Users/mklein/_Ventures/PlaneStack/bridge_root/workspaces",
+    "/Users/mklein/_Ventures/PlaneStack/bridge_root/tmp",
+    "/Users/mklein/_Ventures/PlaneStack/bridge_root/caches",
+    "/Users/mklein/_Ventures/PlaneStack/bridge_root/logs"
+  ],
+  "errors": []
+}
