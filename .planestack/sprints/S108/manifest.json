@@ -1,0 +1,40 @@
+{
+  "name": "planestack-s108-pack",
+  "sprint": 108,
+  "files": [
+    "project-management/planestack-s108-pack/Sprint108-Pack.md",
+    "project-management/planestack-s108-pack/S108-runlog.md",
+    "project-management/planestack-s108-pack/S108-evidence.json",
+    "project-management/planestack-s108-pack/manifest.json",
+    "project-management/planestack-s108-pack/screenshots/README.md",
+    ".planestack/sprints/S108/pack.md",
+    ".planestack/sprints/S108/runlog.md",
+    ".planestack/sprints/S108/evidence.json",
+    ".planestack/sprints/S108/manifest.json"
+  ],
+  "status": "archived",
+  "date": "2026-03-10",
+  "required_artifact_ids": {
+    ".planestack/governance/evidence/s108/lock-check.json": "4f158158-c355-4bcf-b503-033803c05abf",
+    ".planestack/governance/evidence/s108/concierge/inbox.json": "761f6cac-5062-4be1-bcee-d4a9fc14eaf0",
+    ".planestack/governance/evidence/s108/concierge/handoff-lifecycle.json": "7519e09e-50f8-4648-b826-df6c4bfe044d",
+    ".planestack/governance/evidence/s108/concierge/multi-user-collision.json": "3fa75db7-4a4e-49ed-b47f-e848ab408ee0",
+    ".planestack/governance/evidence/s108/concierge/wait-state.json": "bdbf6983-e86b-49d5-981f-80aa3d280b26",
+    ".planestack/governance/evidence/s108/concierge/approval-binding.json": "5ec360e8-1faa-4a04-b9f6-e0da55d42534",
+    ".planestack/governance/evidence/s108/concierge/approval-resume.json": "6df21d3f-8ce3-4254-b09a-894a2152485f",
+    ".planestack/governance/evidence/s108/calculator/concierge-gold-proof.json": "8885e7b0-0ef7-41c3-b985-558118b444c7",
+    ".planestack/governance/evidence/s108/concierge/ui/concierge-coordination-ui-smoke.json": "0621971b-6639-48cb-9a30-d2cc0443056d",
+    ".planestack/governance/evidence/s108/sprint108-validate.json": "a269044d-d915-4b38-972b-fa262bdab7e5",
+    ".planestack/governance/evidence/s108/closeout-evidence-check.json": "c1fc9cc7-cf68-40e9-adce-2026fab48909",
+    ".planestack/governance/evidence/s108/closeout-summary.json": "f890d572-1c58-4794-8fa1-a792e80c6356",
+    ".planestack/governance/evidence/s108/archive.json": "adfd8d13-21b2-4227-b3d7-c6ebc48e6db9"
+  },
+  "archive": {
+    "pack_id": "e162f60a-3140-4184-80e5-7f86c611e608",
+    "runlog_id": "a9015a22-93d8-494c-bb5e-93a86d51420c",
+    "evidence_id": "a3f983e4-314b-44c8-b127-e9af2324a5cf",
+    "manifest_id": "deb3bc33-8784-4ee9-bdee-f254e1e1ad77",
+    "writeback_id": "0d4721ec-471f-4899-8209-dcf2896b790c",
+    "writeback_artifact_id": "d93007f7-e12e-4b84-8a8b-9814f17b2eb4"
+  }
+}
