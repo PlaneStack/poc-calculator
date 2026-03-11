@@ -1,0 +1,17 @@
+{
+  "manifest_version": "1.0",
+  "sprint": "S111",
+  "theme": "AI Management v1 \u2014 Provider / Prompt / Run / Ledger Foundations",
+  "files": [
+    "project-management/planestack-s111-pack/Sprint111-Pack.md",
+    "project-management/planestack-s111-pack/S111-runlog.md",
+    "project-management/planestack-s111-pack/S111-evidence.json",
+    "project-management/planestack-s111-pack/manifest.json",
+    "project-management/planestack-s111-pack/screenshots/README.md",
+    ".planestack/sprints/S111/pack.md",
+    ".planestack/sprints/S111/runlog.md",
+    ".planestack/sprints/S111/evidence.json",
+    ".planestack/sprints/S111/manifest.json"
+  ],
+  "closeout_required": true
+}

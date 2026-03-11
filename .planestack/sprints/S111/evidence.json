@@ -1,0 +1,73 @@
+{
+  "sprint": "S111",
+  "theme": "AI Management v1 \u2014 Provider / Prompt / Run / Ledger Foundations",
+  "status": "closed",
+  "required_artifacts": {
+    "lock_check": ".planestack/governance/evidence/s111/lock-check.json",
+    "providers_registry": ".planestack/governance/evidence/s111/ai/providers.json",
+    "models_registry": ".planestack/governance/evidence/s111/ai/models.json",
+    "templates_registry": ".planestack/governance/evidence/s111/ai/templates.json",
+    "policies_registry": ".planestack/governance/evidence/s111/ai/policies.json",
+    "budgets_registry": ".planestack/governance/evidence/s111/ai/budgets.json",
+    "cache_rules": ".planestack/governance/evidence/s111/ai/cache-rules.json",
+    "evals_registry": ".planestack/governance/evidence/s111/ai/evals.json",
+    "subsystem_routing": ".planestack/governance/evidence/s111/ai/subsystem-routing.json",
+    "provider_validation": ".planestack/governance/evidence/s111/ai/provider-validation.json",
+    "template_preview": ".planestack/governance/evidence/s111/ai/template-preview.json",
+    "template_lifecycle": ".planestack/governance/evidence/s111/ai/template-lifecycle.json",
+    "policy_enforcement": ".planestack/governance/evidence/s111/ai/policy-enforcement.json",
+    "quota_budget_enforcement": ".planestack/governance/evidence/s111/ai/quota-budget-enforcement.json",
+    "run_audit": ".planestack/governance/evidence/s111/ai/run-audit.json",
+    "run_replay": ".planestack/governance/evidence/s111/ai/run-replay.json",
+    "run_compare": ".planestack/governance/evidence/s111/ai/run-compare.json",
+    "ledger_summary": ".planestack/governance/evidence/s111/ai/ledger-summary.json",
+    "ledger_by_user": ".planestack/governance/evidence/s111/ai/ledger-by-user.json",
+    "ledger_by_subsystem": ".planestack/governance/evidence/s111/ai/ledger-by-subsystem.json",
+    "ledger_by_provider": ".planestack/governance/evidence/s111/ai/ledger-by-provider.json",
+    "cache_accounting": ".planestack/governance/evidence/s111/ai/cache-accounting.json",
+    "eval_run": ".planestack/governance/evidence/s111/ai/eval-run.json",
+    "redaction_provider_safety": ".planestack/governance/evidence/s111/ai/redaction-provider-safety.json",
+    "ai_management_overview_ui": ".planestack/governance/evidence/s111/ui/ai-management-overview.json",
+    "ai_management_runs_ui": ".planestack/governance/evidence/s111/ui/ai-management-runs.json",
+    "ai_management_ledger_ui": ".planestack/governance/evidence/s111/ui/ai-management-ledger.json",
+    "calculator_gold_bundle": ".planestack/governance/evidence/s111/ai/calculator-gold-bundle.json",
+    "blocked_flows": ".planestack/governance/evidence/s111/ai/blocked-flows.json",
+    "validate_summary": ".planestack/governance/evidence/s111/sprint111-validate.json",
+    "archive": ".planestack/governance/evidence/s111/archive.json",
+    "closeout_summary": ".planestack/governance/evidence/s111/closeout-summary.json"
+  },
+  "gates": {
+    "sprint111_validate": "required",
+    "contract_test_docker": "required",
+    "e2e_gate": "required"
+  },
+  "regressions": {
+    "s100_to_s110": "hard_blocking_via_umbrella_targets"
+  },
+  "tags": [
+    "sprint111-pass-2026-03-11",
+    "sprint111-evidence-2026-03-11"
+  ],
+  "results": {
+    "validated_at": "2026-03-11",
+    "gates": {
+      "sprint111_validate": "pass",
+      "contract_test_docker": "pass",
+      "e2e_gate": "pass"
+    },
+    "commits": {
+      "ps_contracts": "42fdbed",
+      "ps_api": "a7b081f",
+      "ps_web": "3978b0b",
+      "ps_dev": "8e2a78e"
+    }
+  },
+  "archive_ids": {
+    "pack_id": "7cde8df9-4eb5-456d-9630-71850d041002",
+    "runlog_id": "0c771fd9-271c-49cd-af30-555cd4c1eeec",
+    "evidence_id": "26934aa3-ee89-43a3-a99e-cd59e21607b1",
+    "manifest_id": "0b55a32f-084f-4a50-8ce8-3440177b5891",
+    "writeback_id": "c37435d0-f347-4a76-96d5-c339c622543f",
+    "writeback_artifact_id": "417fbdf5-f9d2-431b-854a-2e317ebccb12"
+  }
+}
