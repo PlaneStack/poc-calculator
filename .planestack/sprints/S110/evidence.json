@@ -1,0 +1,125 @@
+{
+  "sprint": "S110",
+  "theme": "Concierge v4 \u2014 Project Control Tower + Persistent Orchestration",
+  "status": "closed",
+  "required_artifacts": {
+    "lock_check": ".planestack/governance/evidence/s110/lock-check.json",
+    "concierge_inbox": ".planestack/governance/evidence/s110/concierge/inbox.json",
+    "concierge_summary": ".planestack/governance/evidence/s110/concierge/summary.json",
+    "concierge_resume_engine": ".planestack/governance/evidence/s110/concierge/resume-engine.json",
+    "concierge_handoff_workflow": ".planestack/governance/evidence/s110/concierge/handoff-workflow.json",
+    "concierge_blockers": ".planestack/governance/evidence/s110/concierge/blockers.json",
+    "concierge_wait_resume": ".planestack/governance/evidence/s110/concierge/wait-resume.json",
+    "concierge_console_ui": ".planestack/governance/evidence/s110/ui/concierge-console.json",
+    "concierge_plane_ui": ".planestack/governance/evidence/s110/ui/concierge-plane.json",
+    "calculator_gold_bundle": ".planestack/governance/evidence/s110/concierge/calculator-gold-bundle.json",
+    "blocked_flows": ".planestack/governance/evidence/s110/concierge/blocked-flows.json",
+    "validate_summary": ".planestack/governance/evidence/s110/sprint110-validate.json",
+    "closeout_evidence_check": ".planestack/governance/evidence/s110/closeout-evidence-check.json",
+    "archive": ".planestack/governance/evidence/s110/archive.json",
+    "closeout_summary": ".planestack/governance/evidence/s110/closeout-summary.json"
+  },
+  "gates": {
+    "sprint110_validate": "passed",
+    "contract_test_docker": "passed",
+    "e2e_gate": "passed"
+  },
+  "regressions": {
+    "s100_to_s109": "hard_blocking_via_umbrella_targets"
+  },
+  "implementation_commits": {
+    "ps-contracts": "cfbaf63",
+    "ps-api": "7f6f7d0",
+    "ps-web": "8bf8db2",
+    "ps-dev": "e5ea70a"
+  },
+  "tags": [
+    "sprint110-pass-YYYY-MM-DD",
+    "sprint110-evidence-YYYY-MM-DD"
+  ],
+  "required_evidence_artifacts": [
+    {
+      "name": "lock_check",
+      "path": ".planestack/governance/evidence/s110/lock-check.json",
+      "artifact_id": "a4d68fe0-e0cf-42d1-8814-e3f7db3011aa"
+    },
+    {
+      "name": "concierge_inbox",
+      "path": ".planestack/governance/evidence/s110/concierge/inbox.json",
+      "artifact_id": "f2b2f569-02fd-496a-9115-68652b0335a7"
+    },
+    {
+      "name": "concierge_summary",
+      "path": ".planestack/governance/evidence/s110/concierge/summary.json",
+      "artifact_id": "72dc0e6a-65bd-41ec-b0ba-ff9074887108"
+    },
+    {
+      "name": "concierge_resume_engine",
+      "path": ".planestack/governance/evidence/s110/concierge/resume-engine.json",
+      "artifact_id": "4a2200a4-3e99-443c-b7e8-936fa2896468"
+    },
+    {
+      "name": "concierge_handoff_workflow",
+      "path": ".planestack/governance/evidence/s110/concierge/handoff-workflow.json",
+      "artifact_id": "b05ad8b8-a34f-4f97-a9ab-429e40eba5fd"
+    },
+    {
+      "name": "concierge_blockers",
+      "path": ".planestack/governance/evidence/s110/concierge/blockers.json",
+      "artifact_id": "35675724-0d36-4bc2-a1f0-5b4364c17c76"
+    },
+    {
+      "name": "concierge_wait_resume",
+      "path": ".planestack/governance/evidence/s110/concierge/wait-resume.json",
+      "artifact_id": "7e5d772f-35f3-4d78-a37d-0f5597bbe2a5"
+    },
+    {
+      "name": "concierge_console_ui",
+      "path": ".planestack/governance/evidence/s110/ui/concierge-console.json",
+      "artifact_id": "f6e2ce23-292e-4789-a585-9dfe047a4446"
+    },
+    {
+      "name": "concierge_plane_ui",
+      "path": ".planestack/governance/evidence/s110/ui/concierge-plane.json",
+      "artifact_id": "0fd9ff6f-c255-44df-9f93-f00eabf1b603"
+    },
+    {
+      "name": "calculator_gold_bundle",
+      "path": ".planestack/governance/evidence/s110/concierge/calculator-gold-bundle.json",
+      "artifact_id": "cee83ced-d75b-4c7a-964a-1a56b72aaa6d"
+    },
+    {
+      "name": "blocked_flows",
+      "path": ".planestack/governance/evidence/s110/concierge/blocked-flows.json",
+      "artifact_id": "310a23b0-a12e-4190-8dcf-54cdfd8b2cad"
+    },
+    {
+      "name": "validate_summary",
+      "path": ".planestack/governance/evidence/s110/sprint110-validate.json",
+      "artifact_id": "3baea4f4-25b1-4ddb-8089-07c8ff72d279"
+    },
+    {
+      "name": "closeout_evidence_check",
+      "path": ".planestack/governance/evidence/s110/closeout-evidence-check.json",
+      "artifact_id": "db762d76-008b-45d3-90e9-1ff1e01fe201"
+    },
+    {
+      "name": "archive",
+      "path": ".planestack/governance/evidence/s110/archive.json",
+      "artifact_id": "12f55936-cf1e-4471-b484-3f83c88fd496"
+    },
+    {
+      "name": "closeout_summary",
+      "path": ".planestack/governance/evidence/s110/closeout-summary.json",
+      "artifact_id": "5243d319-dd4d-4a9e-a196-ced80258caca"
+    }
+  ],
+  "archive_ids": {
+    "pack_id": "1f0fcbe4-1b01-4623-b6d4-cd53bdf5895f",
+    "runlog_id": "65ad59e2-89fe-4f19-828c-cdc61295eef6",
+    "evidence_id": "8e1e9953-4df9-4564-bfd2-9a1d2b962887",
+    "manifest_id": "13a10b5b-a56d-4745-a255-e6971900cb91",
+    "writeback_id": "1a322fdc-afbc-41ba-bbeb-ee51280ba4ff",
+    "writeback_artifact_id": "987f6453-8853-42dc-bd1c-dc07fff1c11e"
+  }
+}
