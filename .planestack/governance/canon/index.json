@@ -1,10 +1,12 @@
 {
   "version": 1,
-  "updated_at": "2026-03-07T20:45:00Z",
+  "updated_at": "2026-03-12T12:30:00Z",
   "current_context_capsule_ref": ".planestack/governance/context/latest.json",
   "active_lock_set_ref": ".planestack/governance/locks/active.json",
   "filesystem_roots_invariant_ref": ".planestack/governance/specs/filesystem-roots-v1.json",
   "dev_ai_contract_ref": ".planestack/governance/locks/lockset-dev-ai-contract-v1.json",
+  "state_snapshot_ref": ".planestack/governance/context/capsule-s112-001.json",
+  "metrics_ownership_ref": ".planestack/governance/metrics/ownership.json",
   "invariants": [
     {
       "name": "invariant.project_root_vs_bridge_root",
@@ -19,6 +21,24 @@
     {
       "name": "retrieval-protocol",
       "ref": ".planestack/governance/runbooks/retrieval-protocol.md"
+    }
+  ],
+  "references": [
+    {
+      "name": "s112-evidence",
+      "ref": ".planestack/sprints/S112/evidence.json"
+    },
+    {
+      "name": "s112-runlog",
+      "ref": ".planestack/sprints/S112/runlog.md"
+    },
+    {
+      "name": "s112-manifest",
+      "ref": ".planestack/sprints/S112/manifest.json"
+    },
+    {
+      "name": "state-rollup-s95-s112",
+      "ref": ".planestack/governance/context/state-rollup-s95-s112.md"
     }
   ]
 }

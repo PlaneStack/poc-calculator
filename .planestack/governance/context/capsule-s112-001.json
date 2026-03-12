@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "capsule_id": "capsule-s112-001.json",
+  "generated_at": "2026-03-12T12:30:00Z",
+  "objective": "Refresh Chronicle/state context to current sprint reality (through S112) while preserving root-separation invariants.",
+  "filesystem_roots": {
+    "project_root_definition": {
+      "path": "/Users/mklein/_Ventures/PlaneStack/repos/poc-calculator",
+      "mirror_path": "/Users/mklein/_Ventures/PlaneStack/repos/poc-calculator/.planestack"
+    },
+    "bridge_root_definition": {
+      "path": "/Users/mklein/_Ventures/PlaneStack/bridge_root",
+      "subdirs": [
+        "workspaces",
+        "caches",
+        "logs",
+        "tmp"
+      ]
+    },
+    "evidence_vs_scratch_rule": "Evidence intended for audit MUST go to project_root/.planestack/**; execution scratch MUST go to bridge_root/**."
+  },
+  "state_snapshot": {
+    "as_of": "2026-03-12",
+    "active_sprint": "S112",
+    "sprint_closeout": {
+      "s112_status": "closed",
+      "s112_tags": [
+        "sprint112-pass-2026-03-12",
+        "sprint112-evidence-2026-03-12"
+      ],
+      "required_gates": [
+        "sprint112-validate",
+        "contract-test-docker",
+        "e2e-gate"
+      ]
+    },
+    "ai_management_state": {
+      "plane_location": "Manage -> AI Management",
+      "canonical_api_family": "/api/v1/ou/:ouKey/p/:projectKey/ai/*",
+      "subsystem_gold_proof": "codegen",
+      "idempotency_required_on_mutations": true
+    },
+    "navigation_state": {
+      "shell_model": "Header=Modes, Left drawer=Planes, Nested=Surfaces",
+      "canonical_modes": [
+        "center",
+        "plan",
+        "run",
+        "review",
+        "observe",
+        "operate",
+        "manage"
+      ],
+      "legacy_redirects": "disabled_in_ps_web_for_prelaunch_normalization"
+    }
+  },
+  "anchors": {
+    "canon_index_ref": ".planestack/governance/canon/index.json",
+    "active_lock_set_ref": ".planestack/governance/locks/active.json",
+    "retrieval_protocol_ref": ".planestack/governance/runbooks/retrieval-protocol.md",
+    "metrics_ownership_ref": ".planestack/governance/metrics/ownership.json",
+    "s112_evidence_ref": ".planestack/sprints/S112/evidence.json",
+    "s112_runlog_ref": ".planestack/sprints/S112/runlog.md",
+    "s112_manifest_ref": ".planestack/sprints/S112/manifest.json",
+    "state_rollup_ref": ".planestack/governance/context/state-rollup-s95-s112.md"
+  }
+}

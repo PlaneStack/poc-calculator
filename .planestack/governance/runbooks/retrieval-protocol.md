@@ -13,3 +13,6 @@
 4. Where is the active dev-ai lockset stored?
 5. How do we validate a run complied with root separation locks?
 6. What is the Sprint evidence routing rule for work-producing vs ad-hoc runs?
+7. What is the latest context capsule and what sprint state does it snapshot?
+8. What is the canonical location of Sprint S112 closeout evidence/runlog/manifest?
+9. Is navigation IA canonicalized without legacy redirects in current prelaunch posture?
