@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-03-09T19:33:50Z",
+  "generated_at": "2026-03-12T04:42:59Z",
   "operation": "governance-lock-check",
-  "runner": "bash",
+  "runner": "s103-write-validate-summary.sh",
   "status": "passed",
   "sprint_code": "S103",
   "work_producing": true,

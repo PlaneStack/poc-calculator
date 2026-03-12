@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-03-12T01:39:25Z",
+  "generated_at": "2026-03-12T04:41:48Z",
   "operation": "governance-lock-check",
-  "runner": "s111-ai-management-ui-smoke.sh",
+  "runner": "s103-setup-state-smoke.sh",
   "status": "passed",
   "sprint_code": "S111",
   "work_producing": true,

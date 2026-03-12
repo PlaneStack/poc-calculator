@@ -1,0 +1,28 @@
+{
+  "sprint": "S112",
+  "pack": "project-management/planestack-s112-pack/Sprint112-Pack.md",
+  "runlog": "project-management/planestack-s112-pack/S112-runlog.md",
+  "evidence": "project-management/planestack-s112-pack/S112-evidence.json",
+  "screenshots_readme": "project-management/planestack-s112-pack/screenshots/README.md",
+  "mirror": {
+    "pack": ".planestack/sprints/S112/pack.md",
+    "runlog": ".planestack/sprints/S112/runlog.md",
+    "evidence": ".planestack/sprints/S112/evidence.json",
+    "manifest": ".planestack/sprints/S112/manifest.json"
+  },
+  "primary_project": "poc-calculator",
+  "execution_posture": "ai_management_control_plane + deterministic_validate + governed_execution",
+  "status": "closed",
+  "archive_ids": {
+    "pack_id": "a3314402-bcb4-476c-b80c-773d3eefbf57",
+    "runlog_id": "1ab8214c-a9e1-4947-89b9-86f0f07c4edf",
+    "evidence_id": "72b36978-9b57-4944-aaf8-876898031b39",
+    "manifest_id": "5ba45dda-7b5c-4d7d-8ebe-7b619033a7f1",
+    "writeback_id": "8f43e606-7fd6-4ff9-bcc6-87a3c4c03c6a",
+    "writeback_artifact_id": "bb9ac945-6c0b-4bc7-aa46-e3e97bb85187"
+  },
+  "tags": [
+    "sprint112-pass-2026-03-12",
+    "sprint112-evidence-2026-03-12"
+  ]
+}

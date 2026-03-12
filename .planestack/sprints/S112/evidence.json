@@ -1,0 +1,226 @@
+{
+  "sprint": "S112",
+  "theme": "AI Management v1.2 \u2014 Exceptional Control Plane (Tightened)",
+  "status": "closed",
+  "required_artifacts": {
+    "lock_check": ".planestack/governance/evidence/s112/lock-check.json",
+    "providers_registry": ".planestack/governance/evidence/s112/ai/providers-registry.json",
+    "models_registry": ".planestack/governance/evidence/s112/ai/models-registry.json",
+    "provider_connections": ".planestack/governance/evidence/s112/ai/provider-connections.json",
+    "subsystem_routing": ".planestack/governance/evidence/s112/ai/subsystem-routing.json",
+    "templates_registry": ".planestack/governance/evidence/s112/ai/templates-registry.json",
+    "policies_registry": ".planestack/governance/evidence/s112/ai/policies-registry.json",
+    "quotas_registry": ".planestack/governance/evidence/s112/ai/quotas-registry.json",
+    "budgets_registry": ".planestack/governance/evidence/s112/ai/budgets-registry.json",
+    "cache_policies": ".planestack/governance/evidence/s112/ai/cache-policies.json",
+    "eval_suites": ".planestack/governance/evidence/s112/ai/eval-suites.json",
+    "redaction_policies": ".planestack/governance/evidence/s112/ai/redaction-policies.json",
+    "adoption_inventory": ".planestack/governance/evidence/s112/ai/adoption-inventory.json",
+    "no_bypass_check": ".planestack/governance/evidence/s112/ai/no-bypass-check.json",
+    "policy_decision_preview": ".planestack/governance/evidence/s112/ai/policy-decision-preview.json",
+    "ledger_proof": ".planestack/governance/evidence/s112/ai/ledger-proof.json",
+    "run_detail": ".planestack/governance/evidence/s112/ai/run-detail.json",
+    "replay_proof": ".planestack/governance/evidence/s112/ai/replay-proof.json",
+    "compare_proof": ".planestack/governance/evidence/s112/ai/compare-proof.json",
+    "cache_proof": ".planestack/governance/evidence/s112/ai/cache-proof.json",
+    "codegen_proof": ".planestack/governance/evidence/s112/ai/codegen-proof.json",
+    "incidents_proof": ".planestack/governance/evidence/s112/ai/incidents-proof.json",
+    "blocked_flows": ".planestack/governance/evidence/s112/ai/blocked-flows.json",
+    "ui_smoke": ".planestack/governance/evidence/s112/ai/ui-smoke.json",
+    "validate_summary": ".planestack/governance/evidence/s112/sprint112-validate.json",
+    "archive": ".planestack/governance/evidence/s112/archive.json",
+    "closeout_summary": ".planestack/governance/evidence/s112/closeout-summary.json"
+  },
+  "required_gates": [
+    "make -C ps-dev sprint112-validate",
+    "make -C ps-dev contract-test-docker",
+    "make -C ps-dev e2e-gate"
+  ],
+  "blocked_flows_schema": {
+    "sections": [
+      "validation_400",
+      "authz_403_404",
+      "policy_blocked"
+    ]
+  },
+  "closeout_tags": [
+    "sprint112-pass-YYYY-MM-DD",
+    "sprint112-evidence-YYYY-MM-DD"
+  ],
+  "required_evidence_artifacts": [
+    {
+      "name": "lock_check",
+      "path": ".planestack/governance/evidence/s112/lock-check.json",
+      "artifact_id": "3772a6e5-cf29-4c45-89f1-0f1fa5509ee8"
+    },
+    {
+      "name": "providers_registry",
+      "path": ".planestack/governance/evidence/s112/ai/providers-registry.json",
+      "artifact_id": "2628437a-7b7e-4de1-9481-6ebb479ae749"
+    },
+    {
+      "name": "models_registry",
+      "path": ".planestack/governance/evidence/s112/ai/models-registry.json",
+      "artifact_id": "65e7a422-35e3-4823-81e9-91e1fb769d95"
+    },
+    {
+      "name": "provider_connections",
+      "path": ".planestack/governance/evidence/s112/ai/provider-connections.json",
+      "artifact_id": "e33a395b-246a-4714-86d2-db293c37df89"
+    },
+    {
+      "name": "subsystem_routing",
+      "path": ".planestack/governance/evidence/s112/ai/subsystem-routing.json",
+      "artifact_id": "295c7dd3-363d-4666-8321-a4a7a12288f1"
+    },
+    {
+      "name": "templates_registry",
+      "path": ".planestack/governance/evidence/s112/ai/templates-registry.json",
+      "artifact_id": "17778291-ceb5-4abc-ad11-999b90f32142"
+    },
+    {
+      "name": "policies_registry",
+      "path": ".planestack/governance/evidence/s112/ai/policies-registry.json",
+      "artifact_id": "6a168986-559e-43c1-b8bc-c558204e60b9"
+    },
+    {
+      "name": "quotas_registry",
+      "path": ".planestack/governance/evidence/s112/ai/quotas-registry.json",
+      "artifact_id": "c1e9dd9a-a78b-4992-979a-0cb18684e3d8"
+    },
+    {
+      "name": "budgets_registry",
+      "path": ".planestack/governance/evidence/s112/ai/budgets-registry.json",
+      "artifact_id": "c711540e-d1a5-4b20-bbfd-5abd85a071cb"
+    },
+    {
+      "name": "cache_policies",
+      "path": ".planestack/governance/evidence/s112/ai/cache-policies.json",
+      "artifact_id": "9e82d445-fede-44cb-b43b-3298c6a31712"
+    },
+    {
+      "name": "eval_suites",
+      "path": ".planestack/governance/evidence/s112/ai/eval-suites.json",
+      "artifact_id": "c893cdef-d6d4-4573-80df-a350f59d1abb"
+    },
+    {
+      "name": "redaction_policies",
+      "path": ".planestack/governance/evidence/s112/ai/redaction-policies.json",
+      "artifact_id": "66983304-e6cf-46db-81a3-d64fe8253dbb"
+    },
+    {
+      "name": "adoption_inventory",
+      "path": ".planestack/governance/evidence/s112/ai/adoption-inventory.json",
+      "artifact_id": "afa787c9-5111-45ad-baee-3c9fb3d105e4"
+    },
+    {
+      "name": "no_bypass_check",
+      "path": ".planestack/governance/evidence/s112/ai/no-bypass-check.json",
+      "artifact_id": "25fbc46d-d32f-4d76-8a08-f3d8eadbb159"
+    },
+    {
+      "name": "policy_decision_preview",
+      "path": ".planestack/governance/evidence/s112/ai/policy-decision-preview.json",
+      "artifact_id": "c4f7d458-feeb-439b-8031-a4637f9c3ded"
+    },
+    {
+      "name": "ledger_proof",
+      "path": ".planestack/governance/evidence/s112/ai/ledger-proof.json",
+      "artifact_id": "7453c595-8026-4fcb-8c20-53c781cf3fb4"
+    },
+    {
+      "name": "run_detail",
+      "path": ".planestack/governance/evidence/s112/ai/run-detail.json",
+      "artifact_id": "e98534be-aa56-40d3-bfd4-6a4d6d609283"
+    },
+    {
+      "name": "replay_proof",
+      "path": ".planestack/governance/evidence/s112/ai/replay-proof.json",
+      "artifact_id": "6f795fe8-617f-40f2-8891-a85fe4e3aa09"
+    },
+    {
+      "name": "compare_proof",
+      "path": ".planestack/governance/evidence/s112/ai/compare-proof.json",
+      "artifact_id": "c88ad701-a03e-4770-b766-67179fd17694"
+    },
+    {
+      "name": "cache_proof",
+      "path": ".planestack/governance/evidence/s112/ai/cache-proof.json",
+      "artifact_id": "3db28736-51db-4882-8a97-9349cd8ab336"
+    },
+    {
+      "name": "codegen_proof",
+      "path": ".planestack/governance/evidence/s112/ai/codegen-proof.json",
+      "artifact_id": "fa145d14-ea50-4e51-834b-4a2be43e1117"
+    },
+    {
+      "name": "incidents_proof",
+      "path": ".planestack/governance/evidence/s112/ai/incidents-proof.json",
+      "artifact_id": "b0d11be4-0269-4c22-ae00-13352fd51bff"
+    },
+    {
+      "name": "blocked_flows",
+      "path": ".planestack/governance/evidence/s112/ai/blocked-flows.json",
+      "artifact_id": "9729641a-25ac-4823-a4dd-8e18f2f2fe83"
+    },
+    {
+      "name": "ui_smoke",
+      "path": ".planestack/governance/evidence/s112/ai/ui-smoke.json",
+      "artifact_id": "01f12797-bea3-4611-bd03-027c87d524e4"
+    },
+    {
+      "name": "validate_summary",
+      "path": ".planestack/governance/evidence/s112/sprint112-validate.json",
+      "artifact_id": "74799d98-9d0d-4b43-96ed-e764b55126ad"
+    },
+    {
+      "name": "archive",
+      "path": ".planestack/governance/evidence/s112/archive.json",
+      "artifact_id": "8060d9cc-bc2d-4869-a832-0ee1fc05e33b"
+    },
+    {
+      "name": "closeout_summary",
+      "path": ".planestack/governance/evidence/s112/closeout-summary.json",
+      "artifact_id": "4c8a9cc0-ff3b-4ee7-b383-1657d7445741"
+    }
+  ],
+  "gates": {
+    "sprint112_validate": "passed",
+    "contract_test_docker": "passed",
+    "e2e_gate": "passed"
+  },
+  "implementation_commits": {
+    "ps-contracts": "9c2dbaa",
+    "ps-api": "5ddc162",
+    "ps-web": "0c2755c",
+    "ps-web_followup": "c092bf2",
+    "ps-dev": "0975471"
+  },
+  "tags": [
+    "sprint112-pass-2026-03-12",
+    "sprint112-evidence-2026-03-12"
+  ],
+  "archive_ids": {
+    "pack_id": "a3314402-bcb4-476c-b80c-773d3eefbf57",
+    "runlog_id": "1ab8214c-a9e1-4947-89b9-86f0f07c4edf",
+    "evidence_id": "72b36978-9b57-4944-aaf8-876898031b39",
+    "manifest_id": "5ba45dda-7b5c-4d7d-8ebe-7b619033a7f1",
+    "writeback_id": "8f43e606-7fd6-4ff9-bcc6-87a3c4c03c6a",
+    "writeback_artifact_id": "bb9ac945-6c0b-4bc7-aa46-e3e97bb85187"
+  },
+  "results": {
+    "validated_at": "2026-03-12",
+    "gates": {
+      "sprint112_validate": "pass",
+      "contract_test_docker": "pass",
+      "e2e_gate": "pass"
+    },
+    "commits": {
+      "ps-contracts": "9c2dbaa",
+      "ps-api": "5ddc162",
+      "ps-web": "0c2755c",
+      "ps-web_followup": "c092bf2",
+      "ps-dev": "0975471"
+    }
+  }
+}
