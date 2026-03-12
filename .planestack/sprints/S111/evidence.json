@@ -30,6 +30,7 @@
     "ai_management_overview_ui": ".planestack/governance/evidence/s111/ui/ai-management-overview.json",
     "ai_management_runs_ui": ".planestack/governance/evidence/s111/ui/ai-management-runs.json",
     "ai_management_ledger_ui": ".planestack/governance/evidence/s111/ui/ai-management-ledger.json",
+    "navigation_ia_normalization_ui": ".planestack/governance/evidence/s111/ui/navigation-ia-normalization.json",
     "calculator_gold_bundle": ".planestack/governance/evidence/s111/ai/calculator-gold-bundle.json",
     "blocked_flows": ".planestack/governance/evidence/s111/ai/blocked-flows.json",
     "validate_summary": ".planestack/governance/evidence/s111/sprint111-validate.json",

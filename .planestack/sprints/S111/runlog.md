@@ -32,6 +32,12 @@ Results:
 - `contract-test-docker` (inside validate chain): PASS
 - `e2e-gate`: PASS
 
+Additional IA hardening:
+- Unified `Agents` into `AI Management` (single canonical AI control plane in nav).
+- Added nav normalization regression:
+  - `tests/sprint111.navigation-ia-normalization.spec.js`
+  - evidence: `.planestack/governance/evidence/s111/ui/navigation-ia-normalization.json`
+
 ## Archive IDs
 - `pack_id`: `7cde8df9-4eb5-456d-9630-71850d041002`
 - `runlog_id`: `0c771fd9-271c-49cd-af30-555cd4c1eeec`
