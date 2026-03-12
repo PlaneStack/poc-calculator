@@ -1,0 +1,16 @@
+{
+  "sprint": "S115",
+  "pack": "project-management/planestack-s115-pack/Sprint115-Pack.md",
+  "runlog": "project-management/planestack-s115-pack/S115-runlog.md",
+  "evidence": "project-management/planestack-s115-pack/S115-evidence.json",
+  "screenshots_readme": "project-management/planestack-s115-pack/screenshots/README.md",
+  "mirror": {
+    "pack": ".planestack/sprints/S115/pack.md",
+    "runlog": ".planestack/sprints/S115/runlog.md",
+    "evidence": ".planestack/sprints/S115/evidence.json",
+    "manifest": ".planestack/sprints/S115/manifest.json"
+  },
+  "primary_project": "poc-calculator",
+  "execution_posture": "concierge_v1 + governed_orchestration + project_scoped + role_shaped + multi_user + deterministic_validate + governed_execution + evidence_bearing_sessions",
+  "status": "completed"
+}

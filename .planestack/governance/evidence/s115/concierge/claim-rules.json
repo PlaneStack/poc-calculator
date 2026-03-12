@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-12T22:37:58Z", "precedence": ["exclusive", "soft", "informational"], "conflict_key": ["project_key", "normalized_scope_ref"]}

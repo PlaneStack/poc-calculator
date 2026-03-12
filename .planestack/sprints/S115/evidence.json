@@ -1,0 +1,75 @@
+{
+  "sprint": "S115",
+  "theme": "Concierge v1 \u2014 Governed Orchestration Foundation",
+  "status": "completed",
+  "required_artifacts": {
+    "lock_check": ".planestack/governance/evidence/s115/lock-check.json",
+    "autonomy_profiles": ".planestack/governance/evidence/s115/concierge/autonomy-profiles.json",
+    "claim_rules": ".planestack/governance/evidence/s115/concierge/claim-rules.json",
+    "disclosure_rules": ".planestack/governance/evidence/s115/concierge/disclosure-rules.json",
+    "session_policies": ".planestack/governance/evidence/s115/concierge/session-policies.json",
+    "subsystem_bindings": ".planestack/governance/evidence/s115/concierge/subsystem-bindings.json",
+    "handoff_rules": ".planestack/governance/evidence/s115/concierge/handoff-rules.json",
+    "artifact_registry_proof": ".planestack/governance/evidence/s115/concierge/artifact-registry-proof.json",
+    "plane_console_ui_smoke": ".planestack/governance/evidence/s115/concierge/plane-console-ui-smoke.json",
+    "session_lifecycle_proof": ".planestack/governance/evidence/s115/concierge/session-lifecycle-proof.json",
+    "plan_lifecycle_proof": ".planestack/governance/evidence/s115/concierge/plan-lifecycle-proof.json",
+    "claim_collision_proof": ".planestack/governance/evidence/s115/concierge/claim-collision-proof.json",
+    "blocked_wait_proof": ".planestack/governance/evidence/s115/concierge/blocked-wait-proof.json",
+    "request_handoff_proof": ".planestack/governance/evidence/s115/concierge/request-handoff-proof.json",
+    "role_shaping_proof": ".planestack/governance/evidence/s115/concierge/role-shaping-proof.json",
+    "safe_disclosure_proof": ".planestack/governance/evidence/s115/concierge/safe-disclosure-proof.json",
+    "governed_execution_proof": ".planestack/governance/evidence/s115/concierge/governed-execution-proof.json",
+    "operation_binding_proof": ".planestack/governance/evidence/s115/concierge/operation-binding-proof.json",
+    "session_timeline_proof": ".planestack/governance/evidence/s115/concierge/session-timeline-proof.json",
+    "resumability_proof": ".planestack/governance/evidence/s115/concierge/resumability-proof.json",
+    "poc_calculator_e2e_proof": ".planestack/governance/evidence/s115/concierge/poc-calculator-e2e-proof.json",
+    "ui_smoke": ".planestack/governance/evidence/s115/concierge/ui-smoke.json",
+    "validate_summary": ".planestack/governance/evidence/s115/sprint115-validate.json",
+    "archive": ".planestack/governance/evidence/s115/archive.json",
+    "closeout_summary": ".planestack/governance/evidence/s115/closeout-summary.json"
+  },
+  "required_gates": [
+    "make -C ps-dev sprint115-validate",
+    "make -C ps-dev contract-test-docker",
+    "make -C ps-dev e2e-gate"
+  ],
+  "minimum_artifact_families": [
+    "concierge.session",
+    "concierge.plan",
+    "concierge.claim",
+    "concierge.blocker",
+    "concierge.handoff",
+    "concierge.recommendation"
+  ],
+  "next_step_classifications": [
+    "resolve_now",
+    "request_or_handoff",
+    "wait",
+    "prepare_in_parallel",
+    "stop_or_defer"
+  ],
+  "claim_types": [
+    "informational",
+    "soft",
+    "exclusive"
+  ],
+  "closeout_tags": [
+    "sprint115-pass-YYYY-MM-DD",
+    "sprint115-evidence-YYYY-MM-DD"
+  ],
+  "completed_at": "2026-03-12T23:12:00Z",
+  "gate_results": {
+    "sprint115_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "archive_ids": {
+    "pack_id": "f8a70f36-51af-4a95-9d93-3579813ff71c",
+    "runlog_id": "7a53c121-6219-4ca2-92c9-b0fd7e22dcc0",
+    "evidence_id": "a2164267-1a06-481a-a828-c40187c4c648",
+    "manifest_id": "13ee69f0-2b15-4837-9f30-a0caf26180bb",
+    "writeback_id": "7216c133-d557-44bc-b6d0-0bd5fea12f65",
+    "writeback_artifact_id": "6b474a6a-91a8-4422-9aa7-d723a6571b0f"
+  }
+}

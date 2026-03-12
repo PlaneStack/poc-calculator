@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-12T23:14:36Z",
+  "operation": "governance-lock-check",
+  "runner": "governance-lock-check.sh",
+  "status": "passed",
+  "sprint_code": "S115",
+  "work_producing": true,
+  "bucket_used": "s115",
+  "reason": null,
+  "project_root": "/Users/mklein/_Ventures/PlaneStack/repos/poc-calculator",
+  "bridge_root": "/Users/mklein/_Ventures/PlaneStack/bridge_root",
+  "evidence_targets": [
+    ".planestack/governance/evidence"
+  ],
+  "scratch_targets": [
+    "/Users/mklein/_Ventures/PlaneStack/bridge_root/workspaces",
+    "/Users/mklein/_Ventures/PlaneStack/bridge_root/tmp",
+    "/Users/mklein/_Ventures/PlaneStack/bridge_root/caches",
+    "/Users/mklein/_Ventures/PlaneStack/bridge_root/logs"
+  ],
+  "errors": []
+}
