@@ -1,0 +1,19 @@
+{
+  "checks": [
+    {
+      "classification": "governed",
+      "reason": "governed",
+      "result": "pass",
+      "subsystem_key": "codegen"
+    },
+    {
+      "classification": "governed",
+      "reason": "governed",
+      "result": "pass",
+      "subsystem_key": "ai_assistance"
+    }
+  ],
+  "generated_at": "2026-03-12T14:19:25.638Z",
+  "schema_version": 1,
+  "status": "pass"
+}

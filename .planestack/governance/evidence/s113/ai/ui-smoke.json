@@ -1,0 +1,37 @@
+{
+  "assertions": [
+    "ai-mgmt-surface-overview",
+    "ai-mgmt-surface-providers",
+    "ai-mgmt-surface-models",
+    "ai-mgmt-surface-templates",
+    "ai-mgmt-surface-policies",
+    "ai-mgmt-surface-quotas",
+    "ai-mgmt-surface-budgets",
+    "ai-mgmt-surface-ledger",
+    "ai-mgmt-surface-runs",
+    "ai-mgmt-surface-cache",
+    "ai-mgmt-surface-evals",
+    "ai-mgmt-surface-incidents",
+    "ai-mgmt-surface-codegen",
+    "ai-mgmt-surface-agents",
+    "ai-mgmt-adoption-row-<consumerKey>",
+    "ai-mgmt-effective-config-view",
+    "ai-mgmt-resolution-trace",
+    "ai-mgmt-provider-health-row-<providerKey>",
+    "ai-mgmt-provider-history-<connectionKey>",
+    "ai-mgmt-run-explain-<runId>",
+    "ai-mgmt-policy-cost-panel-<runId>",
+    "ai-mgmt-promotion-preview-<templateKey>",
+    "ai-mgmt-rollback-preview-<templateKey>",
+    "ai-mgmt-no-bypass-report",
+    "ai-mgmt-incident-drilldown-<incidentId>"
+  ],
+  "generated_at": "2026-03-12T14:20:08Z",
+  "operation": "s113-ai-management-ui-smoke",
+  "schema_version": 1,
+  "specs": [
+    "tests/sprint113.ai-management.control-plane.spec.js",
+    "tests/sprint111.navigation-ia-normalization.spec.js"
+  ],
+  "status": "passed"
+}

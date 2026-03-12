@@ -1,0 +1,40 @@
+{
+  "authz_403_404": [
+    {
+      "payload": {
+        "error": "incident_not_found"
+      },
+      "status": 404
+    }
+  ],
+  "generated_at": "2026-03-12T14:19:27Z",
+  "policy_blocked": [
+    {
+      "budget_refs": [
+        "project-default"
+      ],
+      "decision": "deny",
+      "generated_at": "2026-03-12T14:19:26.166Z",
+      "hitl_required": false,
+      "must_stage": false,
+      "policy_refs": [
+        "default"
+      ],
+      "quota_refs": [
+        "project-default"
+      ],
+      "reason_code": "operation_not_allowed",
+      "required_action": "policy_update",
+      "subsystem_key": "ai_assistance"
+    }
+  ],
+  "schema_version": 1,
+  "validation_400": [
+    {
+      "payload": {
+        "error": "base_run_id_and_candidate_run_id_required"
+      },
+      "status": 400
+    }
+  ]
+}

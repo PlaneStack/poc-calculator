@@ -1,0 +1,28 @@
+{
+  "sprint": "S113",
+  "generated_at": "2026-03-12T14:25:48Z",
+  "status": "closed",
+  "gates": {
+    "sprint113_validate": "PASS",
+    "contract_test_docker": "PASS",
+    "e2e_gate": "PASS"
+  },
+  "commits": {
+    "ps_contracts": "dd37ad0",
+    "ps_api": "d80bfd8",
+    "ps_web": "ab047d8",
+    "ps_dev": "af94298",
+    "poc_calculator": "ad8e260"
+  },
+  "archive": {
+    "pack_id": "1c010590-9b0b-415f-bae5-0e9204d9aab5",
+    "runlog_id": "0830ebf9-5d14-4b98-a018-aa5010c3a134",
+    "evidence_id": "4eb04116-136d-4f8a-8627-f7fb0b1c1c72",
+    "manifest_id": "86b06e64-5b9d-42f8-8624-3c45d36474ef",
+    "writeback_id": "20aabcd3-27e2-4d89-bf0e-8b9ba451cc3e",
+    "writeback_artifact_id": "373b90ee-abd8-4851-ad60-541277a2a25b"
+  },
+  "notes": [
+    "S113 AI management evidence generated via governed library writes and materialized into project-root mirror for closeout."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "consumers": [
+    {
+      "classification": "governed",
+      "governed": true,
+      "mandatory": true,
+      "subsystem_key": "codegen",
+      "updated_at": "2026-03-12T14:19:25.536Z"
+    },
+    {
+      "classification": "governed",
+      "governed": true,
+      "mandatory": true,
+      "subsystem_key": "ai_assistance",
+      "updated_at": "2026-03-12T14:19:25.536Z"
+    },
+    {
+      "classification": "governed",
+      "governed": true,
+      "mandatory": false,
+      "subsystem_key": "concierge",
+      "updated_at": "2026-03-12T14:19:25.536Z"
+    },
+    {
+      "classification": "governed",
+      "governed": true,
+      "mandatory": false,
+      "subsystem_key": "docgen",
+      "updated_at": "2026-03-12T14:19:25.536Z"
+    }
+  ],
+  "generated_at": "2026-03-12T14:19:25.579Z",
+  "mandatory_governed_consumers": [
+    "codegen",
+    "ai_assistance"
+  ],
+  "schema_version": 1
+}

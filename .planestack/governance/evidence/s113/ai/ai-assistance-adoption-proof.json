@@ -1,0 +1,120 @@
+{
+  "generated_at": "2026-03-12T14:19:27Z",
+  "policy_preview": {
+    "budget_refs": [
+      "project-default"
+    ],
+    "decision": "allow",
+    "generated_at": "2026-03-12T14:19:26.112Z",
+    "hitl_required": false,
+    "must_stage": false,
+    "policy_refs": [
+      "default"
+    ],
+    "quota_refs": [
+      "project-default"
+    ],
+    "reason_code": "policy_blocked",
+    "required_action": "none",
+    "subsystem_key": "ai_assistance"
+  },
+  "routing_preview": {
+    "generated_at": "2026-03-12T14:19:25.760Z",
+    "model_key": "stub-balanced",
+    "model_lifecycle_state": "active",
+    "provider_key": "stub",
+    "provider_lifecycle_state": "active",
+    "subsystem_key": "ai_assistance"
+  },
+  "run_explain": {
+    "approval_refs": [],
+    "evidence_refs": [],
+    "generated_at": "2026-03-12T14:19:26.540Z",
+    "policy_decision": {
+      "budget_refs": [
+        "project-default"
+      ],
+      "decision": "allow",
+      "generated_at": "2026-03-12T14:19:26.540Z",
+      "hitl_required": false,
+      "must_stage": false,
+      "policy_refs": [
+        "default"
+      ],
+      "quota_refs": [
+        "project-default"
+      ],
+      "reason_code": "policy_blocked",
+      "required_action": "none",
+      "subsystem_key": "ai_assistance"
+    },
+    "routing": {
+      "model_key": "stub-balanced",
+      "provider_key": "stub",
+      "resolution_trace": [
+        {
+          "field": "provider_key",
+          "restrictive_rule_wins": false,
+          "selected_value": "stub",
+          "source_ref": ".planestack/governance/ai/subsystem-routing.json",
+          "source_scope": "project"
+        },
+        {
+          "field": "model_key",
+          "restrictive_rule_wins": false,
+          "selected_value": "stub-balanced",
+          "source_ref": ".planestack/governance/ai/subsystem-routing.json",
+          "source_scope": "project"
+        },
+        {
+          "field": "template_key",
+          "restrictive_rule_wins": false,
+          "selected_value": "ai-assistance-summary",
+          "source_ref": ".planestack/governance/ai/templates.json",
+          "source_scope": "project"
+        },
+        {
+          "field": "policy_key",
+          "restrictive_rule_wins": true,
+          "selected_value": "default",
+          "source_ref": ".planestack/governance/ai/policies.json",
+          "source_scope": "project"
+        },
+        {
+          "field": "quota_key",
+          "restrictive_rule_wins": true,
+          "selected_value": "project-default",
+          "source_ref": ".planestack/governance/ai/quotas.json",
+          "source_scope": "project"
+        },
+        {
+          "field": "budget_key",
+          "restrictive_rule_wins": true,
+          "selected_value": "project-default",
+          "source_ref": ".planestack/governance/ai/budgets.json",
+          "source_scope": "project"
+        },
+        {
+          "field": "cache_policy_key",
+          "restrictive_rule_wins": false,
+          "selected_value": "default",
+          "source_ref": ".planestack/governance/ai/cache-policies.json",
+          "source_scope": "project"
+        }
+      ],
+      "subsystem_key": "ai_assistance",
+      "template_key": "ai-assistance-summary"
+    },
+    "run_id": "s113-ai-assistance-1773325164",
+    "usage": {
+      "cache_hit": false,
+      "cost_usd_micros": 620,
+      "input_token_count": 90,
+      "latency_ms": 110,
+      "output_token_count": 35,
+      "token_count": 125
+    }
+  },
+  "schema_version": 1,
+  "subsystem_key": "ai_assistance"
+}

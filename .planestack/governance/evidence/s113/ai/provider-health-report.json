@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-03-12T14:19:25.937Z",
+  "items": [
+    {
+      "base_url": "https://stub.local.planestack.ai",
+      "connection_key": "stub",
+      "disabled": false,
+      "failure_mode": "fail_closed",
+      "fallback_rank": 0,
+      "last_validated_at": "2026-03-12T14:19:24.991Z",
+      "last_validation_reason": "validated",
+      "last_validation_status": "pass",
+      "maintenance_mode": false,
+      "provider_key": "stub",
+      "region": "us-local-1",
+      "residency": "local",
+      "retry_policy_key": "default"
+    },
+    {
+      "base_url": "https://stub.local.planestack.ai",
+      "connection_key": "stub",
+      "disabled": false,
+      "failure_mode": "fail_closed",
+      "fallback_rank": 0,
+      "last_validated_at": "2026-03-12T14:19:24.991Z",
+      "last_validation_reason": "validated",
+      "last_validation_status": "pass",
+      "maintenance_mode": false,
+      "provider_key": "stub",
+      "region": "us-local-1",
+      "residency": "local",
+      "retry_policy_key": "default"
+    }
+  ]
+}

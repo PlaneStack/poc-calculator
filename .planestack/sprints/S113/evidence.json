@@ -1,0 +1,180 @@
+{
+  "sprint": "S113",
+  "theme": "AI Management v2 \u2014 Adoption, Explainability, and Release Control",
+  "status": "closeout_ready",
+  "required_artifacts": {
+    "lock_check": ".planestack/governance/evidence/s113/lock-check.json",
+    "adoption_inventory": ".planestack/governance/evidence/s113/ai/adoption-inventory.json",
+    "no_bypass_report": ".planestack/governance/evidence/s113/ai/no-bypass-report.json",
+    "codegen_adoption_proof": ".planestack/governance/evidence/s113/ai/codegen-adoption-proof.json",
+    "ai_assistance_adoption_proof": ".planestack/governance/evidence/s113/ai/ai-assistance-adoption-proof.json",
+    "effective_config_resolution": ".planestack/governance/evidence/s113/ai/effective-config-resolution.json",
+    "effective_config_diff": ".planestack/governance/evidence/s113/ai/effective-config-diff.json",
+    "provider_health_report": ".planestack/governance/evidence/s113/ai/provider-health-report.json",
+    "provider_validation_history": ".planestack/governance/evidence/s113/ai/provider-validation-history.json",
+    "run_explainability": ".planestack/governance/evidence/s113/ai/run-explainability.json",
+    "policy_cost_explainability": ".planestack/governance/evidence/s113/ai/policy-cost-explainability.json",
+    "blocked_flow_drilldown": ".planestack/governance/evidence/s113/ai/blocked-flow-drilldown.json",
+    "incidents_ops_proof": ".planestack/governance/evidence/s113/ai/incidents-ops-proof.json",
+    "eval_scorecard": ".planestack/governance/evidence/s113/ai/eval-scorecard.json",
+    "promotion_proof": ".planestack/governance/evidence/s113/ai/promotion-proof.json",
+    "rollback_proof": ".planestack/governance/evidence/s113/ai/rollback-proof.json",
+    "release_controls": ".planestack/governance/evidence/s113/ai/release-controls.json",
+    "ui_smoke": ".planestack/governance/evidence/s113/ai/ui-smoke.json",
+    "validate_summary": ".planestack/governance/evidence/s113/sprint113-validate.json",
+    "archive": ".planestack/governance/evidence/s113/archive.json",
+    "closeout_summary": ".planestack/governance/evidence/s113/closeout-summary.json"
+  },
+  "required_gates": [
+    "make -C ps-dev sprint113-validate",
+    "make -C ps-dev contract-test-docker",
+    "make -C ps-dev e2e-gate"
+  ],
+  "blocked_flows_schema": {
+    "sections": [
+      "validation_400",
+      "authz_403_404",
+      "policy_blocked"
+    ]
+  },
+  "mandatory_governed_consumers": [
+    "codegen",
+    "ai_assistance"
+  ],
+  "closeout_tags": [
+    "sprint113-pass-YYYY-MM-DD",
+    "sprint113-evidence-YYYY-MM-DD"
+  ],
+  "finalized_at": "2026-03-12T14:23:45Z",
+  "gate_results": {
+    "sprint113_validate": "PASS",
+    "contract_test_docker": "PASS",
+    "e2e_gate": "PASS"
+  },
+  "commit_shas": {
+    "ps_contracts": "dd37ad0",
+    "ps_api": "d80bfd8",
+    "ps_web": "ab047d8",
+    "ps_dev": "af94298",
+    "poc_calculator": "ad8e260"
+  },
+  "required_evidence_artifacts": [
+    {
+      "key": "lock_check",
+      "path": ".planestack/governance/evidence/s113/lock-check.json",
+      "required": true,
+      "artifact_id": "3f12a7a3-71e9-4082-ba04-56bfb232abcf"
+    },
+    {
+      "key": "adoption_inventory",
+      "path": ".planestack/governance/evidence/s113/ai/adoption-inventory.json",
+      "required": true
+    },
+    {
+      "key": "no_bypass_report",
+      "path": ".planestack/governance/evidence/s113/ai/no-bypass-report.json",
+      "required": true
+    },
+    {
+      "key": "codegen_adoption_proof",
+      "path": ".planestack/governance/evidence/s113/ai/codegen-adoption-proof.json",
+      "required": true
+    },
+    {
+      "key": "ai_assistance_adoption_proof",
+      "path": ".planestack/governance/evidence/s113/ai/ai-assistance-adoption-proof.json",
+      "required": true
+    },
+    {
+      "key": "effective_config_resolution",
+      "path": ".planestack/governance/evidence/s113/ai/effective-config-resolution.json",
+      "required": true
+    },
+    {
+      "key": "effective_config_diff",
+      "path": ".planestack/governance/evidence/s113/ai/effective-config-diff.json",
+      "required": true
+    },
+    {
+      "key": "provider_health_report",
+      "path": ".planestack/governance/evidence/s113/ai/provider-health-report.json",
+      "required": true
+    },
+    {
+      "key": "provider_validation_history",
+      "path": ".planestack/governance/evidence/s113/ai/provider-validation-history.json",
+      "required": true
+    },
+    {
+      "key": "run_explainability",
+      "path": ".planestack/governance/evidence/s113/ai/run-explainability.json",
+      "required": true
+    },
+    {
+      "key": "policy_cost_explainability",
+      "path": ".planestack/governance/evidence/s113/ai/policy-cost-explainability.json",
+      "required": true
+    },
+    {
+      "key": "blocked_flow_drilldown",
+      "path": ".planestack/governance/evidence/s113/ai/blocked-flow-drilldown.json",
+      "required": true
+    },
+    {
+      "key": "incidents_ops_proof",
+      "path": ".planestack/governance/evidence/s113/ai/incidents-ops-proof.json",
+      "required": true
+    },
+    {
+      "key": "eval_scorecard",
+      "path": ".planestack/governance/evidence/s113/ai/eval-scorecard.json",
+      "required": true
+    },
+    {
+      "key": "promotion_proof",
+      "path": ".planestack/governance/evidence/s113/ai/promotion-proof.json",
+      "required": true
+    },
+    {
+      "key": "rollback_proof",
+      "path": ".planestack/governance/evidence/s113/ai/rollback-proof.json",
+      "required": true
+    },
+    {
+      "key": "release_controls",
+      "path": ".planestack/governance/evidence/s113/ai/release-controls.json",
+      "required": true
+    },
+    {
+      "key": "ui_smoke",
+      "path": ".planestack/governance/evidence/s113/ai/ui-smoke.json",
+      "required": true
+    },
+    {
+      "key": "validate_summary",
+      "path": ".planestack/governance/evidence/s113/sprint113-validate.json",
+      "required": true
+    },
+    {
+      "key": "archive",
+      "path": ".planestack/governance/evidence/s113/archive.json",
+      "required": true
+    },
+    {
+      "key": "closeout_summary",
+      "path": ".planestack/governance/evidence/s113/closeout-summary.json",
+      "required": true
+    }
+  ],
+  "artifact_ids": {
+    "lock_check": "3f12a7a3-71e9-4082-ba04-56bfb232abcf"
+  },
+  "archive_ids": {
+    "pack_id": "1c010590-9b0b-415f-bae5-0e9204d9aab5",
+    "runlog_id": "0830ebf9-5d14-4b98-a018-aa5010c3a134",
+    "evidence_id": "4eb04116-136d-4f8a-8627-f7fb0b1c1c72",
+    "manifest_id": "86b06e64-5b9d-42f8-8624-3c45d36474ef",
+    "writeback_id": "20aabcd3-27e2-4d89-bf0e-8b9ba451cc3e",
+    "writeback_artifact_id": "373b90ee-abd8-4851-ad60-541277a2a25b"
+  }
+}

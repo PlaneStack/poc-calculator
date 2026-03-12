@@ -1,0 +1,89 @@
+{
+  "approval_refs": [],
+  "evidence_refs": [],
+  "generated_at": "2026-03-12T14:19:26.450Z",
+  "policy_decision": {
+    "budget_refs": [
+      "project-default"
+    ],
+    "decision": "allow",
+    "generated_at": "2026-03-12T14:19:26.450Z",
+    "hitl_required": true,
+    "must_stage": true,
+    "policy_refs": [
+      "default"
+    ],
+    "quota_refs": [
+      "project-default"
+    ],
+    "reason_code": "policy_blocked",
+    "required_action": "none",
+    "subsystem_key": "codegen"
+  },
+  "routing": {
+    "model_key": "stub-balanced",
+    "provider_key": "stub",
+    "resolution_trace": [
+      {
+        "field": "provider_key",
+        "restrictive_rule_wins": false,
+        "selected_value": "stub",
+        "source_ref": ".planestack/governance/ai/subsystem-routing.json",
+        "source_scope": "project"
+      },
+      {
+        "field": "model_key",
+        "restrictive_rule_wins": false,
+        "selected_value": "stub-balanced",
+        "source_ref": ".planestack/governance/ai/subsystem-routing.json",
+        "source_scope": "project"
+      },
+      {
+        "field": "template_key",
+        "restrictive_rule_wins": false,
+        "selected_value": "codegen-patch-v1",
+        "source_ref": ".planestack/governance/ai/templates.json",
+        "source_scope": "project"
+      },
+      {
+        "field": "policy_key",
+        "restrictive_rule_wins": true,
+        "selected_value": "default",
+        "source_ref": ".planestack/governance/ai/policies.json",
+        "source_scope": "project"
+      },
+      {
+        "field": "quota_key",
+        "restrictive_rule_wins": true,
+        "selected_value": "project-default",
+        "source_ref": ".planestack/governance/ai/quotas.json",
+        "source_scope": "project"
+      },
+      {
+        "field": "budget_key",
+        "restrictive_rule_wins": true,
+        "selected_value": "project-default",
+        "source_ref": ".planestack/governance/ai/budgets.json",
+        "source_scope": "project"
+      },
+      {
+        "field": "cache_policy_key",
+        "restrictive_rule_wins": false,
+        "selected_value": "default",
+        "source_ref": ".planestack/governance/ai/cache-policies.json",
+        "source_scope": "project"
+      }
+    ],
+    "subsystem_key": "codegen",
+    "template_key": "codegen-patch-v1"
+  },
+  "run_id": "s113-codegen-1773325164",
+  "usage": {
+    "cache_hit": false,
+    "cost_usd_micros": 850,
+    "input_token_count": 120,
+    "latency_ms": 140,
+    "output_token_count": 50,
+    "token_count": 170
+  }
+}

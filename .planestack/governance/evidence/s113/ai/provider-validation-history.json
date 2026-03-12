@@ -1,0 +1,24 @@
+{
+  "connection_key": "stub",
+  "generated_at": "2026-03-12T14:19:25.991Z",
+  "items": [
+    {
+      "connection_key": "stub",
+      "detail": {
+        "provider_key": "stub",
+        "validation_status": "unknown"
+      },
+      "event_type": "upsert",
+      "occurred_at": "2026-03-12T14:19:24.932Z"
+    },
+    {
+      "connection_key": "stub",
+      "detail": {
+        "reason": "validated",
+        "status": "pass"
+      },
+      "event_type": "validate",
+      "occurred_at": "2026-03-12T14:19:24.999Z"
+    }
+  ]
+}

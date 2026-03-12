@@ -1,0 +1,32 @@
+{
+  "sprint": "S113",
+  "pack": "project-management/planestack-s113-pack/Sprint113-Pack.md",
+  "runlog": "project-management/planestack-s113-pack/S113-runlog.md",
+  "evidence": "project-management/planestack-s113-pack/S113-evidence.json",
+  "screenshots_readme": "project-management/planestack-s113-pack/screenshots/README.md",
+  "mirror": {
+    "pack": ".planestack/sprints/S113/pack.md",
+    "runlog": ".planestack/sprints/S113/runlog.md",
+    "evidence": ".planestack/sprints/S113/evidence.json",
+    "manifest": ".planestack/sprints/S113/manifest.json"
+  },
+  "primary_project": "poc-calculator",
+  "execution_posture": "ai_management_adoption + explainability + release_control + deterministic_validate + governed_execution",
+  "status": "closeout_ready",
+  "finalized_at": "2026-03-12T14:23:45Z",
+  "commits": {
+    "ps_contracts": "dd37ad0",
+    "ps_api": "d80bfd8",
+    "ps_web": "ab047d8",
+    "ps_dev": "af94298",
+    "poc_calculator": "ad8e260"
+  },
+  "archive_ids": {
+    "pack_id": "1c010590-9b0b-415f-bae5-0e9204d9aab5",
+    "runlog_id": "0830ebf9-5d14-4b98-a018-aa5010c3a134",
+    "evidence_id": "4eb04116-136d-4f8a-8627-f7fb0b1c1c72",
+    "manifest_id": "86b06e64-5b9d-42f8-8624-3c45d36474ef",
+    "writeback_id": "20aabcd3-27e2-4d89-bf0e-8b9ba451cc3e",
+    "writeback_artifact_id": "373b90ee-abd8-4851-ad60-541277a2a25b"
+  }
+}

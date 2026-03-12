@@ -1,0 +1,25 @@
+{
+  "base": {
+    "generated_at": "2026-03-12T14:19:25.698Z",
+    "model_key": "stub-balanced",
+    "model_lifecycle_state": "active",
+    "provider_key": "stub",
+    "provider_lifecycle_state": "active",
+    "subsystem_key": "codegen"
+  },
+  "candidate": {
+    "generated_at": "2026-03-12T14:19:25.760Z",
+    "model_key": "stub-balanced",
+    "model_lifecycle_state": "active",
+    "provider_key": "stub",
+    "provider_lifecycle_state": "active",
+    "subsystem_key": "ai_assistance"
+  },
+  "delta": {
+    "model_changed": false,
+    "provider_changed": false,
+    "subsystem_changed": true
+  },
+  "generated_at": "2026-03-12T14:19:27Z",
+  "schema_version": 1
+}

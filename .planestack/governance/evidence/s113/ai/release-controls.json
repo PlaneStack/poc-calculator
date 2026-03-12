@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-03-12T14:19:27Z",
+  "promotion_preview": {
+    "action": "promote",
+    "confirm_token": "d47c01f2d7799b5225b3d9cb",
+    "controls": [
+      {
+        "approval_required": true,
+        "eval_suite_key": "ai-assistance-quality",
+        "minimum_score": 0.8,
+        "rollback_allowed": true,
+        "target_key": "ai-assistance-summary",
+        "target_type": "template"
+      },
+      {
+        "approval_required": true,
+        "eval_suite_key": "codegen-patch-quality",
+        "minimum_score": 0.8,
+        "rollback_allowed": true,
+        "target_key": "codegen-patch-v1",
+        "target_type": "template"
+      }
+    ],
+    "generated_at": "2026-03-12T14:19:27.103Z",
+    "plan_hash": "b91abd8a0fa97b5658251b839c0df466bd72f7b3cf5d6ea643865dbf614c55b6",
+    "scorecard_required": true,
+    "target_lifecycle_state": "active",
+    "template_key": "codegen-patch-v1",
+    "template_version": 1
+  },
+  "rollback_preview": {
+    "action": "rollback",
+    "confirm_token": "f73fac1d2e2d5259a7fdef83",
+    "controls": [
+      {
+        "approval_required": true,
+        "eval_suite_key": "ai-assistance-quality",
+        "minimum_score": 0.8,
+        "rollback_allowed": true,
+        "target_key": "ai-assistance-summary",
+        "target_type": "template"
+      },
+      {
+        "approval_required": true,
+        "eval_suite_key": "codegen-patch-quality",
+        "minimum_score": 0.8,
+        "rollback_allowed": true,
+        "target_key": "codegen-patch-v1",
+        "target_type": "template"
+      }
+    ],
+    "generated_at": "2026-03-12T14:19:27.268Z",
+    "plan_hash": "d0cca5ed1b784be9dbb365e02907edb9a2c6e274c23e9b13d7317540e61373be",
+    "scorecard_required": true,
+    "target_lifecycle_state": "approved",
+    "template_key": "codegen-patch-v1",
+    "template_version": 1
+  },
+  "schema_version": 1
+}

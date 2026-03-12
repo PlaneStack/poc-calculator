@@ -1,0 +1,72 @@
+{
+  "cache_policy": {
+    "default_ttl_seconds": 86400,
+    "exact_rendered_prompt_only": true
+  },
+  "effective": {
+    "budget_key": "project-default",
+    "cache_policy_key": "default",
+    "failure_mode": "fail_closed",
+    "model_key": "stub-balanced",
+    "operation_key": "summarize",
+    "policy_key": "default",
+    "provider_key": "stub",
+    "quota_key": "project-default",
+    "redaction_policy_key": "default",
+    "subsystem_key": "ai_assistance",
+    "template_key": "ai-assistance-summary"
+  },
+  "generated_at": "2026-03-12T14:19:25.875Z",
+  "resolution_trace": [
+    {
+      "field": "provider_key",
+      "restrictive_rule_wins": false,
+      "selected_value": "stub",
+      "source_ref": ".planestack/governance/ai/subsystem-routing.json",
+      "source_scope": "project"
+    },
+    {
+      "field": "model_key",
+      "restrictive_rule_wins": false,
+      "selected_value": "stub-balanced",
+      "source_ref": ".planestack/governance/ai/subsystem-routing.json",
+      "source_scope": "project"
+    },
+    {
+      "field": "template_key",
+      "restrictive_rule_wins": false,
+      "selected_value": "ai-assistance-summary",
+      "source_ref": ".planestack/governance/ai/templates.json",
+      "source_scope": "project"
+    },
+    {
+      "field": "policy_key",
+      "restrictive_rule_wins": true,
+      "selected_value": "default",
+      "source_ref": ".planestack/governance/ai/policies.json",
+      "source_scope": "project"
+    },
+    {
+      "field": "quota_key",
+      "restrictive_rule_wins": true,
+      "selected_value": "project-default",
+      "source_ref": ".planestack/governance/ai/quotas.json",
+      "source_scope": "project"
+    },
+    {
+      "field": "budget_key",
+      "restrictive_rule_wins": true,
+      "selected_value": "project-default",
+      "source_ref": ".planestack/governance/ai/budgets.json",
+      "source_scope": "project"
+    },
+    {
+      "field": "cache_policy_key",
+      "restrictive_rule_wins": false,
+      "selected_value": "default",
+      "source_ref": ".planestack/governance/ai/cache-policies.json",
+      "source_scope": "project"
+    }
+  ],
+  "restrictive_rule_wins": true
+}

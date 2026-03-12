@@ -1,0 +1,8 @@
+{
+  "action": "rollback",
+  "generated_at": "2026-03-12T14:19:27.376Z",
+  "lifecycle_state": "approved",
+  "status": "accepted",
+  "template_key": "codegen-patch-v1",
+  "template_version": 1
+}
