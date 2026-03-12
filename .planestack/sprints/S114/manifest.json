@@ -1,0 +1,16 @@
+{
+  "sprint": "S114",
+  "pack": "project-management/planestack-s114-pack/Sprint114-Pack.md",
+  "runlog": "project-management/planestack-s114-pack/S114-runlog.md",
+  "evidence": "project-management/planestack-s114-pack/S114-evidence.json",
+  "screenshots_readme": "project-management/planestack-s114-pack/screenshots/README.md",
+  "mirror": {
+    "pack": ".planestack/sprints/S114/pack.md",
+    "runlog": ".planestack/sprints/S114/runlog.md",
+    "evidence": ".planestack/sprints/S114/evidence.json",
+    "manifest": ".planestack/sprints/S114/manifest.json"
+  },
+  "primary_project": "poc-calculator",
+  "execution_posture": "ai_management_launch_readiness + estate_wide_adoption + explainability + release_control + bounded_execution_governance + deterministic_validate + governed_execution",
+  "status": "closed_complete"
+}

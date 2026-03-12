@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "sprint": "S114",
+  "generated_at": "2026-03-12T18:49:47Z",
+  "status": "closed_complete",
+  "gates": {
+    "sprint114-validate": "pass",
+    "contract-test-docker": "pass",
+    "e2e-gate": "pass"
+  },
+  "tranche_commits": {
+    "ps-contracts": "b1829de6bcfeed99489c2d687a1bff7d6d162e5c",
+    "ps-api": "b01d6b072a78c9b0f434f00f2102c045a0150366",
+    "ps-web": "76e9732708d39ac076f895fca6fc329a727ddee1",
+    "ps-dev": "2b29ee483824fef20286c4014c6c6532d410997d"
+  },
+  "archive_ids": {
+    "pack_id": "4840e278-56d2-49ff-90c3-afa28034c8dc",
+    "runlog_id": "1400d159-25ff-4710-bef7-8ea9a7d3baa0",
+    "evidence_id": "5ad54768-0cf1-4d6b-aa0c-6afcb921003b",
+    "manifest_id": "a23ab98a-8f05-43a8-bafb-8a66e9716646",
+    "writeback_id": "f2846225-cadf-4344-b908-7f96a6cc1501",
+    "writeback_artifact_id": "fcba8835-acac-43b9-9358-6ba5a88ef4f8"
+  },
+  "scope_exclusions": [
+    "Preexisting unrelated poc-calculator drift in .planestack/governance/evidence/s90/lock-check.json and .planestack/governance/evidence/s95/lock-check.json was intentionally excluded from S114 scope and archive contents."
+  ]
+}

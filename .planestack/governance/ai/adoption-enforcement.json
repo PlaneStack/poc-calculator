@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-12T18:15:09Z", "mandatory_governed_consumers": ["codegen", "ai_assistance", "center_apply", "center_ask", "pr_description"], "rules": [{"key": "routing_through_ai_management_required", "enabled": true}, {"key": "policy_decision_required", "enabled": true}, {"key": "ledger_attribution_required", "enabled": true}]}
