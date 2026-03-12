@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-03-12T10:51:05Z",
+  "generated_at": "2026-03-12T13:33:24Z",
   "operation": "governance-lock-check",
   "runner": "governance-lock-check.sh",
   "status": "passed",
