@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-13T11:36:29Z", "restrictive_mode": true, "redacted_fields": ["assignee_user_key", "approval_artifact_ref", "policy_details", "actor_identity", "internal_evidence_refs", "private_notes"]}

@@ -1,0 +1,1 @@
+{"schema_version":1,"plan_id":"20260313T113627Z_85654b5c","operation":"operate.runbooks.run","plan_hash":"f5ac3da7ffe6fcae2e2b0e3baf6e4c2b1ff29fa3ff84a1bedd19b718bb08f1d7","confirm_token":"621ada49bbfb07178b584cda51d34a5b4d283296a032007c481ef03e9f02697a","allowed_operations":["plans:act","plans:execute","operate.runbooks.run"],"generated_at":"2026-03-13T11:36:28.093Z"}

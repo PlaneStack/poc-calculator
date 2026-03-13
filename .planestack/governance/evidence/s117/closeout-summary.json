@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "sprint": "S117",
+  "status": "completed",
+  "completed_at": "2026-03-13T14:38:21Z",
+  "gates": {
+    "sprint117_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "commit_shas": {
+    "ps_contracts": "0091c2917e076875cde613cd66eef8ab41a5bbb1",
+    "ps_api": "54ca204f2f2aaa376790b6989305f1901ac75d59",
+    "ps_web": "a15be7ad5824adf4c121f971cad643eb29c09f02",
+    "ps_dev": "fd968136cad94d2462705011901fd8da14ddf9d1"
+  },
+  "archive_ids": {
+    "pack_id": "a5320451-fdfb-45bc-9a34-aa0b010717b3",
+    "runlog_id": "f76019c6-5d3a-4626-a76d-c27013f1f655",
+    "evidence_id": "da65f2b1-1b01-45ca-ae4f-c1f42f75a478",
+    "manifest_id": "a0d14861-670e-4022-87ce-083d882bccf3",
+    "writeback_id": "a5154a7a-aadf-4409-8522-0d47dd118593",
+    "writeback_artifact_id": "f2e3bfa7-fc0b-442b-bc2e-a89b30b48431"
+  },
+  "notes": [
+    "S117 control-tower closeout completed with canonical inbox sections, handoff-centric mutation routes, and approval-bound wait/resume proofs.",
+    "Historical S115/S116 concierge smoke regressions were fixed in-chain by adding required Idempotency-Key handling on session resume.",
+    "e2e clean-slate docker race was hardened in ps-dev/scripts/e2e.sh to prevent teardown/startup overlap during gate runs.",
+    "Preexisting unrelated poc-calculator AI governance drift and s95 lock-check drift were intentionally excluded from S117 scope."
+  ]
+}

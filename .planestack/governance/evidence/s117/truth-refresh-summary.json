@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-13T11:36:42Z", "status": "passed", "operation": "s116-truth-refresh", "artifacts": ["product-knowledge-diff-summary.md", "work-history-diff-summary.md", "navigation-map-diff-summary.md", "truth-index-diff-summary.md"], "no_change_ok": true}
