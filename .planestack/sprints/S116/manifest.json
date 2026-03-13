@@ -1,0 +1,47 @@
+{
+  "sprint": "S116",
+  "pack": "project-management/planestack-s116-pack/Sprint116-Pack.md",
+  "runlog": "project-management/planestack-s116-pack/S116-runlog.md",
+  "evidence": "project-management/planestack-s116-pack/S116-evidence.json",
+  "screenshots_readme": "project-management/planestack-s116-pack/screenshots/README.md",
+  "additional_docs": [
+    "project-management/planestack-s116-pack/README.md",
+    "project-management/planestack-s116-pack/Sprint116-Backlog.md",
+    "project-management/planestack-s116-pack/Sprint116-API-Contract-Locks.md",
+    "project-management/planestack-s116-pack/Sprint116-UX-Acceptance.md",
+    "project-management/planestack-s116-pack/Sprint116-Gold-Proof-Path.md",
+    "project-management/planestack-s116-pack/Sprint116-Locked-Clarifications.md",
+    "project-management/planestack-s116-pack/Sprint116-Validation-Matrix.md",
+    "project-management/planestack-s116-pack/Sprint116-Truth-Refresh-Plan.md",
+    "project-management/planestack-s116-pack/Sprint116-Risk-Register.md"
+  ],
+  "mirror": {
+    "pack": ".planestack/sprints/S116/pack.md",
+    "runlog": ".planestack/sprints/S116/runlog.md",
+    "evidence": ".planestack/sprints/S116/evidence.json",
+    "manifest": ".planestack/sprints/S116/manifest.json"
+  },
+  "primary_project": "poc-calculator",
+  "execution_posture": "concierge_bounded_execution_proof + bridge_mediated_local_execution + governed_preview_execute + blocker_wait_resume + deterministic_validate + truth_refresh_companion",
+  "status": "completed",
+  "completed_at": "2026-03-13T03:35:00Z",
+  "commit_shas": {
+    "ps_contracts": "30e2ada5f578dc03dc664ee1ae38842d1e964f0b",
+    "ps_api": "c64d1c51ae41d4a6e96f2175296c03a7790a6c59",
+    "ps_web": "d81c4c3595ebf38fe70c0cab7140446aeaf3c48a",
+    "ps_dev": "ce216fc891d658bf8d3f497a2119df50e8d3c15c"
+  },
+  "gate_results": {
+    "sprint116_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "archive_ids": {
+    "pack_id": "9898dc79-f8fa-4aab-9ba7-5c6bad391bfd",
+    "runlog_id": "be95f45d-f943-40a5-8320-7a6279379ca9",
+    "evidence_id": "1776355f-53f8-4f2d-9958-466247cea74e",
+    "manifest_id": "229ef245-16b8-4aba-8931-70ba91a0c439",
+    "writeback_id": "f527ff29-896a-4ba2-9605-99984bdc10b7",
+    "writeback_artifact_id": "5f7fa631-d3d1-4193-b4eb-aaa117c0e91a"
+  }
+}

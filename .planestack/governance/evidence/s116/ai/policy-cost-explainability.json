@@ -1,0 +1,1 @@
+{"decision":"deny","reason_code":"template_inactive","required_action":"activate_template","policy_refs":[],"budget_refs":["project-default"],"quota_refs":[],"hitl_required":false,"must_stage":false,"generated_at":"2026-03-13T02:47:28.865Z"}

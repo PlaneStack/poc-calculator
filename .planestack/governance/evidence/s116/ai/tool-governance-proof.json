@@ -1,0 +1,1 @@
+{"generated_at":"2026-03-13T02:47:27.896Z","schema_version":1,"tools":[{"allowed_roles":["org_admin","project_admin","project_operator"],"allowed_subsystems":["codegen"],"display_name":"Codegen","lifecycle_state":"active","tool_key":"codegen"}]}

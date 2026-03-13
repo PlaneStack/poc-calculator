@@ -1,0 +1,87 @@
+{
+  "sprint": "S116",
+  "theme": "Concierge bounded execution proof + truth refresh",
+  "status": "completed",
+  "required_artifacts": {
+    "lock_check": ".planestack/governance/evidence/s116/lock-check.json",
+    "contract_locks_proof": ".planestack/governance/evidence/s116/concierge/contract-locks-proof.json",
+    "artifact_registry_proof": ".planestack/governance/evidence/s116/concierge/artifact-registry-proof.json",
+    "session_flow_proof": ".planestack/governance/evidence/s116/concierge/session-flow-proof.json",
+    "operation_preview_proof": ".planestack/governance/evidence/s116/concierge/operation-preview-proof.json",
+    "operation_execute_proof": ".planestack/governance/evidence/s116/concierge/operation-execute-proof.json",
+    "blocked_state_proof": ".planestack/governance/evidence/s116/concierge/blocked-state-proof.json",
+    "wait_resume_proof": ".planestack/governance/evidence/s116/concierge/wait-resume-proof.json",
+    "request_handoff_proof": ".planestack/governance/evidence/s116/concierge/request-handoff-proof.json",
+    "role_shaping_proof": ".planestack/governance/evidence/s116/concierge/role-shaping-proof.json",
+    "safe_disclosure_proof": ".planestack/governance/evidence/s116/concierge/safe-disclosure-proof.json",
+    "bridge_bindings_proof": ".planestack/governance/evidence/s116/concierge/bridge-bindings-proof.json",
+    "bridge_job_lifecycle_proof": ".planestack/governance/evidence/s116/concierge/bridge-job-lifecycle-proof.json",
+    "bridge_poll_proof": ".planestack/governance/evidence/s116/concierge/bridge-poll-proof.json",
+    "timeline_proof": ".planestack/governance/evidence/s116/concierge/timeline-proof.json",
+    "resumable_proof": ".planestack/governance/evidence/s116/concierge/resumable-proof.json",
+    "summary_surface_proof": ".planestack/governance/evidence/s116/concierge/summary-surface-proof.json",
+    "ui_shell_smoke": ".planestack/governance/evidence/s116/concierge/ui-shell-smoke.json",
+    "poc_calculator_proof_a": ".planestack/governance/evidence/s116/concierge/poc-calculator-proof-a.json",
+    "truth_refresh_summary": ".planestack/governance/evidence/s116/truth-refresh-summary.json",
+    "product_knowledge_diff_summary": ".planestack/governance/evidence/s116/product-knowledge-diff-summary.md",
+    "work_history_diff_summary": ".planestack/governance/evidence/s116/work-history-diff-summary.md",
+    "navigation_map_diff_summary": ".planestack/governance/evidence/s116/navigation-map-diff-summary.md",
+    "truth_index_diff_summary": ".planestack/governance/evidence/s116/truth-index-diff-summary.md",
+    "validate_summary": ".planestack/governance/evidence/s116/sprint116-validate.json",
+    "archive": ".planestack/governance/evidence/s116/archive.json",
+    "closeout_summary": ".planestack/governance/evidence/s116/closeout-summary.json"
+  },
+  "optional_artifacts": {
+    "poc_calculator_proof_b": ".planestack/governance/evidence/s116/concierge/poc-calculator-proof-b.json"
+  },
+  "required_gates": [
+    "make -C ps-dev sprint116-validate",
+    "make -C ps-dev contract-test-docker",
+    "make -C ps-dev e2e-gate"
+  ],
+  "minimum_artifact_families": [
+    "concierge.session",
+    "concierge.plan",
+    "concierge.claim",
+    "concierge.blocker",
+    "concierge.handoff",
+    "concierge.recommendation",
+    "concierge.bridge_job"
+  ],
+  "next_step_classifications": [
+    "resolve_now",
+    "request_or_handoff",
+    "wait",
+    "prepare_in_parallel",
+    "stop_or_defer"
+  ],
+  "claim_types": [
+    "informational",
+    "soft",
+    "exclusive"
+  ],
+  "closeout_tags": [
+    "sprint116-pass-YYYY-MM-DD",
+    "sprint116-evidence-YYYY-MM-DD"
+  ],
+  "completed_at": "2026-03-13T03:35:00Z",
+  "gate_results": {
+    "sprint116_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "commit_shas": {
+    "ps_contracts": "30e2ada5f578dc03dc664ee1ae38842d1e964f0b",
+    "ps_api": "c64d1c51ae41d4a6e96f2175296c03a7790a6c59",
+    "ps_web": "d81c4c3595ebf38fe70c0cab7140446aeaf3c48a",
+    "ps_dev": "ce216fc891d658bf8d3f497a2119df50e8d3c15c"
+  },
+  "archive_ids": {
+    "pack_id": "9898dc79-f8fa-4aab-9ba7-5c6bad391bfd",
+    "runlog_id": "be95f45d-f943-40a5-8320-7a6279379ca9",
+    "evidence_id": "1776355f-53f8-4f2d-9958-466247cea74e",
+    "manifest_id": "229ef245-16b8-4aba-8931-70ba91a0c439",
+    "writeback_id": "f527ff29-896a-4ba2-9605-99984bdc10b7",
+    "writeback_artifact_id": "5f7fa631-d3d1-4193-b4eb-aaa117c0e91a"
+  }
+}

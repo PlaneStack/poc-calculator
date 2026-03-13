@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-13T02:48:06Z", "validation_400": [{"status": 400, "payload": {"error": "plan_id_scope_ref_and_valid_precedence_required"}}], "authz_403_404": [{"status": 404, "payload": {"error": "concierge_handoff_not_found", "handoff_id": "missing-handoff"}}], "policy_blocked": [{"status": 409, "payload": {"error": "operation_binding_mismatch"}}]}
