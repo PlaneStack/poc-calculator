@@ -1,0 +1,176 @@
+{
+  "sprint_code": "S120",
+  "status": "completed",
+  "theme": "Concierge readiness-driven execution + governed bundle adoption",
+  "required_gates": [
+    "sprint120-validate",
+    "contract-test-docker",
+    "e2e-gate"
+  ],
+  "required_proofs": {
+    "proof_a_readiness_selection_and_refusal": {
+      "required": true,
+      "description": "Deterministic refusal of a non-runnable bundle plus correct recommendation and session-scoped selection of a runnable bundle"
+    },
+    "proof_b_runtime_readiness_remediation": {
+      "required": true,
+      "description": "Runtime-readiness remediation remains explainable through readiness reasons and recovery playbooks"
+    },
+    "proof_c_operator_surface_readiness_uplift": {
+      "required": true,
+      "description": "Plans, bottom console, timeline, and summary meet the locked S120 exceptional-range thresholds"
+    },
+    "proof_d_truth_refresh_companion": {
+      "required": true,
+      "description": "S120 produced a roadmap/spec truth refresh companion artifact for the readiness/adoption model"
+    }
+  },
+  "required_artifacts": [
+    ".planestack/sprints/S120/pack.md",
+    ".planestack/sprints/S120/runlog.md",
+    ".planestack/sprints/S120/evidence.json",
+    ".planestack/sprints/S120/manifest.json",
+    ".planestack/governance/evidence/s120/lock-check.json",
+    ".planestack/governance/evidence/s120/bundle-selection-readiness-proof.json",
+    ".planestack/governance/evidence/s120/runtime-refusal-proof.json",
+    ".planestack/governance/evidence/s120/recovery-playbook-proof.json",
+    ".planestack/governance/evidence/s120/exceptional-range-scorecard.json",
+    ".planestack/governance/evidence/s120/truth-refresh-summary.json",
+    ".planestack/governance/evidence/s120/concierge-roadmap-diff-summary.md",
+    ".planestack/governance/evidence/s120/sprint120-validate.json",
+    ".planestack/governance/evidence/s120/archive.json",
+    ".planestack/governance/evidence/s120/closeout-summary.json"
+  ],
+  "focused_surfaces": [
+    "plans",
+    "bottom_console",
+    "timeline",
+    "summary"
+  ],
+  "scorecard_dimensions": [
+    "clarity",
+    "actionability",
+    "state_trust",
+    "evidence_continuity",
+    "ownership_clarity",
+    "progression_continuity",
+    "navigation_continuity",
+    "no_dead_end_behavior"
+  ],
+  "readiness_dimensions": [
+    "lifecycle_readiness",
+    "governance_readiness",
+    "runtime_readiness",
+    "evidence_continuity",
+    "autonomy_allowance",
+    "selected_bundle_validity",
+    "operator_clarity"
+  ],
+  "score_thresholds": {
+    "plans": 4.2,
+    "bottom_console": 4.2,
+    "timeline": 4.2,
+    "summary": 4.2,
+    "minimum_dimension_score": 3.7,
+    "aggregate_focused_surface_score": 4.1
+  },
+  "notes": [
+    "No new alias use in UI, tests, or evidence.",
+    "Session-scoped execution and session-scoped bundle selection remain canonical.",
+    "Readiness and selection are projected from canonical governed truth plus session context.",
+    "Recovery playbooks remain embedded operational outcomes rather than a new route family.",
+    "Temporary S120 proof bundles were used only as validation fixtures and were excluded from committed registry truth."
+  ],
+  "completed_at": "2026-03-14T14:34:15Z",
+  "gate_results": {
+    "sprint120_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "commit_shas": {
+    "ps_contracts": "e1af5133859d30865cea084cccf8ec0c8a35d1f7",
+    "ps_api": "1e19622a012999710b534807e62dbbd2cb6568b1",
+    "ps_web": "ff0d13bd5962a53ce086eab1a334d712a87cd7a2",
+    "ps_dev": "16a8e3bcb09af1b827298220cdaf995f589601a9"
+  },
+  "archive_ids": {
+    "pack_id": "0a5cefa7-66da-466d-b035-5b0399727ed4",
+    "runlog_id": "990e88ca-740f-4014-a7fb-2d221eb6c392",
+    "evidence_id": "d640a918-1b24-4596-be60-940fc6eaf2ad",
+    "manifest_id": "4499b27d-344c-418a-81ab-dcebdbfadfb2",
+    "writeback_id": "b833a9a6-0058-4376-b4a0-25fb68624088",
+    "writeback_artifact_id": "4f7d81a0-7200-46cf-b20e-a01e09c13305"
+  },
+  "required_evidence_artifacts": [
+    {
+      "key": "pack",
+      "path": ".planestack/sprints/S120/pack.md",
+      "required": true
+    },
+    {
+      "key": "runlog",
+      "path": ".planestack/sprints/S120/runlog.md",
+      "required": true
+    },
+    {
+      "key": "evidence",
+      "path": ".planestack/sprints/S120/evidence.json",
+      "required": true
+    },
+    {
+      "key": "manifest",
+      "path": ".planestack/sprints/S120/manifest.json",
+      "required": true
+    },
+    {
+      "key": "lock_check",
+      "path": ".planestack/governance/evidence/s120/lock-check.json",
+      "required": true
+    },
+    {
+      "key": "bundle_selection_readiness_proof",
+      "path": ".planestack/governance/evidence/s120/bundle-selection-readiness-proof.json",
+      "required": true
+    },
+    {
+      "key": "runtime_refusal_proof",
+      "path": ".planestack/governance/evidence/s120/runtime-refusal-proof.json",
+      "required": true
+    },
+    {
+      "key": "recovery_playbook_proof",
+      "path": ".planestack/governance/evidence/s120/recovery-playbook-proof.json",
+      "required": true
+    },
+    {
+      "key": "exceptional_range_scorecard",
+      "path": ".planestack/governance/evidence/s120/exceptional-range-scorecard.json",
+      "required": true
+    },
+    {
+      "key": "truth_refresh_summary",
+      "path": ".planestack/governance/evidence/s120/truth-refresh-summary.json",
+      "required": true
+    },
+    {
+      "key": "concierge_roadmap_diff_summary",
+      "path": ".planestack/governance/evidence/s120/concierge-roadmap-diff-summary.md",
+      "required": true
+    },
+    {
+      "key": "validate_summary",
+      "path": ".planestack/governance/evidence/s120/sprint120-validate.json",
+      "required": true
+    },
+    {
+      "key": "archive",
+      "path": ".planestack/governance/evidence/s120/archive.json",
+      "required": true
+    },
+    {
+      "key": "closeout_summary",
+      "path": ".planestack/governance/evidence/s120/closeout-summary.json",
+      "required": true
+    }
+  ]
+}

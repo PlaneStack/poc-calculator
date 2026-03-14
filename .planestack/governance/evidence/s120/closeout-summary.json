@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-14T14:34:15Z",
+  "sprint": "S120",
+  "status": "completed",
+  "gate_results": {
+    "sprint120_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "commit_shas": {
+    "ps_contracts": "e1af5133859d30865cea084cccf8ec0c8a35d1f7",
+    "ps_api": "1e19622a012999710b534807e62dbbd2cb6568b1",
+    "ps_web": "ff0d13bd5962a53ce086eab1a334d712a87cd7a2",
+    "ps_dev": "16a8e3bcb09af1b827298220cdaf995f589601a9"
+  },
+  "archive_ids": {
+    "pack_id": "0a5cefa7-66da-466d-b035-5b0399727ed4",
+    "runlog_id": "990e88ca-740f-4014-a7fb-2d221eb6c392",
+    "evidence_id": "d640a918-1b24-4596-be60-940fc6eaf2ad",
+    "manifest_id": "4499b27d-344c-418a-81ab-dcebdbfadfb2",
+    "writeback_id": "b833a9a6-0058-4376-b4a0-25fb68624088",
+    "writeback_artifact_id": "4f7d81a0-7200-46cf-b20e-a01e09c13305"
+  },
+  "excluded_drift": [
+    "historical non-S120 poc-calculator drift in .planestack/governance/evidence/s95/lock-check.json was intentionally reverted before closeout",
+    "temporary proof fixture bundles created during S120 validation were intentionally excluded from committed ps-contracts registry truth"
+  ]
+}

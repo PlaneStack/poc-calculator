@@ -1,0 +1,146 @@
+{
+  "name": "planestack-s120-pack",
+  "sprint_code": "S120",
+  "theme": "Concierge readiness-driven execution + governed bundle adoption",
+  "files": [
+    {
+      "path": "planestack-s120-pack/README.md",
+      "sha256": "960c914a97e5bccac68b064150d05f520c2b40965730c051caa343de708a2a81",
+      "bytes": 681
+    },
+    {
+      "path": "planestack-s120-pack/S120-evidence.json",
+      "sha256": "ea8b4afa2c3a83cb0d168e5fc8d42088d8fb0d4ac6caaadcfce893f742f3f652",
+      "bytes": 6013
+    },
+    {
+      "path": "planestack-s120-pack/S120-runlog.md",
+      "sha256": "454d574c51e380e7a29f6bfc142d8b7bf2e0c2e86c868be50781104a66bb99b7",
+      "bytes": 2532
+    },
+    {
+      "path": "planestack-s120-pack/Sprint120-API-Contract-Locks.md",
+      "sha256": "89f11ce85a34bf178ca085aca7b1072e2abf49f182691c5b4147917230e719c0",
+      "bytes": 3196
+    },
+    {
+      "path": "planestack-s120-pack/Sprint120-Backlog.md",
+      "sha256": "f499392b31198e1a1c7a3981620e785c37ecda3e24b21fa0c675f45447409f8d",
+      "bytes": 2191
+    },
+    {
+      "path": "planestack-s120-pack/Sprint120-Exceptional-Range-Targets.md",
+      "sha256": "fa93e8c4c142574fb28189f0b606061e7f86498e5b762c906ee2ee225e9f5050",
+      "bytes": 1205
+    },
+    {
+      "path": "planestack-s120-pack/Sprint120-Execution-Readiness-Scorecard-Model.md",
+      "sha256": "e0a0ede28c627c1d60dfa37b208e82feb259304262e289c9c684111a8553a677",
+      "bytes": 689
+    },
+    {
+      "path": "planestack-s120-pack/Sprint120-Gold-Proof-Path.md",
+      "sha256": "f2c8c2884567714fa4b23f5a2b92bc9cbef341c944c7e21b9a71555bb7d36ef6",
+      "bytes": 1507
+    },
+    {
+      "path": "planestack-s120-pack/Sprint120-Pack.md",
+      "sha256": "40d535d53231ae4ba6e917885bb775c31a42631ec867fc2984a3ccc310469f97",
+      "bytes": 15359
+    },
+    {
+      "path": "planestack-s120-pack/Sprint120-Readiness-and-Bundle-Adoption-Model.md",
+      "sha256": "d9624f9e4c39a523d71ad0ced8ca78c8221476a5b5c0889d81233a58e75d9327",
+      "bytes": 1175
+    },
+    {
+      "path": "planestack-s120-pack/Sprint120-Risk-Register.md",
+      "sha256": "e5ad52741e34147fee3eea4a8116beddcdebdee74fc672370175574ed23f54b1",
+      "bytes": 1070
+    },
+    {
+      "path": "planestack-s120-pack/Sprint120-Strategic-Alignment-Guardrails.md",
+      "sha256": "2501bc1f742091fbfa88eb340c3f6b9e171793edaa3d35924850ed4739e3dbe5",
+      "bytes": 1013
+    },
+    {
+      "path": "planestack-s120-pack/Sprint120-Tranche-Plan.md",
+      "sha256": "1802c51706823217269eb93d3d60e34a9872eb234b1bc1473a5fe90a07b1cc34",
+      "bytes": 726
+    },
+    {
+      "path": "planestack-s120-pack/Sprint120-Truth-Refresh-Plan.md",
+      "sha256": "1c8e2aeaaed1d60b3a49cc8f984362924e5a2022957a81754c0cad06c1064291",
+      "bytes": 591
+    },
+    {
+      "path": "planestack-s120-pack/Sprint120-UX-Acceptance.md",
+      "sha256": "fd25120cb64d6e8d9748cd718992eeb2c5888732e9a16bb9c1bf7c96971f9a05",
+      "bytes": 819
+    },
+    {
+      "path": "planestack-s120-pack/Sprint120-Validation-Matrix.md",
+      "sha256": "675554cab67ee51528cd3767e46bd9e9634e44c20143130342850cb139651551",
+      "bytes": 1476
+    },
+    {
+      "path": "planestack-s120-pack/manifest.json",
+      "sha256": "6dced02dba8e431c7f17c06db2a28b83674f1315f4f8c7f56227fa81f0e4a37c",
+      "bytes": 787
+    },
+    {
+      "path": "planestack-s120-pack/screenshots/README.md",
+      "sha256": "1f80237857ea3508712c4dd9dd0b9508d455f047a7c5e35124a3fc562e33b9da",
+      "bytes": 228
+    }
+  ],
+  "sprint": "S120",
+  "pack": "project-management/planestack-s120-pack/Sprint120-Pack.md",
+  "runlog": "project-management/planestack-s120-pack/S120-runlog.md",
+  "evidence": "project-management/planestack-s120-pack/S120-evidence.json",
+  "screenshots_readme": "project-management/planestack-s120-pack/screenshots/README.md",
+  "additional_docs": [
+    "project-management/planestack-s120-pack/README.md",
+    "project-management/planestack-s120-pack/Sprint120-API-Contract-Locks.md",
+    "project-management/planestack-s120-pack/Sprint120-Backlog.md",
+    "project-management/planestack-s120-pack/Sprint120-Execution-Readiness-Scorecard-Model.md",
+    "project-management/planestack-s120-pack/Sprint120-Gold-Proof-Path.md",
+    "project-management/planestack-s120-pack/Sprint120-Pack.md",
+    "project-management/planestack-s120-pack/Sprint120-Readiness-and-Bundle-Adoption-Model.md",
+    "project-management/planestack-s120-pack/Sprint120-Risk-Register.md",
+    "project-management/planestack-s120-pack/Sprint120-Strategic-Alignment-Guardrails.md",
+    "project-management/planestack-s120-pack/Sprint120-Tranche-Plan.md",
+    "project-management/planestack-s120-pack/Sprint120-Truth-Refresh-Plan.md",
+    "project-management/planestack-s120-pack/Sprint120-UX-Acceptance.md",
+    "project-management/planestack-s120-pack/Sprint120-Validation-Matrix.md"
+  ],
+  "mirror": {
+    "pack": ".planestack/sprints/S120/pack.md",
+    "runlog": ".planestack/sprints/S120/runlog.md",
+    "evidence": ".planestack/sprints/S120/evidence.json",
+    "manifest": ".planestack/sprints/S120/manifest.json"
+  },
+  "primary_project": "poc-calculator",
+  "execution_posture": "concierge_readiness_driven_execution + governed_bundle_adoption + readiness_refusal + recovery_playbooks + focused_surface_exceptional_uplift + truth_refresh_companion",
+  "status": "completed",
+  "completed_at": "2026-03-14T14:34:15Z",
+  "commit_shas": {
+    "ps_contracts": "e1af5133859d30865cea084cccf8ec0c8a35d1f7",
+    "ps_api": "1e19622a012999710b534807e62dbbd2cb6568b1",
+    "ps_web": "ff0d13bd5962a53ce086eab1a334d712a87cd7a2",
+    "ps_dev": "16a8e3bcb09af1b827298220cdaf995f589601a9"
+  },
+  "gate_results": {
+    "sprint120_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "archive_ids": {
+    "pack_id": "0a5cefa7-66da-466d-b035-5b0399727ed4",
+    "runlog_id": "990e88ca-740f-4014-a7fb-2d221eb6c392",
+    "evidence_id": "d640a918-1b24-4596-be60-940fc6eaf2ad",
+    "manifest_id": "4499b27d-344c-418a-81ab-dcebdbfadfb2",
+    "writeback_id": "b833a9a6-0058-4376-b4a0-25fb68624088",
+    "writeback_artifact_id": "4f7d81a0-7200-46cf-b20e-a01e09c13305"
+  }
+}

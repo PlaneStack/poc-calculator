@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-14T13:05:42Z", "operation": "s120-concierge-ui-smoke", "status": "passed", "spec": "tests/sprint120.concierge.readiness-and-adoption.spec.js", "assertions": ["concierge-surface-plans", "concierge-bundle-detail", "concierge-bundle-select", "concierge-surface-summary", "concierge-console", "concierge-console-status"]}
