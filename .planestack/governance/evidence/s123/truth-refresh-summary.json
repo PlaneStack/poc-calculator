@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-14T20:00:22Z", "status": "passed", "operation": "s123-truth-refresh", "artifacts": ["jobs-routes-diff-summary.md", "jobs-execution-diff-summary.md"], "no_change_ok": false}

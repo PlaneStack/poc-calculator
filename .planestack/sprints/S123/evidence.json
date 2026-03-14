@@ -1,0 +1,167 @@
+{
+  "sprint_code": "S123",
+  "status": "completed",
+  "theme": "Jobs excellence: plan-to-execution continuity, run detail, workflow trust, retry lineage, and explicit output/evidence handoff",
+  "required_gates": [
+    "sprint123-validate",
+    "contract-test-docker",
+    "e2e-gate"
+  ],
+  "required_proofs": {
+    "proof_a_plan_to_jobs_continuity": {
+      "required": true,
+      "description": "Launch from one plan task produces a Job whose run detail preserves source planning context, rationale, linked component refs, and a deep link back into Plan"
+    },
+    "proof_b_run_detail_retry_trust": {
+      "required": true,
+      "description": "A deterministic bad or missing executable path failure is retried into a new run attempt with previous/current attempt lineage, reason-code continuity, and latest-attempt clarity"
+    },
+    "proof_c_workflow_and_evidence_handoff": {
+      "required": true,
+      "description": "A workflow produces at least one successful run with output artifacts separated from evidence links and an explicit next-step CTA toward Review"
+    },
+    "proof_d_jobs_continuity": {
+      "required": true,
+      "description": "Plan deep link launches into Jobs and all new S123 user-facing UI, tests, evidence, and screenshots use Jobs as the canonical label"
+    }
+  },
+  "required_artifacts": [
+    ".planestack/sprints/S123/pack.md",
+    ".planestack/sprints/S123/runlog.md",
+    ".planestack/sprints/S123/evidence.json",
+    ".planestack/sprints/S123/manifest.json",
+    ".planestack/governance/evidence/s123/lock-check.json",
+    ".planestack/governance/evidence/s123/plan-to-jobs-continuity-proof.json",
+    ".planestack/governance/evidence/s123/run-detail-retry-trust-proof.json",
+    ".planestack/governance/evidence/s123/workflow-output-evidence-handoff-proof.json",
+    ".planestack/governance/evidence/s123/jobs-continuity-proof.json",
+    ".planestack/governance/evidence/s123/ui-smoke.json",
+    ".planestack/governance/evidence/s123/truth-refresh-summary.json",
+    ".planestack/governance/evidence/s123/jobs-routes-diff-summary.md",
+    ".planestack/governance/evidence/s123/jobs-execution-diff-summary.md",
+    ".planestack/governance/evidence/s123/exceptional-range-scorecard.json",
+    ".planestack/governance/evidence/s123/archive.json",
+    ".planestack/governance/evidence/s123/closeout-summary.json"
+  ],
+  "focused_surfaces": [
+    "jobs/runs",
+    "run detail",
+    "jobs/workflows",
+    "workflow detail"
+  ],
+  "score_thresholds": {
+    "jobs/runs": 4.0,
+    "run detail": 4.0,
+    "jobs/workflows": 4.0,
+    "workflow detail": 3.8,
+    "minimum_dimension_score": 3.0,
+    "aggregate_focused_surface_score": 3.95
+  },
+  "notes": [
+    "Plan-origin launch routes are canonical for S123 continuity.",
+    "Retry creates a new run record with explicit lineage.",
+    "Outputs and evidence remain visibly separate in Jobs detail surfaces."
+  ],
+  "completed_at": "2026-03-14T20:36:32Z",
+  "gate_results": {
+    "sprint123_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "commit_shas": {
+    "ps_contracts": "2773b19995bc73f64cac04bb6baa339bdf35bf09",
+    "ps_api": "e414212896a4cf4ed0d0aef794ea0c1d360e78bb",
+    "ps_web": "a3f1b698ebb53bb30e1def835b9879e9261f501d",
+    "ps_dev": "d41f885141e02dce9152c92daecca966691326be"
+  },
+  "archive_ids": {
+    "pack_id": "7ddaf2ae-8d6c-499e-9b35-8f79127c55de",
+    "runlog_id": "245249bf-d2b6-4896-89c4-2589e593d366",
+    "evidence_id": "cb848e57-e273-4148-be53-4f2112dea5b5",
+    "manifest_id": "51829036-bad3-467f-9721-c1ca39d6ace0",
+    "writeback_id": "8ce000b6-9cde-4bcd-acb5-5f6c08b1d8cc",
+    "writeback_artifact_id": "51e911b3-2487-46fc-b6fe-711d3aaaded3"
+  },
+  "required_evidence_artifacts": [
+    {
+      "key": "pack",
+      "path": ".planestack/sprints/S123/pack.md",
+      "required": true
+    },
+    {
+      "key": "runlog",
+      "path": ".planestack/sprints/S123/runlog.md",
+      "required": true
+    },
+    {
+      "key": "evidence",
+      "path": ".planestack/sprints/S123/evidence.json",
+      "required": true
+    },
+    {
+      "key": "manifest",
+      "path": ".planestack/sprints/S123/manifest.json",
+      "required": true
+    },
+    {
+      "key": "lock_check",
+      "path": ".planestack/governance/evidence/s123/lock-check.json",
+      "required": true
+    },
+    {
+      "key": "proof_a",
+      "path": ".planestack/governance/evidence/s123/plan-to-jobs-continuity-proof.json",
+      "required": true
+    },
+    {
+      "key": "proof_b",
+      "path": ".planestack/governance/evidence/s123/run-detail-retry-trust-proof.json",
+      "required": true
+    },
+    {
+      "key": "proof_c",
+      "path": ".planestack/governance/evidence/s123/workflow-output-evidence-handoff-proof.json",
+      "required": true
+    },
+    {
+      "key": "proof_d",
+      "path": ".planestack/governance/evidence/s123/jobs-continuity-proof.json",
+      "required": true
+    },
+    {
+      "key": "ui_smoke",
+      "path": ".planestack/governance/evidence/s123/ui-smoke.json",
+      "required": true
+    },
+    {
+      "key": "truth_refresh_summary",
+      "path": ".planestack/governance/evidence/s123/truth-refresh-summary.json",
+      "required": true
+    },
+    {
+      "key": "jobs_routes_diff_summary",
+      "path": ".planestack/governance/evidence/s123/jobs-routes-diff-summary.md",
+      "required": true
+    },
+    {
+      "key": "jobs_execution_diff_summary",
+      "path": ".planestack/governance/evidence/s123/jobs-execution-diff-summary.md",
+      "required": true
+    },
+    {
+      "key": "exceptional_range_scorecard",
+      "path": ".planestack/governance/evidence/s123/exceptional-range-scorecard.json",
+      "required": true
+    },
+    {
+      "key": "archive",
+      "path": ".planestack/governance/evidence/s123/archive.json",
+      "required": true
+    },
+    {
+      "key": "closeout_summary",
+      "path": ".planestack/governance/evidence/s123/closeout-summary.json",
+      "required": true
+    }
+  ]
+}
