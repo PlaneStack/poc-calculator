@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-13T22:35:33Z", "execute": {"plan_id": "20260313T223531Z_7808d585", "recommended_next_state": "resolve_now", "reasons": ["operation executed"], "allowed_operations": [], "safe_disclosure": {"can_view_sensitive": true, "redacted_fields": []}, "generated_at": "2026-03-13T22:35:31.844Z"}}

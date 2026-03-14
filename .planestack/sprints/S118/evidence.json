@@ -1,0 +1,219 @@
+{
+  "sprint": "S118",
+  "theme": "Concierge operational backend + exceptional interactive execution",
+  "status": "completed",
+  "required_artifacts": {
+    "lock_check": ".planestack/governance/evidence/s118/lock-check.json",
+    "contract_locks_proof": ".planestack/governance/evidence/s118/concierge/contract-locks-proof.json",
+    "bundle_backend_proof": ".planestack/governance/evidence/s118/concierge/bundle-backend-proof.json",
+    "bridge_job_proof": ".planestack/governance/evidence/s118/concierge/bridge-job-proof.json",
+    "plans_operational_proof": ".planestack/governance/evidence/s118/concierge/plans-operational-proof.json",
+    "console_state_proof": ".planestack/governance/evidence/s118/concierge/console-state-proof.json",
+    "summary_trust_proof": ".planestack/governance/evidence/s118/concierge/summary-trust-proof.json",
+    "timeline_trust_proof": ".planestack/governance/evidence/s118/concierge/timeline-trust-proof.json",
+    "queue_coherence_proof": ".planestack/governance/evidence/s118/concierge/queue-coherence-proof.json",
+    "autonomy_allowlist_proof": ".planestack/governance/evidence/s118/concierge/autonomy-allowlist-proof.json",
+    "role_shaping_proof": ".planestack/governance/evidence/s118/concierge/role-shaping-proof.json",
+    "safe_disclosure_proof": ".planestack/governance/evidence/s118/concierge/safe-disclosure-proof.json",
+    "exceptional_range_scorecard": ".planestack/governance/evidence/s118/concierge/exceptional-range-scorecard.json",
+    "poc_calculator_proof_a": ".planestack/governance/evidence/s118/concierge/poc-calculator-proof-a.json",
+    "poc_calculator_proof_b": ".planestack/governance/evidence/s118/concierge/poc-calculator-proof-b.json",
+    "poc_calculator_proof_c": ".planestack/governance/evidence/s118/concierge/poc-calculator-proof-c.json",
+    "poc_calculator_proof_d": ".planestack/governance/evidence/s118/concierge/poc-calculator-proof-d.json",
+    "truth_refresh_summary": ".planestack/governance/evidence/s118/truth-refresh-summary.json",
+    "product_knowledge_diff_summary": ".planestack/governance/evidence/s118/product-knowledge-diff-summary.md",
+    "work_history_diff_summary": ".planestack/governance/evidence/s118/work-history-diff-summary.md",
+    "navigation_map_diff_summary": ".planestack/governance/evidence/s118/navigation-map-diff-summary.md",
+    "truth_index_diff_summary": ".planestack/governance/evidence/s118/truth-index-diff-summary.md",
+    "navigation_menu_ia_diff_summary": ".planestack/governance/evidence/s118/navigation-menu-ia-current-diff-summary.md",
+    "validate_summary": ".planestack/governance/evidence/s118/sprint118-validate.json",
+    "archive": ".planestack/governance/evidence/s118/archive.json",
+    "closeout_summary": ".planestack/governance/evidence/s118/closeout-summary.json"
+  },
+  "required_gates": [
+    "make -C ps-dev sprint118-validate",
+    "make -C ps-dev contract-test-docker",
+    "make -C ps-dev e2e-gate"
+  ],
+  "minimum_artifact_families": [
+    "concierge.session",
+    "concierge.plan",
+    "concierge.claim",
+    "concierge.blocker",
+    "concierge.handoff",
+    "concierge.recommendation",
+    "concierge.bridge_job",
+    "concierge.bundle",
+    "concierge.bundle_run",
+    "concierge.step_result"
+  ],
+  "autonomy_modes": [
+    "chauffeur",
+    "autopilot_bounded"
+  ],
+  "closeout_tags": [
+    "sprint118-pass-YYYY-MM-DD",
+    "sprint118-evidence-YYYY-MM-DD"
+  ],
+  "optional_artifacts": {
+    "bundle_catalog_proof": ".planestack/governance/evidence/s118/concierge/bundle-catalog-proof.json",
+    "bridge_health_rollup_proof": ".planestack/governance/evidence/s118/concierge/bridge-health-rollup-proof.json",
+    "additional_surface_screenshots": ".planestack/governance/evidence/s118/concierge/screenshot-index.json"
+  },
+  "completed_at": "2026-03-13T22:37:00Z",
+  "gate_results": {
+    "sprint118_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "commit_shas": {
+    "ps_contracts": "5621658be817e3acc65ebef0d1d219ad1f746880",
+    "ps_api": "5243d496b5ca08a71d3d533bcb3dedf1f58fd328",
+    "ps_web": "9151f24b8058e19b3c5b9f04585a1374c2bc21da",
+    "ps_dev": "277af68c7af7d0501e98e884feecf7efbdaaeafb"
+  },
+  "notes": [
+    "Non-S118 poc-calculator drift from older sprints was intentionally excluded from S118 closeout."
+  ],
+  "required_evidence_artifacts": [
+    {
+      "key": "lock_check",
+      "path": ".planestack/governance/evidence/s118/lock-check.json",
+      "required": true,
+      "artifact_id": "c0e34042-7e4c-4fa0-8ce1-6a5b0f599746"
+    },
+    {
+      "key": "contract_locks_proof",
+      "path": ".planestack/governance/evidence/s118/concierge/contract-locks-proof.json",
+      "required": true
+    },
+    {
+      "key": "bundle_backend_proof",
+      "path": ".planestack/governance/evidence/s118/concierge/bundle-backend-proof.json",
+      "required": true
+    },
+    {
+      "key": "bridge_job_proof",
+      "path": ".planestack/governance/evidence/s118/concierge/bridge-job-proof.json",
+      "required": true
+    },
+    {
+      "key": "plans_operational_proof",
+      "path": ".planestack/governance/evidence/s118/concierge/plans-operational-proof.json",
+      "required": true
+    },
+    {
+      "key": "console_state_proof",
+      "path": ".planestack/governance/evidence/s118/concierge/console-state-proof.json",
+      "required": true
+    },
+    {
+      "key": "summary_trust_proof",
+      "path": ".planestack/governance/evidence/s118/concierge/summary-trust-proof.json",
+      "required": true
+    },
+    {
+      "key": "timeline_trust_proof",
+      "path": ".planestack/governance/evidence/s118/concierge/timeline-trust-proof.json",
+      "required": true
+    },
+    {
+      "key": "queue_coherence_proof",
+      "path": ".planestack/governance/evidence/s118/concierge/queue-coherence-proof.json",
+      "required": true
+    },
+    {
+      "key": "autonomy_allowlist_proof",
+      "path": ".planestack/governance/evidence/s118/concierge/autonomy-allowlist-proof.json",
+      "required": true
+    },
+    {
+      "key": "role_shaping_proof",
+      "path": ".planestack/governance/evidence/s118/concierge/role-shaping-proof.json",
+      "required": true
+    },
+    {
+      "key": "safe_disclosure_proof",
+      "path": ".planestack/governance/evidence/s118/concierge/safe-disclosure-proof.json",
+      "required": true
+    },
+    {
+      "key": "exceptional_range_scorecard",
+      "path": ".planestack/governance/evidence/s118/concierge/exceptional-range-scorecard.json",
+      "required": true
+    },
+    {
+      "key": "poc_calculator_proof_a",
+      "path": ".planestack/governance/evidence/s118/concierge/poc-calculator-proof-a.json",
+      "required": true
+    },
+    {
+      "key": "poc_calculator_proof_b",
+      "path": ".planestack/governance/evidence/s118/concierge/poc-calculator-proof-b.json",
+      "required": true
+    },
+    {
+      "key": "poc_calculator_proof_c",
+      "path": ".planestack/governance/evidence/s118/concierge/poc-calculator-proof-c.json",
+      "required": true
+    },
+    {
+      "key": "poc_calculator_proof_d",
+      "path": ".planestack/governance/evidence/s118/concierge/poc-calculator-proof-d.json",
+      "required": true
+    },
+    {
+      "key": "truth_refresh_summary",
+      "path": ".planestack/governance/evidence/s118/truth-refresh-summary.json",
+      "required": true
+    },
+    {
+      "key": "product_knowledge_diff_summary",
+      "path": ".planestack/governance/evidence/s118/product-knowledge-diff-summary.md",
+      "required": true
+    },
+    {
+      "key": "work_history_diff_summary",
+      "path": ".planestack/governance/evidence/s118/work-history-diff-summary.md",
+      "required": true
+    },
+    {
+      "key": "navigation_map_diff_summary",
+      "path": ".planestack/governance/evidence/s118/navigation-map-diff-summary.md",
+      "required": true
+    },
+    {
+      "key": "truth_index_diff_summary",
+      "path": ".planestack/governance/evidence/s118/truth-index-diff-summary.md",
+      "required": true
+    },
+    {
+      "key": "navigation_menu_ia_diff_summary",
+      "path": ".planestack/governance/evidence/s118/navigation-menu-ia-current-diff-summary.md",
+      "required": true
+    },
+    {
+      "key": "validate_summary",
+      "path": ".planestack/governance/evidence/s118/sprint118-validate.json",
+      "required": true
+    },
+    {
+      "key": "archive",
+      "path": ".planestack/governance/evidence/s118/archive.json",
+      "required": true
+    },
+    {
+      "key": "closeout_summary",
+      "path": ".planestack/governance/evidence/s118/closeout-summary.json",
+      "required": true
+    }
+  ],
+  "archive_ids": {
+    "pack_id": "c8db5861-448c-47aa-a1e1-04ed8d3eb414",
+    "runlog_id": "dda08b35-952c-4767-b24c-3d2e628535f5",
+    "evidence_id": "ab076b97-302c-40c4-8a2d-2b06a4d34257",
+    "manifest_id": "bffc21e1-2436-443f-a3b0-5108586c22d2",
+    "writeback_id": "67a59941-2e60-41d6-96c9-2d19892ebc6b",
+    "writeback_artifact_id": "331c7e63-1c39-4454-9eff-f7f4f6c5a25d"
+  }
+}

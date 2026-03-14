@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-13T22:35:59Z", "profiles": [{"profile_key": "chauffeur-default", "autonomy_level": "chauffeur", "allowed_operations": ["plans:claim", "plans:handoff", "operate.runbooks.run"], "requires_approval_for": ["design.implementation_plans.activate"]}]}

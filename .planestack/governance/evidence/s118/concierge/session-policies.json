@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-13T22:35:59Z", "default_autonomy": "chauffeur", "allowed_states": ["draft", "active", "blocked", "waiting", "handoff_pending", "completed", "deferred", "cancelled"]}

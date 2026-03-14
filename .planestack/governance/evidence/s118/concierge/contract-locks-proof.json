@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-13T22:36:04Z", "canonical_ui_routes": ["POST /concierge/sessions/:sessionId:preview", "POST /concierge/sessions/:sessionId:execute"], "lower_level_adapter_routes": ["POST /concierge/operations:preview", "POST /concierge/operations:execute"], "idempotency_required_on_mutations": true}

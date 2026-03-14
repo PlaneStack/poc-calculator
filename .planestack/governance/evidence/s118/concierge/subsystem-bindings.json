@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-13T22:35:59Z", "bindings": [{"subsystem_key": "operate", "operation_keys": ["operate.runbooks.run", "plans:act", "plans:execute"]}]}
