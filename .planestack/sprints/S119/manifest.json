@@ -1,0 +1,138 @@
+{
+  "sprint": "S119",
+  "pack": "project-management/planestack-s119-pack/Sprint119-Pack.md",
+  "runlog": "project-management/planestack-s119-pack/S119-runlog.md",
+  "evidence": "project-management/planestack-s119-pack/S119-evidence.json",
+  "screenshots_readme": "project-management/planestack-s119-pack/screenshots/README.md",
+  "additional_docs": [
+    "project-management/planestack-s119-pack/README.md",
+    "project-management/planestack-s119-pack/Sprint119-API-Contract-Locks.md",
+    "project-management/planestack-s119-pack/Sprint119-Backlog.md",
+    "project-management/planestack-s119-pack/Sprint119-Bundle-Lifecycle-Model.md",
+    "project-management/planestack-s119-pack/Sprint119-Exceptional-Range-Targets.md",
+    "project-management/planestack-s119-pack/Sprint119-Execution-Observability-Model.md",
+    "project-management/planestack-s119-pack/Sprint119-Gold-Proof-Path.md",
+    "project-management/planestack-s119-pack/Sprint119-Pack.md",
+    "project-management/planestack-s119-pack/Sprint119-Risk-Register.md",
+    "project-management/planestack-s119-pack/Sprint119-Tranche-Plan.md",
+    "project-management/planestack-s119-pack/Sprint119-Truth-Refresh-Plan.md",
+    "project-management/planestack-s119-pack/Sprint119-UX-Acceptance.md",
+    "project-management/planestack-s119-pack/Sprint119-Validation-Matrix.md"
+  ],
+  "mirror": {
+    "pack": ".planestack/sprints/S119/pack.md",
+    "runlog": ".planestack/sprints/S119/runlog.md",
+    "evidence": ".planestack/sprints/S119/evidence.json",
+    "manifest": ".planestack/sprints/S119/manifest.json"
+  },
+  "primary_project": "poc-calculator",
+  "execution_posture": "concierge_governed_bundle_lifecycle + execution_forensics + approval_bound_apply_checkpoint + focused_surface_exceptional_uplift + truth_refresh_companion",
+  "status": "completed",
+  "files": [
+    {
+      "path": "planestack-s119-pack/README.md",
+      "sha256": "bc5dafc17fd103cf4fab4e2c79ecaa1403fb7acdf11d35a48e7861c89536d83e",
+      "bytes": 630
+    },
+    {
+      "path": "planestack-s119-pack/S119-evidence.json",
+      "sha256": "0d9e1096b374279d43c644f5789d3f13ba977495ef5cc69673a1ee9206f97f0d",
+      "bytes": 5256
+    },
+    {
+      "path": "planestack-s119-pack/S119-runlog.md",
+      "sha256": "4ca4a4d5ff4e939343fb6856fd7333d13090723d4ff2bd5a91554a95065f90a3",
+      "bytes": 2145
+    },
+    {
+      "path": "planestack-s119-pack/Sprint119-API-Contract-Locks.md",
+      "sha256": "c9f91cf8308ac8838ca52942c91b657eebf5669535a38e03a6c8738a34e4cf7e",
+      "bytes": 6370
+    },
+    {
+      "path": "planestack-s119-pack/Sprint119-Backlog.md",
+      "sha256": "2215062c73e5adbb74bae43d04f912f730ad1f7151d3fa11fd5e175a579ec917",
+      "bytes": 3887
+    },
+    {
+      "path": "planestack-s119-pack/Sprint119-Bundle-Lifecycle-Model.md",
+      "sha256": "164f56e7e547cdbc27bc1cbbc6c2431e80474c2475778bf38caa454b6a4913a8",
+      "bytes": 998
+    },
+    {
+      "path": "planestack-s119-pack/Sprint119-Exceptional-Range-Targets.md",
+      "sha256": "e6f429c9e7756629c79135c263d16c153fa67b886c2af0729a46093115940a94",
+      "bytes": 1170
+    },
+    {
+      "path": "planestack-s119-pack/Sprint119-Execution-Observability-Model.md",
+      "sha256": "de55a9a1e625bd749ecc56fd97e1ee1e70dba1cdb31e7444b2180c9f38e62bac",
+      "bytes": 875
+    },
+    {
+      "path": "planestack-s119-pack/Sprint119-Gold-Proof-Path.md",
+      "sha256": "9c54e5bb37af02f4b07a08ffe070562a71354f3c11080a8a74fbe3841833a295",
+      "bytes": 1226
+    },
+    {
+      "path": "planestack-s119-pack/Sprint119-Pack.md",
+      "sha256": "f5be68b15a7b6cc0599a3ce61b0a54fb15dc0c13aa664e4e2ed192b55788cffe",
+      "bytes": 15729
+    },
+    {
+      "path": "planestack-s119-pack/Sprint119-Risk-Register.md",
+      "sha256": "dd94b1021bbd788d8be1aaa81f447923dc01019c7b7963fcea479b1ecee98862",
+      "bytes": 1062
+    },
+    {
+      "path": "planestack-s119-pack/Sprint119-Tranche-Plan.md",
+      "sha256": "56d0893de88de08c811d4f4c0e930e70674fef806fb3f52ff1f61247fe51ad1d",
+      "bytes": 759
+    },
+    {
+      "path": "planestack-s119-pack/Sprint119-Truth-Refresh-Plan.md",
+      "sha256": "ada2b01f2dd16b780ce5271e53e38a442b8f72f214d8e3c0fbb8775ac0ae42e1",
+      "bytes": 701
+    },
+    {
+      "path": "planestack-s119-pack/Sprint119-UX-Acceptance.md",
+      "sha256": "cd7d117efd0318f4a95c2fe8f1efbb766c767c52981d6ce43c0c59d6f9aae0e5",
+      "bytes": 1025
+    },
+    {
+      "path": "planestack-s119-pack/Sprint119-Validation-Matrix.md",
+      "sha256": "f28b28dedc157f4c9ec7c04acf2c098fae6fc3aa25d3f8cfb222038a14b8b411",
+      "bytes": 1189
+    },
+    {
+      "path": "planestack-s119-pack/manifest.json",
+      "sha256": "1eabfdfef7689cb15004a004e6472ddfb876b13c62f49b2ada53cd7d5ff1e1d3",
+      "bytes": 5707
+    },
+    {
+      "path": "planestack-s119-pack/screenshots/README.md",
+      "sha256": "a0abb326a9d50f18368bfd093de7c7979fa2e5231de9dc9d25de54adf6a14572",
+      "bytes": 256
+    }
+  ],
+  "completed_at": "2026-03-14T12:15:00Z",
+  "commit_shas": {
+    "ps_contracts": "35267f8d1840f602ef1463e28b2b26cb020cd267",
+    "ps_api": "a4e7604328aa8fb4286f3d40c57a5390dd5d832a",
+    "ps_web": "aa82a37a8ae193d8176ca4130c437c991713a320",
+    "ps_dev": "9311edb53aae3186b54df0a5215444e2bb6e0797"
+  },
+  "gate_results": {
+    "sprint119_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "archive_ids": {
+    "pack_id": "a4a46dbc-40ab-4181-b6c5-cdcb73162780",
+    "runlog_id": "539ca348-58b5-48eb-a7c8-6e648487dd65",
+    "evidence_id": "c8923983-29b2-4269-8806-17397d2a66ab",
+    "manifest_id": "38d8beb9-291a-4a4a-abab-07ab2f3f61a9",
+    "writeback_id": "6c9d94d2-3f67-4044-8358-02ae2a77d6f4",
+    "writeback_artifact_id": "81b401cb-3891-46bd-a4e4-6ea181e7c54d"
+  }
+}

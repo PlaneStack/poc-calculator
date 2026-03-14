@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-14T12:00:09Z", "status": "passed", "operation": "s119-truth-refresh", "artifacts": ["product-knowledge-diff-summary.md", "work-history-diff-summary.md", "navigation-map-diff-summary.md", "navigation-menu-ia-current-diff-summary.md", "truth-index-diff-summary.md", "concierge-roadmap-diff-summary.md"], "no_change_ok": true}

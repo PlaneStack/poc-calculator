@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-14T12:22:54Z",
+  "operation": "governance-lock-check",
+  "runner": "s119-closeout-evidence-check.sh",
+  "status": "passed",
+  "sprint_code": "S119",
+  "work_producing": true,
+  "bucket_used": "s119",
+  "reason": null,
+  "project_root": "/Users/mklein/_Ventures/PlaneStack/repos/poc-calculator",
+  "bridge_root": "/Users/mklein/_Ventures/PlaneStack/bridge_root",
+  "evidence_targets": [
+    ".planestack/governance/evidence"
+  ],
+  "scratch_targets": [
+    "/Users/mklein/_Ventures/PlaneStack/bridge_root/workspaces",
+    "/Users/mklein/_Ventures/PlaneStack/bridge_root/tmp",
+    "/Users/mklein/_Ventures/PlaneStack/bridge_root/caches",
+    "/Users/mklein/_Ventures/PlaneStack/bridge_root/logs"
+  ],
+  "errors": []
+}

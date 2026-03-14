@@ -1,0 +1,158 @@
+{
+  "sprint_code": "S119",
+  "status": "completed",
+  "theme": "Concierge governed bundle lifecycle + execution observability",
+  "required_gates": [
+    "sprint119-validate",
+    "contract-test-docker",
+    "e2e-gate"
+  ],
+  "required_proofs": {
+    "proof_a_bundle_lifecycle_activation": {
+      "required": true,
+      "description": "Draft -> review -> approve -> activate path with active selection evidence"
+    },
+    "proof_b_bridge_remediation_forensics": {
+      "required": true,
+      "description": "Diagnose/remediate/retry path with attempt compare and recovery"
+    },
+    "proof_c_approval_bound_apply_checkpoint": {
+      "required": true,
+      "description": "Dry-run -> approval wait -> approved apply -> evidence-backed completion"
+    },
+    "proof_d_mid_execution_handoff_continuity": {
+      "required": true,
+      "description": "Mid-flow handoff after at least one successful step result with continuity preserved"
+    }
+  },
+  "required_artifacts": [
+    ".planestack/sprints/S119/pack.md",
+    ".planestack/sprints/S119/runlog.md",
+    ".planestack/sprints/S119/evidence.json",
+    ".planestack/sprints/S119/manifest.json",
+    ".planestack/governance/evidence/s119/lock-check.json",
+    ".planestack/governance/evidence/s119/bundle-lifecycle-proof.json",
+    ".planestack/governance/evidence/s119/bridge-remediation-forensics.json",
+    ".planestack/governance/evidence/s119/apply-checkpoint-proof.json",
+    ".planestack/governance/evidence/s119/handoff-continuity-proof.json",
+    ".planestack/governance/evidence/s119/exceptional-range-scorecard.json",
+    ".planestack/governance/evidence/s119/truth-refresh-summary.json",
+    ".planestack/governance/evidence/s119/archive.json",
+    ".planestack/governance/evidence/s119/closeout-summary.json"
+  ],
+  "focused_surfaces": [
+    "plans",
+    "bottom_console",
+    "timeline",
+    "summary"
+  ],
+  "scorecard_dimensions": [
+    "clarity",
+    "actionability",
+    "state_trust",
+    "evidence_continuity",
+    "ownership_clarity",
+    "progression_continuity",
+    "navigation_continuity",
+    "no_dead_end_behavior"
+  ],
+  "score_thresholds": {
+    "plans": 4.1,
+    "bottom_console": 4.1,
+    "timeline": 4.1,
+    "summary": 4.1,
+    "minimum_dimension_score": 3.5,
+    "aggregate_focused_surface_score": 4.0
+  },
+  "notes": [
+    "Prior-sprint regression umbrellas were intentionally removed from sprint119-validate so the sprint validates only S119 gates.",
+    "Non-S119 poc-calculator drift from governance AI files and historical s90/s95 evidence was intentionally excluded from S119 closeout."
+  ],
+  "completed_at": "2026-03-14T12:15:00Z",
+  "gate_results": {
+    "sprint119_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "commit_shas": {
+    "ps_contracts": "35267f8d1840f602ef1463e28b2b26cb020cd267",
+    "ps_api": "a4e7604328aa8fb4286f3d40c57a5390dd5d832a",
+    "ps_web": "aa82a37a8ae193d8176ca4130c437c991713a320",
+    "ps_dev": "9311edb53aae3186b54df0a5215444e2bb6e0797"
+  },
+  "archive_ids": {
+    "pack_id": "a4a46dbc-40ab-4181-b6c5-cdcb73162780",
+    "runlog_id": "539ca348-58b5-48eb-a7c8-6e648487dd65",
+    "evidence_id": "c8923983-29b2-4269-8806-17397d2a66ab",
+    "manifest_id": "38d8beb9-291a-4a4a-abab-07ab2f3f61a9",
+    "writeback_id": "6c9d94d2-3f67-4044-8358-02ae2a77d6f4",
+    "writeback_artifact_id": "81b401cb-3891-46bd-a4e4-6ea181e7c54d"
+  },
+  "required_evidence_artifacts": [
+    {
+      "key": "pack",
+      "path": ".planestack/sprints/S119/pack.md",
+      "required": true
+    },
+    {
+      "key": "runlog",
+      "path": ".planestack/sprints/S119/runlog.md",
+      "required": true
+    },
+    {
+      "key": "evidence",
+      "path": ".planestack/sprints/S119/evidence.json",
+      "required": true
+    },
+    {
+      "key": "manifest",
+      "path": ".planestack/sprints/S119/manifest.json",
+      "required": true
+    },
+    {
+      "key": "lock_check",
+      "path": ".planestack/governance/evidence/s119/lock-check.json",
+      "required": true
+    },
+    {
+      "key": "bundle_lifecycle_proof",
+      "path": ".planestack/governance/evidence/s119/bundle-lifecycle-proof.json",
+      "required": true
+    },
+    {
+      "key": "bridge_remediation_forensics",
+      "path": ".planestack/governance/evidence/s119/bridge-remediation-forensics.json",
+      "required": true
+    },
+    {
+      "key": "apply_checkpoint_proof",
+      "path": ".planestack/governance/evidence/s119/apply-checkpoint-proof.json",
+      "required": true
+    },
+    {
+      "key": "handoff_continuity_proof",
+      "path": ".planestack/governance/evidence/s119/handoff-continuity-proof.json",
+      "required": true
+    },
+    {
+      "key": "exceptional_range_scorecard",
+      "path": ".planestack/governance/evidence/s119/exceptional-range-scorecard.json",
+      "required": true
+    },
+    {
+      "key": "truth_refresh_summary",
+      "path": ".planestack/governance/evidence/s119/truth-refresh-summary.json",
+      "required": true
+    },
+    {
+      "key": "archive",
+      "path": ".planestack/governance/evidence/s119/archive.json",
+      "required": true
+    },
+    {
+      "key": "closeout_summary",
+      "path": ".planestack/governance/evidence/s119/closeout-summary.json",
+      "required": true
+    }
+  ]
+}
