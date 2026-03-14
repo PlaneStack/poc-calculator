@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-14T18:02:47Z", "status": "passed", "operation": "s122-truth-refresh", "artifacts": ["plan-work-diff-summary.md", "jobs-continuity-diff-summary.md"], "no_change_ok": false}

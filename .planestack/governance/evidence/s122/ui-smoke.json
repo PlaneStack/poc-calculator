@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-14T18:02:46Z", "operation": "s122-plan-ui-smoke", "status": "passed", "spec": "tests/sprint122.plan-depth-and-jobs.spec.js", "assertions": ["plan overview cockpit", "work items detail", "templates detail/apply affordance", "sprints detail", "jobs continuity link"]}

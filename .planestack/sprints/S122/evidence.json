@@ -1,0 +1,153 @@
+{
+  "sprint_code": "S122",
+  "status": "completed",
+  "theme": "Plan excellence: requirement-grade work-items, tasks, sprints, templates, and component-aware planning with Jobs continuity",
+  "required_gates": [
+    "sprint122-validate",
+    "contract-test-docker",
+    "e2e-gate"
+  ],
+  "required_proofs": {
+    "proof_a_workitem_task_sprint": {
+      "required": true,
+      "description": "Requirement-grade work-item is broken down into canonical tasks and at least one derived task is assigned into a sprint with overview reflection"
+    },
+    "proof_b_component_aware_planning": {
+      "required": true,
+      "description": "One work-item and one derived task are both linked to the same canonical component and remain visible through component-aware planning filters and grouping"
+    },
+    "proof_c_template_driven_planning": {
+      "required": true,
+      "description": "Applying a work_item_starter template creates one canonical work-item plus at least two starter tasks with visible provenance"
+    },
+    "proof_d_jobs_continuity": {
+      "required": true,
+      "description": "Jobs remains the canonical label and Plan provides at least one real transition into a Jobs surface"
+    }
+  },
+  "required_artifacts": [
+    ".planestack/sprints/S122/pack.md",
+    ".planestack/sprints/S122/runlog.md",
+    ".planestack/sprints/S122/evidence.json",
+    ".planestack/sprints/S122/manifest.json",
+    ".planestack/governance/evidence/s122/lock-check.json",
+    ".planestack/governance/evidence/s122/workitem-task-sprint-proof.json",
+    ".planestack/governance/evidence/s122/component-aware-planning-proof.json",
+    ".planestack/governance/evidence/s122/template-driven-planning-proof.json",
+    ".planestack/governance/evidence/s122/jobs-continuity-proof.json",
+    ".planestack/governance/evidence/s122/exceptional-range-scorecard.json",
+    ".planestack/governance/evidence/s122/truth-refresh-summary.json",
+    ".planestack/governance/evidence/s122/archive.json",
+    ".planestack/governance/evidence/s122/closeout-summary.json"
+  ],
+  "focused_surfaces": [
+    "center/project",
+    "center/artifacts",
+    "plan/work/overview",
+    "plan/work/templates",
+    "plan/work/ideas",
+    "plan/work/work-items"
+  ],
+  "score_thresholds": {
+    "center/project": 4.0,
+    "center/artifacts": 3.8,
+    "plan/work/overview": 3.8,
+    "plan/work/templates": 3.8,
+    "plan/work/ideas": 4.0,
+    "plan/work/work-items": 4.0,
+    "minimum_dimension_score": 3.0,
+    "aggregate_focused_surface_score": 3.9
+  },
+  "notes": [
+    "work.task and work.sprint are canonical artifacts in S122.",
+    "Plan-scoped work APIs are canonical for work-items, tasks, sprints, and templates.",
+    "Jobs remains the canonical user-facing label; internal route compatibility may remain run-shaped in S122."
+  ],
+  "completed_at": "2026-03-14T18:28:49Z",
+  "gate_results": {
+    "sprint122_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "commit_shas": {
+    "ps_contracts": "97aaa63546e94de3805766c3a8369730347c58a4",
+    "ps_api": "294aa6da688b0ae0ec787638a862de15baf94488",
+    "ps_web": "caefcba1a9bebc25c4d2d6d3c0f08b3919343a2d",
+    "ps_dev": "dfaa99f10ab5f5a2767986218a2135ca727ae05b"
+  },
+  "archive_ids": {
+    "pack_id": "63005e40-469b-4318-abae-841f538ac31c",
+    "runlog_id": "8abb565c-63ad-4af1-9c3c-5a86d6998974",
+    "evidence_id": "c88bba13-5bb7-423a-9627-368e6467a0a9",
+    "manifest_id": "1ef6757e-929d-4fcd-a93d-32b6c910a4c9",
+    "writeback_id": "27510580-be5d-4f7f-8dc2-6d33af7d0e0e",
+    "writeback_artifact_id": "a41d7935-1942-4732-9264-52055aeb7042"
+  },
+  "required_evidence_artifacts": [
+    {
+      "key": "pack",
+      "path": ".planestack/sprints/S122/pack.md",
+      "required": true
+    },
+    {
+      "key": "runlog",
+      "path": ".planestack/sprints/S122/runlog.md",
+      "required": true
+    },
+    {
+      "key": "evidence",
+      "path": ".planestack/sprints/S122/evidence.json",
+      "required": true
+    },
+    {
+      "key": "manifest",
+      "path": ".planestack/sprints/S122/manifest.json",
+      "required": true
+    },
+    {
+      "key": "lock_check",
+      "path": ".planestack/governance/evidence/s122/lock-check.json",
+      "required": true
+    },
+    {
+      "key": "workitem_task_sprint_proof",
+      "path": ".planestack/governance/evidence/s122/workitem-task-sprint-proof.json",
+      "required": true
+    },
+    {
+      "key": "component_aware_planning_proof",
+      "path": ".planestack/governance/evidence/s122/component-aware-planning-proof.json",
+      "required": true
+    },
+    {
+      "key": "template_driven_planning_proof",
+      "path": ".planestack/governance/evidence/s122/template-driven-planning-proof.json",
+      "required": true
+    },
+    {
+      "key": "jobs_continuity_proof",
+      "path": ".planestack/governance/evidence/s122/jobs-continuity-proof.json",
+      "required": true
+    },
+    {
+      "key": "exceptional_range_scorecard",
+      "path": ".planestack/governance/evidence/s122/exceptional-range-scorecard.json",
+      "required": true
+    },
+    {
+      "key": "truth_refresh_summary",
+      "path": ".planestack/governance/evidence/s122/truth-refresh-summary.json",
+      "required": true
+    },
+    {
+      "key": "archive",
+      "path": ".planestack/governance/evidence/s122/archive.json",
+      "required": true
+    },
+    {
+      "key": "closeout_summary",
+      "path": ".planestack/governance/evidence/s122/closeout-summary.json",
+      "required": true
+    }
+  ]
+}
