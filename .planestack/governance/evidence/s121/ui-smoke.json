@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-14T15:39:42Z", "operation": "s121-concierge-ui-smoke", "status": "passed", "spec": "tests/sprint121.center-bootstrap-and-jobs.spec.js", "assertions": ["center-project-page", "center-bootstrap-panel or seeded summary", "plan ideas/work-items continuity", "mode-Jobs", "runs-page-header"]}

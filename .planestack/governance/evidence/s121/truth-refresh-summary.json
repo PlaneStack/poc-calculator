@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-14T15:39:51Z", "status": "passed", "operation": "s121-truth-refresh", "artifacts": ["jobs-rename-diff-summary.md", "center-bootstrap-diff-summary.md"], "no_change_ok": false}

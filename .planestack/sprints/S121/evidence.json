@@ -1,0 +1,153 @@
+{
+  "sprint_code": "S121",
+  "status": "completed",
+  "theme": "First-run excellence: Center -> project bootstrap -> goals / ideas / work-items golden path",
+  "required_gates": [
+    "sprint121-validate",
+    "contract-test-docker",
+    "e2e-gate"
+  ],
+  "required_proofs": {
+    "proof_a_bootstrap": {
+      "required": true,
+      "description": "Sparse project bootstrap creates scope, goal, idea, and work-item with immediate Center/Plan reflection"
+    },
+    "proof_b_lineage": {
+      "required": true,
+      "description": "Goal -> idea -> work-item lineage preserves rationale, acceptance criteria continuity, and goal linkage"
+    },
+    "proof_c_project_bootstrap_template": {
+      "required": true,
+      "description": "Project bootstrap template materializes canonical records with provenance visible from Center and Plan"
+    },
+    "proof_d_jobs_rename": {
+      "required": true,
+      "description": "Header and execution surfaces render Jobs canonically with no new S121-facing Run label"
+    }
+  },
+  "required_artifacts": [
+    ".planestack/sprints/S121/pack.md",
+    ".planestack/sprints/S121/runlog.md",
+    ".planestack/sprints/S121/evidence.json",
+    ".planestack/sprints/S121/manifest.json",
+    ".planestack/governance/evidence/s121/lock-check.json",
+    ".planestack/governance/evidence/s121/bootstrap-proof.json",
+    ".planestack/governance/evidence/s121/lineage-proof.json",
+    ".planestack/governance/evidence/s121/template-proof.json",
+    ".planestack/governance/evidence/s121/jobs-rename-proof.json",
+    ".planestack/governance/evidence/s121/exceptional-range-scorecard.json",
+    ".planestack/governance/evidence/s121/truth-refresh-summary.json",
+    ".planestack/governance/evidence/s121/archive.json",
+    ".planestack/governance/evidence/s121/closeout-summary.json"
+  ],
+  "focused_surfaces": [
+    "center/project",
+    "center/artifacts",
+    "plan/work/overview",
+    "plan/work/templates",
+    "plan/work/ideas",
+    "plan/work/work-items"
+  ],
+  "score_thresholds": {
+    "center/project": 4.0,
+    "center/artifacts": 3.8,
+    "plan/work/overview": 3.8,
+    "plan/work/templates": 3.8,
+    "plan/work/ideas": 4.0,
+    "plan/work/work-items": 4.0,
+    "minimum_dimension_score": 3.0,
+    "aggregate_focused_surface_score": 3.9
+  },
+  "notes": [
+    "Jobs is the canonical user-facing mode label; internal route compatibility may remain run-shaped in S121.",
+    "Concierge remained optional helper only and was not used as the first-run front door.",
+    "Historical non-S121 poc-calculator drift in s90/s95 lock-check artifacts was intentionally reverted before closeout."
+  ],
+  "completed_at": "2026-03-14T16:02:52Z",
+  "gate_results": {
+    "sprint121_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "commit_shas": {
+    "ps_contracts": "f2ab6cc22f2da94bfae8398972ad4417e6fb46ea",
+    "ps_api": "2cd9e84b3ba593b80efe666481d5442b356b3f85",
+    "ps_web": "7b02db789b4f2da1745630cbf10de9657b425d4d",
+    "ps_dev": "bdc18d43afa5216cd94b6474c6a6f865dd631cda"
+  },
+  "archive_ids": {
+    "pack_id": "d6ec739a-aca5-475e-8385-1cd7feeea7a4",
+    "runlog_id": "f304137b-d4e1-4742-b725-aaa9312ead7a",
+    "evidence_id": "9a82aa82-33f3-476f-bbf6-080ff1e1e428",
+    "manifest_id": "71a9e9fe-3f7a-48db-8137-34bb7ddbf677",
+    "writeback_id": "4f16083f-eaf0-4c17-a499-0ed786fd0f0a",
+    "writeback_artifact_id": "2c4df4cc-e77b-43e0-b132-258121bf8645"
+  },
+  "required_evidence_artifacts": [
+    {
+      "key": "pack",
+      "path": ".planestack/sprints/S121/pack.md",
+      "required": true
+    },
+    {
+      "key": "runlog",
+      "path": ".planestack/sprints/S121/runlog.md",
+      "required": true
+    },
+    {
+      "key": "evidence",
+      "path": ".planestack/sprints/S121/evidence.json",
+      "required": true
+    },
+    {
+      "key": "manifest",
+      "path": ".planestack/sprints/S121/manifest.json",
+      "required": true
+    },
+    {
+      "key": "lock_check",
+      "path": ".planestack/governance/evidence/s121/lock-check.json",
+      "required": true
+    },
+    {
+      "key": "bootstrap_proof",
+      "path": ".planestack/governance/evidence/s121/bootstrap-proof.json",
+      "required": true
+    },
+    {
+      "key": "lineage_proof",
+      "path": ".planestack/governance/evidence/s121/lineage-proof.json",
+      "required": true
+    },
+    {
+      "key": "template_proof",
+      "path": ".planestack/governance/evidence/s121/template-proof.json",
+      "required": true
+    },
+    {
+      "key": "jobs_rename_proof",
+      "path": ".planestack/governance/evidence/s121/jobs-rename-proof.json",
+      "required": true
+    },
+    {
+      "key": "exceptional_range_scorecard",
+      "path": ".planestack/governance/evidence/s121/exceptional-range-scorecard.json",
+      "required": true
+    },
+    {
+      "key": "truth_refresh_summary",
+      "path": ".planestack/governance/evidence/s121/truth-refresh-summary.json",
+      "required": true
+    },
+    {
+      "key": "archive",
+      "path": ".planestack/governance/evidence/s121/archive.json",
+      "required": true
+    },
+    {
+      "key": "closeout_summary",
+      "path": ".planestack/governance/evidence/s121/closeout-summary.json",
+      "required": true
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "name": "planestack-s121-pack",
+  "sprint_code": "S121",
+  "theme": "First-run excellence: Center -> project bootstrap -> goals / ideas / work-items golden path",
+  "pack": "project-management/planestack-s121-pack/Sprint121-Pack.md",
+  "runlog": "project-management/planestack-s121-pack/S121-runlog.md",
+  "evidence": "project-management/planestack-s121-pack/S121-evidence.json",
+  "primary_targets": [
+    "center/project",
+    "center/artifacts",
+    "plan/work/overview",
+    "plan/work/templates",
+    "plan/work/ideas",
+    "plan/work/work-items"
+  ],
+  "required_gates": [
+    "sprint121-validate",
+    "contract-test-docker",
+    "e2e-gate"
+  ],
+  "mirror": {
+    "pack": ".planestack/sprints/S121/pack.md",
+    "runlog": ".planestack/sprints/S121/runlog.md",
+    "evidence": ".planestack/sprints/S121/evidence.json",
+    "manifest": ".planestack/sprints/S121/manifest.json"
+  },
+  "primary_project": "poc-calculator",
+  "status": "completed",
+  "completed_at": "2026-03-14T16:02:52Z",
+  "commit_shas": {
+    "ps_contracts": "f2ab6cc22f2da94bfae8398972ad4417e6fb46ea",
+    "ps_api": "2cd9e84b3ba593b80efe666481d5442b356b3f85",
+    "ps_web": "7b02db789b4f2da1745630cbf10de9657b425d4d",
+    "ps_dev": "bdc18d43afa5216cd94b6474c6a6f865dd631cda"
+  },
+  "gate_results": {
+    "sprint121_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "archive_ids": {
+    "pack_id": "d6ec739a-aca5-475e-8385-1cd7feeea7a4",
+    "runlog_id": "f304137b-d4e1-4742-b725-aaa9312ead7a",
+    "evidence_id": "9a82aa82-33f3-476f-bbf6-080ff1e1e428",
+    "manifest_id": "71a9e9fe-3f7a-48db-8137-34bb7ddbf677",
+    "writeback_id": "4f16083f-eaf0-4c17-a499-0ed786fd0f0a",
+    "writeback_artifact_id": "2c4df4cc-e77b-43e0-b132-258121bf8645"
+  }
+}
