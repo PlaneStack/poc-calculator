@@ -1,0 +1,103 @@
+{
+  "sprint_code": "S124",
+  "status": "completed",
+  "theme": "Review/Governance excellence: Jobs-to-Approval continuity + policy trust",
+  "required_gates": [
+    "sprint124-validate",
+    "contract-test-docker",
+    "e2e-gate"
+  ],
+  "required_proofs": {
+    "proof_a_jobs_to_review_continuity": {
+      "required": true,
+      "description": "A Jobs run deep-links into approval detail with preserved source execution context, policy linkage, and review next-step continuity"
+    },
+    "proof_b_policy_blocked_review_trust": {
+      "required": true,
+      "description": "Completed execution is blocked from review by policy-required approval not yet granted, with blocked detail showing blocked_by_policy and explicit next actions"
+    },
+    "proof_c_approval_decision_activation_distinction": {
+      "required": true,
+      "description": "Approval granted creates a decision record while activation remains pending, proving approval and activation remain distinct states"
+    },
+    "proof_d_output_evidence_review_trust": {
+      "required": true,
+      "description": "Release-candidate or queue detail shows execution outputs and evidence separately, with a trustworthy Review continuation path"
+    }
+  },
+  "required_artifacts": [
+    ".planestack/sprints/S124/pack.md",
+    ".planestack/sprints/S124/runlog.md",
+    ".planestack/sprints/S124/evidence.json",
+    ".planestack/sprints/S124/manifest.json",
+    ".planestack/governance/evidence/s124/lock-check.json",
+    ".planestack/governance/evidence/s124/jobs-to-review-approval-proof.json",
+    ".planestack/governance/evidence/s124/policy-blocked-review-proof.json",
+    ".planestack/governance/evidence/s124/approval-decision-activation-proof.json",
+    ".planestack/governance/evidence/s124/release-candidate-output-evidence-proof.json",
+    ".planestack/governance/evidence/s124/ui-smoke.json",
+    ".planestack/governance/evidence/s124/truth-refresh-summary.json",
+    ".planestack/governance/evidence/s124/review-governance-routes-summary.md",
+    ".planestack/governance/evidence/s124/review-governance-semantic-summary.md",
+    ".planestack/governance/evidence/s124/exceptional-range-scorecard.json",
+    ".planestack/governance/evidence/s124/archive.json",
+    ".planestack/governance/evidence/s124/closeout-summary.json"
+  ],
+  "focused_surfaces": [
+    "jobs/run detail",
+    "governance/approvals",
+    "reviews/queue",
+    "release-candidate detail"
+  ],
+  "score_thresholds": {
+    "jobs/run detail": 4.0,
+    "governance/approvals": 4.0,
+    "reviews/queue": 3.8,
+    "release-candidate detail": 3.8,
+    "minimum_dimension_score": 3.0,
+    "aggregate_focused_surface_score": 3.9
+  },
+  "notes": [
+    "Approval, blocked, decision, and activation remain distinct state models.",
+    "Jobs hand off primarily into approval detail, with policy-linked review continuity.",
+    "Outputs and evidence remain visibly separate in Review/Governance surfaces."
+  ],
+  "completed_at": "2026-03-15T01:31:56Z",
+  "gate_results": {
+    "sprint124_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "commit_shas": {
+    "ps_contracts": "6c20497b82241073493d51543f9911fbcc592425",
+    "ps_api": "7f66dcf0d9682f949c4ee1504adbe5af713318c8",
+    "ps_web": "da14e8b7c71b3fcdfedc3829f66a56f4c596e433",
+    "ps_dev": "b15bffc7963a8f415fd76d81ceffa5cf2842cd8a"
+  },
+  "archive_ids": {
+    "pack_id": "d547a755-8e63-4dee-8527-09ac73395e4f",
+    "runlog_id": "726228b2-ed72-4444-9457-e1705ca1a58b",
+    "evidence_id": "a6194da0-da8f-4f57-9258-f1ec69df266e",
+    "manifest_id": "45d8336d-c8f9-47fc-a6bf-482ea4ef6521",
+    "writeback_id": "4223c657-4d52-4b5d-84d7-2c3e22c5edee",
+    "writeback_artifact_id": "2efe1bf4-f69f-455c-99c0-9bd94bc9debc"
+  },
+  "required_evidence_artifacts": [
+    { "key": "pack", "path": ".planestack/sprints/S124/pack.md", "required": true },
+    { "key": "runlog", "path": ".planestack/sprints/S124/runlog.md", "required": true },
+    { "key": "evidence", "path": ".planestack/sprints/S124/evidence.json", "required": true },
+    { "key": "manifest", "path": ".planestack/sprints/S124/manifest.json", "required": true },
+    { "key": "lock_check", "path": ".planestack/governance/evidence/s124/lock-check.json", "required": true },
+    { "key": "proof_a", "path": ".planestack/governance/evidence/s124/jobs-to-review-approval-proof.json", "required": true },
+    { "key": "proof_b", "path": ".planestack/governance/evidence/s124/policy-blocked-review-proof.json", "required": true },
+    { "key": "proof_c", "path": ".planestack/governance/evidence/s124/approval-decision-activation-proof.json", "required": true },
+    { "key": "proof_d", "path": ".planestack/governance/evidence/s124/release-candidate-output-evidence-proof.json", "required": true },
+    { "key": "ui_smoke", "path": ".planestack/governance/evidence/s124/ui-smoke.json", "required": true },
+    { "key": "truth_refresh_summary", "path": ".planestack/governance/evidence/s124/truth-refresh-summary.json", "required": true },
+    { "key": "routes_summary", "path": ".planestack/governance/evidence/s124/review-governance-routes-summary.md", "required": true },
+    { "key": "semantic_summary", "path": ".planestack/governance/evidence/s124/review-governance-semantic-summary.md", "required": true },
+    { "key": "exceptional_range_scorecard", "path": ".planestack/governance/evidence/s124/exceptional-range-scorecard.json", "required": true },
+    { "key": "archive", "path": ".planestack/governance/evidence/s124/archive.json", "required": true },
+    { "key": "closeout_summary", "path": ".planestack/governance/evidence/s124/closeout-summary.json", "required": true }
+  ]
+}
