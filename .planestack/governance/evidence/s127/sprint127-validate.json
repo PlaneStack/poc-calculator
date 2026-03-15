@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-15T04:25:44Z", "status": "passed", "operation": "sprint127-validate", "chain": ["governance-lock-check", "contract-test-docker", "s127-integrations-smoke", "s127-admin-ui-smoke", "s127-truth-refresh", "s127-write-validate-summary"]}

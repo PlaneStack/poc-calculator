@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-15T04:25:44Z", "status": "passed", "operation": "s127-truth-refresh", "artifacts": ["manage-integrations-summary.md", "manage-admin-summary.md", "manage-cross-plane-summary.md"], "no_change_ok": false}

@@ -1,0 +1,103 @@
+{
+  "sprint_code": "S127",
+  "status": "completed",
+  "theme": "Manage Excellence: Integrations + Admin Reliability with AI Management Continuity",
+  "required_gates": [
+    "sprint127-validate",
+    "contract-test-docker",
+    "e2e-gate"
+  ],
+  "required_proofs": {
+    "proof_a_credential_validation": {
+      "required": true,
+      "description": "A credential validates through Manage with a safe normalized result and explicit next action."
+    },
+    "proof_b_policy_activation_distinction": {
+      "required": true,
+      "description": "A writeback policy can be approved and ready before activation, and activation supersedes the previously active policy."
+    },
+    "proof_c_cross_plane_manage_continuity": {
+      "required": true,
+      "description": "Jobs, Review, and Operate each deep-link into the correct Manage context with preserved source continuity and return URL."
+    },
+    "proof_d_admin_environment_component_trust": {
+      "required": true,
+      "description": "Admin environment and component detail surfaces render readiness, linkage, and next-action trust without inventing shadow control-plane truth."
+    }
+  },
+  "required_artifacts": [
+    ".planestack/sprints/S127/pack.md",
+    ".planestack/sprints/S127/runlog.md",
+    ".planestack/sprints/S127/evidence.json",
+    ".planestack/sprints/S127/manifest.json",
+    ".planestack/governance/evidence/s127/lock-check.json",
+    ".planestack/governance/evidence/s127/manage-credential-proof.json",
+    ".planestack/governance/evidence/s127/manage-writeback-policy-proof.json",
+    ".planestack/governance/evidence/s127/manage-cross-plane-continuity-proof.json",
+    ".planestack/governance/evidence/s127/manage-admin-trust-proof.json",
+    ".planestack/governance/evidence/s127/ui-smoke.json",
+    ".planestack/governance/evidence/s127/truth-refresh-summary.json",
+    ".planestack/governance/evidence/s127/manage-integrations-summary.md",
+    ".planestack/governance/evidence/s127/manage-admin-summary.md",
+    ".planestack/governance/evidence/s127/manage-cross-plane-summary.md",
+    ".planestack/governance/evidence/s127/exceptional-range-scorecard.json",
+    ".planestack/governance/evidence/s127/archive.json",
+    ".planestack/governance/evidence/s127/closeout-summary.json"
+  ],
+  "focused_surfaces": [
+    "manage/integrations",
+    "manage/admin",
+    "manage/cross_plane"
+  ],
+  "score_thresholds": {
+    "manage/integrations": 4.2,
+    "manage/admin": 4.0,
+    "manage/cross_plane": 4.2,
+    "minimum_dimension_score": 3.0,
+    "aggregate_focused_surface_score": 4.1
+  },
+  "notes": [
+    "Credential validation is deterministic and safely redacted on project-scoped Manage surfaces.",
+    "Writeback approval remains distinct from activation, and activating a ready policy automatically supersedes the previous active policy.",
+    "Manage now carries real continuity from Jobs, Review, and Operate without creating admin-only shadow truth."
+  ],
+  "completed_at": "2026-03-15T04:34:54Z",
+  "gate_results": {
+    "sprint127_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "commit_shas": {
+    "ps_contracts": "f8cd6e4f6151ae32862ced9ba6c3db71d1670367",
+    "ps_api": "30cbcc51bc29ea214eaed4e56c6a8f52e270c7ac",
+    "ps_web": "e7b9f1e18c52eea22e47de2fd12f7969e358637e",
+    "ps_dev": "21c1a2391448c89779f6182b337dc1728db46409"
+  },
+  "archive_ids": {
+    "pack_id": "b771c911-20b7-4bdf-b05a-5964ecaabea5",
+    "runlog_id": "b30c5837-9b07-449d-9f71-919978bc02e4",
+    "evidence_id": "39fb9bd0-c113-43dc-8836-67bbeb243090",
+    "manifest_id": "48afc968-1364-4f10-a026-aaa98bc30f23",
+    "writeback_id": "0736e4bb-39ac-4fcc-b59b-948b1e81e884",
+    "writeback_artifact_id": "5d28deab-8a4d-491c-9032-215b204e03f6"
+  },
+  "required_evidence_artifacts": [
+    { "key": "pack", "path": ".planestack/sprints/S127/pack.md", "required": true },
+    { "key": "runlog", "path": ".planestack/sprints/S127/runlog.md", "required": true },
+    { "key": "evidence", "path": ".planestack/sprints/S127/evidence.json", "required": true },
+    { "key": "manifest", "path": ".planestack/sprints/S127/manifest.json", "required": true },
+    { "key": "lock_check", "path": ".planestack/governance/evidence/s127/lock-check.json", "required": true },
+    { "key": "proof_a", "path": ".planestack/governance/evidence/s127/manage-credential-proof.json", "required": true },
+    { "key": "proof_b", "path": ".planestack/governance/evidence/s127/manage-writeback-policy-proof.json", "required": true },
+    { "key": "proof_c", "path": ".planestack/governance/evidence/s127/manage-cross-plane-continuity-proof.json", "required": true },
+    { "key": "proof_d", "path": ".planestack/governance/evidence/s127/manage-admin-trust-proof.json", "required": true },
+    { "key": "ui_smoke", "path": ".planestack/governance/evidence/s127/ui-smoke.json", "required": true },
+    { "key": "truth_refresh_summary", "path": ".planestack/governance/evidence/s127/truth-refresh-summary.json", "required": true },
+    { "key": "integrations_summary", "path": ".planestack/governance/evidence/s127/manage-integrations-summary.md", "required": true },
+    { "key": "admin_summary", "path": ".planestack/governance/evidence/s127/manage-admin-summary.md", "required": true },
+    { "key": "cross_plane_summary", "path": ".planestack/governance/evidence/s127/manage-cross-plane-summary.md", "required": true },
+    { "key": "exceptional_range_scorecard", "path": ".planestack/governance/evidence/s127/exceptional-range-scorecard.json", "required": true },
+    { "key": "archive", "path": ".planestack/governance/evidence/s127/archive.json", "required": true },
+    { "key": "closeout_summary", "path": ".planestack/governance/evidence/s127/closeout-summary.json", "required": true }
+  ]
+}

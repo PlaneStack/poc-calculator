@@ -1,0 +1,46 @@
+{
+  "name": "planestack-s127-pack",
+  "sprint_code": "S127",
+  "theme": "Manage Excellence: Integrations + Admin Reliability with AI Management Continuity",
+  "pack": "project-management/planestack-s127-pack/Sprint127-Pack.md",
+  "runlog": "project-management/planestack-s127-pack/S127-runlog.md",
+  "evidence": "project-management/planestack-s127-pack/S127-evidence.json",
+  "primary_targets": [
+    "manage/integrations",
+    "manage/admin",
+    "manage/cross_plane"
+  ],
+  "required_gates": [
+    "sprint127-validate",
+    "contract-test-docker",
+    "e2e-gate"
+  ],
+  "mirror": {
+    "pack": ".planestack/sprints/S127/pack.md",
+    "runlog": ".planestack/sprints/S127/runlog.md",
+    "evidence": ".planestack/sprints/S127/evidence.json",
+    "manifest": ".planestack/sprints/S127/manifest.json"
+  },
+  "primary_project": "poc-calculator",
+  "status": "completed",
+  "completed_at": "2026-03-15T04:34:54Z",
+  "commit_shas": {
+    "ps_contracts": "f8cd6e4f6151ae32862ced9ba6c3db71d1670367",
+    "ps_api": "30cbcc51bc29ea214eaed4e56c6a8f52e270c7ac",
+    "ps_web": "e7b9f1e18c52eea22e47de2fd12f7969e358637e",
+    "ps_dev": "21c1a2391448c89779f6182b337dc1728db46409"
+  },
+  "gate_results": {
+    "sprint127_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "archive_ids": {
+    "pack_id": "b771c911-20b7-4bdf-b05a-5964ecaabea5",
+    "runlog_id": "b30c5837-9b07-449d-9f71-919978bc02e4",
+    "evidence_id": "39fb9bd0-c113-43dc-8836-67bbeb243090",
+    "manifest_id": "48afc968-1364-4f10-a026-aaa98bc30f23",
+    "writeback_id": "0736e4bb-39ac-4fcc-b59b-948b1e81e884",
+    "writeback_artifact_id": "5d28deab-8a4d-491c-9032-215b204e03f6"
+  }
+}

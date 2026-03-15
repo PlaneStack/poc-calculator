@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-15T04:25:43Z", "operation": "s127-admin-ui-smoke", "status": "passed", "spec": "tests/sprint127.manage-integrations-admin.spec.js", "assertions": ["manage credentials", "writeback policy lifecycle", "admin system environment component trust", "cross-plane manage links"]}
