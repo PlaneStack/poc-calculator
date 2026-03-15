@@ -1,0 +1,212 @@
+{
+  "sprint_code": "S129",
+  "status": "completed",
+  "theme": "Jobs Excellence II: Runs + Workflows Trust and Structural Readiness",
+  "required_gates": [
+    "sprint129-validate",
+    "contract-test-docker",
+    "e2e-gate"
+  ],
+  "required_proofs": {
+    "proof_a_plan_task_to_jobs_run_trust": {
+      "required": true,
+      "description": "A plan task launch lands in Jobs run detail with preserved planning context, rationale, component refs, and a deep link back into Plan."
+    },
+    "proof_b_workflow_trust": {
+      "required": true,
+      "description": "A workflow produced from a plan-origin task launch exposes recent runs, produced-run counts, and trustworthy Jobs continuity."
+    },
+    "proof_c_retry_lineage_trust": {
+      "required": true,
+      "description": "A bad or missing executable path fails deterministically, retry creates a new run attempt, and compare data remains available between attempts."
+    },
+    "proof_d_jobs_continuity": {
+      "required": true,
+      "description": "Jobs run detail drills into Reviews release-candidate context and Operate overview with preserved source context and typed linkage refs."
+    }
+  },
+  "required_artifacts": [
+    ".planestack/sprints/S129/pack.md",
+    ".planestack/sprints/S129/runlog.md",
+    ".planestack/sprints/S129/evidence.json",
+    ".planestack/sprints/S129/manifest.json",
+    ".planestack/governance/evidence/s129/lock-check.json",
+    ".planestack/governance/evidence/s129/plan-task-to-jobs-run-proof.json",
+    ".planestack/governance/evidence/s129/workflow-trust-proof.json",
+    ".planestack/governance/evidence/s129/retry-lineage-proof.json",
+    ".planestack/governance/evidence/s129/jobs-continuity-proof.json",
+    ".planestack/governance/evidence/s129/no-data-proof.json",
+    ".planestack/governance/evidence/s129/output-runtime-evidence-separation-proof.json",
+    ".planestack/governance/evidence/s129/retry-lineage-compare.json",
+    ".planestack/governance/evidence/s129/jobs-context.json",
+    ".planestack/governance/evidence/s129/jobs-runs-list.json",
+    ".planestack/governance/evidence/s129/jobs-workflows-list.json",
+    ".planestack/governance/evidence/s129/ui-smoke.json",
+    ".planestack/governance/evidence/s129/truth-refresh-summary.json",
+    ".planestack/governance/evidence/s129/jobs-release-summary.md",
+    ".planestack/governance/evidence/s129/jobs-retry-summary.md",
+    ".planestack/governance/evidence/s129/jobs-workflow-summary.md",
+    ".planestack/governance/evidence/s129/sprint129-validate.json",
+    ".planestack/governance/evidence/s129/jobs_exceptional_range_scorecard.json",
+    ".planestack/governance/evidence/s129/archive.json",
+    ".planestack/governance/evidence/s129/closeout-summary.json"
+  ],
+  "focused_surfaces": [
+    "jobs/runs",
+    "jobs/workflows"
+  ],
+  "score_thresholds": {
+    "jobs/runs": 4.1,
+    "jobs/workflows": 4.0,
+    "minimum_dimension_score": 3.2,
+    "aggregate_focused_surface_score": 4.1
+  },
+  "notes": [
+    "Jobs runs now treat outputs, runtime artifacts, and evidence as three distinct field families instead of a mixed execution payload.",
+    "Workflows moved from a thin support surface to a trustworthy execution surface with recent runs, produced counts, grouping, and no-data handling.",
+    "Retry lineage is explicitly inspectable through compare refs and preserved attempt metadata rather than implicit state transitions."
+  ],
+  "completed_at": "2026-03-15T13:14:22Z",
+  "gate_results": {
+    "sprint129_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "commit_shas": {
+    "ps_contracts": "9fd0392",
+    "ps_api": "62dcfe9",
+    "ps_web": "4cebdc1",
+    "ps_dev": "2b6f4ba"
+  },
+  "required_evidence_artifacts": [
+    {
+      "key": "pack",
+      "path": ".planestack/sprints/S129/pack.md",
+      "required": true
+    },
+    {
+      "key": "runlog",
+      "path": ".planestack/sprints/S129/runlog.md",
+      "required": true
+    },
+    {
+      "key": "evidence",
+      "path": ".planestack/sprints/S129/evidence.json",
+      "required": true
+    },
+    {
+      "key": "manifest",
+      "path": ".planestack/sprints/S129/manifest.json",
+      "required": true
+    },
+    {
+      "key": "lock_check",
+      "path": ".planestack/governance/evidence/s129/lock-check.json",
+      "required": true,
+      "artifact_id": "60e06aa9-e5c4-4115-9f1a-64907a05ae57"
+    },
+    {
+      "key": "proof_a",
+      "path": ".planestack/governance/evidence/s129/plan-task-to-jobs-run-proof.json",
+      "required": true
+    },
+    {
+      "key": "proof_b",
+      "path": ".planestack/governance/evidence/s129/workflow-trust-proof.json",
+      "required": true
+    },
+    {
+      "key": "proof_c",
+      "path": ".planestack/governance/evidence/s129/retry-lineage-proof.json",
+      "required": true
+    },
+    {
+      "key": "proof_d",
+      "path": ".planestack/governance/evidence/s129/jobs-continuity-proof.json",
+      "required": true
+    },
+    {
+      "key": "no_data",
+      "path": ".planestack/governance/evidence/s129/no-data-proof.json",
+      "required": true
+    },
+    {
+      "key": "separation",
+      "path": ".planestack/governance/evidence/s129/output-runtime-evidence-separation-proof.json",
+      "required": true
+    },
+    {
+      "key": "retry_compare",
+      "path": ".planestack/governance/evidence/s129/retry-lineage-compare.json",
+      "required": true
+    },
+    {
+      "key": "jobs_context",
+      "path": ".planestack/governance/evidence/s129/jobs-context.json",
+      "required": true
+    },
+    {
+      "key": "runs_list",
+      "path": ".planestack/governance/evidence/s129/jobs-runs-list.json",
+      "required": true
+    },
+    {
+      "key": "workflows_list",
+      "path": ".planestack/governance/evidence/s129/jobs-workflows-list.json",
+      "required": true
+    },
+    {
+      "key": "ui_smoke",
+      "path": ".planestack/governance/evidence/s129/ui-smoke.json",
+      "required": true
+    },
+    {
+      "key": "truth_refresh_summary",
+      "path": ".planestack/governance/evidence/s129/truth-refresh-summary.json",
+      "required": true
+    },
+    {
+      "key": "release_summary",
+      "path": ".planestack/governance/evidence/s129/jobs-release-summary.md",
+      "required": true
+    },
+    {
+      "key": "retry_summary",
+      "path": ".planestack/governance/evidence/s129/jobs-retry-summary.md",
+      "required": true
+    },
+    {
+      "key": "workflow_summary",
+      "path": ".planestack/governance/evidence/s129/jobs-workflow-summary.md",
+      "required": true
+    },
+    {
+      "key": "validate_summary",
+      "path": ".planestack/governance/evidence/s129/sprint129-validate.json",
+      "required": true
+    },
+    {
+      "key": "exceptional_range_scorecard",
+      "path": ".planestack/governance/evidence/s129/jobs_exceptional_range_scorecard.json",
+      "required": true
+    },
+    {
+      "key": "archive",
+      "path": ".planestack/governance/evidence/s129/archive.json",
+      "required": true
+    },
+    {
+      "key": "closeout_summary",
+      "path": ".planestack/governance/evidence/s129/closeout-summary.json",
+      "required": true
+    }
+  ],
+  "archive_ids": {
+    "pack_id": "97a8bcc6-4d17-4cd7-86ed-93b3f3d4a4ec",
+    "runlog_id": "d0a238b2-e067-40c4-9492-e11445a6f3af",
+    "evidence_id": "7352a501-2c82-43ce-b015-867e4529cb52",
+    "manifest_id": "5df57a1a-11e8-4542-9ca5-72f900e93aaf",
+    "writeback_id": "345e87be-54ac-4302-9a7e-667b15538f2a",
+    "writeback_artifact_id": "ba55dead-4beb-4980-ab8b-863882519233"
+  }
+}

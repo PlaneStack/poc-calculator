@@ -1,0 +1,1 @@
+# S129 Jobs Release Candidate Summary\n\n- task-origin launch preserved planning context into Jobs\n- completed retry surfaces Review CTA and Operate CTA\n- outputs, runtime artifacts, and evidence remain separate

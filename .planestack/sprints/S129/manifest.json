@@ -1,0 +1,12 @@
+{
+  "sprint": "S129",
+  "theme": "Jobs Excellence II: Runs + Workflows Trust and Structural Readiness",
+  "files": [
+    "Sprint129-Pack.md",
+    "S129-runlog.md",
+    "S129-evidence.json",
+    "manifest.json",
+    "screenshots/README.md"
+  ],
+  "canonical_runlog": "S129-runlog.md"
+}
