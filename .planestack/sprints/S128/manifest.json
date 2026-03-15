@@ -1,0 +1,46 @@
+{
+  "name": "planestack-s128-pack",
+  "sprint_code": "S128",
+  "theme": "Reviews Excellence: Release-Candidate + Shared Review Trust",
+  "pack": "project-management/planestack-s128-pack/Sprint128-Pack.md",
+  "runlog": "project-management/planestack-s128-pack/S128-runlog.md",
+  "evidence": "project-management/planestack-s128-pack/S128-evidence.json",
+  "primary_targets": [
+    "review/reviews/release-candidate",
+    "review/reviews/queue",
+    "review/reviews/shared"
+  ],
+  "required_gates": [
+    "sprint128-validate",
+    "contract-test-docker",
+    "e2e-gate"
+  ],
+  "mirror": {
+    "pack": ".planestack/sprints/S128/pack.md",
+    "runlog": ".planestack/sprints/S128/runlog.md",
+    "evidence": ".planestack/sprints/S128/evidence.json",
+    "manifest": ".planestack/sprints/S128/manifest.json"
+  },
+  "primary_project": "poc-calculator",
+  "status": "completed",
+  "completed_at": "2026-03-15T12:36:55Z",
+  "commit_shas": {
+    "ps_contracts": "011b0d5",
+    "ps_api": "8dca257",
+    "ps_web": "745ebab",
+    "ps_dev": "9e8e6ee"
+  },
+  "gate_results": {
+    "sprint128_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "archive_ids": {
+    "pack_id": "62fc3de4-236e-4718-b982-14d414c92af2",
+    "runlog_id": "c491fd48-a4ea-4cb0-9f33-1f46cc36af66",
+    "evidence_id": "4683f8fd-d9f9-447d-ac12-2cc745be82c5",
+    "manifest_id": "444b9e10-9960-47c4-b2f2-9c9a5f64390a",
+    "writeback_id": "0dc1007f-722e-47df-81f5-ca4e4bc0edd1",
+    "writeback_artifact_id": "677ef8cc-c164-4422-8f24-85fdf6492b02"
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "sprint_code": "S128",
+  "status": "completed",
+  "theme": "Reviews Excellence: Release-Candidate + Shared Review Trust",
+  "required_gates": [
+    "sprint128-validate",
+    "contract-test-docker",
+    "e2e-gate"
+  ],
+  "required_proofs": {
+    "proof_a_jobs_to_release_candidate": {
+      "required": true,
+      "description": "A Jobs run detail CTA opens release-candidate detail with preserved source refs and separate outputs versus evidence."
+    },
+    "proof_b_queue_trust": {
+      "required": true,
+      "description": "A blocked queue entry shows governance-sourced blocked context, approval linkage, next action, and preserved return path."
+    },
+    "proof_c_shared_review_continuity": {
+      "required": true,
+      "description": "A shared review bundle groups a release-candidate and queue entry from the same source-context family without losing lineage."
+    },
+    "proof_d_review_to_operate_or_observe": {
+      "required": true,
+      "description": "A release-candidate or queue detail surface drills through into Observe or Operate with context preserved and no shadow review state introduced."
+    }
+  },
+  "required_artifacts": [
+    ".planestack/sprints/S128/pack.md",
+    ".planestack/sprints/S128/runlog.md",
+    ".planestack/sprints/S128/evidence.json",
+    ".planestack/sprints/S128/manifest.json",
+    ".planestack/governance/evidence/s128/lock-check.json",
+    ".planestack/governance/evidence/s128/release-candidate-trust-proof.json",
+    ".planestack/governance/evidence/s128/review-queue-proof.json",
+    ".planestack/governance/evidence/s128/shared-review-proof.json",
+    ".planestack/governance/evidence/s128/reviews-continuity-proof.json",
+    ".planestack/governance/evidence/s128/reviews-context.json",
+    ".planestack/governance/evidence/s128/ui-smoke.json",
+    ".planestack/governance/evidence/s128/truth-refresh-summary.json",
+    ".planestack/governance/evidence/s128/reviews-release-candidate-summary.md",
+    ".planestack/governance/evidence/s128/reviews-queue-summary.md",
+    ".planestack/governance/evidence/s128/reviews-shared-summary.md",
+    ".planestack/governance/evidence/s128/sprint128-validate.json",
+    ".planestack/governance/evidence/s128/exceptional-range-scorecard.json",
+    ".planestack/governance/evidence/s128/archive.json",
+    ".planestack/governance/evidence/s128/closeout-summary.json"
+  ],
+  "focused_surfaces": [
+    "review/reviews/release-candidate",
+    "review/reviews/queue",
+    "review/reviews/shared"
+  ],
+  "score_thresholds": {
+    "review/reviews/release-candidate": 4.0,
+    "review/reviews/queue": 4.0,
+    "review/reviews/shared": 4.0,
+    "minimum_dimension_score": 3.2,
+    "aggregate_focused_surface_score": 4.1
+  },
+  "notes": [
+    "Reviews now has dedicated server-backed release-candidate, queue, and shared projections instead of thin supporting surfaces.",
+    "Jobs-to-Reviews continuity is explicit through release-candidate CTA flow, with outputs and evidence kept visibly separate.",
+    "Shared review groups related review objects without inventing a second governance authority or a new artifact family."
+  ],
+  "completed_at": "2026-03-15T12:36:55Z",
+  "gate_results": {
+    "sprint128_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "commit_shas": {
+    "ps_contracts": "011b0d5",
+    "ps_api": "8dca257",
+    "ps_web": "745ebab",
+    "ps_dev": "9e8e6ee"
+  },
+  "archive_ids": {
+    "pack_id": "62fc3de4-236e-4718-b982-14d414c92af2",
+    "runlog_id": "c491fd48-a4ea-4cb0-9f33-1f46cc36af66",
+    "evidence_id": "4683f8fd-d9f9-447d-ac12-2cc745be82c5",
+    "manifest_id": "444b9e10-9960-47c4-b2f2-9c9a5f64390a",
+    "writeback_id": "0dc1007f-722e-47df-81f5-ca4e4bc0edd1",
+    "writeback_artifact_id": "677ef8cc-c164-4422-8f24-85fdf6492b02"
+  },
+  "required_evidence_artifacts": [
+    {
+      "key": "pack",
+      "path": ".planestack/sprints/S128/pack.md",
+      "required": true
+    },
+    {
+      "key": "runlog",
+      "path": ".planestack/sprints/S128/runlog.md",
+      "required": true
+    },
+    {
+      "key": "evidence",
+      "path": ".planestack/sprints/S128/evidence.json",
+      "required": true
+    },
+    {
+      "key": "manifest",
+      "path": ".planestack/sprints/S128/manifest.json",
+      "required": true
+    },
+    {
+      "key": "lock_check",
+      "path": ".planestack/governance/evidence/s128/lock-check.json",
+      "required": true,
+      "artifact_id": "d0696f75-a841-4b2d-bdbf-72e3be757a95"
+    },
+    {
+      "key": "proof_a",
+      "path": ".planestack/governance/evidence/s128/release-candidate-trust-proof.json",
+      "required": true
+    },
+    {
+      "key": "proof_b",
+      "path": ".planestack/governance/evidence/s128/review-queue-proof.json",
+      "required": true
+    },
+    {
+      "key": "proof_c",
+      "path": ".planestack/governance/evidence/s128/shared-review-proof.json",
+      "required": true
+    },
+    {
+      "key": "proof_d",
+      "path": ".planestack/governance/evidence/s128/reviews-continuity-proof.json",
+      "required": true
+    },
+    {
+      "key": "reviews_context",
+      "path": ".planestack/governance/evidence/s128/reviews-context.json",
+      "required": true
+    },
+    {
+      "key": "ui_smoke",
+      "path": ".planestack/governance/evidence/s128/ui-smoke.json",
+      "required": true
+    },
+    {
+      "key": "truth_refresh_summary",
+      "path": ".planestack/governance/evidence/s128/truth-refresh-summary.json",
+      "required": true
+    },
+    {
+      "key": "release_candidate_summary",
+      "path": ".planestack/governance/evidence/s128/reviews-release-candidate-summary.md",
+      "required": true
+    },
+    {
+      "key": "queue_summary",
+      "path": ".planestack/governance/evidence/s128/reviews-queue-summary.md",
+      "required": true
+    },
+    {
+      "key": "shared_summary",
+      "path": ".planestack/governance/evidence/s128/reviews-shared-summary.md",
+      "required": true
+    },
+    {
+      "key": "validate_summary",
+      "path": ".planestack/governance/evidence/s128/sprint128-validate.json",
+      "required": true
+    },
+    {
+      "key": "exceptional_range_scorecard",
+      "path": ".planestack/governance/evidence/s128/exceptional-range-scorecard.json",
+      "required": true
+    },
+    {
+      "key": "archive",
+      "path": ".planestack/governance/evidence/s128/archive.json",
+      "required": true
+    },
+    {
+      "key": "closeout_summary",
+      "path": ".planestack/governance/evidence/s128/closeout-summary.json",
+      "required": true
+    }
+  ]
+}

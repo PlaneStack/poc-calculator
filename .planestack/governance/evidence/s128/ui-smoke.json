@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-15T12:26:03Z", "operation": "s128-reviews-ui-smoke", "status": "passed", "spec": "tests/sprint128.reviews-release-candidate-and-shared.spec.js", "assertions": ["jobs to release-candidate CTA", "queue surface", "shared surface", "observe-or-operate continuity"]}

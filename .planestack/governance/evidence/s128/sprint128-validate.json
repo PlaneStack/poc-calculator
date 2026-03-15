@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-15T12:26:05Z", "status": "passed", "operation": "sprint128-validate", "chain": ["governance-lock-check", "contract-test-docker", "s128-release-candidate-smoke", "s128-reviews-ui-smoke", "s128-truth-refresh", "s128-write-validate-summary"]}
