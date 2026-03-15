@@ -1,0 +1,49 @@
+{
+  "name": "planestack-s125-pack",
+  "sprint_code": "S125",
+  "theme": "Operate Excellence: Review-to-Operation Continuity + Local Mission Control Trust",
+  "pack": "project-management/planestack-s125-pack/Sprint125-Pack.md",
+  "runlog": "project-management/planestack-s125-pack/S125-runlog.md",
+  "evidence": "project-management/planestack-s125-pack/S125-evidence.json",
+  "primary_targets": [
+    "operate/overview",
+    "operate/environments",
+    "operate/sessions",
+    "operate/execution",
+    "operate/incidents",
+    "operate/runbooks"
+  ],
+  "required_gates": [
+    "sprint125-validate",
+    "contract-test-docker",
+    "e2e-gate"
+  ],
+  "mirror": {
+    "pack": ".planestack/sprints/S125/pack.md",
+    "runlog": ".planestack/sprints/S125/runlog.md",
+    "evidence": ".planestack/sprints/S125/evidence.json",
+    "manifest": ".planestack/sprints/S125/manifest.json"
+  },
+  "primary_project": "poc-calculator",
+  "status": "completed",
+  "completed_at": "2026-03-15T02:19:34Z",
+  "commit_shas": {
+    "ps_contracts": "3c4544bba996c4b49889af3303ff2755fec12b64",
+    "ps_api": "db212a94c713e7bdeae1ce2693cfc3fbcd87f1e6",
+    "ps_web": "1ac003f3710323de072f76079626ad80cd86544c",
+    "ps_dev": "021cf84f53302ceafc8696df1fca2da7cc981ada"
+  },
+  "gate_results": {
+    "sprint125_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "archive_ids": {
+    "pack_id": "80fc0886-f8dd-497a-856d-a5b6053918b4",
+    "runlog_id": "904d72e9-dace-41f7-b64a-dc7fbb779844",
+    "evidence_id": "d4517fad-7208-4b01-83a3-62849266bfae",
+    "manifest_id": "ef13f547-c342-4641-9dfb-608a075b93d1",
+    "writeback_id": "7ced1c3f-a9f4-4a85-a39b-8fc03a157644",
+    "writeback_artifact_id": "538c77a2-a099-4fee-9b15-147dc84e2576"
+  }
+}

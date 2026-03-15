@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-15T02:19:34Z",
+  "sprint": "S125",
+  "status": "completed",
+  "gate_results": {
+    "sprint125_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "commit_shas": {
+    "ps_contracts": "3c4544bba996c4b49889af3303ff2755fec12b64",
+    "ps_api": "db212a94c713e7bdeae1ce2693cfc3fbcd87f1e6",
+    "ps_web": "1ac003f3710323de072f76079626ad80cd86544c",
+    "ps_dev": "021cf84f53302ceafc8696df1fca2da7cc981ada"
+  },
+  "archive_ids": {
+    "pack_id": "80fc0886-f8dd-497a-856d-a5b6053918b4",
+    "runlog_id": "904d72e9-dace-41f7-b64a-dc7fbb779844",
+    "evidence_id": "d4517fad-7208-4b01-83a3-62849266bfae",
+    "manifest_id": "ef13f547-c342-4641-9dfb-608a075b93d1",
+    "writeback_id": "7ced1c3f-a9f4-4a85-a39b-8fc03a157644",
+    "writeback_artifact_id": "538c77a2-a099-4fee-9b15-147dc84e2576"
+  },
+  "excluded_drift": [
+    "historical non-S125 poc-calculator drift in .planestack/governance/evidence/s95/lock-check.json was intentionally reverted before closeout"
+  ]
+}

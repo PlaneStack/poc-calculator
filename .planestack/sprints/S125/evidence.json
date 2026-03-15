@@ -1,0 +1,107 @@
+{
+  "sprint_code": "S125",
+  "status": "completed",
+  "theme": "Operate Excellence: Review-to-Operation Continuity + Local Mission Control Trust",
+  "required_gates": [
+    "sprint125-validate",
+    "contract-test-docker",
+    "e2e-gate"
+  ],
+  "required_proofs": {
+    "proof_a_review_to_operate_handoff": {
+      "required": true,
+      "description": "Review-cleared approval detail deep-links into operate overview with activation-ready handoff and preserved review context"
+    },
+    "proof_b_environment_session_execution": {
+      "required": true,
+      "description": "Operate mission control proves one blocked readiness case and one successful environment inspection/session execution path"
+    },
+    "proof_c_incident_runbook_flow": {
+      "required": true,
+      "description": "A degraded local execution caused by a bad or missing executable path creates or appends an incident, links a runbook, and yields explicit follow-on execution or guidance"
+    },
+    "proof_d_operate_continuity_objective_trust": {
+      "required": true,
+      "description": "Operate overview and environment detail expose the same governed objective refs and health posture, with next-step guidance derived from that truth"
+    }
+  },
+  "required_artifacts": [
+    ".planestack/sprints/S125/pack.md",
+    ".planestack/sprints/S125/runlog.md",
+    ".planestack/sprints/S125/evidence.json",
+    ".planestack/sprints/S125/manifest.json",
+    ".planestack/governance/evidence/s125/lock-check.json",
+    ".planestack/governance/evidence/s125/review-to-operate-proof.json",
+    ".planestack/governance/evidence/s125/environment-session-execution-proof.json",
+    ".planestack/governance/evidence/s125/incident-runbook-proof.json",
+    ".planestack/governance/evidence/s125/operate-objective-trust-proof.json",
+    ".planestack/governance/evidence/s125/ui-smoke.json",
+    ".planestack/governance/evidence/s125/truth-refresh-summary.json",
+    ".planestack/governance/evidence/s125/operate-mission-control-summary.md",
+    ".planestack/governance/evidence/s125/operate-semantic-summary.md",
+    ".planestack/governance/evidence/s125/exceptional-range-scorecard.json",
+    ".planestack/governance/evidence/s125/archive.json",
+    ".planestack/governance/evidence/s125/closeout-summary.json"
+  ],
+  "focused_surfaces": [
+    "operate/overview",
+    "operate/environments",
+    "operate/sessions",
+    "operate/execution",
+    "operate/incidents",
+    "operate/runbooks"
+  ],
+  "score_thresholds": {
+    "operate/overview": 4.1,
+    "operate/environments": 4.0,
+    "operate/sessions": 4.0,
+    "operate/execution": 4.1,
+    "operate/incidents": 3.9,
+    "operate/runbooks": 3.9,
+    "minimum_dimension_score": 3.0,
+    "aggregate_focused_surface_score": 4.0
+  },
+  "notes": [
+    "Review and Operate remain distinct planes while gaining explicit handoff continuity.",
+    "Sessions persist while executions carry attempt lineage.",
+    "Outputs, transient runtime artifacts, and governed evidence remain separate."
+  ],
+  "completed_at": "2026-03-15T02:19:34Z",
+  "gate_results": {
+    "sprint125_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "commit_shas": {
+    "ps_contracts": "3c4544bba996c4b49889af3303ff2755fec12b64",
+    "ps_api": "db212a94c713e7bdeae1ce2693cfc3fbcd87f1e6",
+    "ps_web": "1ac003f3710323de072f76079626ad80cd86544c",
+    "ps_dev": "021cf84f53302ceafc8696df1fca2da7cc981ada"
+  },
+  "archive_ids": {
+    "pack_id": "80fc0886-f8dd-497a-856d-a5b6053918b4",
+    "runlog_id": "904d72e9-dace-41f7-b64a-dc7fbb779844",
+    "evidence_id": "d4517fad-7208-4b01-83a3-62849266bfae",
+    "manifest_id": "ef13f547-c342-4641-9dfb-608a075b93d1",
+    "writeback_id": "7ced1c3f-a9f4-4a85-a39b-8fc03a157644",
+    "writeback_artifact_id": "538c77a2-a099-4fee-9b15-147dc84e2576"
+  },
+  "required_evidence_artifacts": [
+    { "key": "pack", "path": ".planestack/sprints/S125/pack.md", "required": true },
+    { "key": "runlog", "path": ".planestack/sprints/S125/runlog.md", "required": true },
+    { "key": "evidence", "path": ".planestack/sprints/S125/evidence.json", "required": true },
+    { "key": "manifest", "path": ".planestack/sprints/S125/manifest.json", "required": true },
+    { "key": "lock_check", "path": ".planestack/governance/evidence/s125/lock-check.json", "required": true },
+    { "key": "proof_a", "path": ".planestack/governance/evidence/s125/review-to-operate-proof.json", "required": true },
+    { "key": "proof_b", "path": ".planestack/governance/evidence/s125/environment-session-execution-proof.json", "required": true },
+    { "key": "proof_c", "path": ".planestack/governance/evidence/s125/incident-runbook-proof.json", "required": true },
+    { "key": "proof_d", "path": ".planestack/governance/evidence/s125/operate-objective-trust-proof.json", "required": true },
+    { "key": "ui_smoke", "path": ".planestack/governance/evidence/s125/ui-smoke.json", "required": true },
+    { "key": "truth_refresh_summary", "path": ".planestack/governance/evidence/s125/truth-refresh-summary.json", "required": true },
+    { "key": "mission_control_summary", "path": ".planestack/governance/evidence/s125/operate-mission-control-summary.md", "required": true },
+    { "key": "semantic_summary", "path": ".planestack/governance/evidence/s125/operate-semantic-summary.md", "required": true },
+    { "key": "exceptional_range_scorecard", "path": ".planestack/governance/evidence/s125/exceptional-range-scorecard.json", "required": true },
+    { "key": "archive", "path": ".planestack/governance/evidence/s125/archive.json", "required": true },
+    { "key": "closeout_summary", "path": ".planestack/governance/evidence/s125/closeout-summary.json", "required": true }
+  ]
+}
