@@ -1,0 +1,1 @@
+{"schema_version": 1, "proof": "A", "status": "passed", "required_cards": ["run_posture", "governance_throughput", "operate_incidents"], "missing_cards": [], "drillthrough_ok": true, "export_kind": "analytics_overview_snapshot", "no_data_state": "has_data"}

@@ -1,0 +1,103 @@
+{
+  "sprint_code": "S126",
+  "status": "completed",
+  "theme": "Observe Excellence: Analytics & Reporting + Library Trust with Chronicle Continuity",
+  "required_gates": [
+    "sprint126-validate",
+    "contract-test-docker",
+    "e2e-gate"
+  ],
+  "required_proofs": {
+    "proof_a_analytics_trust": {
+      "required": true,
+      "description": "Observe analytics overview proves runs, governance, and operate posture in one server-backed reporting surface with drill-through into source truth"
+    },
+    "proof_b_library_trust": {
+      "required": true,
+      "description": "Library browse filters recent sprint and artifact family, preserves conversation continuity, and opens the correct sprint, artifact, and conversation truth"
+    },
+    "proof_c_chronicle_continuity": {
+      "required": true,
+      "description": "Chronicle query deep-links into analytics with preserved filter context and then drills into library or source truth without inventing a second analytics model"
+    },
+    "proof_d_no_data_trust": {
+      "required": true,
+      "description": "Analytics and library both render explicit no-data states instead of blank or conflicting shells"
+    }
+  },
+  "required_artifacts": [
+    ".planestack/sprints/S126/pack.md",
+    ".planestack/sprints/S126/runlog.md",
+    ".planestack/sprints/S126/evidence.json",
+    ".planestack/sprints/S126/manifest.json",
+    ".planestack/governance/evidence/s126/lock-check.json",
+    ".planestack/governance/evidence/s126/analytics-overview-proof.json",
+    ".planestack/governance/evidence/s126/library-browse-proof.json",
+    ".planestack/governance/evidence/s126/chronicle-analytics-continuity-proof.json",
+    ".planestack/governance/evidence/s126/observe-no-data-proof.json",
+    ".planestack/governance/evidence/s126/ui-smoke.json",
+    ".planestack/governance/evidence/s126/truth-refresh-summary.json",
+    ".planestack/governance/evidence/s126/observe-analytics-summary.md",
+    ".planestack/governance/evidence/s126/observe-library-summary.md",
+    ".planestack/governance/evidence/s126/observe-chronicle-summary.md",
+    ".planestack/governance/evidence/s126/exceptional-range-scorecard.json",
+    ".planestack/governance/evidence/s126/archive.json",
+    ".planestack/governance/evidence/s126/closeout-summary.json"
+  ],
+  "focused_surfaces": [
+    "observe/analytics_reporting",
+    "observe/library",
+    "observe/chronicle"
+  ],
+  "score_thresholds": {
+    "observe/analytics_reporting": 4.2,
+    "observe/library": 4.2,
+    "observe/chronicle": 4.4,
+    "minimum_dimension_score": 3.0,
+    "aggregate_focused_surface_score": 4.0
+  },
+  "notes": [
+    "Analytics owns Observe rollups while Chronicle remains the continuity and history anchor.",
+    "Library browse is server-backed and preserves sprint, artifact, and conversation continuity.",
+    "Observe now renders explicit no-data states for analytics and library instead of empty shells."
+  ],
+  "completed_at": "2026-03-15T03:43:47Z",
+  "gate_results": {
+    "sprint126_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "commit_shas": {
+    "ps_contracts": "5a0aa40a1da33f2d07f78c84e8a02b478cbf8345",
+    "ps_api": "dee559fd939f2e4c44b1e3bc1b1df73552fe1dc2",
+    "ps_web": "a2be9eefcf3526f02bbc098223af19294bfa79fb",
+    "ps_dev": "7d4f927c688e028274ce1589e2119004281b6bf9"
+  },
+  "archive_ids": {
+    "pack_id": "792f6356-c6b3-4b06-800c-62ab2ecd23c7",
+    "runlog_id": "a3049b5c-0475-4f1b-9b56-c63ed9e17886",
+    "evidence_id": "2f6d4154-87f0-49b1-9694-e5a86b228448",
+    "manifest_id": "fbadc754-75a7-4938-a3b8-77a0a1cc6313",
+    "writeback_id": "b499d484-ba35-4fb6-842a-fa325560ba70",
+    "writeback_artifact_id": "a49b4ed2-8583-4440-a42f-3a31ad0bbe62"
+  },
+  "required_evidence_artifacts": [
+    { "key": "pack", "path": ".planestack/sprints/S126/pack.md", "required": true },
+    { "key": "runlog", "path": ".planestack/sprints/S126/runlog.md", "required": true },
+    { "key": "evidence", "path": ".planestack/sprints/S126/evidence.json", "required": true },
+    { "key": "manifest", "path": ".planestack/sprints/S126/manifest.json", "required": true },
+    { "key": "lock_check", "path": ".planestack/governance/evidence/s126/lock-check.json", "required": true },
+    { "key": "proof_a", "path": ".planestack/governance/evidence/s126/analytics-overview-proof.json", "required": true },
+    { "key": "proof_b", "path": ".planestack/governance/evidence/s126/library-browse-proof.json", "required": true },
+    { "key": "proof_c", "path": ".planestack/governance/evidence/s126/chronicle-analytics-continuity-proof.json", "required": true },
+    { "key": "proof_d", "path": ".planestack/governance/evidence/s126/observe-no-data-proof.json", "required": true },
+    { "key": "ui_smoke", "path": ".planestack/governance/evidence/s126/ui-smoke.json", "required": true },
+    { "key": "truth_refresh_summary", "path": ".planestack/governance/evidence/s126/truth-refresh-summary.json", "required": true },
+    { "key": "analytics_summary", "path": ".planestack/governance/evidence/s126/observe-analytics-summary.md", "required": true },
+    { "key": "library_summary", "path": ".planestack/governance/evidence/s126/observe-library-summary.md", "required": true },
+    { "key": "chronicle_summary", "path": ".planestack/governance/evidence/s126/observe-chronicle-summary.md", "required": true },
+    { "key": "exceptional_range_scorecard", "path": ".planestack/governance/evidence/s126/exceptional-range-scorecard.json", "required": true },
+    { "key": "archive", "path": ".planestack/governance/evidence/s126/archive.json", "required": true },
+    { "key": "closeout_summary", "path": ".planestack/governance/evidence/s126/closeout-summary.json", "required": true }
+  ]
+}

@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-15T03:28:24Z", "operation": "s126-observe-ui-smoke", "status": "passed", "spec": "tests/sprint126.observe-analytics-and-library.spec.js", "assertions": ["analytics overview", "library overview", "library browse empty state", "chronicle analytics continuity"]}
