@@ -1,0 +1,12 @@
+{
+  "sprint": "S130",
+  "theme": "Manage Excellence II — Admin + Integrations + Configuration Spine",
+  "files": [
+    "Sprint130-Pack.md",
+    "S130-runlog.md",
+    "S130-evidence.json",
+    "manifest.json",
+    "screenshots/README.md"
+  ],
+  "canonical_runlog": "S130-runlog.md"
+}

@@ -1,0 +1,191 @@
+{
+  "sprint_code": "S130",
+  "status": "completed",
+  "theme": "Manage Excellence II \u2014 Admin + Integrations + Configuration Spine",
+  "required_gates": [
+    "sprint130-validate",
+    "contract-test-docker",
+    "e2e-gate"
+  ],
+  "required_proofs": {
+    "proof_a_admin_environment_trust": {
+      "required": true,
+      "description": "An admin environment renders a non-ideal readiness state with reason codes, next action, and a drill-through into matching Operate context."
+    },
+    "proof_b_component_trust_continuity": {
+      "required": true,
+      "description": "An admin component exposes linked downstream usage across at least two planes, including Work or Jobs, while preserving component lineage through drill-through."
+    },
+    "proof_c_integration_writeback_policy_trust": {
+      "required": true,
+      "description": "Writeback policy detail shows posture, activation state, reason codes, next action, and correct landing from governance blocked context."
+    },
+    "proof_d_credential_writeback_center_trust": {
+      "required": true,
+      "description": "Credentials and writeback center expose non-ideal posture, readiness, next action, and a downstream transition into Jobs or Operate without lineage loss."
+    }
+  },
+  "required_artifacts": [
+    ".planestack/sprints/S130/pack.md",
+    ".planestack/sprints/S130/runlog.md",
+    ".planestack/sprints/S130/evidence.json",
+    ".planestack/sprints/S130/manifest.json",
+    ".planestack/governance/evidence/s130/lock-check.json",
+    ".planestack/governance/evidence/s130/admin-environment-trust-proof.json",
+    ".planestack/governance/evidence/s130/component-trust-continuity-proof.json",
+    ".planestack/governance/evidence/s130/integration-writeback-policy-trust-proof.json",
+    ".planestack/governance/evidence/s130/credential-writeback-center-trust-proof.json",
+    ".planestack/governance/evidence/s130/manage-context.json",
+    ".planestack/governance/evidence/s130/ui-smoke.json",
+    ".planestack/governance/evidence/s130/truth-refresh-summary.json",
+    ".planestack/governance/evidence/s130/manage-admin-summary.md",
+    ".planestack/governance/evidence/s130/manage-integrations-summary.md",
+    ".planestack/governance/evidence/s130/manage-cross-plane-summary.md",
+    ".planestack/governance/evidence/s130/sprint130-validate.json",
+    ".planestack/governance/evidence/s130/manage_exceptional_range_scorecard.json",
+    ".planestack/governance/evidence/s130/archive.json",
+    ".planestack/governance/evidence/s130/closeout-summary.json"
+  ],
+  "hard_bar_surfaces": [
+    "manage/admin/system",
+    "manage/admin/environments",
+    "manage/admin/components",
+    "manage/integrations/credentials",
+    "manage/integrations/writeback-policy",
+    "manage/integrations/writeback-center"
+  ],
+  "focused_surfaces": [
+    "manage/admin",
+    "manage/integrations",
+    "manage/configuration_spine"
+  ],
+  "score_thresholds": {
+    "per_surface_overall_min": 4.0,
+    "per_dimension_min": 3.2,
+    "aggregate_min": 4.1
+  },
+  "notes": [
+    "S130 widened Manage into a configuration-spine trust plane without introducing broad new mutation families.",
+    "Admin system, environments, and components now explain current state, reason codes, next action, and what downstream planes are affected.",
+    "Integrations credentials, writeback policy, and writeback center now expose inspectable posture and direct downstream usage refs instead of shallow counts or disconnected settings.",
+    "The proof path uses a dedicated deterministic S130 project so Manage proofs stay stable and do not alter poc-calculator working truth."
+  ],
+  "completed_at": "2026-03-15T15:41:59Z",
+  "gate_results": {
+    "sprint130_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "commit_shas": {
+    "ps_contracts": "61d35ec",
+    "ps_api": "12c6af5",
+    "ps_web": "9fb586b",
+    "ps_dev": "c8ef951"
+  },
+  "required_evidence_artifacts": [
+    {
+      "key": "pack",
+      "path": ".planestack/sprints/S130/pack.md",
+      "required": true
+    },
+    {
+      "key": "runlog",
+      "path": ".planestack/sprints/S130/runlog.md",
+      "required": true
+    },
+    {
+      "key": "evidence",
+      "path": ".planestack/sprints/S130/evidence.json",
+      "required": true
+    },
+    {
+      "key": "manifest",
+      "path": ".planestack/sprints/S130/manifest.json",
+      "required": true
+    },
+    {
+      "key": "lock_check",
+      "path": ".planestack/governance/evidence/s130/lock-check.json",
+      "required": true,
+      "artifact_id": "f6cce8ba-792b-4ac1-ad0d-c9d0e0bc8cb0"
+    },
+    {
+      "key": "proof_a",
+      "path": ".planestack/governance/evidence/s130/admin-environment-trust-proof.json",
+      "required": true
+    },
+    {
+      "key": "proof_b",
+      "path": ".planestack/governance/evidence/s130/component-trust-continuity-proof.json",
+      "required": true
+    },
+    {
+      "key": "proof_c",
+      "path": ".planestack/governance/evidence/s130/integration-writeback-policy-trust-proof.json",
+      "required": true
+    },
+    {
+      "key": "proof_d",
+      "path": ".planestack/governance/evidence/s130/credential-writeback-center-trust-proof.json",
+      "required": true
+    },
+    {
+      "key": "manage_context",
+      "path": ".planestack/governance/evidence/s130/manage-context.json",
+      "required": true
+    },
+    {
+      "key": "ui_smoke",
+      "path": ".planestack/governance/evidence/s130/ui-smoke.json",
+      "required": true
+    },
+    {
+      "key": "truth_refresh_summary",
+      "path": ".planestack/governance/evidence/s130/truth-refresh-summary.json",
+      "required": true
+    },
+    {
+      "key": "manage_admin_summary",
+      "path": ".planestack/governance/evidence/s130/manage-admin-summary.md",
+      "required": true
+    },
+    {
+      "key": "manage_integrations_summary",
+      "path": ".planestack/governance/evidence/s130/manage-integrations-summary.md",
+      "required": true
+    },
+    {
+      "key": "manage_cross_plane_summary",
+      "path": ".planestack/governance/evidence/s130/manage-cross-plane-summary.md",
+      "required": true
+    },
+    {
+      "key": "validate_summary",
+      "path": ".planestack/governance/evidence/s130/sprint130-validate.json",
+      "required": true
+    },
+    {
+      "key": "exceptional_range_scorecard",
+      "path": ".planestack/governance/evidence/s130/manage_exceptional_range_scorecard.json",
+      "required": true
+    },
+    {
+      "key": "archive",
+      "path": ".planestack/governance/evidence/s130/archive.json",
+      "required": true
+    },
+    {
+      "key": "closeout_summary",
+      "path": ".planestack/governance/evidence/s130/closeout-summary.json",
+      "required": true
+    }
+  ],
+  "archive_ids": {
+    "pack_id": "1f659348-b83f-4297-a62e-2ed857923aaa",
+    "runlog_id": "6e53524a-52ff-474a-a6fb-3355f089aec6",
+    "evidence_id": "28236a4d-0c37-4352-a39e-2e2b1f02ff4b",
+    "manifest_id": "3b478ee1-b56d-45ce-b2fa-721afc98fa31",
+    "writeback_id": "4987f533-8cdf-4d0d-9e05-26676aca3c65",
+    "writeback_artifact_id": "f9f4bdbb-9cea-43e6-bf4e-2d7859e10b0b"
+  }
+}

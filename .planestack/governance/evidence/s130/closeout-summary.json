@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "sprint_code": "S130",
+  "status": "closed",
+  "completed_at": "2026-03-15T15:42:21Z",
+  "gate_results": {
+    "sprint130_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "archive_ids": {
+    "pack_id": "1f659348-b83f-4297-a62e-2ed857923aaa",
+    "runlog_id": "6e53524a-52ff-474a-a6fb-3355f089aec6",
+    "evidence_id": "28236a4d-0c37-4352-a39e-2e2b1f02ff4b",
+    "manifest_id": "3b478ee1-b56d-45ce-b2fa-721afc98fa31",
+    "writeback_id": "4987f533-8cdf-4d0d-9e05-26676aca3c65",
+    "writeback_artifact_id": "f9f4bdbb-9cea-43e6-bf4e-2d7859e10b0b"
+  },
+  "commit_shas": {
+    "ps_contracts": "61d35ec",
+    "ps_api": "12c6af5",
+    "ps_web": "9fb586b",
+    "ps_dev": "c8ef951"
+  },
+  "proof_project_key": "s130-manage-1773588309077409"
+}
