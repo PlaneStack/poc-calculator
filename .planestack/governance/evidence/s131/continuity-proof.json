@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-15T17:02:02Z",
+  "fixture_project_ref": "plane-read-fixture",
+  "status": "passed",
+  "paths": [
+    {
+      "path": "Plan->Jobs",
+      "status": "ready"
+    },
+    {
+      "path": "Jobs->Review",
+      "status": "ready"
+    },
+    {
+      "path": "Review->Operate/Observe",
+      "status": "ready"
+    },
+    {
+      "path": "Jobs->Manage",
+      "status": "ready"
+    },
+    {
+      "path": "Review->Manage",
+      "status": "ready"
+    },
+    {
+      "path": "Operate->Manage",
+      "status": "ready"
+    }
+  ],
+  "context_refs": {
+    "work_item_ref": null,
+    "retry_run_ref": null,
+    "release_candidate_ref": null,
+    "shared_review_ref": null,
+    "session_ref": null,
+    "component_ref": null,
+    "credential_ref": null
+  }
+}

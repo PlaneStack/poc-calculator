@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-15T16:48:39Z", "operation": "s131-ui-smoke", "status": "passed", "assertions": ["grouped surface render", "detail surface render", "intentional no-data state render", "zero console error"]}

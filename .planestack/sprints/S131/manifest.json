@@ -1,0 +1,20 @@
+{
+  "sprint_code": "S131",
+  "title": "Deterministic Read Fixture + QA Infrastructure",
+  "files": [
+    "Sprint131-Pack.md",
+    "Sprint131-Backlog.md",
+    "Sprint131-Fixture-Data-Model.md",
+    "Sprint131-QA-Strategy.md",
+    "Sprint131-Validation-Matrix.md",
+    "Sprint131-Truth-Refresh-Plan.md",
+    "Sprint131-Risk-Register.md",
+    "Sprint131-Tranche-Plan.md",
+    "S131-runlog.md",
+    "S131-evidence.json",
+    "manifest.json",
+    "screenshots/README.md"
+  ],
+  "canonical_runlog": "S131-runlog.md",
+  "canonical_evidence": "S131-evidence.json"
+}

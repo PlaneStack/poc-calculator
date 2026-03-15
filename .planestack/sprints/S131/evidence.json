@@ -1,0 +1,183 @@
+{
+  "sprint_code": "S131",
+  "status": "completed",
+  "theme": "Deterministic Read Fixture + QA Infrastructure",
+  "required_gates": [
+    "s131-fixture-health-check",
+    "s131-route-traversal-smoke",
+    "s131-ui-smoke",
+    "s131-truth-refresh",
+    "s131-write-validate-summary",
+    "sprint131-validate",
+    "contract-test-docker",
+    "e2e-gate"
+  ],
+  "closeout_only": [
+    "s131-closeout-evidence-check"
+  ],
+  "required_proofs": {
+    "proof_a_fixture_exists": {
+      "required": true,
+      "status": "passed"
+    },
+    "proof_b_route_traversal": {
+      "required": true,
+      "status": "passed"
+    },
+    "proof_c_continuity": {
+      "required": true,
+      "status": "passed"
+    },
+    "proof_d_no_data_and_health": {
+      "required": true,
+      "status": "passed"
+    }
+  },
+  "required_artifacts": [
+    ".planestack/sprints/S131/pack.md",
+    ".planestack/sprints/S131/runlog.md",
+    ".planestack/sprints/S131/evidence.json",
+    ".planestack/sprints/S131/manifest.json",
+    ".planestack/governance/evidence/s131/lock-check.json",
+    ".planestack/governance/evidence/s131/fixture-health-proof.json",
+    ".planestack/governance/evidence/s131/route-traversal-proof.json",
+    ".planestack/governance/evidence/s131/continuity-proof.json",
+    ".planestack/governance/evidence/s131/no-data-and-health-proof.json",
+    ".planestack/governance/evidence/s131/fixture-context.json",
+    ".planestack/governance/evidence/s131/ui-smoke.json",
+    ".planestack/governance/evidence/s131/truth-refresh-summary.json",
+    ".planestack/governance/evidence/s131/fixture_exceptional_range_scorecard.json",
+    ".planestack/governance/evidence/s131/sprint131-validate.json",
+    ".planestack/governance/evidence/s131/archive.json",
+    ".planestack/governance/evidence/s131/closeout-summary.json",
+    ".planestack/governance/evidence/s131/closeout-evidence-check.json"
+  ],
+  "hard_bar_surfaces": [
+    "fixture/health",
+    "fixture/route-traversal",
+    "fixture/continuity",
+    "fixture/no-data"
+  ],
+  "focused_surfaces": [
+    "plane-read-fixture",
+    "qa-harness",
+    "cross-plane-continuity"
+  ],
+  "score_thresholds": {
+    "per_surface_overall_min": 4.0,
+    "per_dimension_min": 3.2,
+    "aggregate_min": 4.1
+  },
+  "notes": [
+    "Fixture is internal QA infrastructure, not a product-facing demo.",
+    "Genesis seed, fixture seed, and suite overlays are intentionally distinct.",
+    "Historical sprint writes are disallowed in normal validate/gate/closeout flows."
+  ],
+  "completed_at": "2026-03-15T17:07:13Z",
+  "gate_results": {
+    "s131_fixture_health_check": "pass",
+    "s131_route_traversal_smoke": "pass",
+    "s131_ui_smoke": "pass",
+    "s131_truth_refresh": "pass",
+    "s131_write_validate_summary": "pass",
+    "sprint131_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "required_evidence_artifacts": [
+    {
+      "key": "pack",
+      "path": ".planestack/sprints/S131/pack.md",
+      "required": true
+    },
+    {
+      "key": "runlog",
+      "path": ".planestack/sprints/S131/runlog.md",
+      "required": true
+    },
+    {
+      "key": "evidence",
+      "path": ".planestack/sprints/S131/evidence.json",
+      "required": true
+    },
+    {
+      "key": "manifest",
+      "path": ".planestack/sprints/S131/manifest.json",
+      "required": true
+    },
+    {
+      "key": "lock_check",
+      "path": ".planestack/governance/evidence/s131/lock-check.json",
+      "required": true,
+      "artifact_id": "e8f52009-ba0e-4119-a497-11fe769d294d"
+    },
+    {
+      "key": "proof_a",
+      "path": ".planestack/governance/evidence/s131/fixture-health-proof.json",
+      "required": true
+    },
+    {
+      "key": "proof_b",
+      "path": ".planestack/governance/evidence/s131/route-traversal-proof.json",
+      "required": true
+    },
+    {
+      "key": "proof_c",
+      "path": ".planestack/governance/evidence/s131/continuity-proof.json",
+      "required": true
+    },
+    {
+      "key": "proof_d",
+      "path": ".planestack/governance/evidence/s131/no-data-and-health-proof.json",
+      "required": true
+    },
+    {
+      "key": "fixture_context",
+      "path": ".planestack/governance/evidence/s131/fixture-context.json",
+      "required": true
+    },
+    {
+      "key": "ui_smoke",
+      "path": ".planestack/governance/evidence/s131/ui-smoke.json",
+      "required": true
+    },
+    {
+      "key": "truth_refresh_summary",
+      "path": ".planestack/governance/evidence/s131/truth-refresh-summary.json",
+      "required": true
+    },
+    {
+      "key": "exceptional_range_scorecard",
+      "path": ".planestack/governance/evidence/s131/fixture_exceptional_range_scorecard.json",
+      "required": true
+    },
+    {
+      "key": "validate_summary",
+      "path": ".planestack/governance/evidence/s131/sprint131-validate.json",
+      "required": true
+    },
+    {
+      "key": "archive",
+      "path": ".planestack/governance/evidence/s131/archive.json",
+      "required": true
+    },
+    {
+      "key": "closeout_summary",
+      "path": ".planestack/governance/evidence/s131/closeout-summary.json",
+      "required": true
+    },
+    {
+      "key": "closeout_evidence_check",
+      "path": ".planestack/governance/evidence/s131/closeout-evidence-check.json",
+      "required": true
+    }
+  ],
+  "archive_ids": {
+    "pack_id": "4e13cf79-000b-4878-91fb-e2713169d0b8",
+    "runlog_id": "9621707b-5754-4245-97a9-81a5c8aefc2f",
+    "evidence_id": "39dab619-d2b5-40e5-87df-79eaa82e6f06",
+    "manifest_id": "15b5fc86-2635-4ec4-ae6b-745ffbf8884b",
+    "writeback_id": "49540c5b-6825-4901-b811-ea851d735b37",
+    "writeback_artifact_id": "2d1ade27-d519-40b2-90ac-77a2eefe18eb"
+  }
+}

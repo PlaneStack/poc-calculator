@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-15T16:48:40Z", "status": "passed", "operation": "s131-truth-refresh", "artifacts": ["fixture-seed-summary.md", "qa-harness-summary.md"], "notes": ["Fixture remains internal QA infrastructure", "Genesis, fixture seed, and overlays remain explicit layers"]}

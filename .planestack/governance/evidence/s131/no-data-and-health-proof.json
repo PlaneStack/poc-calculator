@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-15T17:02:02Z",
+  "fixture_project_ref": "plane-read-fixture",
+  "status": "passed",
+  "checks": [
+    {
+      "kind": "grouped_surface",
+      "surface_ref": "manage/admin/environments",
+      "status": "passed"
+    },
+    {
+      "kind": "detail_surface",
+      "surface_ref": "jobs/runs/",
+      "status": "passed"
+    },
+    {
+      "kind": "intentional_no_data",
+      "surface_ref": "observe/analytics-reporting/overview",
+      "filter": {
+        "artifact_family": "definitely-missing"
+      },
+      "status": "passed",
+      "state": "filtered_empty"
+    },
+    {
+      "kind": "health_guard",
+      "surface_ref": "fixture-health-check",
+      "status": "passed"
+    }
+  ]
+}
