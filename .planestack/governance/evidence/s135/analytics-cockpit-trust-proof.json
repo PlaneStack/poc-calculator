@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "proof": "A",
+  "status": "passed",
+  "missing_cards": [],
+  "missing_regions": [],
+  "region_refs_ok": true,
+  "no_data_state": "has_data"
+}

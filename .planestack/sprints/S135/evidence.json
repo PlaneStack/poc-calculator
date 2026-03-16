@@ -1,0 +1,54 @@
+{
+  "sprint_code": "S135",
+  "theme": "Observe Excellence II: Analytics Reporting + Library Daily-Driver Trust with Chronicle Continuity",
+  "required_green_bar": [
+    "s135-analytics-smoke",
+    "s135-library-smoke",
+    "s135-chronicle-continuity-smoke",
+    "s135-truth-refresh",
+    "s135-write-validate-summary",
+    "sprint135-validate",
+    "contract-test-docker",
+    "e2e-gate"
+  ],
+  "closeout_only": [
+    "s135-closeout-evidence-check"
+  ],
+  "proof_artifacts": [
+    "analytics-cockpit-trust-proof.json",
+    "library-trust-proof.json",
+    "chronicle-continuity-proof.json",
+    "observe-no-data-proof.json",
+    "analytics-export-trust-proof.json",
+    "observe-cross-plane-continuity-proof.json",
+    "observe-context.json",
+    "ui-smoke.json",
+    "truth-refresh-summary.json",
+    "observe_exceptional_range_scorecard.json",
+    "sprint135-validate.json"
+  ],
+  "notes": [
+    "Analytics owns aggregate/reporting projections",
+    "Library owns browse/archive projections",
+    "Chronicle owns continuity/history"
+  ],
+  "status": "completed",
+  "completed_at": "2026-03-16T14:54:51Z",
+  "gate_results": {
+    "s135-analytics-smoke": "pass",
+    "s135-library-smoke": "pass",
+    "s135-chronicle-continuity-smoke": "pass",
+    "s135-truth-refresh": "pass",
+    "s135-write-validate-summary": "pass",
+    "s135-closeout-evidence-check": "pass",
+    "sprint135-validate": "pass",
+    "contract-test-docker": "pass",
+    "e2e-gate": "pass"
+  },
+  "required_evidence_artifacts": [
+    {
+      "path": ".planestack/governance/evidence/s135/lock-check.json",
+      "artifact_id": "1a49e84f-b92c-4df1-b632-148bc140fa8a"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-16T14:48:44Z",
+  "operation": "s135-chronicle-continuity-smoke",
+  "status": "passed",
+  "spec": "tests/sprint135.observe-reporting-and-library.spec.js",
+  "assertions": [
+    "analytics cockpit",
+    "analytics groups",
+    "library overview",
+    "library browse",
+    "chronicle continuity"
+  ]
+}

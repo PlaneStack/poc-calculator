@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "plane_scores": {
+    "observe/analytics_reporting": {
+      "clarity": 4.5,
+      "actionability": 4.5,
+      "continuity": 4.5,
+      "trust": 4.5
+    },
+    "observe/library": {
+      "clarity": 4.5,
+      "actionability": 4.5,
+      "continuity": 4.5,
+      "trust": 4.5
+    },
+    "observe/chronicle": {
+      "clarity": 4.4,
+      "actionability": 4.4,
+      "continuity": 4.6,
+      "trust": 4.5
+    }
+  }
+}

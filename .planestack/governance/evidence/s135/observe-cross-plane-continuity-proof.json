@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "proof": "F",
+  "status": "passed",
+  "planes": [
+    "ai-management",
+    "governance",
+    "library",
+    "operate",
+    "runs"
+  ],
+  "manage_ok": true
+}

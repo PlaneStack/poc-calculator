@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-16T14:56:36Z",
+  "status": "passed",
+  "operation": "s135-closeout",
+  "gates": {
+    "s135-analytics-smoke": "passed",
+    "s135-library-smoke": "passed",
+    "s135-chronicle-continuity-smoke": "passed",
+    "s135-truth-refresh": "passed",
+    "s135-write-validate-summary": "passed",
+    "s135-closeout-evidence-check": "passed",
+    "sprint135-validate": "passed",
+    "contract-test-docker": "passed",
+    "e2e-gate": "passed"
+  },
+  "fixture_project_ref": "observe-proof-s135",
+  "archive_ids": {
+    "pack_id": "158664c9-a591-4934-a351-9d91c8ff85ec",
+    "runlog_id": "87c86ef3-7611-49b5-a068-205681182699",
+    "evidence_id": "85ffdddd-19b0-4e33-bb30-d527e2c64d6e",
+    "manifest_id": "cd2c55b8-b08b-48d8-8144-7f4efd95129a",
+    "writeback_id": "04fae2d4-6ffe-44b5-b05a-aaa4c92498db",
+    "writeback_artifact_id": "a326df6d-dd1b-414a-b8a0-0a8bec33c45e"
+  }
+}
