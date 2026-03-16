@@ -1,0 +1,12 @@
+{
+  "sprint": "S133",
+  "pack_file": "Sprint133-Pack.md",
+  "runlog_file": "S133-runlog.md",
+  "validation_matrix_file": "Sprint133-Validation-Matrix.md",
+  "data_model_file": "Sprint133-Setup-Wizard-Data-Model.md",
+  "tranche_plan_file": "Sprint133-Tranche-Plan.md",
+  "risk_register_file": "Sprint133-Risk-Register.md",
+  "truth_refresh_file": "Sprint133-Truth-Refresh-Plan.md",
+  "evidence_file": "S133-evidence.json",
+  "screenshots_dir": "screenshots"
+}

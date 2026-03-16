@@ -1,0 +1,266 @@
+{
+  "resume": {
+    "setup_ref": "c175aa01-ec51-43c4-89c9-f1fbe989c791",
+    "project_ref": "d16e5d0b-3608-4c10-a2b7-0eb9a29dd820",
+    "status": "in_progress",
+    "current_stage": "environment_setup",
+    "completed_stages": [
+      "project_bootstrap",
+      "starter_planning"
+    ],
+    "incomplete_stages": [
+      "environment_setup",
+      "integration_setup",
+      "policy_review",
+      "validation",
+      "completion"
+    ],
+    "readiness_state": "degraded",
+    "reason_codes": [
+      "environment_not_configured",
+      "credential_missing"
+    ],
+    "next_required_action": "resume_setup",
+    "validation_posture": "not_started",
+    "approval_posture": "not_required",
+    "activation_posture": "not_required",
+    "starter_package_refs": [],
+    "landing_refs": [
+      {
+        "center_ref": "/ou/platform/p/setup-proof-s133/plane/center/project",
+        "work_ref": "/ou/platform/p/setup-proof-s133/plane/work/overview",
+        "review_ref": "/ou/platform/p/setup-proof-s133/plane/review/release-candidate",
+        "operate_ref": "/ou/platform/p/setup-proof-s133/plane/operate/overview",
+        "manage_ref": "/ou/platform/p/setup-proof-s133/plane/manage/credentials"
+      }
+    ],
+    "available_environment_refs": [
+      {
+        "ref": "ebba9dc5-5419-4f3c-8bba-e4d8e23d4151",
+        "label": "Local Ready Environment",
+        "readiness_state": "ready"
+      }
+    ],
+    "available_credential_refs": [
+      {
+        "ref": "12a13ffc-1e2c-429c-a1d0-172676ce4543",
+        "label": "planestack-bot",
+        "provider_key": "github"
+      },
+      {
+        "ref": "a229276b-2d36-48f6-b813-f5a32afee79d",
+        "label": "S133 Invalid Credential",
+        "provider_key": "github"
+      },
+      {
+        "ref": "8c325ce1-5a75-450d-83e4-fefdf77484b0",
+        "label": "S133 Valid Credential",
+        "provider_key": "github_app"
+      }
+    ],
+    "available_policy_refs": [
+      {
+        "ref": "5073beed-fcc9-4dbe-b822-f1d5e7649941",
+        "label": "Active writeback policy"
+      }
+    ],
+    "source_truth_refs": [
+      {
+        "ref": "d673804a-9d2d-4414-9cf0-a9079de964e4",
+        "type": "project.scope",
+        "label": "Setup Proof S133",
+        "url": "/ou/platform/p/setup-proof-s133/artifacts/d673804a-9d2d-4414-9cf0-a9079de964e4"
+      },
+      {
+        "ref": "d9f63b38-7a9c-4662-ac08-0b5208b5a231",
+        "type": "project.goal",
+        "label": "Resume proof goal",
+        "url": "/ou/platform/p/setup-proof-s133/artifacts/d9f63b38-7a9c-4662-ac08-0b5208b5a231"
+      },
+      {
+        "ref": "2e76563e-7cc9-412e-82b4-1906868c9b4b",
+        "type": "work.item",
+        "label": "Resume proof goal starter work",
+        "url": "/ou/platform/p/setup-proof-s133/plane/work/work-items"
+      }
+    ],
+    "incomplete_sections": [
+      {
+        "stage": "environment_setup",
+        "reason": "environment_not_configured"
+      },
+      {
+        "stage": "integration_setup",
+        "reason": "environment_not_configured"
+      },
+      {
+        "stage": "policy_review",
+        "reason": "environment_not_configured"
+      },
+      {
+        "stage": "validation",
+        "reason": "environment_not_configured"
+      },
+      {
+        "stage": "completion",
+        "reason": "environment_not_configured"
+      }
+    ],
+    "created_starter_package": null,
+    "bootstrap": {
+      "goal_ref": "d9f63b38-7a9c-4662-ac08-0b5208b5a231",
+      "idea_ref": "b3f36bd1-89f6-4831-bb80-9edff7d002ae",
+      "scope_ref": "d673804a-9d2d-4414-9cf0-a9079de964e4",
+      "goal_title": "Resume proof goal",
+      "goal_summary": "Resume proof summary",
+      "project_name": "Setup Proof S133",
+      "work_item_ref": "2e76563e-7cc9-412e-82b4-1906868c9b4b",
+      "project_summary": "Resume semantics proof",
+      "starter_readiness_classification": "lean"
+    },
+    "environment_setup": null,
+    "integration_setup": null,
+    "policy_review": null,
+    "validation": null,
+    "completion_summary": null,
+    "no_data_state": "has_data",
+    "resumable": true,
+    "restartable": true,
+    "restart_warning": "Restart resets setup progression state only. Existing downstream records remain.",
+    "last_completed_stage": "starter_planning",
+    "last_saved_at": "2026-03-16T03:33:42.512Z",
+    "updated_at": "2026-03-16T03:33:42.512Z"
+  },
+  "restart": {
+    "setup_ref": "c175aa01-ec51-43c4-89c9-f1fbe989c791",
+    "project_ref": "d16e5d0b-3608-4c10-a2b7-0eb9a29dd820",
+    "status": "in_progress",
+    "current_stage": "project_bootstrap",
+    "completed_stages": [
+      "project_bootstrap",
+      "starter_planning"
+    ],
+    "incomplete_stages": [
+      "environment_setup",
+      "integration_setup",
+      "policy_review",
+      "validation",
+      "completion"
+    ],
+    "readiness_state": "degraded",
+    "reason_codes": [
+      "environment_not_configured",
+      "credential_missing"
+    ],
+    "next_required_action": "configure_environment",
+    "validation_posture": "not_started",
+    "approval_posture": "not_required",
+    "activation_posture": "not_required",
+    "starter_package_refs": [],
+    "landing_refs": [
+      {
+        "center_ref": "/ou/platform/p/setup-proof-s133/plane/center/project",
+        "work_ref": "/ou/platform/p/setup-proof-s133/plane/work/overview",
+        "review_ref": "/ou/platform/p/setup-proof-s133/plane/review/release-candidate",
+        "operate_ref": "/ou/platform/p/setup-proof-s133/plane/operate/overview",
+        "manage_ref": "/ou/platform/p/setup-proof-s133/plane/manage/credentials"
+      }
+    ],
+    "available_environment_refs": [
+      {
+        "ref": "ebba9dc5-5419-4f3c-8bba-e4d8e23d4151",
+        "label": "Local Ready Environment",
+        "readiness_state": "ready"
+      }
+    ],
+    "available_credential_refs": [
+      {
+        "ref": "12a13ffc-1e2c-429c-a1d0-172676ce4543",
+        "label": "planestack-bot",
+        "provider_key": "github"
+      },
+      {
+        "ref": "a229276b-2d36-48f6-b813-f5a32afee79d",
+        "label": "S133 Invalid Credential",
+        "provider_key": "github"
+      },
+      {
+        "ref": "8c325ce1-5a75-450d-83e4-fefdf77484b0",
+        "label": "S133 Valid Credential",
+        "provider_key": "github_app"
+      }
+    ],
+    "available_policy_refs": [
+      {
+        "ref": "5073beed-fcc9-4dbe-b822-f1d5e7649941",
+        "label": "Active writeback policy"
+      }
+    ],
+    "source_truth_refs": [
+      {
+        "ref": "d673804a-9d2d-4414-9cf0-a9079de964e4",
+        "type": "project.scope",
+        "label": "Setup Proof S133",
+        "url": "/ou/platform/p/setup-proof-s133/artifacts/d673804a-9d2d-4414-9cf0-a9079de964e4"
+      },
+      {
+        "ref": "d9f63b38-7a9c-4662-ac08-0b5208b5a231",
+        "type": "project.goal",
+        "label": "Resume proof goal",
+        "url": "/ou/platform/p/setup-proof-s133/artifacts/d9f63b38-7a9c-4662-ac08-0b5208b5a231"
+      },
+      {
+        "ref": "2e76563e-7cc9-412e-82b4-1906868c9b4b",
+        "type": "work.item",
+        "label": "Resume proof goal starter work",
+        "url": "/ou/platform/p/setup-proof-s133/plane/work/work-items"
+      }
+    ],
+    "incomplete_sections": [
+      {
+        "stage": "environment_setup",
+        "reason": "environment_not_configured"
+      },
+      {
+        "stage": "integration_setup",
+        "reason": "environment_not_configured"
+      },
+      {
+        "stage": "policy_review",
+        "reason": "environment_not_configured"
+      },
+      {
+        "stage": "validation",
+        "reason": "environment_not_configured"
+      },
+      {
+        "stage": "completion",
+        "reason": "environment_not_configured"
+      }
+    ],
+    "created_starter_package": null,
+    "bootstrap": {
+      "goal_ref": "d9f63b38-7a9c-4662-ac08-0b5208b5a231",
+      "idea_ref": "b3f36bd1-89f6-4831-bb80-9edff7d002ae",
+      "scope_ref": "d673804a-9d2d-4414-9cf0-a9079de964e4",
+      "goal_title": "Resume proof goal",
+      "goal_summary": "Resume proof summary",
+      "project_name": "Setup Proof S133",
+      "work_item_ref": "2e76563e-7cc9-412e-82b4-1906868c9b4b",
+      "project_summary": "Resume semantics proof",
+      "starter_readiness_classification": "lean"
+    },
+    "environment_setup": null,
+    "integration_setup": null,
+    "policy_review": null,
+    "validation": null,
+    "completion_summary": null,
+    "no_data_state": "has_data",
+    "resumable": true,
+    "restartable": true,
+    "restart_warning": "Restart resets setup progression state only. Existing downstream records remain.",
+    "last_completed_stage": "starter_planning",
+    "last_saved_at": "2026-03-16T03:33:42.555Z",
+    "updated_at": "2026-03-16T03:33:42.555Z"
+  }
+}

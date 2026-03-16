@@ -1,0 +1,118 @@
+{
+  "work_items": {
+    "items": [
+      {
+        "id": "bc538397-3c1b-40da-b20b-eefc0d14365a",
+        "project_id": "d16e5d0b-3608-4c10-a2b7-0eb9a29dd820",
+        "type": "work.item",
+        "key": null,
+        "component_id": null,
+        "data": {
+          "kind": "story",
+          "state": "open",
+          "title": "Bootstrap the first project slice starter work",
+          "summary": "Establish the first usable slice and proof path",
+          "rationale": "Created during setup wizard bootstrap",
+          "setup_ref": "cbcc0c60-46b2-4393-a221-d4f11df899ee",
+          "generated_by": "center_project_setup",
+          "linked_goal_refs": [
+            "0a6be0ac-d62b-4385-bbbc-8a9a6eb913f0"
+          ],
+          "promoted_from_idea_ref": "22758023-6cef-4552-a352-4a7d3613076c"
+        },
+        "external_links": [],
+        "created_at": "2026-03-16T03:33:46.821Z",
+        "updated_at": "2026-03-16T03:33:46.821Z",
+        "task_count": 4
+      }
+    ]
+  },
+  "tasks": {
+    "items": [
+      {
+        "id": "f605c5e1-470e-4e3f-a149-5bde47f4198a",
+        "project_id": "d16e5d0b-3608-4c10-a2b7-0eb9a29dd820",
+        "type": "work.task",
+        "key": null,
+        "component_id": null,
+        "data": {
+          "state": "open",
+          "title": "Define implementation slice",
+          "summary": "Break the starter work into a requirement-grade implementation slice.",
+          "setup_ref": "cbcc0c60-46b2-4393-a221-d4f11df899ee",
+          "starter_mode": "guided",
+          "linked_goal_refs": [
+            "0a6be0ac-d62b-4385-bbbc-8a9a6eb913f0"
+          ],
+          "parent_work_item_ref": "bc538397-3c1b-40da-b20b-eefc0d14365a"
+        },
+        "external_links": [],
+        "created_at": "2026-03-16T03:33:47.059Z",
+        "updated_at": "2026-03-16T03:33:47.059Z"
+      },
+      {
+        "id": "ce0364e7-a245-4287-9c32-01f723941a7d",
+        "project_id": "d16e5d0b-3608-4c10-a2b7-0eb9a29dd820",
+        "type": "work.task",
+        "key": null,
+        "component_id": null,
+        "data": {
+          "state": "open",
+          "title": "Define validation plan",
+          "summary": "Capture tests, evidence, and acceptance checks for the starter slice.",
+          "setup_ref": "cbcc0c60-46b2-4393-a221-d4f11df899ee",
+          "starter_mode": "guided",
+          "linked_goal_refs": [
+            "0a6be0ac-d62b-4385-bbbc-8a9a6eb913f0"
+          ],
+          "parent_work_item_ref": "bc538397-3c1b-40da-b20b-eefc0d14365a"
+        },
+        "external_links": [],
+        "created_at": "2026-03-16T03:33:47.059Z",
+        "updated_at": "2026-03-16T03:33:47.059Z"
+      },
+      {
+        "id": "bbde6e70-6a77-4fa7-8d5d-5339fbdb301a",
+        "project_id": "d16e5d0b-3608-4c10-a2b7-0eb9a29dd820",
+        "type": "work.task",
+        "key": null,
+        "component_id": null,
+        "data": {
+          "state": "open",
+          "title": "Define governance and review path",
+          "summary": "Capture review, approval, and policy checkpoints for the starter slice.",
+          "setup_ref": "cbcc0c60-46b2-4393-a221-d4f11df899ee",
+          "starter_mode": "guided",
+          "linked_goal_refs": [
+            "0a6be0ac-d62b-4385-bbbc-8a9a6eb913f0"
+          ],
+          "parent_work_item_ref": "bc538397-3c1b-40da-b20b-eefc0d14365a"
+        },
+        "external_links": [],
+        "created_at": "2026-03-16T03:33:47.059Z",
+        "updated_at": "2026-03-16T03:33:47.059Z"
+      },
+      {
+        "id": "ab3cc878-0fe3-41e6-8842-1a204b9816bd",
+        "project_id": "d16e5d0b-3608-4c10-a2b7-0eb9a29dd820",
+        "type": "work.task",
+        "key": null,
+        "component_id": null,
+        "data": {
+          "state": "open",
+          "title": "Define operate readiness",
+          "summary": "Capture environment, runbook, and handoff expectations for first execution.",
+          "setup_ref": "cbcc0c60-46b2-4393-a221-d4f11df899ee",
+          "starter_mode": "guided",
+          "linked_goal_refs": [
+            "0a6be0ac-d62b-4385-bbbc-8a9a6eb913f0"
+          ],
+          "parent_work_item_ref": "bc538397-3c1b-40da-b20b-eefc0d14365a"
+        },
+        "external_links": [],
+        "created_at": "2026-03-16T03:33:47.059Z",
+        "updated_at": "2026-03-16T03:33:47.059Z"
+      }
+    ]
+  }
+}

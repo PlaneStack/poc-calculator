@@ -1,0 +1,337 @@
+{
+  "integration_setup": {
+    "setup_ref": "cbcc0c60-46b2-4393-a221-d4f11df899ee",
+    "project_ref": "d16e5d0b-3608-4c10-a2b7-0eb9a29dd820",
+    "status": "blocked",
+    "current_stage": "integration_setup",
+    "completed_stages": [
+      "project_bootstrap",
+      "starter_planning",
+      "environment_setup",
+      "integration_setup",
+      "policy_review",
+      "validation"
+    ],
+    "incomplete_stages": [
+      "completion"
+    ],
+    "readiness_state": "blocked",
+    "reason_codes": [
+      "activation_pending"
+    ],
+    "next_required_action": "activate_setup",
+    "validation_posture": "valid",
+    "approval_posture": "approved",
+    "activation_posture": "ready",
+    "starter_package_refs": [
+      "starter-package:cbcc0c60-46b2-4393-a221-d4f11df899ee"
+    ],
+    "landing_refs": [
+      {
+        "center_ref": "/ou/platform/p/setup-proof-s133/plane/center/project",
+        "work_ref": "/ou/platform/p/setup-proof-s133/plane/work/overview",
+        "review_ref": "/ou/platform/p/setup-proof-s133/plane/review/release-candidate",
+        "operate_ref": "/ou/platform/p/setup-proof-s133/plane/operate/overview",
+        "manage_ref": "/ou/platform/p/setup-proof-s133/plane/manage/credentials"
+      }
+    ],
+    "available_environment_refs": [
+      {
+        "ref": "b5d9471f-40ed-460f-bec9-783b4eb008db",
+        "label": "Local Ready Environment",
+        "readiness_state": "ready"
+      }
+    ],
+    "available_credential_refs": [
+      {
+        "ref": "12a13ffc-1e2c-429c-a1d0-172676ce4543",
+        "label": "planestack-bot",
+        "provider_key": "github"
+      },
+      {
+        "ref": "7dd9772c-7464-4350-bc0e-5148620d5708",
+        "label": "S133 Invalid Credential",
+        "provider_key": "github"
+      },
+      {
+        "ref": "0bd03e7b-f785-47d5-8aba-9b156e5a1c72",
+        "label": "S133 Valid Credential",
+        "provider_key": "github_app"
+      }
+    ],
+    "available_policy_refs": [
+      {
+        "ref": "5073beed-fcc9-4dbe-b822-f1d5e7649941",
+        "label": "Active writeback policy"
+      }
+    ],
+    "source_truth_refs": [
+      {
+        "ref": "7f561972-4374-48c8-bf18-6e4cc14e1ecf",
+        "type": "project.scope",
+        "label": "Setup Proof S133",
+        "url": "/ou/platform/p/setup-proof-s133/artifacts/7f561972-4374-48c8-bf18-6e4cc14e1ecf"
+      },
+      {
+        "ref": "0a6be0ac-d62b-4385-bbbc-8a9a6eb913f0",
+        "type": "project.goal",
+        "label": "Bootstrap the first project slice",
+        "url": "/ou/platform/p/setup-proof-s133/artifacts/0a6be0ac-d62b-4385-bbbc-8a9a6eb913f0"
+      },
+      {
+        "ref": "bc538397-3c1b-40da-b20b-eefc0d14365a",
+        "type": "work.item",
+        "label": "Bootstrap the first project slice starter work",
+        "url": "/ou/platform/p/setup-proof-s133/plane/work/work-items"
+      }
+    ],
+    "incomplete_sections": [
+      {
+        "stage": "completion",
+        "reason": "activation_pending"
+      }
+    ],
+    "created_starter_package": {
+      "setup_ref": "cbcc0c60-46b2-4393-a221-d4f11df899ee",
+      "package_ref": "starter-package:cbcc0c60-46b2-4393-a221-d4f11df899ee",
+      "project_ref": "d16e5d0b-3608-4c10-a2b7-0eb9a29dd820",
+      "starter_mode": "guided",
+      "template_ref": null,
+      "provenance_label": "created_by_setup_wizard",
+      "created_goal_refs": [
+        "0a6be0ac-d62b-4385-bbbc-8a9a6eb913f0"
+      ],
+      "created_task_refs": [
+        "f605c5e1-470e-4e3f-a149-5bde47f4198a",
+        "ce0364e7-a245-4287-9c32-01f723941a7d",
+        "bbde6e70-6a77-4fa7-8d5d-5339fbdb301a",
+        "ab3cc878-0fe3-41e6-8842-1a204b9816bd"
+      ],
+      "created_work_item_refs": [
+        "bc538397-3c1b-40da-b20b-eefc0d14365a"
+      ]
+    },
+    "bootstrap": {
+      "goal_ref": "0a6be0ac-d62b-4385-bbbc-8a9a6eb913f0",
+      "idea_ref": "22758023-6cef-4552-a352-4a7d3613076c",
+      "scope_ref": "7f561972-4374-48c8-bf18-6e4cc14e1ecf",
+      "goal_title": "Bootstrap the first project slice",
+      "goal_summary": "Establish the first usable slice and proof path",
+      "project_name": "Setup Proof S133",
+      "work_item_ref": "bc538397-3c1b-40da-b20b-eefc0d14365a",
+      "project_summary": "Product-facing setup proof project",
+      "starter_readiness_classification": "guided"
+    },
+    "environment_setup": {
+      "environment_ref": "b5d9471f-40ed-460f-bec9-783b4eb008db",
+      "readiness_state": "ready",
+      "reason_codes": [],
+      "next_required_action": "open_downstream_context",
+      "linked_admin_environment_ref": "/ou/platform/p/setup-proof-s133/plane/admin/environments/b5d9471f-40ed-460f-bec9-783b4eb008db",
+      "linked_operate_environment_ref": "/ou/platform/p/setup-proof-s133/plane/operate/environments?selected=b5d9471f-40ed-460f-bec9-783b4eb008db",
+      "return_url": "/ou/platform/p/setup-proof-s133/plane/center/setup"
+    },
+    "integration_setup": {
+      "credential_ref": "0bd03e7b-f785-47d5-8aba-9b156e5a1c72",
+      "validation_status": "valid",
+      "validation_reason_codes": [],
+      "policy_ref": "13449dca-bc05-4ad9-bc02-36bf0eb8d213",
+      "approval_status": "approved",
+      "activation_status": "ready",
+      "next_required_action": "activate_setup",
+      "linked_manage_refs": [
+        "/ou/platform/p/setup-proof-s133/plane/integrations/credentials/0bd03e7b-f785-47d5-8aba-9b156e5a1c72",
+        "/ou/platform/p/setup-proof-s133/plane/integrations/writeback-policy/13449dca-bc05-4ad9-bc02-36bf0eb8d213"
+      ]
+    },
+    "policy_review": null,
+    "validation": null,
+    "completion_summary": null,
+    "no_data_state": "has_data",
+    "resumable": true,
+    "restartable": true,
+    "restart_warning": "Restart resets setup progression state only. Existing downstream records remain.",
+    "last_completed_stage": "validation",
+    "last_saved_at": "2026-03-16T03:33:47.635Z",
+    "updated_at": "2026-03-16T03:33:47.635Z",
+    "downstream_refs": [
+      {
+        "center_ref": "/ou/platform/p/setup-proof-s133/plane/center/project",
+        "work_ref": "/ou/platform/p/setup-proof-s133/plane/work/overview",
+        "review_ref": "/ou/platform/p/setup-proof-s133/plane/review/release-candidate",
+        "operate_ref": "/ou/platform/p/setup-proof-s133/plane/operate/overview",
+        "manage_ref": "/ou/platform/p/setup-proof-s133/plane/manage/credentials"
+      }
+    ]
+  },
+  "policy_review": {
+    "setup_ref": "cbcc0c60-46b2-4393-a221-d4f11df899ee",
+    "project_ref": "d16e5d0b-3608-4c10-a2b7-0eb9a29dd820",
+    "status": "blocked",
+    "current_stage": "policy_review",
+    "completed_stages": [
+      "project_bootstrap",
+      "starter_planning",
+      "environment_setup",
+      "integration_setup",
+      "policy_review",
+      "validation"
+    ],
+    "incomplete_stages": [
+      "completion"
+    ],
+    "readiness_state": "blocked",
+    "reason_codes": [
+      "activation_pending"
+    ],
+    "next_required_action": "activate_setup",
+    "validation_posture": "valid",
+    "approval_posture": "approved",
+    "activation_posture": "ready",
+    "starter_package_refs": [
+      "starter-package:cbcc0c60-46b2-4393-a221-d4f11df899ee"
+    ],
+    "landing_refs": [
+      {
+        "center_ref": "/ou/platform/p/setup-proof-s133/plane/center/project",
+        "work_ref": "/ou/platform/p/setup-proof-s133/plane/work/overview",
+        "review_ref": "/ou/platform/p/setup-proof-s133/plane/review/release-candidate",
+        "operate_ref": "/ou/platform/p/setup-proof-s133/plane/operate/overview",
+        "manage_ref": "/ou/platform/p/setup-proof-s133/plane/manage/credentials"
+      }
+    ],
+    "available_environment_refs": [
+      {
+        "ref": "b5d9471f-40ed-460f-bec9-783b4eb008db",
+        "label": "Local Ready Environment",
+        "readiness_state": "ready"
+      }
+    ],
+    "available_credential_refs": [
+      {
+        "ref": "12a13ffc-1e2c-429c-a1d0-172676ce4543",
+        "label": "planestack-bot",
+        "provider_key": "github"
+      },
+      {
+        "ref": "7dd9772c-7464-4350-bc0e-5148620d5708",
+        "label": "S133 Invalid Credential",
+        "provider_key": "github"
+      },
+      {
+        "ref": "0bd03e7b-f785-47d5-8aba-9b156e5a1c72",
+        "label": "S133 Valid Credential",
+        "provider_key": "github_app"
+      }
+    ],
+    "available_policy_refs": [
+      {
+        "ref": "5073beed-fcc9-4dbe-b822-f1d5e7649941",
+        "label": "Active writeback policy"
+      }
+    ],
+    "source_truth_refs": [
+      {
+        "ref": "7f561972-4374-48c8-bf18-6e4cc14e1ecf",
+        "type": "project.scope",
+        "label": "Setup Proof S133",
+        "url": "/ou/platform/p/setup-proof-s133/artifacts/7f561972-4374-48c8-bf18-6e4cc14e1ecf"
+      },
+      {
+        "ref": "0a6be0ac-d62b-4385-bbbc-8a9a6eb913f0",
+        "type": "project.goal",
+        "label": "Bootstrap the first project slice",
+        "url": "/ou/platform/p/setup-proof-s133/artifacts/0a6be0ac-d62b-4385-bbbc-8a9a6eb913f0"
+      },
+      {
+        "ref": "bc538397-3c1b-40da-b20b-eefc0d14365a",
+        "type": "work.item",
+        "label": "Bootstrap the first project slice starter work",
+        "url": "/ou/platform/p/setup-proof-s133/plane/work/work-items"
+      }
+    ],
+    "incomplete_sections": [
+      {
+        "stage": "completion",
+        "reason": "activation_pending"
+      }
+    ],
+    "created_starter_package": {
+      "setup_ref": "cbcc0c60-46b2-4393-a221-d4f11df899ee",
+      "package_ref": "starter-package:cbcc0c60-46b2-4393-a221-d4f11df899ee",
+      "project_ref": "d16e5d0b-3608-4c10-a2b7-0eb9a29dd820",
+      "starter_mode": "guided",
+      "template_ref": null,
+      "provenance_label": "created_by_setup_wizard",
+      "created_goal_refs": [
+        "0a6be0ac-d62b-4385-bbbc-8a9a6eb913f0"
+      ],
+      "created_task_refs": [
+        "f605c5e1-470e-4e3f-a149-5bde47f4198a",
+        "ce0364e7-a245-4287-9c32-01f723941a7d",
+        "bbde6e70-6a77-4fa7-8d5d-5339fbdb301a",
+        "ab3cc878-0fe3-41e6-8842-1a204b9816bd"
+      ],
+      "created_work_item_refs": [
+        "bc538397-3c1b-40da-b20b-eefc0d14365a"
+      ]
+    },
+    "bootstrap": {
+      "goal_ref": "0a6be0ac-d62b-4385-bbbc-8a9a6eb913f0",
+      "idea_ref": "22758023-6cef-4552-a352-4a7d3613076c",
+      "scope_ref": "7f561972-4374-48c8-bf18-6e4cc14e1ecf",
+      "goal_title": "Bootstrap the first project slice",
+      "goal_summary": "Establish the first usable slice and proof path",
+      "project_name": "Setup Proof S133",
+      "work_item_ref": "bc538397-3c1b-40da-b20b-eefc0d14365a",
+      "project_summary": "Product-facing setup proof project",
+      "starter_readiness_classification": "guided"
+    },
+    "environment_setup": {
+      "environment_ref": "b5d9471f-40ed-460f-bec9-783b4eb008db",
+      "readiness_state": "ready",
+      "reason_codes": [],
+      "next_required_action": "open_downstream_context",
+      "linked_admin_environment_ref": "/ou/platform/p/setup-proof-s133/plane/admin/environments/b5d9471f-40ed-460f-bec9-783b4eb008db",
+      "linked_operate_environment_ref": "/ou/platform/p/setup-proof-s133/plane/operate/environments?selected=b5d9471f-40ed-460f-bec9-783b4eb008db",
+      "return_url": "/ou/platform/p/setup-proof-s133/plane/center/setup"
+    },
+    "integration_setup": {
+      "credential_ref": "0bd03e7b-f785-47d5-8aba-9b156e5a1c72",
+      "validation_status": "valid",
+      "validation_reason_codes": [],
+      "policy_ref": "13449dca-bc05-4ad9-bc02-36bf0eb8d213",
+      "approval_status": "approved",
+      "activation_status": "ready",
+      "next_required_action": "activate_setup",
+      "linked_manage_refs": [
+        "/ou/platform/p/setup-proof-s133/plane/integrations/credentials/0bd03e7b-f785-47d5-8aba-9b156e5a1c72",
+        "/ou/platform/p/setup-proof-s133/plane/integrations/writeback-policy/13449dca-bc05-4ad9-bc02-36bf0eb8d213"
+      ]
+    },
+    "policy_review": {
+      "policy_ref": "13449dca-bc05-4ad9-bc02-36bf0eb8d213",
+      "review_ref": "/ou/platform/p/setup-proof-s133/plane/integrations/writeback-policy/13449dca-bc05-4ad9-bc02-36bf0eb8d213",
+      "approval_posture": "approved",
+      "activation_posture": "ready"
+    },
+    "validation": null,
+    "completion_summary": null,
+    "no_data_state": "has_data",
+    "resumable": true,
+    "restartable": true,
+    "restart_warning": "Restart resets setup progression state only. Existing downstream records remain.",
+    "last_completed_stage": "validation",
+    "last_saved_at": "2026-03-16T03:33:47.653Z",
+    "updated_at": "2026-03-16T03:33:47.653Z",
+    "downstream_refs": [
+      {
+        "center_ref": "/ou/platform/p/setup-proof-s133/plane/center/project",
+        "work_ref": "/ou/platform/p/setup-proof-s133/plane/work/overview",
+        "review_ref": "/ou/platform/p/setup-proof-s133/plane/review/release-candidate",
+        "operate_ref": "/ou/platform/p/setup-proof-s133/plane/operate/overview",
+        "manage_ref": "/ou/platform/p/setup-proof-s133/plane/manage/credentials"
+      }
+    ]
+  }
+}

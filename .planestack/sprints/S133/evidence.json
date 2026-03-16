@@ -1,0 +1,59 @@
+{
+  "sprint": "S133",
+  "theme": "Setup Wizard v2 \u2014 Exceptional Real Project Bootstrap + Environment / Integration / Policy-Aware Onboarding Spine",
+  "proofs_required": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "required_green_bar": [
+    "s133-setup-smoke",
+    "s133-setup-ui-smoke",
+    "s133-setup-resume-smoke",
+    "s133-setup-starter-continuity-smoke",
+    "s133-truth-refresh",
+    "s133-write-validate-summary",
+    "sprint133-validate",
+    "contract-test-docker",
+    "e2e-gate"
+  ],
+  "closeout_only": [
+    "s133-closeout-evidence-check"
+  ],
+  "expected_artifacts": [
+    "setup-bootstrap-proof.json",
+    "setup-readiness-proof.json",
+    "setup-approval-vs-activation-proof.json",
+    "starter-planning-continuity-proof.json",
+    "setup-completion-landing-proof.json",
+    "setup-resume-restart-proof.json",
+    "setup-context.json",
+    "ui-smoke.json",
+    "truth-refresh-summary.json",
+    "setup_exceptional_range_scorecard.json",
+    "sprint133-validate.json"
+  ],
+  "status": "completed",
+  "completed_at": "2026-03-16T03:42:00Z",
+  "gate_results": {
+    "s133-setup-smoke": "pass",
+    "s133-setup-ui-smoke": "pass",
+    "s133-setup-resume-smoke": "pass",
+    "s133-setup-starter-continuity-smoke": "pass",
+    "s133-truth-refresh": "pass",
+    "s133-write-validate-summary": "pass",
+    "s133-closeout-evidence-check": "pass",
+    "sprint133-validate": "pass",
+    "contract-test-docker": "pass",
+    "e2e-gate": "pass"
+  },
+  "required_evidence_artifacts": [
+    {
+      "path": ".planestack/governance/evidence/s133/lock-check.json",
+      "artifact_id": "2c00db8a-7dab-42ea-be62-81fcc45f1e58"
+    }
+  ]
+}
