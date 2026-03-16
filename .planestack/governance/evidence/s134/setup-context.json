@@ -1,0 +1,16 @@
+{
+  "project_id": "20689516-b09f-4b6a-afc5-585cb138d73c",
+  "project_key": "ai-management-proof-s134",
+  "provider_key": "s134-stub",
+  "model_key": "s134-stub-balanced",
+  "policy_key": "s134-default-policy",
+  "routing_key": "concierge",
+  "budget_key": "s134-project-budget",
+  "quota_key": "s134-project-quota",
+  "run_ids": [
+    "s134-jobs-run",
+    "s134-review-run",
+    "s134-observe-run",
+    "s134-concierge-run"
+  ]
+}

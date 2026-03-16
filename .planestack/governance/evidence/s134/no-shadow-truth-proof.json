@@ -1,0 +1,41 @@
+{
+  "ownership": "ai_management_control_plane_projection_only",
+  "provider": {
+    "ref": "s134-stub",
+    "type": "source_truth",
+    "label": "S134 Stub Provider",
+    "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/providers/s134-stub"
+  },
+  "model": {
+    "ref": "s134-stub-balanced",
+    "type": "source_truth",
+    "label": "s134-stub-balanced",
+    "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/models/s134-stub-balanced"
+  },
+  "routing": {
+    "ref": "concierge",
+    "type": "source_truth",
+    "label": "concierge",
+    "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/routing/concierge"
+  },
+  "policy": {
+    "ref": "s134-default-policy",
+    "type": "source_truth",
+    "label": "s134-default-policy",
+    "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/policies/s134-default-policy"
+  },
+  "run": {
+    "outputs": [],
+    "evidence_refs": [
+      "artifact-evidence-s134-review"
+    ],
+    "drillthrough_refs": [
+      {
+        "ref": "s134-review-run",
+        "type": "related_governance",
+        "label": "Review source",
+        "url": "/ou/platform/p/ai-management-proof-s134/review/reviews/release-candidate/s134-review-run"
+      }
+    ]
+  }
+}

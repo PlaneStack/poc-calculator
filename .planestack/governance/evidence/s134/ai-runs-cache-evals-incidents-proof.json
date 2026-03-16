@@ -1,0 +1,268 @@
+{
+  "run_detail": {
+    "run_ref": "s134-review-run",
+    "run_id": "s134-review-run",
+    "status": "failed",
+    "provider_ref": "s134-stub",
+    "model_ref": "s134-stub-balanced",
+    "routing_ref": "concierge",
+    "posture_state": "blocked",
+    "reason_codes": [
+      "incident_open"
+    ],
+    "next_required_action": "inspect_ai_run",
+    "outputs": [],
+    "evidence_refs": [
+      "artifact-evidence-s134-review"
+    ],
+    "cache_posture": "miss",
+    "eval_posture": "failed",
+    "incident_posture": "open",
+    "source_truth_ref": {
+      "ref": "s134-review-run",
+      "type": "source_truth",
+      "label": "s134-review-run",
+      "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/runs/s134-review-run"
+    },
+    "drillthrough_refs": [
+      {
+        "ref": "s134-review-run",
+        "type": "related_governance",
+        "label": "Review source",
+        "url": "/ou/platform/p/ai-management-proof-s134/review/reviews/release-candidate/s134-review-run"
+      }
+    ],
+    "source_context_refs": [],
+    "return_url": null,
+    "data": {
+      "usage": {
+        "total_tokens": 130,
+        "prompt_tokens": 90,
+        "completion_tokens": 40
+      },
+      "run_id": "s134-review-run",
+      "status": "failed",
+      "outputs": [],
+      "cache_hit": false,
+      "model_key": "s134-stub-balanced",
+      "created_at": "2026-03-16T04:37:46Z",
+      "latency_ms": 190,
+      "eval_status": "failed",
+      "provider_key": "s134-stub",
+      "source_plane": "reviews",
+      "evidence_refs": [
+        "artifact-evidence-s134-review"
+      ],
+      "operation_key": "plan",
+      "subsystem_key": "concierge",
+      "cost_usd_micros": 640,
+      "incident_status": "open",
+      "artifact_id": "29c0108f-0f07-45ce-9593-51683bd017fd",
+      "id": "29c0108f-0f07-45ce-9593-51683bd017fd"
+    }
+  },
+  "cache": {
+    "items": [
+      {
+        "cache_ref": "s134-cache",
+        "display_name": "s134-cache",
+        "posture_state": "degraded",
+        "reason_codes": [
+          "cache_degraded"
+        ],
+        "next_required_action": "inspect_cache",
+        "source_truth_ref": {
+          "ref": "s134-cache",
+          "type": "source_truth",
+          "label": "s134-cache",
+          "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/cache"
+        },
+        "source_context_refs": [],
+        "return_url": null,
+        "data": {
+          "cache_key": "s134-cache",
+          "degraded_mode": true,
+          "reason_codes": [
+            "cache_degraded"
+          ]
+        }
+      }
+    ],
+    "groups": [
+      {
+        "group_key": "degraded",
+        "label": "degraded",
+        "count": 1
+      }
+    ],
+    "no_data_state": "has_data",
+    "source_context_refs": [],
+    "return_url": null
+  },
+  "evals": {
+    "items": [
+      {
+        "eval_ref": "s134-quality-suite",
+        "eval_id": "s134-quality-suite",
+        "display_name": "s134-quality-suite",
+        "posture_state": "degraded",
+        "reason_codes": [
+          "eval_regressed"
+        ],
+        "next_required_action": "inspect_eval",
+        "status": "failed",
+        "source_truth_ref": {
+          "ref": "s134-quality-suite",
+          "type": "source_truth",
+          "label": "s134-quality-suite",
+          "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/evals/s134-quality-suite"
+        },
+        "source_context_refs": [],
+        "return_url": null,
+        "data": {
+          "lifecycle_state": "active",
+          "status": "failed",
+          "subsystem": "concierge",
+          "suite_key": "s134-quality-suite"
+        }
+      },
+      {
+        "eval_ref": "s134-baseline-suite",
+        "eval_id": "s134-baseline-suite",
+        "display_name": "s134-baseline-suite",
+        "posture_state": "healthy",
+        "reason_codes": [],
+        "next_required_action": "inspect_eval",
+        "status": "passed",
+        "source_truth_ref": {
+          "ref": "s134-baseline-suite",
+          "type": "source_truth",
+          "label": "s134-baseline-suite",
+          "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/evals/s134-baseline-suite"
+        },
+        "source_context_refs": [],
+        "return_url": null,
+        "data": {
+          "lifecycle_state": "active",
+          "status": "passed",
+          "subsystem": "codegen",
+          "suite_key": "s134-baseline-suite"
+        }
+      }
+    ],
+    "groups": [
+      {
+        "group_key": "degraded",
+        "label": "degraded",
+        "count": 1
+      },
+      {
+        "group_key": "healthy",
+        "label": "healthy",
+        "count": 1
+      }
+    ],
+    "no_data_state": "has_data",
+    "source_context_refs": [],
+    "return_url": null
+  },
+  "eval_detail": {
+    "eval_ref": "s134-quality-suite",
+    "eval_id": "s134-quality-suite",
+    "display_name": "s134-quality-suite",
+    "posture_state": "degraded",
+    "reason_codes": [
+      "eval_regressed"
+    ],
+    "next_required_action": "inspect_eval",
+    "status": "failed",
+    "source_truth_ref": {
+      "ref": "s134-quality-suite",
+      "type": "source_truth",
+      "label": "s134-quality-suite",
+      "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/evals/s134-quality-suite"
+    },
+    "source_context_refs": [],
+    "return_url": null,
+    "data": {
+      "lifecycle_state": "active",
+      "status": "failed",
+      "subsystem": "concierge",
+      "suite_key": "s134-quality-suite"
+    }
+  },
+  "incidents": {
+    "items": [
+      {
+        "incident_ref": "3ad0aa19-157a-46dd-ae35-9f338f573629",
+        "incident_id": "3ad0aa19-157a-46dd-ae35-9f338f573629",
+        "display_name": "S134 AI routing incident",
+        "posture_state": "blocked",
+        "status": "open",
+        "severity": "high",
+        "reason_codes": [
+          "incident_open"
+        ],
+        "next_required_action": "inspect_incident",
+        "source_truth_ref": {
+          "ref": "3ad0aa19-157a-46dd-ae35-9f338f573629",
+          "type": "source_truth",
+          "label": "S134 AI routing incident",
+          "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/incidents/3ad0aa19-157a-46dd-ae35-9f338f573629"
+        },
+        "source_context_refs": [],
+        "return_url": null,
+        "data": {
+          "incident_id": "3ad0aa19-157a-46dd-ae35-9f338f573629",
+          "status": "open",
+          "severity": "high",
+          "title": "S134 AI routing incident",
+          "summary": "Deterministic S134 incident proof",
+          "evidence_refs": [
+            "artifact-evidence-s134-review"
+          ]
+        }
+      }
+    ],
+    "groups": [
+      {
+        "group_key": "high",
+        "label": "high",
+        "count": 1
+      }
+    ],
+    "no_data_state": "has_data",
+    "source_context_refs": [],
+    "return_url": null
+  },
+  "incident_detail": {
+    "incident_ref": "3ad0aa19-157a-46dd-ae35-9f338f573629",
+    "incident_id": "3ad0aa19-157a-46dd-ae35-9f338f573629",
+    "display_name": "S134 AI routing incident",
+    "posture_state": "blocked",
+    "status": "open",
+    "severity": "high",
+    "reason_codes": [
+      "incident_open"
+    ],
+    "next_required_action": "inspect_incident",
+    "source_truth_ref": {
+      "ref": "3ad0aa19-157a-46dd-ae35-9f338f573629",
+      "type": "source_truth",
+      "label": "S134 AI routing incident",
+      "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/incidents/3ad0aa19-157a-46dd-ae35-9f338f573629"
+    },
+    "source_context_refs": [],
+    "return_url": null,
+    "data": {
+      "incident_id": "3ad0aa19-157a-46dd-ae35-9f338f573629",
+      "status": "open",
+      "severity": "high",
+      "title": "S134 AI routing incident",
+      "summary": "Deterministic S134 incident proof",
+      "evidence_refs": [
+        "artifact-evidence-s134-review"
+      ]
+    }
+  }
+}

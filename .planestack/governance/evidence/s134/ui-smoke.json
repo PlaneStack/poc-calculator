@@ -1,0 +1,248 @@
+{
+  "provider": {
+    "provider_ref": "s134-stub",
+    "provider_key": "s134-stub",
+    "display_name": "S134 Stub Provider",
+    "posture_state": "healthy",
+    "availability_state": "available",
+    "reason_codes": [],
+    "next_required_action": "inspect_provider",
+    "linked_model_refs": [
+      {
+        "ref": "s134-stub-balanced",
+        "type": "related_governance",
+        "label": "s134-stub-balanced",
+        "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/models/s134-stub-balanced"
+      }
+    ],
+    "linked_routing_refs": [
+      {
+        "ref": "concierge",
+        "type": "related_governance",
+        "label": "concierge",
+        "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/routing/concierge"
+      },
+      {
+        "ref": "codegen",
+        "type": "related_governance",
+        "label": "codegen",
+        "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/routing/codegen"
+      },
+      {
+        "ref": "ai_assistance",
+        "type": "related_governance",
+        "label": "ai_assistance",
+        "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/routing/ai_assistance"
+      },
+      {
+        "ref": "center_ask",
+        "type": "related_governance",
+        "label": "center_ask",
+        "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/routing/center_ask"
+      }
+    ],
+    "linked_policy_refs": [
+      {
+        "ref": "s134-default-policy",
+        "type": "related_governance",
+        "label": "s134-default-policy",
+        "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/policies/s134-default-policy"
+      },
+      {
+        "ref": "s134-constrained-policy",
+        "type": "related_governance",
+        "label": "s134-constrained-policy",
+        "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/policies/s134-constrained-policy"
+      }
+    ],
+    "drillthrough_refs": [
+      {
+        "ref": "s134-stub-balanced",
+        "type": "related_governance",
+        "label": "s134-stub-balanced",
+        "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/models/s134-stub-balanced"
+      },
+      {
+        "ref": "concierge",
+        "type": "related_governance",
+        "label": "concierge",
+        "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/routing/concierge"
+      },
+      {
+        "ref": "codegen",
+        "type": "related_governance",
+        "label": "codegen",
+        "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/routing/codegen"
+      },
+      {
+        "ref": "ai_assistance",
+        "type": "related_governance",
+        "label": "ai_assistance",
+        "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/routing/ai_assistance"
+      },
+      {
+        "ref": "center_ask",
+        "type": "related_governance",
+        "label": "center_ask",
+        "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/routing/center_ask"
+      },
+      {
+        "ref": "s134-default-policy",
+        "type": "related_governance",
+        "label": "s134-default-policy",
+        "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/policies/s134-default-policy"
+      },
+      {
+        "ref": "s134-constrained-policy",
+        "type": "related_governance",
+        "label": "s134-constrained-policy",
+        "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/policies/s134-constrained-policy"
+      }
+    ],
+    "source_truth_ref": {
+      "ref": "s134-stub",
+      "type": "source_truth",
+      "label": "S134 Stub Provider",
+      "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/providers/s134-stub"
+    },
+    "source_context_refs": [],
+    "return_url": null,
+    "data": {
+      "allowed_data_classes": [
+        "internal"
+      ],
+      "capability_matrix": {
+        "chat": true,
+        "completion": true
+      },
+      "cost_model_ref": "s134-stub/default",
+      "display_name": "S134 Stub Provider",
+      "lifecycle_state": "active",
+      "provider_key": "s134-stub"
+    }
+  },
+  "model": {
+    "model_ref": "s134-stub-balanced",
+    "model_key": "s134-stub-balanced",
+    "provider_ref": "s134-stub",
+    "display_name": "s134-stub-balanced",
+    "posture_state": "healthy",
+    "routing_eligibility": "eligible",
+    "reason_codes": [],
+    "next_required_action": "inspect_model",
+    "drillthrough_refs": [
+      {
+        "ref": "s134-stub",
+        "type": "related_governance",
+        "label": "s134-stub",
+        "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/providers/s134-stub"
+      }
+    ],
+    "source_truth_ref": {
+      "ref": "s134-stub-balanced",
+      "type": "source_truth",
+      "label": "s134-stub-balanced",
+      "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/models/s134-stub-balanced"
+    },
+    "source_context_refs": [],
+    "return_url": null,
+    "data": {
+      "capabilities": [
+        "chat",
+        "completion"
+      ],
+      "lifecycle_state": "active",
+      "model_key": "s134-stub-balanced",
+      "model_version": "1.0.0",
+      "provider_key": "s134-stub"
+    }
+  },
+  "routing": {
+    "routing_ref": "concierge",
+    "routing_key": "concierge",
+    "display_name": "concierge",
+    "posture_state": "healthy",
+    "reason_codes": [],
+    "next_required_action": "inspect_routing",
+    "provider_ref": "s134-stub",
+    "model_ref": "s134-stub-balanced",
+    "policy_refs": [],
+    "drillthrough_refs": [
+      {
+        "ref": "s134-stub",
+        "type": "related_governance",
+        "label": "s134-stub",
+        "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/providers/s134-stub"
+      },
+      {
+        "ref": "s134-stub-balanced",
+        "type": "related_governance",
+        "label": "s134-stub-balanced",
+        "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/models/s134-stub-balanced"
+      }
+    ],
+    "source_truth_ref": {
+      "ref": "concierge",
+      "type": "source_truth",
+      "label": "concierge",
+      "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/routing/concierge"
+    },
+    "source_context_refs": [],
+    "return_url": null,
+    "data": {
+      "model_key": "s134-stub-balanced",
+      "provider_key": "s134-stub",
+      "subsystem_key": "concierge"
+    }
+  },
+  "policy": {
+    "policy_ref": "s134-default-policy",
+    "policy_key": "s134-default-policy",
+    "display_name": "s134-default-policy",
+    "posture_state": "healthy",
+    "status": "active",
+    "reason_codes": [],
+    "next_required_action": "review_policy_context",
+    "source_truth_ref": {
+      "ref": "s134-default-policy",
+      "type": "source_truth",
+      "label": "s134-default-policy",
+      "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/policies/s134-default-policy"
+    },
+    "source_context_refs": [],
+    "return_url": null,
+    "data": {
+      "allowed_data_classes": [
+        "public",
+        "internal"
+      ],
+      "allowed_subsystems": [
+        "concierge",
+        "codegen",
+        "ai_assistance",
+        "center_ask",
+        "center_apply",
+        "pr_description"
+      ],
+      "denied_operations": [
+        "blocked.operation"
+      ],
+      "hitl_operations": [
+        "apply",
+        "activate"
+      ],
+      "lifecycle_state": "active",
+      "model_allowlist": [
+        "s134-stub-balanced"
+      ],
+      "must_stage_operations": [
+        "apply",
+        "activate"
+      ],
+      "policy_key": "s134-default-policy",
+      "provider_allowlist": [
+        "s134-stub"
+      ]
+    }
+  }
+}

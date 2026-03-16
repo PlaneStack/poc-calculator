@@ -1,0 +1,414 @@
+{
+  "budgets": {
+    "items": [
+      {
+        "budget_ref": "s134-project-budget",
+        "budget_key": "s134-project-budget",
+        "display_name": "s134-project-budget",
+        "posture_state": "degraded",
+        "reason_codes": [
+          "budget_threshold_reached"
+        ],
+        "next_required_action": "inspect_budget",
+        "limits": {
+          "cost_usd_micros": 2500000,
+          "requests": 1000,
+          "tokens": 500000
+        },
+        "source_truth_ref": {
+          "ref": "s134-project-budget",
+          "type": "source_truth",
+          "label": "s134-project-budget",
+          "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/budgets"
+        },
+        "source_context_refs": [],
+        "return_url": null,
+        "data": {
+          "alert_thresholds": {
+            "error_pct": 90,
+            "warn_pct": 70
+          },
+          "budget_key": "s134-project-budget",
+          "lifecycle_state": "active",
+          "limits": {
+            "cost_usd_micros": 2500000,
+            "requests": 1000,
+            "tokens": 500000
+          },
+          "scope": "project",
+          "used_pct": 91
+        }
+      }
+    ],
+    "groups": [
+      {
+        "group_key": "budgets",
+        "label": "budgets",
+        "count": 1
+      }
+    ],
+    "no_data_state": "has_data",
+    "source_context_refs": [],
+    "return_url": null
+  },
+  "quotas": {
+    "items": [
+      {
+        "quota_ref": "s134-project-quota",
+        "quota_key": "s134-project-quota",
+        "display_name": "s134-project-quota",
+        "posture_state": "healthy",
+        "reason_codes": [],
+        "next_required_action": "inspect_quota",
+        "limits": {
+          "cost_usd_micros": 2500000,
+          "requests": 1000,
+          "tokens": 500000
+        },
+        "source_truth_ref": {
+          "ref": "s134-project-quota",
+          "type": "source_truth",
+          "label": "s134-project-quota",
+          "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/quotas"
+        },
+        "source_context_refs": [],
+        "return_url": null,
+        "data": {
+          "lifecycle_state": "active",
+          "limits": {
+            "cost_usd_micros": 2500000,
+            "requests": 1000,
+            "tokens": 500000
+          },
+          "quota_key": "s134-project-quota",
+          "scope": "project",
+          "used_pct": 82
+        }
+      }
+    ],
+    "groups": [
+      {
+        "group_key": "quotas",
+        "label": "quotas",
+        "count": 1
+      }
+    ],
+    "no_data_state": "has_data",
+    "source_context_refs": [],
+    "return_url": null
+  },
+  "ledger": {
+    "items": [
+      {
+        "entry_ref": "s134-concierge-run",
+        "entry_id": "s134-concierge-run",
+        "entry_type": "usage",
+        "display_name": "s134-concierge-run",
+        "posture_state": "healthy",
+        "reason_codes": [],
+        "next_required_action": "inspect_ledger",
+        "provider_ref": "s134-stub",
+        "model_ref": "s134-stub-balanced",
+        "run_ref": "s134-concierge-run",
+        "source_truth_ref": {
+          "ref": "s134-concierge-run",
+          "type": "source_truth",
+          "label": "s134-concierge-run",
+          "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/ledger/s134-concierge-run"
+        },
+        "drillthrough_refs": [
+          {
+            "ref": "s134-concierge-run",
+            "type": "related_jobs",
+            "label": "AI run",
+            "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/runs/s134-concierge-run"
+          }
+        ],
+        "source_context_refs": [],
+        "return_url": null,
+        "data": {
+          "run_id": "s134-concierge-run",
+          "tenant_ref": null,
+          "ou_ref": null,
+          "project_ref": null,
+          "user_ref": null,
+          "role_context": [],
+          "plane_key": null,
+          "subsystem_key": "concierge",
+          "operation_key": "plan",
+          "provider_key": "s134-stub",
+          "model_key": "s134-stub-balanced",
+          "model_version": null,
+          "template_key": null,
+          "template_version": null,
+          "input_token_count": 50,
+          "output_token_count": 0,
+          "reasoning_token_count": 0,
+          "token_count": 50,
+          "cache_hit": false,
+          "latency_ms": 95,
+          "cost_amount": 210,
+          "cost_currency": "usd_micros",
+          "budget_key": "project-default",
+          "policy_refs": [],
+          "approval_refs": [],
+          "run_ref": null,
+          "evidence_refs": [
+            "artifact-evidence-s134-concierge"
+          ],
+          "timestamp": "2026-03-16T04:37:46Z"
+        }
+      },
+      {
+        "entry_ref": "s134-observe-run",
+        "entry_id": "s134-observe-run",
+        "entry_type": "usage",
+        "display_name": "s134-observe-run",
+        "posture_state": "healthy",
+        "reason_codes": [],
+        "next_required_action": "inspect_ledger",
+        "provider_ref": "s134-stub",
+        "model_ref": "s134-stub-balanced",
+        "run_ref": "s134-observe-run",
+        "source_truth_ref": {
+          "ref": "s134-observe-run",
+          "type": "source_truth",
+          "label": "s134-observe-run",
+          "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/ledger/s134-observe-run"
+        },
+        "drillthrough_refs": [
+          {
+            "ref": "s134-observe-run",
+            "type": "related_jobs",
+            "label": "AI run",
+            "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/runs/s134-observe-run"
+          }
+        ],
+        "source_context_refs": [],
+        "return_url": null,
+        "data": {
+          "run_id": "s134-observe-run",
+          "tenant_ref": null,
+          "ou_ref": null,
+          "project_ref": null,
+          "user_ref": null,
+          "role_context": [],
+          "plane_key": null,
+          "subsystem_key": "ai_assistance",
+          "operation_key": "summarize",
+          "provider_key": "s134-stub",
+          "model_key": "s134-stub-balanced",
+          "model_version": null,
+          "template_key": null,
+          "template_version": null,
+          "input_token_count": 70,
+          "output_token_count": 20,
+          "reasoning_token_count": 0,
+          "token_count": 90,
+          "cache_hit": true,
+          "latency_ms": 110,
+          "cost_amount": 300,
+          "cost_currency": "usd_micros",
+          "budget_key": "project-default",
+          "policy_refs": [],
+          "approval_refs": [],
+          "run_ref": null,
+          "evidence_refs": [
+            "artifact-evidence-s134-observe"
+          ],
+          "timestamp": "2026-03-16T04:37:46Z"
+        }
+      },
+      {
+        "entry_ref": "s134-review-run",
+        "entry_id": "s134-review-run",
+        "entry_type": "usage",
+        "display_name": "s134-review-run",
+        "posture_state": "healthy",
+        "reason_codes": [],
+        "next_required_action": "inspect_ledger",
+        "provider_ref": "s134-stub",
+        "model_ref": "s134-stub-balanced",
+        "run_ref": "s134-review-run",
+        "source_truth_ref": {
+          "ref": "s134-review-run",
+          "type": "source_truth",
+          "label": "s134-review-run",
+          "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/ledger/s134-review-run"
+        },
+        "drillthrough_refs": [
+          {
+            "ref": "s134-review-run",
+            "type": "related_jobs",
+            "label": "AI run",
+            "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/runs/s134-review-run"
+          }
+        ],
+        "source_context_refs": [],
+        "return_url": null,
+        "data": {
+          "run_id": "s134-review-run",
+          "tenant_ref": null,
+          "ou_ref": null,
+          "project_ref": null,
+          "user_ref": null,
+          "role_context": [],
+          "plane_key": null,
+          "subsystem_key": "concierge",
+          "operation_key": "plan",
+          "provider_key": "s134-stub",
+          "model_key": "s134-stub-balanced",
+          "model_version": null,
+          "template_key": null,
+          "template_version": null,
+          "input_token_count": 90,
+          "output_token_count": 40,
+          "reasoning_token_count": 0,
+          "token_count": 130,
+          "cache_hit": false,
+          "latency_ms": 190,
+          "cost_amount": 640,
+          "cost_currency": "usd_micros",
+          "budget_key": "project-default",
+          "policy_refs": [],
+          "approval_refs": [],
+          "run_ref": null,
+          "evidence_refs": [
+            "artifact-evidence-s134-review"
+          ],
+          "timestamp": "2026-03-16T04:37:46Z"
+        }
+      },
+      {
+        "entry_ref": "s134-jobs-run",
+        "entry_id": "s134-jobs-run",
+        "entry_type": "usage",
+        "display_name": "s134-jobs-run",
+        "posture_state": "healthy",
+        "reason_codes": [],
+        "next_required_action": "inspect_ledger",
+        "provider_ref": "s134-stub",
+        "model_ref": "s134-stub-balanced",
+        "run_ref": "s134-jobs-run",
+        "source_truth_ref": {
+          "ref": "s134-jobs-run",
+          "type": "source_truth",
+          "label": "s134-jobs-run",
+          "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/ledger/s134-jobs-run"
+        },
+        "drillthrough_refs": [
+          {
+            "ref": "s134-jobs-run",
+            "type": "related_jobs",
+            "label": "AI run",
+            "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/runs/s134-jobs-run"
+          }
+        ],
+        "source_context_refs": [],
+        "return_url": null,
+        "data": {
+          "run_id": "s134-jobs-run",
+          "tenant_ref": null,
+          "ou_ref": null,
+          "project_ref": null,
+          "user_ref": null,
+          "role_context": [],
+          "plane_key": null,
+          "subsystem_key": "codegen",
+          "operation_key": "summarize",
+          "provider_key": "s134-stub",
+          "model_key": "s134-stub-balanced",
+          "model_version": null,
+          "template_key": null,
+          "template_version": null,
+          "input_token_count": 120,
+          "output_token_count": 60,
+          "reasoning_token_count": 0,
+          "token_count": 180,
+          "cache_hit": false,
+          "latency_ms": 140,
+          "cost_amount": 850,
+          "cost_currency": "usd_micros",
+          "budget_key": "project-default",
+          "policy_refs": [],
+          "approval_refs": [],
+          "run_ref": null,
+          "evidence_refs": [
+            "artifact-evidence-s134-jobs"
+          ],
+          "timestamp": "2026-03-16T04:37:46Z"
+        }
+      }
+    ],
+    "groups": [
+      {
+        "group_key": "usage",
+        "label": "usage",
+        "count": 4
+      }
+    ],
+    "no_data_state": "has_data",
+    "source_context_refs": [],
+    "return_url": null
+  },
+  "ledger_detail": {
+    "entry_ref": "s134-jobs-run",
+    "entry_id": "s134-jobs-run",
+    "entry_type": "usage",
+    "display_name": "s134-jobs-run",
+    "posture_state": "healthy",
+    "reason_codes": [],
+    "next_required_action": "inspect_ledger",
+    "provider_ref": "s134-stub",
+    "model_ref": "s134-stub-balanced",
+    "run_ref": "s134-jobs-run",
+    "source_truth_ref": {
+      "ref": "s134-jobs-run",
+      "type": "source_truth",
+      "label": "s134-jobs-run",
+      "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/ledger/s134-jobs-run"
+    },
+    "drillthrough_refs": [
+      {
+        "ref": "s134-jobs-run",
+        "type": "related_jobs",
+        "label": "AI run",
+        "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/runs/s134-jobs-run"
+      }
+    ],
+    "source_context_refs": [],
+    "return_url": null,
+    "data": {
+      "run_id": "s134-jobs-run",
+      "tenant_ref": null,
+      "ou_ref": null,
+      "project_ref": null,
+      "user_ref": null,
+      "role_context": [],
+      "plane_key": null,
+      "subsystem_key": "codegen",
+      "operation_key": "summarize",
+      "provider_key": "s134-stub",
+      "model_key": "s134-stub-balanced",
+      "model_version": null,
+      "template_key": null,
+      "template_version": null,
+      "input_token_count": 120,
+      "output_token_count": 60,
+      "reasoning_token_count": 0,
+      "token_count": 180,
+      "cache_hit": false,
+      "latency_ms": 140,
+      "cost_amount": 850,
+      "cost_currency": "usd_micros",
+      "budget_key": "project-default",
+      "policy_refs": [],
+      "approval_refs": [],
+      "run_ref": null,
+      "evidence_refs": [
+        "artifact-evidence-s134-jobs"
+      ],
+      "timestamp": "2026-03-16T04:37:46Z"
+    }
+  }
+}

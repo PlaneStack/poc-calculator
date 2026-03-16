@@ -1,0 +1,246 @@
+{
+  "jobs": {
+    "run_ref": "s134-jobs-run",
+    "run_id": "s134-jobs-run",
+    "status": "completed",
+    "provider_ref": "s134-stub",
+    "model_ref": "s134-stub-balanced",
+    "routing_ref": "codegen",
+    "posture_state": "healthy",
+    "reason_codes": [],
+    "next_required_action": "inspect_ai_run",
+    "outputs": [
+      "artifact-output-s134-jobs"
+    ],
+    "evidence_refs": [
+      "artifact-evidence-s134-jobs"
+    ],
+    "cache_posture": "miss",
+    "eval_posture": null,
+    "incident_posture": null,
+    "source_truth_ref": {
+      "ref": "s134-jobs-run",
+      "type": "source_truth",
+      "label": "s134-jobs-run",
+      "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/runs/s134-jobs-run"
+    },
+    "drillthrough_refs": [
+      {
+        "ref": "s134-jobs-run",
+        "type": "related_jobs",
+        "label": "Jobs source",
+        "url": "/ou/platform/p/ai-management-proof-s134/jobs/runs/s134-jobs-run"
+      }
+    ],
+    "source_context_refs": [],
+    "return_url": null,
+    "data": {
+      "usage": {
+        "total_tokens": 180,
+        "prompt_tokens": 120,
+        "completion_tokens": 60
+      },
+      "run_id": "s134-jobs-run",
+      "status": "completed",
+      "outputs": [
+        "artifact-output-s134-jobs"
+      ],
+      "cache_hit": false,
+      "model_key": "s134-stub-balanced",
+      "created_at": "2026-03-16T04:37:46Z",
+      "latency_ms": 140,
+      "provider_key": "s134-stub",
+      "source_plane": "runs",
+      "evidence_refs": [
+        "artifact-evidence-s134-jobs"
+      ],
+      "operation_key": "summarize",
+      "subsystem_key": "codegen",
+      "cost_usd_micros": 850,
+      "artifact_id": "40c26f69-02c3-43f1-b3d7-8ed8dd0cb8f6",
+      "id": "40c26f69-02c3-43f1-b3d7-8ed8dd0cb8f6"
+    }
+  },
+  "review": {
+    "run_ref": "s134-review-run",
+    "run_id": "s134-review-run",
+    "status": "failed",
+    "provider_ref": "s134-stub",
+    "model_ref": "s134-stub-balanced",
+    "routing_ref": "concierge",
+    "posture_state": "blocked",
+    "reason_codes": [
+      "incident_open"
+    ],
+    "next_required_action": "inspect_ai_run",
+    "outputs": [],
+    "evidence_refs": [
+      "artifact-evidence-s134-review"
+    ],
+    "cache_posture": "miss",
+    "eval_posture": "failed",
+    "incident_posture": "open",
+    "source_truth_ref": {
+      "ref": "s134-review-run",
+      "type": "source_truth",
+      "label": "s134-review-run",
+      "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/runs/s134-review-run"
+    },
+    "drillthrough_refs": [
+      {
+        "ref": "s134-review-run",
+        "type": "related_governance",
+        "label": "Review source",
+        "url": "/ou/platform/p/ai-management-proof-s134/review/reviews/release-candidate/s134-review-run"
+      }
+    ],
+    "source_context_refs": [],
+    "return_url": null,
+    "data": {
+      "usage": {
+        "total_tokens": 130,
+        "prompt_tokens": 90,
+        "completion_tokens": 40
+      },
+      "run_id": "s134-review-run",
+      "status": "failed",
+      "outputs": [],
+      "cache_hit": false,
+      "model_key": "s134-stub-balanced",
+      "created_at": "2026-03-16T04:37:46Z",
+      "latency_ms": 190,
+      "eval_status": "failed",
+      "provider_key": "s134-stub",
+      "source_plane": "reviews",
+      "evidence_refs": [
+        "artifact-evidence-s134-review"
+      ],
+      "operation_key": "plan",
+      "subsystem_key": "concierge",
+      "cost_usd_micros": 640,
+      "incident_status": "open",
+      "artifact_id": "29c0108f-0f07-45ce-9593-51683bd017fd",
+      "id": "29c0108f-0f07-45ce-9593-51683bd017fd"
+    }
+  },
+  "observe": {
+    "run_ref": "s134-observe-run",
+    "run_id": "s134-observe-run",
+    "status": "completed",
+    "provider_ref": "s134-stub",
+    "model_ref": "s134-stub-balanced",
+    "routing_ref": "ai_assistance",
+    "posture_state": "healthy",
+    "reason_codes": [],
+    "next_required_action": "inspect_ai_run",
+    "outputs": [
+      "artifact-output-s134-observe"
+    ],
+    "evidence_refs": [
+      "artifact-evidence-s134-observe"
+    ],
+    "cache_posture": "hit",
+    "eval_posture": null,
+    "incident_posture": null,
+    "source_truth_ref": {
+      "ref": "s134-observe-run",
+      "type": "source_truth",
+      "label": "s134-observe-run",
+      "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/runs/s134-observe-run"
+    },
+    "drillthrough_refs": [
+      {
+        "ref": "s134-observe-run",
+        "type": "related_analytics",
+        "label": "Observe source",
+        "url": "/ou/platform/p/ai-management-proof-s134/observe/analytics-reporting/overview"
+      }
+    ],
+    "source_context_refs": [],
+    "return_url": null,
+    "data": {
+      "usage": {
+        "total_tokens": 90,
+        "prompt_tokens": 70,
+        "completion_tokens": 20
+      },
+      "run_id": "s134-observe-run",
+      "status": "completed",
+      "outputs": [
+        "artifact-output-s134-observe"
+      ],
+      "cache_hit": true,
+      "model_key": "s134-stub-balanced",
+      "created_at": "2026-03-16T04:37:46Z",
+      "latency_ms": 110,
+      "provider_key": "s134-stub",
+      "source_plane": "analytics_reporting",
+      "evidence_refs": [
+        "artifact-evidence-s134-observe"
+      ],
+      "operation_key": "summarize",
+      "subsystem_key": "ai_assistance",
+      "cost_usd_micros": 300,
+      "artifact_id": "3aef89e4-798f-463b-9fb8-bcb5b0e74b6f",
+      "id": "3aef89e4-798f-463b-9fb8-bcb5b0e74b6f"
+    }
+  },
+  "concierge": {
+    "run_ref": "s134-concierge-run",
+    "run_id": "s134-concierge-run",
+    "status": "running",
+    "provider_ref": "s134-stub",
+    "model_ref": "s134-stub-balanced",
+    "routing_ref": "concierge",
+    "posture_state": "healthy",
+    "reason_codes": [],
+    "next_required_action": "inspect_ai_run",
+    "outputs": [],
+    "evidence_refs": [
+      "artifact-evidence-s134-concierge"
+    ],
+    "cache_posture": "miss",
+    "eval_posture": null,
+    "incident_posture": null,
+    "source_truth_ref": {
+      "ref": "s134-concierge-run",
+      "type": "source_truth",
+      "label": "s134-concierge-run",
+      "url": "/ou/platform/p/ai-management-proof-s134/plane/ai-management/runs/s134-concierge-run"
+    },
+    "drillthrough_refs": [
+      {
+        "ref": "s134-concierge-run",
+        "type": "related_operate",
+        "label": "Concierge source",
+        "url": "/ou/platform/p/ai-management-proof-s134/plane/concierge/summary"
+      }
+    ],
+    "source_context_refs": [],
+    "return_url": null,
+    "data": {
+      "usage": {
+        "total_tokens": 50,
+        "prompt_tokens": 50,
+        "completion_tokens": 0
+      },
+      "run_id": "s134-concierge-run",
+      "status": "running",
+      "outputs": [],
+      "cache_hit": false,
+      "model_key": "s134-stub-balanced",
+      "created_at": "2026-03-16T04:37:46Z",
+      "latency_ms": 95,
+      "provider_key": "s134-stub",
+      "source_plane": "concierge",
+      "evidence_refs": [
+        "artifact-evidence-s134-concierge"
+      ],
+      "operation_key": "plan",
+      "subsystem_key": "concierge",
+      "cost_usd_micros": 210,
+      "artifact_id": "3fb61943-7b30-4063-b305-a843e5eb044c",
+      "id": "3fb61943-7b30-4063-b305-a843e5eb044c"
+    }
+  }
+}
