@@ -1,0 +1,1 @@
+{"schema_version": 1, "generated_at": "2026-03-16T02:17:37Z", "status": "passed", "operation": "sprint132-validate", "chain": ["governance-lock-check", "contract-test-docker", "s132-read-surface-inventory-check", "s132-route-traversal-smoke", "s132-browser-error-gate", "s132-ui-smoke", "s132-truth-refresh", "s132-write-validate-summary"]}

@@ -1,0 +1,2376 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-16T02:16:26.360Z",
+  "fixture_project_ref": "plane-read-fixture",
+  "items": [
+    {
+      "surface_ref": "center/center/project",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Center",
+          "notes": "Open mode"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "center/center/project",
+        "route_path": "/center/project",
+        "render_selector": "[data-testid=\"center-project-page\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "center/center/artifacts",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Center",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-artifacts",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "center/center/artifacts",
+        "route_path": "/center/artifacts",
+        "render_selector": "[data-testid=\"center-artifacts-page\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "plan/work/overview",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Plan",
+          "notes": "Open mode"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "plan/work/overview",
+        "route_path": "/plane/work/overview",
+        "render_selector": "[data-testid=\"plan-work-overview\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "plan/work/tasks",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Plan",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-tasks",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "plan/work/tasks",
+        "route_path": "/plane/work/tasks",
+        "render_selector": null
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "plan/work/sprints",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Plan",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-sprints",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "plan/work/sprints",
+        "route_path": "/plane/work/sprints",
+        "render_selector": null
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "plan/work/templates",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Plan",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-templates",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "plan/work/templates",
+        "route_path": "/plane/work/templates",
+        "render_selector": null
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "plan/work/ideas",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Plan",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-ideas",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "plan/work/ideas",
+        "route_path": "/plane/work/ideas",
+        "render_selector": null
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "plan/work/work-items",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Plan",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-work-items",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "plan/work/work-items",
+        "route_path": "/plane/work/work-items",
+        "render_selector": "[data-testid=\"plan-work-items\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "plan/work/people",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Plan",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-people",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "plan/work/people",
+        "route_path": "/plane/work/people",
+        "render_selector": null
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "plan/work/feedback",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Plan",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-feedback",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "plan/work/feedback",
+        "route_path": "/plane/work/feedback",
+        "render_selector": null
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "observe/library/overview",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Observe",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-library",
+          "notes": "Switch plane within mode"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "observe/library/overview",
+        "route_path": "/plane/library/overview",
+        "render_selector": "[data-testid=\"observe-library-overview\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "observe/library/browse",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Observe",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-library",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-browse",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "observe/library/browse",
+        "route_path": "/plane/library/browse",
+        "render_selector": "[data-testid=\"observe-library-browse-items\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "observe/library/sprints",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Observe",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-library",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-sprints",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "observe/library/sprints",
+        "route_path": "/plane/library/sprints",
+        "render_selector": "[data-testid=\"library-sprints\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "observe/library/conversations",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Observe",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-library",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-conversations",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "observe/library/conversations",
+        "route_path": "/plane/library/conversations",
+        "render_selector": "[data-testid=\"library-conversations\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "jobs/runs/runs",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Jobs",
+          "notes": "Open mode"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "jobs/runs/runs",
+        "route_path": "/plane/runs/runs",
+        "render_selector": "[data-testid=\"jobs-runs-surface\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "jobs/runs/workflows",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Jobs",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-workflows",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "jobs/runs/workflows",
+        "route_path": "/plane/runs/workflows",
+        "render_selector": "[data-testid=\"jobs-workflows-surface\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "observe/chronicle/overview",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Observe",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-chronicle",
+          "notes": "Switch plane within mode"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "observe/chronicle/overview",
+        "route_path": "/plane/chronicle/overview",
+        "render_selector": "[data-testid=\"chronicle-overview\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "observe/chronicle/timeline",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Observe",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-chronicle",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-timeline",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "observe/chronicle/timeline",
+        "route_path": "/plane/chronicle/timeline",
+        "render_selector": "[data-testid=\"chronicle-timeline\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "observe/chronicle/work-history",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Observe",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-chronicle",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-work-history",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "observe/chronicle/work-history",
+        "route_path": "/plane/chronicle/work-history",
+        "render_selector": "[data-testid=\"chronicle-work-history\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "observe/chronicle/product-knowledge",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Observe",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-chronicle",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-product-knowledge",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "observe/chronicle/product-knowledge",
+        "route_path": "/plane/chronicle/product-knowledge",
+        "render_selector": "[data-testid=\"chronicle-product-knowledge\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "observe/chronicle/query",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Observe",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-chronicle",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-query",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "observe/chronicle/query",
+        "route_path": "/plane/chronicle/query",
+        "render_selector": "[data-testid=\"chronicle-query\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "review/governance/changesets",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Review",
+          "notes": "Open mode"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "review/governance/changesets",
+        "route_path": "/plane/governance/changesets",
+        "render_selector": null
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "review/governance/decisions",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Review",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-decisions",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "review/governance/decisions",
+        "route_path": "/plane/governance/decisions",
+        "render_selector": null
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "review/governance/blocked",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Review",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-blocked",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "review/governance/blocked",
+        "route_path": "/plane/governance/blocked",
+        "render_selector": null
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "review/governance/approvals",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Review",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-approvals",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "review/governance/approvals",
+        "route_path": "/plane/governance/approvals",
+        "render_selector": null
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "review/governance/roles",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Review",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-roles",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "review/governance/roles",
+        "route_path": "/plane/governance/roles",
+        "render_selector": null
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "review/governance/policy",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Review",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-policy",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "review/governance/policy",
+        "route_path": "/plane/governance/policy",
+        "render_selector": null
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "review/governance/parity",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Review",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-parity",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "review/governance/parity",
+        "route_path": "/plane/governance/parity",
+        "render_selector": null
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "review/governance/orchestration",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Review",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-orchestration",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "review/governance/orchestration",
+        "route_path": "/plane/governance/orchestration",
+        "render_selector": null
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "review/governance/incidents",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Review",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-incidents",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "review/governance/incidents",
+        "route_path": "/plane/governance/incidents",
+        "render_selector": null
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/integrations/credentials",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/integrations/credentials",
+        "route_path": "/plane/integrations/credentials",
+        "render_selector": "[data-testid=\"integrations-island\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/integrations/writeback-policy",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-writeback-policy",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/integrations/writeback-policy",
+        "route_path": "/plane/integrations/writeback-policy",
+        "render_selector": "[data-testid^=\"manage-writeback-policy-row\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/integrations/writeback-center",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-writeback-center",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/integrations/writeback-center",
+        "route_path": "/plane/integrations/writeback-center",
+        "render_selector": "#writeback-center-filter"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "observe/analytics_reporting/overview",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Observe",
+          "notes": "Open mode"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "observe/analytics_reporting/overview",
+        "route_path": "/plane/analytics_reporting/overview",
+        "render_selector": "[data-testid=\"observe-analytics-overview\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "review/reviews/release-candidate",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Review",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-reviews",
+          "notes": "Switch plane within mode"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "review/reviews/release-candidate",
+        "route_path": "/plane/reviews/release-candidate",
+        "render_selector": "[data-testid=\"release-candidate-panel\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "review/reviews/queue",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Review",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-reviews",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-queue",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "review/reviews/queue",
+        "route_path": "/plane/reviews/queue",
+        "render_selector": "[data-testid=\"review-queue-panel\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "review/reviews/shared",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Review",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-reviews",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-shared",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "review/reviews/shared",
+        "route_path": "/plane/reviews/shared",
+        "render_selector": "[data-testid=\"shared-review-panel\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": [
+        "external reviewer-only surface; canonical internal fixture uses internal role posture"
+      ]
+    },
+    {
+      "surface_ref": "operate/operate/overview",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Operate",
+          "notes": "Open mode"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "operate/operate/overview",
+        "route_path": "/plane/operate/overview",
+        "render_selector": "[data-testid=\"operate-overview\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "operate/operate/setup",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Operate",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-setup",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "operate/operate/setup",
+        "route_path": "/plane/operate/setup",
+        "render_selector": "[data-testid=\"operate-surface-setup\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "operate/operate/environments",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Operate",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-environments",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "operate/operate/environments",
+        "route_path": "/plane/operate/environments",
+        "render_selector": "[data-testid=\"operate-surface-environments\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "operate/operate/resources",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Operate",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-resources",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "operate/operate/resources",
+        "route_path": "/plane/operate/resources",
+        "render_selector": "[data-testid=\"operate-surface-resources\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "operate/operate/blueprints",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Operate",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-blueprints",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "operate/operate/blueprints",
+        "route_path": "/plane/operate/blueprints",
+        "render_selector": "[data-testid=\"operate-surface-blueprints\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "operate/operate/sessions",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Operate",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-sessions",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "operate/operate/sessions",
+        "route_path": "/plane/operate/sessions",
+        "render_selector": "[data-testid=\"operate-surface-sessions\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "operate/operate/execution",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Operate",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-execution",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "operate/operate/execution",
+        "route_path": "/plane/operate/execution",
+        "render_selector": "[data-testid=\"operate-execution\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "operate/operate/incidents",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Operate",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-incidents",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "operate/operate/incidents",
+        "route_path": "/plane/operate/incidents",
+        "render_selector": "[data-testid=\"operate-incidents\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "operate/operate/runbooks",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Operate",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-runbooks",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "operate/operate/runbooks",
+        "route_path": "/plane/operate/runbooks",
+        "render_selector": "[data-testid=\"operate-surface-runbooks\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "operate/operate/templates",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Operate",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-templates",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "operate/operate/templates",
+        "route_path": "/plane/operate/templates",
+        "render_selector": "[data-testid=\"operate-surface-templates\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "operate/operate/settings",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Operate",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-settings",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "operate/operate/settings",
+        "route_path": "/plane/operate/settings",
+        "render_selector": null
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/concierge/inbox",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-concierge",
+          "notes": "Switch plane within mode"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/concierge/inbox",
+        "route_path": "/plane/concierge/inbox",
+        "render_selector": "[data-testid=\"concierge-surface-inbox\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/concierge/plans",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-concierge",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-plans",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/concierge/plans",
+        "route_path": "/plane/concierge/plans",
+        "render_selector": "[data-testid=\"concierge-surface-plans\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/concierge/blockers",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-concierge",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-blockers",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/concierge/blockers",
+        "route_path": "/plane/concierge/blockers",
+        "render_selector": "[data-testid=\"concierge-surface-blockers\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/concierge/handoffs",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-concierge",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-handoffs",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/concierge/handoffs",
+        "route_path": "/plane/concierge/handoffs",
+        "render_selector": "[data-testid=\"concierge-surface-handoffs\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/concierge/resumable",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-concierge",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-resumable",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/concierge/resumable",
+        "route_path": "/plane/concierge/resumable",
+        "render_selector": "[data-testid=\"concierge-surface-resumable\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/concierge/timeline",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-concierge",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-timeline",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/concierge/timeline",
+        "route_path": "/plane/concierge/timeline",
+        "render_selector": "[data-testid=\"concierge-surface-timeline\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/concierge/summary",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-concierge",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-summary",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/concierge/summary",
+        "route_path": "/plane/concierge/summary",
+        "render_selector": "[data-testid=\"concierge-surface-summary\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/ai-management/overview",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-ai-management",
+          "notes": "Switch plane within mode"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/ai-management/overview",
+        "route_path": "/plane/ai-management/overview",
+        "render_selector": "[data-testid=\"ai-mgmt-surface-overview\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/ai-management/agents",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-ai-management",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-agents",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/ai-management/agents",
+        "route_path": "/plane/ai-management/agents",
+        "render_selector": "[data-testid=\"ai-mgmt-surface-agents\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/ai-management/codegen",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-ai-management",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-codegen",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/ai-management/codegen",
+        "route_path": "/plane/ai-management/codegen",
+        "render_selector": null
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": [
+        "feature-flagged codegen surface is not guaranteed enabled in the deterministic fixture"
+      ]
+    },
+    {
+      "surface_ref": "manage/ai-management/providers",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-ai-management",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-providers",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/ai-management/providers",
+        "route_path": "/plane/ai-management/providers",
+        "render_selector": "[data-testid=\"ai-mgmt-surface-providers\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/ai-management/models",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-ai-management",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-models",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/ai-management/models",
+        "route_path": "/plane/ai-management/models",
+        "render_selector": "[data-testid=\"ai-mgmt-surface-models\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/ai-management/routing",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-ai-management",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-routing",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/ai-management/routing",
+        "route_path": "/plane/ai-management/routing",
+        "render_selector": "[data-testid=\"manage-ai-routing\"], [data-testid=\"ai-mgmt-surface-overview\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/ai-management/templates",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-ai-management",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-templates",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/ai-management/templates",
+        "route_path": "/plane/ai-management/templates",
+        "render_selector": "[data-testid=\"ai-mgmt-surface-templates\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/ai-management/policies",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-ai-management",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-policies",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/ai-management/policies",
+        "route_path": "/plane/ai-management/policies",
+        "render_selector": "[data-testid=\"ai-mgmt-surface-policies\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/ai-management/quotas",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-ai-management",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-quotas",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/ai-management/quotas",
+        "route_path": "/plane/ai-management/quotas",
+        "render_selector": "[data-testid=\"ai-mgmt-surface-quotas\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/ai-management/budgets",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-ai-management",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-budgets",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/ai-management/budgets",
+        "route_path": "/plane/ai-management/budgets",
+        "render_selector": "[data-testid=\"ai-mgmt-surface-budgets\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/ai-management/ledger",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-ai-management",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-ledger",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/ai-management/ledger",
+        "route_path": "/plane/ai-management/ledger",
+        "render_selector": "[data-testid=\"ai-mgmt-surface-ledger\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/ai-management/runs",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-ai-management",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-runs",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/ai-management/runs",
+        "route_path": "/plane/ai-management/runs",
+        "render_selector": "[data-testid=\"ai-mgmt-surface-runs\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/ai-management/cache",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-ai-management",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-cache",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/ai-management/cache",
+        "route_path": "/plane/ai-management/cache",
+        "render_selector": "[data-testid=\"ai-mgmt-surface-cache\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/ai-management/evals",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-ai-management",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-evals",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/ai-management/evals",
+        "route_path": "/plane/ai-management/evals",
+        "render_selector": "[data-testid=\"ai-mgmt-surface-evals\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/ai-management/incidents",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-ai-management",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-incidents",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/ai-management/incidents",
+        "route_path": "/plane/ai-management/incidents",
+        "render_selector": "[data-testid=\"ai-mgmt-surface-incidents\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/admin/demo",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-admin",
+          "notes": "Switch plane within mode"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/admin/demo",
+        "route_path": "/plane/admin/demo",
+        "render_selector": "[data-testid=\"manage-admin-demo\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/admin/system",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-admin",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-system",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/admin/system",
+        "route_path": "/plane/admin/system",
+        "render_selector": "[data-testid=\"manage-admin-system\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/admin/environments",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-admin",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-environments",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/admin/environments",
+        "route_path": "/plane/admin/environments",
+        "render_selector": "[data-testid=\"manage-admin-environments\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/admin/components",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-admin",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-components",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/admin/components",
+        "route_path": "/plane/admin/components",
+        "render_selector": "[data-testid=\"components-panel\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/admin/preferences",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-admin",
+          "notes": "Switch plane within mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-preferences",
+          "notes": "Switch surface within plane"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/admin/preferences",
+        "route_path": "/plane/admin/preferences",
+        "render_selector": "[data-testid=\"manage-admin-preferences\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "jobs/runs/detail",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Jobs",
+          "notes": "Open Jobs mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "css_fallback",
+          "selector_value": "[data-testid^=\"jobs-run-open-\"]",
+          "notes": "Open first run detail from list"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "jobs/runs/detail",
+        "route_path": "/jobs/runs/",
+        "render_selector": "[data-testid=\"job-detail-panel\"]"
+      },
+      "required_fixture_state": "jobs_retry_lineage_overlay",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "jobs/workflows/detail",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Jobs",
+          "notes": "Open Jobs mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-workflows",
+          "notes": "Open Workflows surface"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "css_fallback",
+          "selector_value": "[data-testid^=\"jobs-workflow-open-\"]",
+          "notes": "Open first workflow detail"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "jobs/workflows/detail",
+        "route_path": "/jobs/workflows/",
+        "render_selector": "[data-testid=\"workflow-detail-panel\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "review/reviews/release-candidate/detail",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Review",
+          "notes": "Open Review mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-reviews",
+          "notes": "Switch to Reviews plane"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "css_fallback",
+          "selector_value": "[data-testid^=\"release-candidate-open-\"]",
+          "notes": "Open first release candidate detail"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "review/reviews/release-candidate/detail",
+        "route_path": "/plane/reviews/release-candidate/",
+        "render_selector": "[data-testid=\"release-candidate-detail-panel\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "review/reviews/queue/detail",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Review",
+          "notes": "Open Review mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-reviews",
+          "notes": "Switch to Reviews plane"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-queue",
+          "notes": "Open queue surface"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "css_fallback",
+          "selector_value": "[data-testid^=\"review-queue-open-\"]",
+          "notes": "Open first review queue detail"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "review/reviews/queue/detail",
+        "route_path": "/plane/reviews/queue/",
+        "render_selector": "[data-testid=\"review-queue-detail-panel\"]"
+      },
+      "required_fixture_state": "governance_blocked_overlay",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/admin/environments/detail",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open Manage mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-admin",
+          "notes": "Switch to Admin plane"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-environments",
+          "notes": "Open environments surface"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "css_fallback",
+          "selector_value": "[data-testid^=\"manage-admin-environment-open-\"]",
+          "notes": "Open first environment detail"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/admin/environments/detail",
+        "route_path": "/plane/admin/environments/",
+        "render_selector": "[data-testid=\"manage-admin-environment-detail\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/admin/components/detail",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open Manage mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-admin",
+          "notes": "Switch to Admin plane"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-components",
+          "notes": "Open components surface"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "css_fallback",
+          "selector_value": "[data-testid^=\"manage-admin-component-open-\"]",
+          "notes": "Open first component detail"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/admin/components/detail",
+        "route_path": "/plane/admin/components/",
+        "render_selector": "[data-testid=\"manage-admin-component-detail\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "manage/integrations/writeback-policy/detail",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Manage",
+          "notes": "Open Manage mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-writeback-policy",
+          "notes": "Open writeback policy surface"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "css_fallback",
+          "selector_value": "[data-testid^=\"manage-writeback-policy-open-\"]",
+          "notes": "Open first writeback policy detail"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "manage/integrations/writeback-policy/detail",
+        "route_path": "/plane/integrations/writeback-policy/",
+        "render_selector": "[data-testid=\"manage-writeback-policy-detail\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "review/governance/approvals/detail",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Review",
+          "notes": "Open Review mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-plane-label-reviews",
+          "notes": "Switch to Reviews plane"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-queue",
+          "notes": "Open review queue surface"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "css_fallback",
+          "selector_value": "[data-testid^=\"review-queue-open-\"]",
+          "notes": "Open first review queue detail"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "css_fallback",
+          "selector_value": "a[href*=\"/plane/governance/approvals/\"]",
+          "notes": "Open approval detail from queue detail"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "review/governance/approvals/detail",
+        "route_path": "/plane/governance/approvals/",
+        "render_selector": "[data-testid=\"review-approval-detail\"]"
+      },
+      "required_fixture_state": "governance_blocked_overlay",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "review/governance/blocked/detail",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Review",
+          "notes": "Open Review mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-blocked",
+          "notes": "Open blocked surface"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "css_fallback",
+          "selector_value": "[data-testid^=\"governance-blocked-open-\"]",
+          "notes": "Open first blocked detail"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "review/governance/blocked/detail",
+        "route_path": "/plane/governance/blocked/",
+        "render_selector": "[data-testid=\"review-blocked-detail\"]"
+      },
+      "required_fixture_state": "governance_blocked_overlay",
+      "blocking_conditions": []
+    },
+    {
+      "surface_ref": "review/governance/decisions/detail",
+      "entry_surface_ref": "center/center/project",
+      "click_path": [
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "mode-Review",
+          "notes": "Open Review mode"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "testid",
+          "selector_value": "nav-surface-row-decisions",
+          "notes": "Open decisions surface"
+        },
+        {
+          "action": "click",
+          "selector_strategy": "css_fallback",
+          "selector_value": "[data-testid^=\"governance-decision-open-\"]",
+          "notes": "Open first decision detail"
+        }
+      ],
+      "expected_target": {
+        "surface_ref": "review/governance/decisions/detail",
+        "route_path": "/plane/governance/decisions/",
+        "render_selector": "[data-testid=\"review-decision-detail\"]"
+      },
+      "required_fixture_state": "base_fixture",
+      "blocking_conditions": []
+    }
+  ]
+}

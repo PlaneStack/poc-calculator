@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-16T02:24:44Z",
+  "status": "passed",
+  "operation": "s132-closeout",
+  "gates": {
+    "s132-read-surface-inventory-check": "passed",
+    "s132-route-traversal-smoke": "passed",
+    "s132-browser-error-gate": "passed",
+    "s132-ui-smoke": "passed",
+    "s132-truth-refresh": "passed",
+    "s132-write-validate-summary": "passed",
+    "s132-closeout-evidence-check": "passed",
+    "sprint132-validate": "passed",
+    "contract-test-docker": "passed",
+    "e2e-gate": "passed"
+  },
+  "fixture_project_ref": "plane-read-fixture",
+  "archive_ids": {
+    "pack_id": "fc92d170-c7d8-4af9-b0a5-71fe4935660a",
+    "runlog_id": "8654c0e4-1b4c-403d-b831-02bb6559b61d",
+    "evidence_id": "860d4b89-e9cc-4d07-84fc-25f1733951aa",
+    "manifest_id": "53ba1484-c619-4f70-bc3b-f72f313d145a",
+    "writeback_id": "f873ab0a-456c-4b3e-af87-e9a681f544d5",
+    "writeback_artifact_id": "0b2fb775-5417-41cd-b77d-718fb927ab97"
+  }
+}

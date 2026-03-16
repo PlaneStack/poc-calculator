@@ -1,0 +1,188 @@
+{
+  "sprint_code": "S132",
+  "status": "completed",
+  "theme": "Exhaustive Read-Surface QA Coverage",
+  "required_gates": [
+    "s132-read-surface-inventory-check",
+    "s132-route-traversal-smoke",
+    "s132-browser-error-gate",
+    "s132-ui-smoke",
+    "s132-truth-refresh",
+    "s132-write-validate-summary",
+    "sprint132-validate",
+    "contract-test-docker",
+    "e2e-gate"
+  ],
+  "closeout_only": [
+    "s132-closeout-evidence-check"
+  ],
+  "required_proofs": {
+    "proof_a_inventory_and_coverage": {
+      "required": true,
+      "status": "passed"
+    },
+    "proof_b_broad_click_traversal": {
+      "required": true,
+      "status": "passed"
+    },
+    "proof_c_cross_plane_continuity": {
+      "required": true,
+      "status": "passed"
+    },
+    "proof_d_no_data_and_health": {
+      "required": true,
+      "status": "passed"
+    }
+  },
+  "required_artifacts": [
+    ".planestack/sprints/S132/pack.md",
+    ".planestack/sprints/S132/runlog.md",
+    ".planestack/sprints/S132/evidence.json",
+    ".planestack/sprints/S132/manifest.json",
+    ".planestack/governance/evidence/s132/lock-check.json",
+    ".planestack/governance/evidence/s132/read-surface-inventory.json",
+    ".planestack/governance/evidence/s132/read-surface-click-paths.json",
+    ".planestack/governance/evidence/s132/read-surface-coverage-report.json",
+    ".planestack/governance/evidence/s132/browser-error-gate-report.json",
+    ".planestack/governance/evidence/s132/fixture-read-coverage-summary.json",
+    ".planestack/governance/evidence/s132/ui-traversal-proof.json",
+    ".planestack/governance/evidence/s132/cross-plane-read-continuity-proof.json",
+    ".planestack/governance/evidence/s132/truth-refresh-summary.json",
+    ".planestack/governance/evidence/s132/sprint132-validate.json",
+    ".planestack/governance/evidence/s132/closeout-evidence-check.json",
+    ".planestack/governance/evidence/s132/warning-whitelist.json",
+    ".planestack/governance/evidence/s132/archive.json",
+    ".planestack/governance/evidence/s132/closeout-summary.json"
+  ],
+  "hard_bar_surfaces": [
+    "inventory/read-surfaces",
+    "traversal/click-only-coverage",
+    "continuity/manage-links",
+    "browser-error-gate"
+  ],
+  "focused_surfaces": [
+    "plane-read-fixture",
+    "observe/*",
+    "review/*",
+    "manage/*"
+  ],
+  "notes": [
+    "Inventory is the QA source of truth for S132.",
+    "Base fixture is broadly populated; overlays provide blocked, degraded, filtered-empty, no-data, and redacted variants.",
+    "Only click-reachable read surfaces count for the S132 hard bar."
+  ],
+  "completed_at": "2026-03-16T02:24:44Z",
+  "gate_results": {
+    "s132_read_surface_inventory_check": "pass",
+    "s132_route_traversal_smoke": "pass",
+    "s132_browser_error_gate": "pass",
+    "s132_ui_smoke": "pass",
+    "s132_truth_refresh": "pass",
+    "s132_write_validate_summary": "pass",
+    "s132_closeout_evidence_check": "pass",
+    "sprint132_validate": "pass",
+    "contract_test_docker": "pass",
+    "e2e_gate": "pass"
+  },
+  "required_evidence_artifacts": [
+    {
+      "key": "pack",
+      "path": ".planestack/sprints/S132/pack.md",
+      "required": true
+    },
+    {
+      "key": "runlog",
+      "path": ".planestack/sprints/S132/runlog.md",
+      "required": true
+    },
+    {
+      "key": "evidence",
+      "path": ".planestack/sprints/S132/evidence.json",
+      "required": true
+    },
+    {
+      "key": "manifest",
+      "path": ".planestack/sprints/S132/manifest.json",
+      "required": true
+    },
+    {
+      "key": "lock_check",
+      "path": ".planestack/governance/evidence/s132/lock-check.json",
+      "required": true,
+      "artifact_id": "acdce87d-1635-4104-94fe-d6724017d426"
+    },
+    {
+      "key": "inventory",
+      "path": ".planestack/governance/evidence/s132/read-surface-inventory.json",
+      "required": true
+    },
+    {
+      "key": "click_paths",
+      "path": ".planestack/governance/evidence/s132/read-surface-click-paths.json",
+      "required": true
+    },
+    {
+      "key": "coverage_report",
+      "path": ".planestack/governance/evidence/s132/read-surface-coverage-report.json",
+      "required": true
+    },
+    {
+      "key": "browser_error_gate",
+      "path": ".planestack/governance/evidence/s132/browser-error-gate-report.json",
+      "required": true
+    },
+    {
+      "key": "fixture_summary",
+      "path": ".planestack/governance/evidence/s132/fixture-read-coverage-summary.json",
+      "required": true
+    },
+    {
+      "key": "ui_traversal",
+      "path": ".planestack/governance/evidence/s132/ui-traversal-proof.json",
+      "required": true
+    },
+    {
+      "key": "continuity",
+      "path": ".planestack/governance/evidence/s132/cross-plane-read-continuity-proof.json",
+      "required": true
+    },
+    {
+      "key": "truth_refresh_summary",
+      "path": ".planestack/governance/evidence/s132/truth-refresh-summary.json",
+      "required": true
+    },
+    {
+      "key": "validate_summary",
+      "path": ".planestack/governance/evidence/s132/sprint132-validate.json",
+      "required": true
+    },
+    {
+      "key": "closeout_evidence_check",
+      "path": ".planestack/governance/evidence/s132/closeout-evidence-check.json",
+      "required": true
+    },
+    {
+      "key": "warning_whitelist",
+      "path": ".planestack/governance/evidence/s132/warning-whitelist.json",
+      "required": true
+    },
+    {
+      "key": "archive",
+      "path": ".planestack/governance/evidence/s132/archive.json",
+      "required": true
+    },
+    {
+      "key": "closeout_summary",
+      "path": ".planestack/governance/evidence/s132/closeout-summary.json",
+      "required": true
+    }
+  ],
+  "archive_ids": {
+    "pack_id": "fc92d170-c7d8-4af9-b0a5-71fe4935660a",
+    "runlog_id": "8654c0e4-1b4c-403d-b831-02bb6559b61d",
+    "evidence_id": "860d4b89-e9cc-4d07-84fc-25f1733951aa",
+    "manifest_id": "53ba1484-c619-4f70-bc3b-f72f313d145a",
+    "writeback_id": "f873ab0a-456c-4b3e-af87-e9a681f544d5",
+    "writeback_artifact_id": "0b2fb775-5417-41cd-b77d-718fb927ab97"
+  }
+}

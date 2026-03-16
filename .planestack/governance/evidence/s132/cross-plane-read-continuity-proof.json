@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-16T02:17:35.525Z",
+  "status": "passed",
+  "continuity_checks": [
+    {
+      "path": "Plan->Jobs",
+      "status": "passed"
+    },
+    {
+      "path": "Jobs->Review",
+      "status": "passed"
+    },
+    {
+      "path": "Review->Operate or Observe",
+      "status": "passed"
+    },
+    {
+      "path": "Jobs->Manage",
+      "status": "passed"
+    },
+    {
+      "path": "Review->Manage",
+      "status": "passed"
+    },
+    {
+      "path": "Operate->Manage",
+      "status": "passed"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "sprint_code": "S132",
+  "title": "Exhaustive Read-Surface QA Coverage",
+  "files": [
+    "Sprint132-Pack.md",
+    "Sprint132-Backlog.md",
+    "Sprint132-Inventory-and-Coverage-Model.md",
+    "Sprint132-QA-Strategy.md",
+    "Sprint132-Validation-Matrix.md",
+    "Sprint132-Truth-Refresh-Plan.md",
+    "Sprint132-Risk-Register.md",
+    "Sprint132-Tranche-Plan.md",
+    "S132-runlog.md",
+    "S132-evidence.json",
+    "manifest.json",
+    "screenshots/README.md"
+  ],
+  "canonical_runlog": "S132-runlog.md",
+  "canonical_evidence": "S132-evidence.json"
+}

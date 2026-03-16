@@ -1,0 +1,534 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-16T02:17:35.525Z",
+  "total_surfaces": 85,
+  "covered_count": 83,
+  "partial_count": 0,
+  "missing_count": 0,
+  "out_of_scope_count": 2,
+  "covered_surface_refs": [
+    "center/center/project",
+    "center/center/artifacts",
+    "plan/work/overview",
+    "plan/work/tasks",
+    "plan/work/sprints",
+    "plan/work/templates",
+    "plan/work/ideas",
+    "plan/work/work-items",
+    "plan/work/people",
+    "plan/work/feedback",
+    "observe/library/overview",
+    "observe/library/browse",
+    "observe/library/sprints",
+    "observe/library/conversations",
+    "jobs/runs/runs",
+    "jobs/runs/workflows",
+    "observe/chronicle/overview",
+    "observe/chronicle/timeline",
+    "observe/chronicle/work-history",
+    "observe/chronicle/product-knowledge",
+    "observe/chronicle/query",
+    "review/governance/changesets",
+    "review/governance/decisions",
+    "review/governance/blocked",
+    "review/governance/approvals",
+    "review/governance/roles",
+    "review/governance/policy",
+    "review/governance/parity",
+    "review/governance/orchestration",
+    "review/governance/incidents",
+    "manage/integrations/credentials",
+    "manage/integrations/writeback-policy",
+    "manage/integrations/writeback-center",
+    "observe/analytics_reporting/overview",
+    "review/reviews/release-candidate",
+    "review/reviews/queue",
+    "operate/operate/overview",
+    "operate/operate/setup",
+    "operate/operate/environments",
+    "operate/operate/resources",
+    "operate/operate/blueprints",
+    "operate/operate/sessions",
+    "operate/operate/execution",
+    "operate/operate/incidents",
+    "operate/operate/runbooks",
+    "operate/operate/templates",
+    "operate/operate/settings",
+    "manage/concierge/inbox",
+    "manage/concierge/plans",
+    "manage/concierge/blockers",
+    "manage/concierge/handoffs",
+    "manage/concierge/resumable",
+    "manage/concierge/timeline",
+    "manage/concierge/summary",
+    "manage/ai-management/overview",
+    "manage/ai-management/agents",
+    "manage/ai-management/providers",
+    "manage/ai-management/models",
+    "manage/ai-management/routing",
+    "manage/ai-management/templates",
+    "manage/ai-management/policies",
+    "manage/ai-management/quotas",
+    "manage/ai-management/budgets",
+    "manage/ai-management/ledger",
+    "manage/ai-management/runs",
+    "manage/ai-management/cache",
+    "manage/ai-management/evals",
+    "manage/ai-management/incidents",
+    "manage/admin/demo",
+    "manage/admin/system",
+    "manage/admin/environments",
+    "manage/admin/components",
+    "manage/admin/preferences",
+    "jobs/runs/detail",
+    "jobs/workflows/detail",
+    "review/reviews/release-candidate/detail",
+    "review/reviews/queue/detail",
+    "manage/admin/environments/detail",
+    "manage/admin/components/detail",
+    "manage/integrations/writeback-policy/detail",
+    "review/governance/approvals/detail",
+    "review/governance/blocked/detail",
+    "review/governance/decisions/detail"
+  ],
+  "partial_surface_refs": [],
+  "missing_surface_refs": [],
+  "out_of_scope_surface_refs": [
+    "review/reviews/shared",
+    "manage/ai-management/codegen"
+  ],
+  "browser_error_summary": {
+    "console_error_count": 0,
+    "uncaught_exception_count": 0,
+    "unexpected_warning_count": 0,
+    "broken_click_path_count": 0
+  },
+  "unresolved_gaps": [],
+  "results": [
+    {
+      "surface_ref": "center/center/project",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "center/center/artifacts",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "plan/work/overview",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "plan/work/tasks",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "plan/work/sprints",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "plan/work/templates",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "plan/work/ideas",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "plan/work/work-items",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "plan/work/people",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "plan/work/feedback",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "observe/library/overview",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "observe/library/browse",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "observe/library/sprints",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "observe/library/conversations",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "jobs/runs/runs",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "jobs/runs/workflows",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "observe/chronicle/overview",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "observe/chronicle/timeline",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "observe/chronicle/work-history",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "observe/chronicle/product-knowledge",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "observe/chronicle/query",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "review/governance/changesets",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "review/governance/decisions",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "review/governance/blocked",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "review/governance/approvals",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "review/governance/roles",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "review/governance/policy",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "review/governance/parity",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "review/governance/orchestration",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "review/governance/incidents",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/integrations/credentials",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/integrations/writeback-policy",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/integrations/writeback-center",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "observe/analytics_reporting/overview",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "review/reviews/release-candidate",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "review/reviews/queue",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "review/reviews/shared",
+      "status": "out_of_scope",
+      "reason": "external reviewer-only surface; canonical internal fixture uses internal role posture"
+    },
+    {
+      "surface_ref": "operate/operate/overview",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "operate/operate/setup",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "operate/operate/environments",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "operate/operate/resources",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "operate/operate/blueprints",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "operate/operate/sessions",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "operate/operate/execution",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "operate/operate/incidents",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "operate/operate/runbooks",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "operate/operate/templates",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "operate/operate/settings",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/concierge/inbox",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/concierge/plans",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/concierge/blockers",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/concierge/handoffs",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/concierge/resumable",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/concierge/timeline",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/concierge/summary",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/ai-management/overview",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/ai-management/agents",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/ai-management/codegen",
+      "status": "out_of_scope",
+      "reason": "feature-flagged codegen surface is not guaranteed enabled in the deterministic fixture"
+    },
+    {
+      "surface_ref": "manage/ai-management/providers",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/ai-management/models",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/ai-management/routing",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/ai-management/templates",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/ai-management/policies",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/ai-management/quotas",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/ai-management/budgets",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/ai-management/ledger",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/ai-management/runs",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/ai-management/cache",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/ai-management/evals",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/ai-management/incidents",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/admin/demo",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/admin/system",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/admin/environments",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/admin/components",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/admin/preferences",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "jobs/runs/detail",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "jobs/workflows/detail",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "review/reviews/release-candidate/detail",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "review/reviews/queue/detail",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/admin/environments/detail",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/admin/components/detail",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "manage/integrations/writeback-policy/detail",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "review/governance/approvals/detail",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "review/governance/blocked/detail",
+      "status": "covered",
+      "unexpected_warnings": []
+    },
+    {
+      "surface_ref": "review/governance/decisions/detail",
+      "status": "covered",
+      "unexpected_warnings": []
+    }
+  ]
+}
