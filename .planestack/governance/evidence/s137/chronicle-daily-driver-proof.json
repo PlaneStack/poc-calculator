@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "status": "failed",
+  "timeline_items": 1,
+  "query_items": 1,
+  "summary_card_count": 2,
+  "summary_cards_have_explanation_and_context_count": true,
+  "chronicle_context_preserved": false
+}

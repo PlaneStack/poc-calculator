@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-17T03:02:50Z",
+  "status": "passed",
+  "operation": "s137-ui-smoke",
+  "spec": "tests/sprint137.remaining-plane-closure.spec.js",
+  "assertions": [
+    "center artifacts explorer",
+    "chronicle query/work-history",
+    "concierge summary"
+  ]
+}

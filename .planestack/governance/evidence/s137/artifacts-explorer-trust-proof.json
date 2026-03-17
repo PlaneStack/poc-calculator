@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "failed",
+  "required_presets_present": [
+    "by_artifact_family",
+    "by_conversation",
+    "by_source_plane",
+    "by_sprint"
+  ],
+  "preset_keys": [
+    "by_artifact_family",
+    "by_conversation",
+    "by_source_plane",
+    "by_sprint"
+  ],
+  "group_keys": [
+    "S137",
+    "ccddcf91-2046-4a0b-9244-467ceaa29692",
+    "unlinked"
+  ],
+  "detail_ref": "efaa0fd2-f1a1-4332-b6dd-ccd06fcfc195",
+  "provenance_visible": false,
+  "source_context_visible": false,
+  "return_path_visible": false
+}

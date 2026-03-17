@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-17T03:02:53Z",
+  "status": "passed",
+  "operation": "sprint137-validate",
+  "chain": [
+    "governance-lock-check",
+    "contract-test-docker",
+    "s137-artifacts-smoke",
+    "s137-chronicle-smoke",
+    "s137-concierge-admin-smoke",
+    "s137-ui-smoke",
+    "s137-truth-refresh",
+    "s137-write-validate-summary"
+  ]
+}

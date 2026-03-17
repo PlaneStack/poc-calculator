@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "preferences_blocks_present": true,
+  "demo_boundary_present": true,
+  "preferences_count": 2,
+  "demo_classification": "internal_support_only"
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "status": "failed",
+  "summary_related_types": [
+    "related_artifact",
+    "related_jobs",
+    "related_observe",
+    "related_operate",
+    "related_review",
+    "related_work"
+  ],
+  "all_source_plane_launches_present": true,
+  "continuity_blocks_present": false
+}

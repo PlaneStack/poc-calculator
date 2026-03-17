@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "plane_scores": {
+    "center": {
+      "trust": 4.5,
+      "continuity": 4.4
+    },
+    "observe": {
+      "trust": 4.5,
+      "continuity": 4.5
+    },
+    "manage": {
+      "trust": 4.4,
+      "continuity": 4.4
+    }
+  }
+}
