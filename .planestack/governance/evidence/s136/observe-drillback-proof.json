@@ -1,0 +1,845 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "checks": {
+    "chronicle_loaded": true,
+    "analytics_has_refs": true,
+    "library_recent": true
+  },
+  "chronicle": {
+    "artifact_id": "61a20b0b-6223-4ddf-ae72-3c8db9da5c82",
+    "library_path": ".planestack/governance/chronicle/work-history.md",
+    "content": "# Work History\n\nDeterministic work history summary (v1).\n"
+  },
+  "analytics": {
+    "generated_at": "2026-03-16T23:54:04.156Z",
+    "summary_cards": [
+      {
+        "card_key": "run_posture",
+        "label": "Run posture",
+        "value": "0 runs \u00b7 0 failed \u00b7 0 retried",
+        "trend": "flat",
+        "explanation": "Recent run outcomes and retry posture from canonical job executions.",
+        "source_metric_key": "runs.outcome_posture",
+        "posture_state": "unknown",
+        "reason_codes": [
+          "no_recent_activity"
+        ],
+        "next_required_action": "open_source_context",
+        "drillthrough_refs": [
+          {
+            "ref": "/ou/platform/p/lifecycle-proof-s136/plane/runs/runs",
+            "label": "Open Jobs",
+            "url": "/ou/platform/p/lifecycle-proof-s136/plane/runs/runs",
+            "return_url": null,
+            "type": "related_jobs",
+            "target_plane": "runs",
+            "target_surface": "runs",
+            "target_ref": null,
+            "target_url": "/ou/platform/p/lifecycle-proof-s136/plane/runs/runs"
+          }
+        ]
+      },
+      {
+        "card_key": "governance_throughput",
+        "label": "Governance throughput",
+        "value": "0 approved \u00b7 0 blocked \u00b7 avg 0h",
+        "trend": "flat",
+        "explanation": "Approval latency and blocked governance posture from canonical approval artifacts.",
+        "source_metric_key": "governance.approval_latency",
+        "posture_state": "unknown",
+        "reason_codes": [
+          "no_recent_activity"
+        ],
+        "next_required_action": "review_policy_context",
+        "drillthrough_refs": [
+          {
+            "ref": "/ou/platform/p/lifecycle-proof-s136/plane/governance/approvals",
+            "label": "Open approvals",
+            "url": "/ou/platform/p/lifecycle-proof-s136/plane/governance/approvals",
+            "return_url": null,
+            "type": "related_governance",
+            "target_plane": "governance",
+            "target_surface": "approvals",
+            "target_ref": null,
+            "target_url": "/ou/platform/p/lifecycle-proof-s136/plane/governance/approvals"
+          }
+        ]
+      },
+      {
+        "card_key": "operate_incidents",
+        "label": "Operate readiness",
+        "value": "0 incidents \u00b7 0 runbooks linked",
+        "trend": "flat",
+        "explanation": "Operate incident posture and runbook linkage from governed incident evidence.",
+        "source_metric_key": "operate.incident_posture",
+        "posture_state": "healthy",
+        "reason_codes": [
+          "no_recent_activity"
+        ],
+        "next_required_action": "open_source_context",
+        "drillthrough_refs": [
+          {
+            "ref": "/ou/platform/p/lifecycle-proof-s136/plane/operate/incidents",
+            "label": "Open incidents",
+            "url": "/ou/platform/p/lifecycle-proof-s136/plane/operate/incidents",
+            "return_url": null,
+            "type": "related_operate",
+            "target_plane": "operate",
+            "target_surface": "incidents",
+            "target_ref": null,
+            "target_url": "/ou/platform/p/lifecycle-proof-s136/plane/operate/incidents"
+          }
+        ]
+      },
+      {
+        "card_key": "artifact_activity",
+        "label": "Artifact activity",
+        "value": "sprint:1",
+        "trend": "up",
+        "explanation": "Recent artifact activity by family from canonical artifact records.",
+        "source_metric_key": "artifacts.family_activity",
+        "posture_state": "healthy",
+        "reason_codes": [],
+        "next_required_action": "open_source_context",
+        "drillthrough_refs": [
+          {
+            "ref": "/ou/platform/p/lifecycle-proof-s136/plane/library/browse",
+            "label": "Open Library browse",
+            "url": "/ou/platform/p/lifecycle-proof-s136/plane/library/browse",
+            "return_url": null,
+            "type": "related_library",
+            "target_plane": "library",
+            "target_surface": "browse",
+            "target_ref": null,
+            "target_url": "/ou/platform/p/lifecycle-proof-s136/plane/library/browse"
+          }
+        ]
+      },
+      {
+        "card_key": "manage_ai_posture",
+        "label": "AI posture",
+        "value": "0 AI-linked records",
+        "trend": "flat",
+        "explanation": "AI posture remains drill-through visible in Manage without Observe re-owning AI truth.",
+        "source_metric_key": "manage.ai_posture",
+        "posture_state": "unknown",
+        "reason_codes": [
+          "no_recent_activity"
+        ],
+        "next_required_action": "open_source_context",
+        "drillthrough_refs": [
+          {
+            "ref": "/ou/platform/p/lifecycle-proof-s136/plane/ai-management/providers",
+            "label": "Open AI Management",
+            "url": "/ou/platform/p/lifecycle-proof-s136/plane/ai-management/providers",
+            "return_url": null,
+            "type": "related_manage",
+            "target_plane": "ai-management",
+            "target_surface": "providers",
+            "target_ref": null,
+            "target_url": "/ou/platform/p/lifecycle-proof-s136/plane/ai-management/providers"
+          }
+        ]
+      },
+      {
+        "card_key": "sprint_evidence_completeness",
+        "label": "Sprint evidence completeness",
+        "value": "0/1 completed",
+        "trend": "mixed",
+        "explanation": "Recent sprint manifests and evidence posture from canonical sprint mirror truth.",
+        "source_metric_key": "sprints.evidence_completeness",
+        "posture_state": "degraded",
+        "reason_codes": [
+          "incomplete_sprint_evidence"
+        ],
+        "next_required_action": "open_source_context",
+        "drillthrough_refs": [
+          {
+            "ref": ".planestack/sprints/S136/manifest.json",
+            "label": "Open latest sprint records",
+            "url": "/ou/platform/p/lifecycle-proof-s136/plane/library/browse?text_query=manifest.json",
+            "return_url": null,
+            "type": "related_library",
+            "target_plane": "library",
+            "target_surface": "browse",
+            "target_ref": ".planestack/sprints/S136/manifest.json",
+            "target_url": "/ou/platform/p/lifecycle-proof-s136/plane/library/browse?text_query=manifest.json"
+          }
+        ]
+      }
+    ],
+    "grouped_regions": [
+      {
+        "group_key": "runs_retry_posture",
+        "label": "Runs and retry posture",
+        "dimension": "status",
+        "posture_state": "unknown",
+        "reason_codes": [
+          "no_recent_activity"
+        ],
+        "next_required_action": "open_source_context",
+        "total": 0,
+        "groups": [],
+        "drillthrough_refs": [
+          {
+            "ref": "/ou/platform/p/lifecycle-proof-s136/plane/runs/runs",
+            "label": "Open Jobs",
+            "url": "/ou/platform/p/lifecycle-proof-s136/plane/runs/runs",
+            "return_url": null,
+            "type": "related_jobs",
+            "target_plane": "runs",
+            "target_surface": "runs",
+            "target_ref": null,
+            "target_url": "/ou/platform/p/lifecycle-proof-s136/plane/runs/runs"
+          }
+        ]
+      },
+      {
+        "group_key": "governance_blocked_reasons",
+        "label": "Governance approvals and blocked reasons",
+        "dimension": "reason_class",
+        "posture_state": "unknown",
+        "reason_codes": [
+          "no_recent_activity"
+        ],
+        "next_required_action": "review_policy_context",
+        "total": 0,
+        "groups": [],
+        "drillthrough_refs": [
+          {
+            "ref": "/ou/platform/p/lifecycle-proof-s136/plane/governance/approvals",
+            "label": "Open governance",
+            "url": "/ou/platform/p/lifecycle-proof-s136/plane/governance/approvals",
+            "return_url": null,
+            "type": "related_governance",
+            "target_plane": "governance",
+            "target_surface": "approvals",
+            "target_ref": null,
+            "target_url": "/ou/platform/p/lifecycle-proof-s136/plane/governance/approvals"
+          }
+        ]
+      },
+      {
+        "group_key": "operate_readiness_incidents",
+        "label": "Operate readiness, incidents, and runbook usage",
+        "dimension": "status",
+        "posture_state": "healthy",
+        "reason_codes": [
+          "no_recent_activity"
+        ],
+        "next_required_action": "open_source_context",
+        "total": 1,
+        "groups": [
+          {
+            "key": "healthy",
+            "label": "healthy",
+            "count": 1,
+            "drillthrough_refs": []
+          }
+        ],
+        "drillthrough_refs": [
+          {
+            "ref": "/ou/platform/p/lifecycle-proof-s136/plane/operate/incidents",
+            "label": "Open operate incidents",
+            "url": "/ou/platform/p/lifecycle-proof-s136/plane/operate/incidents",
+            "return_url": null,
+            "type": "related_operate",
+            "target_plane": "operate",
+            "target_surface": "incidents",
+            "target_ref": null,
+            "target_url": "/ou/platform/p/lifecycle-proof-s136/plane/operate/incidents"
+          }
+        ]
+      }
+    ],
+    "chart_series": [
+      {
+        "series_key": "runs_by_day",
+        "label": "Run outcomes",
+        "points": [],
+        "x_axis_kind": "time",
+        "y_axis_kind": "count",
+        "unit": "runs",
+        "no_data_state": "filtered_empty"
+      },
+      {
+        "series_key": "approvals_by_day",
+        "label": "Governance approvals",
+        "points": [],
+        "x_axis_kind": "time",
+        "y_axis_kind": "count",
+        "unit": "approvals",
+        "no_data_state": "filtered_empty"
+      },
+      {
+        "series_key": "incidents_by_day",
+        "label": "Operate incidents",
+        "points": [],
+        "x_axis_kind": "time",
+        "y_axis_kind": "count",
+        "unit": "incidents",
+        "no_data_state": "filtered_empty"
+      },
+      {
+        "series_key": "blocked_reasons",
+        "label": "Blocked reason distribution",
+        "points": [],
+        "x_axis_kind": "category",
+        "y_axis_kind": "count",
+        "unit": "blocked",
+        "no_data_state": "filtered_empty"
+      },
+      {
+        "series_key": "artifact_family_activity",
+        "label": "Artifact activity by family",
+        "points": [
+          {
+            "x": "sprint",
+            "y": 1
+          }
+        ],
+        "x_axis_kind": "category",
+        "y_axis_kind": "count",
+        "unit": "artifacts",
+        "no_data_state": "has_data"
+      }
+    ],
+    "filter_state": {
+      "sprint_ref": "S136",
+      "component_ref": null,
+      "artifact_family": null,
+      "status": null,
+      "reason_class": null,
+      "source_plane": null,
+      "source_artifact_ref": null,
+      "time_window": "30d"
+    },
+    "grouping_options": [
+      "by_sprint",
+      "by_component",
+      "by_artifact_family",
+      "by_status",
+      "by_reason_class"
+    ],
+    "group_dimensions": [
+      "sprint",
+      "component",
+      "artifact_family",
+      "status",
+      "reason_class"
+    ],
+    "drillthrough_refs": [
+      {
+        "ref": "/ou/platform/p/lifecycle-proof-s136/plane/chronicle/timeline",
+        "label": "Chronicle timeline",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/chronicle/timeline",
+        "return_url": null,
+        "type": "related_chronicle",
+        "target_plane": "chronicle",
+        "target_surface": "timeline",
+        "target_ref": null,
+        "target_url": "/ou/platform/p/lifecycle-proof-s136/plane/chronicle/timeline"
+      },
+      {
+        "ref": "/ou/platform/p/lifecycle-proof-s136/plane/library/browse",
+        "label": "Library browse",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/library/browse",
+        "return_url": null,
+        "type": "related_library",
+        "target_plane": "library",
+        "target_surface": "browse",
+        "target_ref": null,
+        "target_url": "/ou/platform/p/lifecycle-proof-s136/plane/library/browse"
+      },
+      {
+        "ref": "/ou/platform/p/lifecycle-proof-s136/plane/ai-management/providers",
+        "label": "AI Management",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/ai-management/providers",
+        "return_url": null,
+        "type": "related_manage",
+        "target_plane": "ai-management",
+        "target_surface": "providers",
+        "target_ref": null,
+        "target_url": "/ou/platform/p/lifecycle-proof-s136/plane/ai-management/providers"
+      }
+    ],
+    "no_data_state": "has_data",
+    "metric_sot": {
+      "owner_plane": "analytics_reporting",
+      "history_plane": "chronicle",
+      "canonical_json_hash": "1d2e"
+    }
+  },
+  "library": {
+    "generated_at": "2026-03-16T23:54:04.183Z",
+    "summary_cards": [
+      {
+        "card_key": "library_records",
+        "label": "Library records",
+        "value": "28",
+        "trend": "up",
+        "explanation": "Recent governed and exported library records available for browse.",
+        "source_metric_key": "library.record_count",
+        "posture_state": "unknown",
+        "reason_codes": [],
+        "next_required_action": "open_source_context",
+        "drillthrough_refs": [
+          {
+            "ref": "/ou/platform/p/lifecycle-proof-s136/plane/library/browse",
+            "label": "Browse library",
+            "url": "/ou/platform/p/lifecycle-proof-s136/plane/library/browse",
+            "return_url": null,
+            "type": "source_truth",
+            "target_plane": "library",
+            "target_surface": "browse",
+            "target_ref": null,
+            "target_url": "/ou/platform/p/lifecycle-proof-s136/plane/library/browse"
+          }
+        ]
+      },
+      {
+        "card_key": "recent_sprints",
+        "label": "Recent sprints",
+        "value": "1",
+        "trend": "up",
+        "explanation": "Recent sprint mirror records available in the library.",
+        "source_metric_key": "library.sprint_records",
+        "posture_state": "unknown",
+        "reason_codes": [],
+        "next_required_action": "open_source_context",
+        "drillthrough_refs": []
+      },
+      {
+        "card_key": "recent_conversations",
+        "label": "Recent conversations",
+        "value": "1",
+        "trend": "up",
+        "explanation": "Recent conversation exports linked back to canonical conversation artifacts.",
+        "source_metric_key": "library.conversation_records",
+        "posture_state": "unknown",
+        "reason_codes": [],
+        "next_required_action": "open_source_context",
+        "drillthrough_refs": []
+      }
+    ],
+    "recent_sprints": [
+      {
+        "sprint_ref": "S136",
+        "title": "Sprint 136 Lifecycle Continuity",
+        "path": ".planestack/sprints/S136/manifest.json",
+        "target_url": "/ou/platform/p/lifecycle-proof-s136/plane/library/browse?text_query=S136"
+      }
+    ],
+    "recent_conversations": [
+      {
+        "artifact_ref": "bb877422-3ad4-47e1-9c3a-febd2e548d33",
+        "title": "S136 lifecycle conversation",
+        "summary": null,
+        "target_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/bb877422-3ad4-47e1-9c3a-febd2e548d33"
+      }
+    ],
+    "artifact_family_counts": [
+      {
+        "artifact_family": "code.file",
+        "count": 5
+      },
+      {
+        "artifact_family": "doc.markdown",
+        "count": 2
+      },
+      {
+        "artifact_family": "job.workflow",
+        "count": 1
+      },
+      {
+        "artifact_family": "governance",
+        "count": 2
+      },
+      {
+        "artifact_family": "policy.guardrails",
+        "count": 1
+      },
+      {
+        "artifact_family": "job",
+        "count": 2
+      },
+      {
+        "artifact_family": "run.log",
+        "count": 1
+      },
+      {
+        "artifact_family": "project.setup",
+        "count": 1
+      },
+      {
+        "artifact_family": "planning",
+        "count": 7
+      },
+      {
+        "artifact_family": "project.scope",
+        "count": 1
+      },
+      {
+        "artifact_family": "work.idea",
+        "count": 1
+      },
+      {
+        "artifact_family": "conversation",
+        "count": 1
+      },
+      {
+        "artifact_family": "sprint",
+        "count": 1
+      },
+      {
+        "artifact_family": "integration.writeback_policy",
+        "count": 1
+      },
+      {
+        "artifact_family": "env.profile",
+        "count": 1
+      }
+    ],
+    "browse_entry_refs": [
+      {
+        "artifact_ref": "beab2173-ca76-4031-8b5f-0f8124b4453e",
+        "artifact_type": "code.file",
+        "sprint_ref": null,
+        "conversation_ref": null,
+        "lineage_refs": [],
+        "source_plane": "artifacts",
+        "source_surface": "detail",
+        "title": "S136 lifecycle context",
+        "summary": null,
+        "artifact_family": "code.file",
+        "library_path": ".planestack/governance/evidence/s136/continuity-context.json",
+        "target_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/beab2173-ca76-4031-8b5f-0f8124b4453e",
+        "drillthrough_refs": [
+          {
+            "ref": "beab2173-ca76-4031-8b5f-0f8124b4453e",
+            "label": "Open source truth",
+            "url": "/ou/platform/p/lifecycle-proof-s136/artifacts/beab2173-ca76-4031-8b5f-0f8124b4453e",
+            "return_url": null,
+            "type": "source_truth",
+            "target_plane": "artifacts",
+            "target_surface": "detail",
+            "target_ref": "beab2173-ca76-4031-8b5f-0f8124b4453e",
+            "target_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/beab2173-ca76-4031-8b5f-0f8124b4453e"
+          }
+        ]
+      },
+      {
+        "artifact_ref": "1063f3aa-8d81-4050-b32b-36e819d0b285",
+        "artifact_type": "code.file",
+        "sprint_ref": null,
+        "conversation_ref": null,
+        "lineage_refs": [],
+        "source_plane": "artifacts",
+        "source_surface": "detail",
+        "title": ".planestack/governance/chronicle/capability-matrix.json",
+        "summary": null,
+        "artifact_family": "code.file",
+        "library_path": ".planestack/governance/chronicle/capability-matrix.json",
+        "target_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/1063f3aa-8d81-4050-b32b-36e819d0b285",
+        "drillthrough_refs": [
+          {
+            "ref": "1063f3aa-8d81-4050-b32b-36e819d0b285",
+            "label": "Open source truth",
+            "url": "/ou/platform/p/lifecycle-proof-s136/artifacts/1063f3aa-8d81-4050-b32b-36e819d0b285",
+            "return_url": null,
+            "type": "source_truth",
+            "target_plane": "artifacts",
+            "target_surface": "detail",
+            "target_ref": "1063f3aa-8d81-4050-b32b-36e819d0b285",
+            "target_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/1063f3aa-8d81-4050-b32b-36e819d0b285"
+          }
+        ]
+      },
+      {
+        "artifact_ref": "debcb9b9-499c-4a9a-8168-b1e12533aaba",
+        "artifact_type": "doc.markdown",
+        "sprint_ref": null,
+        "conversation_ref": null,
+        "lineage_refs": [],
+        "source_plane": "artifacts",
+        "source_surface": "detail",
+        "title": ".planestack/governance/chronicle/product-knowledge.md",
+        "summary": null,
+        "artifact_family": "doc.markdown",
+        "library_path": ".planestack/governance/chronicle/product-knowledge.md",
+        "target_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/debcb9b9-499c-4a9a-8168-b1e12533aaba",
+        "drillthrough_refs": [
+          {
+            "ref": "debcb9b9-499c-4a9a-8168-b1e12533aaba",
+            "label": "Open source truth",
+            "url": "/ou/platform/p/lifecycle-proof-s136/artifacts/debcb9b9-499c-4a9a-8168-b1e12533aaba",
+            "return_url": null,
+            "type": "source_truth",
+            "target_plane": "artifacts",
+            "target_surface": "detail",
+            "target_ref": "debcb9b9-499c-4a9a-8168-b1e12533aaba",
+            "target_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/debcb9b9-499c-4a9a-8168-b1e12533aaba"
+          }
+        ]
+      },
+      {
+        "artifact_ref": "61a20b0b-6223-4ddf-ae72-3c8db9da5c82",
+        "artifact_type": "doc.markdown",
+        "sprint_ref": null,
+        "conversation_ref": null,
+        "lineage_refs": [],
+        "source_plane": "artifacts",
+        "source_surface": "detail",
+        "title": ".planestack/governance/chronicle/work-history.md",
+        "summary": null,
+        "artifact_family": "doc.markdown",
+        "library_path": ".planestack/governance/chronicle/work-history.md",
+        "target_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/61a20b0b-6223-4ddf-ae72-3c8db9da5c82",
+        "drillthrough_refs": [
+          {
+            "ref": "61a20b0b-6223-4ddf-ae72-3c8db9da5c82",
+            "label": "Open source truth",
+            "url": "/ou/platform/p/lifecycle-proof-s136/artifacts/61a20b0b-6223-4ddf-ae72-3c8db9da5c82",
+            "return_url": null,
+            "type": "source_truth",
+            "target_plane": "artifacts",
+            "target_surface": "detail",
+            "target_ref": "61a20b0b-6223-4ddf-ae72-3c8db9da5c82",
+            "target_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/61a20b0b-6223-4ddf-ae72-3c8db9da5c82"
+          }
+        ]
+      },
+      {
+        "artifact_ref": "e5903cfd-035a-4790-886e-955156a45f1b",
+        "artifact_type": "code.file",
+        "sprint_ref": null,
+        "conversation_ref": null,
+        "lineage_refs": [],
+        "source_plane": "artifacts",
+        "source_surface": "detail",
+        "title": "Operate session idempotency index",
+        "summary": null,
+        "artifact_family": "code.file",
+        "library_path": ".planestack/governance/evidence/s119/operate/sessions/idempotency.json",
+        "target_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/e5903cfd-035a-4790-886e-955156a45f1b",
+        "drillthrough_refs": [
+          {
+            "ref": "e5903cfd-035a-4790-886e-955156a45f1b",
+            "label": "Open source truth",
+            "url": "/ou/platform/p/lifecycle-proof-s136/artifacts/e5903cfd-035a-4790-886e-955156a45f1b",
+            "return_url": null,
+            "type": "source_truth",
+            "target_plane": "artifacts",
+            "target_surface": "detail",
+            "target_ref": "e5903cfd-035a-4790-886e-955156a45f1b",
+            "target_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/e5903cfd-035a-4790-886e-955156a45f1b"
+          }
+        ]
+      },
+      {
+        "artifact_ref": "3245058d-4b1c-46a3-b09b-a82f68791ffd",
+        "artifact_type": "code.file",
+        "sprint_ref": null,
+        "conversation_ref": null,
+        "lineage_refs": [],
+        "source_plane": "artifacts",
+        "source_surface": "detail",
+        "title": "Operate session 20260316T235403Z_82bf2e3f",
+        "summary": null,
+        "artifact_family": "code.file",
+        "library_path": ".planestack/governance/evidence/s119/operate/sessions/20260316T235403Z_82bf2e3f/session-state.json",
+        "target_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/3245058d-4b1c-46a3-b09b-a82f68791ffd",
+        "drillthrough_refs": [
+          {
+            "ref": "3245058d-4b1c-46a3-b09b-a82f68791ffd",
+            "label": "Open source truth",
+            "url": "/ou/platform/p/lifecycle-proof-s136/artifacts/3245058d-4b1c-46a3-b09b-a82f68791ffd",
+            "return_url": null,
+            "type": "source_truth",
+            "target_plane": "artifacts",
+            "target_surface": "detail",
+            "target_ref": "3245058d-4b1c-46a3-b09b-a82f68791ffd",
+            "target_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/3245058d-4b1c-46a3-b09b-a82f68791ffd"
+          }
+        ]
+      },
+      {
+        "artifact_ref": "c76a4e74-0777-4dd2-9589-a12622a20f31",
+        "artifact_type": "job.workflow",
+        "sprint_ref": null,
+        "conversation_ref": null,
+        "lineage_refs": [
+          "bb72f97a-9736-4423-91ed-b8ddfe2af9b6"
+        ],
+        "source_plane": "runs",
+        "source_surface": "detail",
+        "title": "Define validation plan workflow",
+        "summary": null,
+        "artifact_family": "job.workflow",
+        "library_path": null,
+        "target_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/c76a4e74-0777-4dd2-9589-a12622a20f31",
+        "drillthrough_refs": [
+          {
+            "ref": "c76a4e74-0777-4dd2-9589-a12622a20f31",
+            "label": "Open source truth",
+            "url": "/ou/platform/p/lifecycle-proof-s136/artifacts/c76a4e74-0777-4dd2-9589-a12622a20f31",
+            "return_url": null,
+            "type": "source_truth",
+            "target_plane": "runs",
+            "target_surface": "detail",
+            "target_ref": "c76a4e74-0777-4dd2-9589-a12622a20f31",
+            "target_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/c76a4e74-0777-4dd2-9589-a12622a20f31"
+          }
+        ]
+      },
+      {
+        "artifact_ref": "c191703d-535a-49ee-b72f-41f07b6d1de0",
+        "artifact_type": "gov.blocked",
+        "sprint_ref": null,
+        "conversation_ref": null,
+        "lineage_refs": [
+          "dc65090d-927e-401e-92ca-4f93743c45bd",
+          "bb72f97a-9736-4423-91ed-b8ddfe2af9b6"
+        ],
+        "source_plane": "governance",
+        "source_surface": "approvals",
+        "title": "Review blocked dc65090d",
+        "summary": "Review is blocked until required policy approval is granted.",
+        "artifact_family": "governance",
+        "library_path": null,
+        "target_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/c191703d-535a-49ee-b72f-41f07b6d1de0",
+        "drillthrough_refs": [
+          {
+            "ref": "c191703d-535a-49ee-b72f-41f07b6d1de0",
+            "label": "Open source truth",
+            "url": "/ou/platform/p/lifecycle-proof-s136/artifacts/c191703d-535a-49ee-b72f-41f07b6d1de0",
+            "return_url": null,
+            "type": "source_truth",
+            "target_plane": "governance",
+            "target_surface": "approvals",
+            "target_ref": "c191703d-535a-49ee-b72f-41f07b6d1de0",
+            "target_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/c191703d-535a-49ee-b72f-41f07b6d1de0"
+          }
+        ]
+      },
+      {
+        "artifact_ref": "a590a2d9-13db-4fe6-91c4-47344a94885e",
+        "artifact_type": "gov.approval",
+        "sprint_ref": null,
+        "conversation_ref": null,
+        "lineage_refs": [
+          "dc65090d-927e-401e-92ca-4f93743c45bd",
+          "bb72f97a-9736-4423-91ed-b8ddfe2af9b6"
+        ],
+        "source_plane": "governance",
+        "source_surface": "approvals",
+        "title": "Review approval dc65090d",
+        "summary": "Governed review approval generated from Jobs execution.",
+        "artifact_family": "governance",
+        "library_path": null,
+        "target_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/a590a2d9-13db-4fe6-91c4-47344a94885e",
+        "drillthrough_refs": [
+          {
+            "ref": "a590a2d9-13db-4fe6-91c4-47344a94885e",
+            "label": "Open source truth",
+            "url": "/ou/platform/p/lifecycle-proof-s136/artifacts/a590a2d9-13db-4fe6-91c4-47344a94885e",
+            "return_url": null,
+            "type": "source_truth",
+            "target_plane": "governance",
+            "target_surface": "approvals",
+            "target_ref": "a590a2d9-13db-4fe6-91c4-47344a94885e",
+            "target_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/a590a2d9-13db-4fe6-91c4-47344a94885e"
+          }
+        ]
+      },
+      {
+        "artifact_ref": "caeffb07-3a33-4a27-88d4-6e54aa474446",
+        "artifact_type": "policy.guardrails",
+        "sprint_ref": null,
+        "conversation_ref": null,
+        "lineage_refs": [],
+        "source_plane": "artifacts",
+        "source_surface": "detail",
+        "title": "Review Guardrails Policy",
+        "summary": null,
+        "artifact_family": "policy.guardrails",
+        "library_path": null,
+        "target_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/caeffb07-3a33-4a27-88d4-6e54aa474446",
+        "drillthrough_refs": [
+          {
+            "ref": "caeffb07-3a33-4a27-88d4-6e54aa474446",
+            "label": "Open source truth",
+            "url": "/ou/platform/p/lifecycle-proof-s136/artifacts/caeffb07-3a33-4a27-88d4-6e54aa474446",
+            "return_url": null,
+            "type": "source_truth",
+            "target_plane": "artifacts",
+            "target_surface": "detail",
+            "target_ref": "caeffb07-3a33-4a27-88d4-6e54aa474446",
+            "target_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/caeffb07-3a33-4a27-88d4-6e54aa474446"
+          }
+        ]
+      },
+      {
+        "artifact_ref": "07f90cc5-9d25-4710-a675-048f2fbb63e2",
+        "artifact_type": "job.evidence",
+        "sprint_ref": null,
+        "conversation_ref": null,
+        "lineage_refs": [
+          "dc65090d-927e-401e-92ca-4f93743c45bd"
+        ],
+        "source_plane": "runs",
+        "source_surface": "detail",
+        "title": "Execution evidence dc65090d",
+        "summary": "Evidence receipt for the successful job execution.",
+        "artifact_family": "job",
+        "library_path": null,
+        "target_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/07f90cc5-9d25-4710-a675-048f2fbb63e2",
+        "drillthrough_refs": [
+          {
+            "ref": "07f90cc5-9d25-4710-a675-048f2fbb63e2",
+            "label": "Open source truth",
+            "url": "/ou/platform/p/lifecycle-proof-s136/artifacts/07f90cc5-9d25-4710-a675-048f2fbb63e2",
+            "return_url": null,
+            "type": "source_truth",
+            "target_plane": "runs",
+            "target_surface": "detail",
+            "target_ref": "07f90cc5-9d25-4710-a675-048f2fbb63e2",
+            "target_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/07f90cc5-9d25-4710-a675-048f2fbb63e2"
+          }
+        ]
+      },
+      {
+        "artifact_ref": "2002dedf-98a3-47a9-98e1-a5c1e8e8e3b0",
+        "artifact_type": "job.output",
+        "sprint_ref": null,
+        "conversation_ref": null,
+        "lineage_refs": [
+          "dc65090d-927e-401e-92ca-4f93743c45bd",
+          "bb72f97a-9736-4423-91ed-b8ddfe2af9b6"
+        ],
+        "source_plane": "runs",
+        "source_surface": "detail",
+        "title": "Execution output dc65090d",
+        "summary": "Capture tests, evidence, and acceptance checks for the starter slice.",
+        "artifact_family": "job",
+        "library_path": null,
+        "target_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/2002dedf-98a3-47a9-98e1-a5c1e8e8e3b0",
+        "drillthrough_refs": [
+          {
+            "ref": "2002dedf-98a3-47a9-98e1-a5c1e8e8e3b0",
+            "label": "Open source truth",
+            "url": "/ou/platform/p/lifecycle-proof-s136/artifacts/2002dedf-98a3-47a9-98e1-a5c1e8e8e3b0",
+            "return_url": null,
+            "type": "source_truth",
+            "target_plane": "runs",
+            "target_surface": "detail",
+            "target_ref": "2002dedf-98a3-47a9-98e1-a5c1e8e8e3b0",
+            "target_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/2002dedf-98a3-47a9-98e1-a5c1e8e8e3b0"
+          }
+        ]
+      }
+    ],
+    "no_data_state": "has_data"
+  }
+}

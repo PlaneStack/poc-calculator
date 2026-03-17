@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "checks": {
+    "queue_cta": true,
+    "queue_return": true,
+    "rc_cta": true,
+    "rc_operate_link": true,
+    "rc_manage_link": true
+  },
+  "queue": {
+    "queue_ref": "review-queue:784a6570-f1c8-461a-816d-b42515ad7890",
+    "source_plane": "plan",
+    "source_run_ref": "784a6570-f1c8-461a-816d-b42515ad7890",
+    "source_workflow_ref": "fafd269e-7224-402d-8323-a5ca489c2cba",
+    "source_artifact_ref": "cb2b865c-815a-4432-8086-5d5d50c1a712",
+    "approval_ref": "81aa6419-27d8-4f3b-9edc-ed4db1e535c2",
+    "blocked_ref": "17dfa8ff-ad68-48d8-8a5f-9a8512c192e7",
+    "blocked_refs": [
+      "17dfa8ff-ad68-48d8-8a5f-9a8512c192e7"
+    ],
+    "decision_ref": null,
+    "decision_refs": [],
+    "release_candidate_ref": "release-candidate:784a6570-f1c8-461a-816d-b42515ad7890",
+    "status": "blocked",
+    "priority": "medium",
+    "policy_ref": "ac1a6547-2956-4eb4-87f7-330cfcc9d660",
+    "policy_key": "guardrails",
+    "policy_version": 1,
+    "linked_component_refs": [],
+    "linked_goal_refs": [
+      "d637a816-25c0-4889-a71a-53f6c361acef"
+    ],
+    "linked_work_item_ref": "b16cf803-a526-4e5f-9359-cf0d6c33b2ba",
+    "linked_task_ref": "cb2b865c-815a-4432-8086-5d5d50c1a712",
+    "linked_sprint_ref": "8d03eed5-3353-4642-834b-e97dc1910206",
+    "review_next_url": "/ou/platform/p/lifecycle-proof-s136/plane/reviews/release-candidate/release-candidate%3A784a6570-f1c8-461a-816d-b42515ad7890",
+    "return_url": "/ou/platform/p/lifecycle-proof-s136/plane/runs/runs/784a6570-f1c8-461a-816d-b42515ad7890",
+    "outputs": [
+      {
+        "title": "Execution output 784a6570",
+        "summary": "Capture tests, evidence, and acceptance checks for the starter slice.",
+        "artifact_ref": "069261f5-fd53-4036-b030-874353cc80fb",
+        "artifact_type": "job.output"
+      }
+    ],
+    "evidence_links": [
+      {
+        "title": "Execution evidence 784a6570",
+        "summary": "Evidence receipt for the successful job execution.",
+        "artifact_ref": "44420003-500e-46eb-8a47-44cb1ff1f207",
+        "artifact_type": "job.evidence"
+      }
+    ],
+    "activation_status": "pending",
+    "next_required_action": "resolve_blocked_context",
+    "continuity_posture": "blocked",
+    "reason_codes": [
+      "blocked_by_policy"
+    ],
+    "source_context_refs": [
+      {
+        "type": "run",
+        "ref": "784a6570-f1c8-461a-816d-b42515ad7890",
+        "label": "Source run",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/runs/runs/784a6570-f1c8-461a-816d-b42515ad7890"
+      },
+      {
+        "type": "work_item",
+        "ref": "b16cf803-a526-4e5f-9359-cf0d6c33b2ba",
+        "label": "Source work item",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/work/work-items"
+      },
+      {
+        "type": "task",
+        "ref": "cb2b865c-815a-4432-8086-5d5d50c1a712",
+        "label": "Source task",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/work/tasks"
+      },
+      {
+        "type": "sprint",
+        "ref": "8d03eed5-3353-4642-834b-e97dc1910206",
+        "label": "Source sprint",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/work/sprints/8d03eed5-3353-4642-834b-e97dc1910206"
+      },
+      {
+        "type": "queue_entry",
+        "ref": "review-queue:784a6570-f1c8-461a-816d-b42515ad7890",
+        "label": "Queue entry",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/reviews/queue/review-queue%3A784a6570-f1c8-461a-816d-b42515ad7890"
+      }
+    ],
+    "related_refs": [
+      {
+        "type": "related_review",
+        "ref": "release-candidate:784a6570-f1c8-461a-816d-b42515ad7890",
+        "label": "Release candidate",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/reviews/release-candidate/release-candidate%3A784a6570-f1c8-461a-816d-b42515ad7890"
+      },
+      {
+        "type": "related_observe",
+        "ref": "/ou/platform/p/lifecycle-proof-s136/plane/observe/analytics_reporting?release_candidate_ref=release-candidate%3A784a6570-f1c8-461a-816d-b42515ad7890",
+        "label": "Open Observe",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/observe/analytics_reporting?release_candidate_ref=release-candidate%3A784a6570-f1c8-461a-816d-b42515ad7890"
+      },
+      {
+        "type": "related_operate",
+        "ref": "/ou/platform/p/lifecycle-proof-s136/plane/operate/overview?approval_ref=81aa6419-27d8-4f3b-9edc-ed4db1e535c2&source_run_ref=784a6570-f1c8-461a-816d-b42515ad7890",
+        "label": "Open Operate",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/operate/overview?approval_ref=81aa6419-27d8-4f3b-9edc-ed4db1e535c2&source_run_ref=784a6570-f1c8-461a-816d-b42515ad7890"
+      },
+      {
+        "type": "related_manage",
+        "ref": "ac1a6547-2956-4eb4-87f7-330cfcc9d660",
+        "label": "Manage policy",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/integrations/writeback-policy/ac1a6547-2956-4eb4-87f7-330cfcc9d660"
+      }
+    ]
+  },
+  "release_candidate": {
+    "release_candidate_ref": "release-candidate:784a6570-f1c8-461a-816d-b42515ad7890",
+    "source_run_refs": [
+      "784a6570-f1c8-461a-816d-b42515ad7890"
+    ],
+    "source_workflow_ref": "fafd269e-7224-402d-8323-a5ca489c2cba",
+    "source_artifact_ref": "cb2b865c-815a-4432-8086-5d5d50c1a712",
+    "source_plane": "plan",
+    "status": "blocked",
+    "activation_status": "pending",
+    "output_refs": [
+      "069261f5-fd53-4036-b030-874353cc80fb"
+    ],
+    "evidence_refs": [
+      "44420003-500e-46eb-8a47-44cb1ff1f207"
+    ],
+    "approval_refs": [
+      "81aa6419-27d8-4f3b-9edc-ed4db1e535c2"
+    ],
+    "blocked_refs": [
+      "17dfa8ff-ad68-48d8-8a5f-9a8512c192e7"
+    ],
+    "decision_refs": [],
+    "linked_component_refs": [],
+    "linked_goal_refs": [
+      "d637a816-25c0-4889-a71a-53f6c361acef"
+    ],
+    "linked_work_item_ref": "b16cf803-a526-4e5f-9359-cf0d6c33b2ba",
+    "linked_task_ref": "cb2b865c-815a-4432-8086-5d5d50c1a712",
+    "linked_sprint_ref": "8d03eed5-3353-4642-834b-e97dc1910206",
+    "outputs": [
+      {
+        "title": "Execution output 784a6570",
+        "summary": "Capture tests, evidence, and acceptance checks for the starter slice.",
+        "artifact_ref": "069261f5-fd53-4036-b030-874353cc80fb",
+        "artifact_type": "job.output"
+      }
+    ],
+    "evidence_links": [
+      {
+        "title": "Execution evidence 784a6570",
+        "summary": "Evidence receipt for the successful job execution.",
+        "artifact_ref": "44420003-500e-46eb-8a47-44cb1ff1f207",
+        "artifact_type": "job.evidence"
+      }
+    ],
+    "review_next_url": "/ou/platform/p/lifecycle-proof-s136/plane/reviews/release-candidate/release-candidate%3A784a6570-f1c8-461a-816d-b42515ad7890",
+    "return_url": "/ou/platform/p/lifecycle-proof-s136/plane/runs/runs/784a6570-f1c8-461a-816d-b42515ad7890",
+    "observe_url": "/ou/platform/p/lifecycle-proof-s136/plane/observe/analytics_reporting?release_candidate_ref=release-candidate%3A784a6570-f1c8-461a-816d-b42515ad7890",
+    "operate_url": "/ou/platform/p/lifecycle-proof-s136/plane/operate/overview?approval_ref=81aa6419-27d8-4f3b-9edc-ed4db1e535c2&source_run_ref=784a6570-f1c8-461a-816d-b42515ad7890",
+    "next_required_action": "resolve_blocked_context",
+    "continuity_posture": "blocked",
+    "reason_codes": [
+      "blocked_by_policy"
+    ],
+    "source_context_refs": [
+      {
+        "type": "run",
+        "ref": "784a6570-f1c8-461a-816d-b42515ad7890",
+        "label": "Source run",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/runs/runs/784a6570-f1c8-461a-816d-b42515ad7890"
+      },
+      {
+        "type": "work_item",
+        "ref": "b16cf803-a526-4e5f-9359-cf0d6c33b2ba",
+        "label": "Source work item",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/work/work-items"
+      },
+      {
+        "type": "release_candidate",
+        "ref": "release-candidate:784a6570-f1c8-461a-816d-b42515ad7890",
+        "label": "Release candidate",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/reviews/release-candidate/release-candidate%3A784a6570-f1c8-461a-816d-b42515ad7890"
+      }
+    ],
+    "related_refs": [
+      {
+        "type": "related_manage",
+        "ref": "ac1a6547-2956-4eb4-87f7-330cfcc9d660",
+        "label": "Manage policy",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/integrations/writeback-policy/ac1a6547-2956-4eb4-87f7-330cfcc9d660"
+      },
+      {
+        "type": "related_observe",
+        "ref": "/ou/platform/p/lifecycle-proof-s136/plane/observe/analytics_reporting?release_candidate_ref=release-candidate%3A784a6570-f1c8-461a-816d-b42515ad7890",
+        "label": "Open Observe",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/observe/analytics_reporting?release_candidate_ref=release-candidate%3A784a6570-f1c8-461a-816d-b42515ad7890"
+      },
+      {
+        "type": "related_operate",
+        "ref": "/ou/platform/p/lifecycle-proof-s136/plane/operate/overview?approval_ref=81aa6419-27d8-4f3b-9edc-ed4db1e535c2&source_run_ref=784a6570-f1c8-461a-816d-b42515ad7890",
+        "label": "Open Operate",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/operate/overview?approval_ref=81aa6419-27d8-4f3b-9edc-ed4db1e535c2&source_run_ref=784a6570-f1c8-461a-816d-b42515ad7890"
+      }
+    ]
+  }
+}

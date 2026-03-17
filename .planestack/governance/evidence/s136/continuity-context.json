@@ -1,0 +1,17 @@
+{
+  "project_id": "aad82f65-afba-4bc1-9b69-eef8eb62763c",
+  "project_key": "lifecycle-proof-s136",
+  "valid_credential_ref": "68d86419-8fd4-4033-8a48-56e0048fc5d2",
+  "invalid_credential_ref": "8a3033e9-106a-4e38-b001-960aa3439d8e",
+  "policy_ref": "d99757bc-ef06-4582-946d-ff694f898f60",
+  "environment_artifact_ref": "efef2616-5520-4fd4-837b-23a8f17cebd2",
+  "work_item_ref": "64f53d0c-f161-4a0c-9b3c-c91a0d8e2a4f",
+  "task_ref": "adab8613-2427-4abf-83de-c28c0a43c4f2",
+  "sprint_ref": "2898ff9b-a629-444e-8c55-4b84e7382af9",
+  "run_ref": "1c430651-0c9e-4f0e-9e15-8a3db485390e",
+  "queue_ref": "review-queue:1c430651-0c9e-4f0e-9e15-8a3db485390e",
+  "release_candidate_ref": "release-candidate:1c430651-0c9e-4f0e-9e15-8a3db485390e",
+  "session_ref": "20260316T235436Z_bcc0c9b4",
+  "env_key": "local",
+  "sprint_code": "S136"
+}

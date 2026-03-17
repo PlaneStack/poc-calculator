@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-16T23:58:00Z",
+  "status": "passed",
+  "operation": "s136-closeout",
+  "gates": {
+    "s136-setup-to-work-smoke": "passed",
+    "s136-work-to-jobs-smoke": "passed",
+    "s136-jobs-to-review-smoke": "passed",
+    "s136-review-to-operate-smoke": "passed",
+    "s136-observe-drillback-smoke": "passed",
+    "s136-manage-drillback-smoke": "passed",
+    "s136-ui-smoke": "passed",
+    "s136-truth-refresh": "passed",
+    "s136-write-validate-summary": "passed",
+    "s136-closeout-evidence-check": "passed",
+    "sprint136-validate": "passed",
+    "contract-test-docker": "passed",
+    "e2e-gate": "passed"
+  },
+  "fixture_project_ref": "lifecycle-proof-s136",
+  "archive_ids": {
+    "pack_id": "29a3f71c-0439-4725-84f0-295e225c94e6",
+    "runlog_id": "bddd2aa7-dcb1-4ffe-864c-312b35e729ae",
+    "evidence_id": "ac246217-432f-4246-b072-fd8fe8547f25",
+    "manifest_id": "9a5fa349-c4e5-4480-86d2-44b317095891",
+    "writeback_id": "ac3266e0-b2d7-4813-8576-fa613cc403ef",
+    "writeback_artifact_id": "d517378c-5f26-403d-bfe6-150cb1772bd2"
+  }
+}

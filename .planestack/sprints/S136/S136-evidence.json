@@ -1,0 +1,68 @@
+{
+  "sprint_code": "S136",
+  "theme": "Lifecycle Continuity Excellence: Setup -> Work -> Jobs -> Review -> Operate -> Observe / Manage",
+  "status": "completed",
+  "required_green_bar": [
+    "s136-setup-to-work-smoke",
+    "s136-work-to-jobs-smoke",
+    "s136-jobs-to-review-smoke",
+    "s136-review-to-operate-smoke",
+    "s136-observe-drillback-smoke",
+    "s136-manage-drillback-smoke",
+    "s136-ui-smoke",
+    "s136-truth-refresh",
+    "s136-write-validate-summary",
+    "sprint136-validate",
+    "contract-test-docker",
+    "e2e-gate"
+  ],
+  "required_artifacts": [
+    "lifecycle-continuity-proof.json",
+    "setup-to-work-proof.json",
+    "work-to-jobs-proof.json",
+    "jobs-to-review-proof.json",
+    "review-to-operate-proof.json",
+    "observe-drillback-proof.json",
+    "manage-drillback-proof.json",
+    "continuity-context.json",
+    "ui-smoke.json",
+    "truth-refresh-summary.json",
+    "lifecycle_exceptional_range_scorecard.json",
+    "sprint136-validate.json"
+  ],
+  "proofs": {
+    "A": "Setup / Center -> Work continuity",
+    "B": "Work -> Jobs continuity",
+    "C": "Jobs -> Review continuity",
+    "D": "Review -> Operate continuity",
+    "E": "Observe drill-back continuity",
+    "F": "Manage drill-back continuity"
+  },
+  "notes": [
+    "Cross-plane continuity sprint, not a nav redesign sprint",
+    "No shadow-truth lifecycle object may be introduced",
+    "Closeout-only: s136-closeout-evidence-check"
+  ],
+  "completed_at": "2026-03-16T23:57:00Z",
+  "gate_results": {
+    "s136-setup-to-work-smoke": "pass",
+    "s136-work-to-jobs-smoke": "pass",
+    "s136-jobs-to-review-smoke": "pass",
+    "s136-review-to-operate-smoke": "pass",
+    "s136-observe-drillback-smoke": "pass",
+    "s136-manage-drillback-smoke": "pass",
+    "s136-ui-smoke": "pass",
+    "s136-truth-refresh": "pass",
+    "s136-write-validate-summary": "pass",
+    "s136-closeout-evidence-check": "pass",
+    "sprint136-validate": "pass",
+    "contract-test-docker": "pass",
+    "e2e-gate": "pass"
+  },
+  "required_evidence_artifacts": [
+    {
+      "path": ".planestack/governance/evidence/s136/lock-check.json",
+      "artifact_id": "374daea8-8dd1-4963-9b78-5ea8f6b7e8c9"
+    }
+  ]
+}

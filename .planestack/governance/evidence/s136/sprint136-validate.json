@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-16T23:54:23Z",
+  "status": "passed",
+  "operation": "sprint136-validate",
+  "chain": [
+    "governance-lock-check",
+    "contract-test-docker",
+    "s136-setup-to-work-smoke",
+    "s136-work-to-jobs-smoke",
+    "s136-jobs-to-review-smoke",
+    "s136-review-to-operate-smoke",
+    "s136-observe-drillback-smoke",
+    "s136-manage-drillback-smoke",
+    "s136-ui-smoke",
+    "s136-truth-refresh",
+    "s136-write-validate-summary"
+  ]
+}

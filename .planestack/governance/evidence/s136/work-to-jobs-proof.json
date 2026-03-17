@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "checks": {
+    "run_detail": true,
+    "primary_cta": true,
+    "return_url": true,
+    "source_context": true,
+    "manage_link": true
+  },
+  "run": {
+    "run_id": "72beb9ea-2b39-42c5-a4c7-5d1921a5560c",
+    "status": "completed",
+    "operation": "plan.launch_job",
+    "created_at": "2026-03-16T23:53:49.064Z",
+    "started_at": null,
+    "ended_at": "2026-03-16T23:53:49.069Z",
+    "actor": "edb5b5c2-1c35-4061-9145-0520f55f8853",
+    "provider": null,
+    "auth_type": null,
+    "identity_type": null,
+    "credential_ref": null,
+    "github_app_id": null,
+    "github_installation_id": null,
+    "artifact_id": "815f08c9-7d3b-4369-9810-62bdfcd81af5",
+    "changeset_id": null,
+    "target_url": null,
+    "response_status": null,
+    "github_request_id": null,
+    "payload": {
+      "outputs": [
+        {
+          "title": "Execution output 72beb9ea",
+          "summary": "Capture tests, evidence, and acceptance checks for the starter slice.",
+          "artifact_ref": "7d7ef158-7f21-4502-a520-ed221ea92dc3",
+          "artifact_type": "job.output"
+        }
+      ],
+      "review_cta": {
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/reviews/release-candidate/release-candidate%3A72beb9ea-2b39-42c5-a4c7-5d1921a5560c",
+        "label": "Open release candidate"
+      },
+      "blocked_refs": [
+        "0de95e61-7de7-45a4-8f0f-99547828ec36"
+      ],
+      "reason_codes": [
+        "launched_from_plan",
+        "output_generated",
+        "evidence_attached",
+        "review_ready",
+        "operate_ready"
+      ],
+      "workflow_ref": "d006427f-94e9-443b-b201-43c6293a324f",
+      "approval_refs": [
+        "1789c680-ee5b-4355-a0d6-0e05cd52e04c"
+      ],
+      "decision_refs": [],
+      "status_detail": "Execution completed successfully from planning context.",
+      "attempt_number": 1,
+      "evidence_links": [
+        {
+          "title": "Execution evidence 72beb9ea",
+          "summary": "Evidence receipt for the successful job execution.",
+          "artifact_ref": "2e4fe76e-3c64-4d74-b855-53a753729381",
+          "artifact_type": "job.evidence"
+        }
+      ],
+      "linked_task_ref": "815f08c9-7d3b-4369-9810-62bdfcd81af5",
+      "review_next_url": "/ou/platform/p/lifecycle-proof-s136/plane/reviews/release-candidate/release-candidate%3A72beb9ea-2b39-42c5-a4c7-5d1921a5560c",
+      "runtime_profile": {
+        "executable_path": "/usr/bin/env"
+      },
+      "workflow_status": "completed",
+      "launch_actor_ref": "edb5b5c2-1c35-4061-9145-0520f55f8853",
+      "launch_rationale": "Capture tests, evidence, and acceptance checks for the starter slice.",
+      "linked_goal_refs": [
+        "69fdb451-686f-463d-bfd6-59b6bf9a5dc0"
+      ],
+      "operate_next_url": "/ou/platform/p/lifecycle-proof-s136/plane/operate/overview?source_run_ref=72beb9ea-2b39-42c5-a4c7-5d1921a5560c&source_artifact_ref=815f08c9-7d3b-4369-9810-62bdfcd81af5",
+      "linked_sprint_ref": "e06aa6c4-4a9f-4602-b54e-3693d524afe9",
+      "review_queue_refs": [
+        "review-queue:72beb9ea-2b39-42c5-a4c7-5d1921a5560c"
+      ],
+      "runtime_artifacts": [
+        {
+          "kind": "execution_log",
+          "label": "Runtime artifact 72beb9ea",
+          "created_at": "2026-03-16T23:53:49.065Z",
+          "artifact_ref": "8953db5d-269b-42fa-90a3-1dc32ac92ae7",
+          "artifact_type": "run.log",
+          "source_execution_ref": "72beb9ea-2b39-42c5-a4c7-5d1921a5560c"
+        }
+      ],
+      "latest_attempt_ref": "72beb9ea-2b39-42c5-a4c7-5d1921a5560c",
+      "source_artifact_ref": "815f08c9-7d3b-4369-9810-62bdfcd81af5",
+      "linked_work_item_ref": "2da46f77-18bc-4c9f-99b7-476e4253da0f",
+      "source_artifact_type": "work.task",
+      "linked_component_refs": [],
+      "release_candidate_ref": "release-candidate:72beb9ea-2b39-42c5-a4c7-5d1921a5560c"
+    },
+    "provenance": {
+      "source": "plan",
+      "source_artifact_ref": "815f08c9-7d3b-4369-9810-62bdfcd81af5"
+    },
+    "ai_capability": null,
+    "workflow_ref": "d006427f-94e9-443b-b201-43c6293a324f",
+    "workflow_status": "completed",
+    "reason_codes": [
+      "ready_for_next_stage"
+    ],
+    "source_context": {
+      "source_artifact_ref": "815f08c9-7d3b-4369-9810-62bdfcd81af5",
+      "source_artifact_type": "work.task",
+      "linked_goal_refs": [
+        "69fdb451-686f-463d-bfd6-59b6bf9a5dc0"
+      ],
+      "linked_work_item_ref": "2da46f77-18bc-4c9f-99b7-476e4253da0f",
+      "linked_task_ref": "815f08c9-7d3b-4369-9810-62bdfcd81af5",
+      "linked_sprint_ref": "e06aa6c4-4a9f-4602-b54e-3693d524afe9",
+      "linked_component_refs": [],
+      "launch_rationale": "Capture tests, evidence, and acceptance checks for the starter slice.",
+      "launch_actor_ref": "edb5b5c2-1c35-4061-9145-0520f55f8853",
+      "plan_url": "/ou/platform/p/lifecycle-proof-s136/artifacts/815f08c9-7d3b-4369-9810-62bdfcd81af5"
+    },
+    "outputs": [
+      {
+        "artifact_ref": "7d7ef158-7f21-4502-a520-ed221ea92dc3",
+        "artifact_type": "job.output",
+        "title": "Execution output 72beb9ea",
+        "summary": "Capture tests, evidence, and acceptance checks for the starter slice.",
+        "url": null
+      }
+    ],
+    "runtime_artifacts": [
+      {
+        "artifact_ref": "8953db5d-269b-42fa-90a3-1dc32ac92ae7",
+        "artifact_type": "run.log",
+        "label": "Runtime artifact 72beb9ea",
+        "kind": "execution_log",
+        "created_at": "2026-03-16T23:53:49.065Z",
+        "source_execution_ref": "72beb9ea-2b39-42c5-a4c7-5d1921a5560c"
+      }
+    ],
+    "evidence_links": [
+      {
+        "artifact_ref": "2e4fe76e-3c64-4d74-b855-53a753729381",
+        "artifact_type": "job.evidence",
+        "title": "Execution evidence 72beb9ea",
+        "summary": "Evidence receipt for the successful job execution.",
+        "url": null
+      }
+    ],
+    "approval_refs": [
+      "1789c680-ee5b-4355-a0d6-0e05cd52e04c"
+    ],
+    "blocked_refs": [
+      "0de95e61-7de7-45a4-8f0f-99547828ec36"
+    ],
+    "decision_refs": [],
+    "review_queue_refs": [
+      "review-queue:72beb9ea-2b39-42c5-a4c7-5d1921a5560c"
+    ],
+    "release_candidate_ref": "release-candidate:72beb9ea-2b39-42c5-a4c7-5d1921a5560c",
+    "review_next_url": "/ou/platform/p/lifecycle-proof-s136/plane/reviews/release-candidate/release-candidate%3A72beb9ea-2b39-42c5-a4c7-5d1921a5560c",
+    "operate_next_url": "/ou/platform/p/lifecycle-proof-s136/plane/operate/overview?source_run_ref=72beb9ea-2b39-42c5-a4c7-5d1921a5560c&source_artifact_ref=815f08c9-7d3b-4369-9810-62bdfcd81af5",
+    "review_cta": {
+      "url": "/ou/platform/p/lifecycle-proof-s136/plane/reviews/release-candidate/release-candidate%3A72beb9ea-2b39-42c5-a4c7-5d1921a5560c",
+      "label": "Open release candidate"
+    },
+    "retry_lineage": {
+      "previous_attempt_ref": null,
+      "latest_attempt_ref": "72beb9ea-2b39-42c5-a4c7-5d1921a5560c",
+      "attempt_number": 1,
+      "retry_reason_code": null,
+      "retry_actor_ref": null,
+      "compare_ref": null
+    },
+    "continuity_posture": "ready",
+    "next_required_action": "open_review_context",
+    "source_context_refs": [
+      {
+        "type": "work_item",
+        "ref": "2da46f77-18bc-4c9f-99b7-476e4253da0f",
+        "label": "Source work item",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/work/work-items"
+      },
+      {
+        "type": "task",
+        "ref": "815f08c9-7d3b-4369-9810-62bdfcd81af5",
+        "label": "Source task",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/work/tasks"
+      },
+      {
+        "type": "sprint",
+        "ref": "e06aa6c4-4a9f-4602-b54e-3693d524afe9",
+        "label": "Source sprint",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/work/sprints/e06aa6c4-4a9f-4602-b54e-3693d524afe9"
+      },
+      {
+        "type": "run",
+        "ref": "72beb9ea-2b39-42c5-a4c7-5d1921a5560c",
+        "label": "Run detail",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/runs/runs/72beb9ea-2b39-42c5-a4c7-5d1921a5560c"
+      },
+      {
+        "type": "workflow",
+        "ref": "d006427f-94e9-443b-b201-43c6293a324f",
+        "label": "Workflow detail",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/runs/workflows/d006427f-94e9-443b-b201-43c6293a324f"
+      }
+    ],
+    "related_refs": [
+      {
+        "type": "related_review",
+        "ref": "release-candidate:72beb9ea-2b39-42c5-a4c7-5d1921a5560c",
+        "label": "Open Review",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/reviews/release-candidate/release-candidate%3A72beb9ea-2b39-42c5-a4c7-5d1921a5560c"
+      },
+      {
+        "type": "related_operate",
+        "ref": "/ou/platform/p/lifecycle-proof-s136/plane/operate/overview?source_run_ref=72beb9ea-2b39-42c5-a4c7-5d1921a5560c&source_artifact_ref=815f08c9-7d3b-4369-9810-62bdfcd81af5",
+        "label": "Open Operate",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/operate/overview?source_run_ref=72beb9ea-2b39-42c5-a4c7-5d1921a5560c&source_artifact_ref=815f08c9-7d3b-4369-9810-62bdfcd81af5"
+      },
+      {
+        "type": "related_manage",
+        "ref": "/ou/platform/p/lifecycle-proof-s136/plane/integrations/credentials?source_run_ref=72beb9ea-2b39-42c5-a4c7-5d1921a5560c&return_url=%2Fou%2Fplatform%2Fp%2Flifecycle-proof-s136%2Fplane%2Fruns%2Fruns%2F72beb9ea-2b39-42c5-a4c7-5d1921a5560c",
+        "label": "Open Manage",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/integrations/credentials?source_run_ref=72beb9ea-2b39-42c5-a4c7-5d1921a5560c&return_url=%2Fou%2Fplatform%2Fp%2Flifecycle-proof-s136%2Fplane%2Fruns%2Fruns%2F72beb9ea-2b39-42c5-a4c7-5d1921a5560c"
+      },
+      {
+        "type": "related_evidence",
+        "ref": "2e4fe76e-3c64-4d74-b855-53a753729381",
+        "label": "Evidence",
+        "url": null
+      },
+      {
+        "type": "related_output",
+        "ref": "7d7ef158-7f21-4502-a520-ed221ea92dc3",
+        "label": "Output",
+        "url": null
+      }
+    ],
+    "return_url": "/ou/platform/p/lifecycle-proof-s136/plane/work/tasks"
+  }
+}

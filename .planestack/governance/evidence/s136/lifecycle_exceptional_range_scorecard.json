@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "plane_scores": {
+    "center": {
+      "continuity": 4.5,
+      "cta_clarity": 4.5
+    },
+    "work": {
+      "continuity": 4.5,
+      "cta_clarity": 4.4
+    },
+    "jobs": {
+      "continuity": 4.5,
+      "cta_clarity": 4.4
+    },
+    "review": {
+      "continuity": 4.5,
+      "cta_clarity": 4.4
+    },
+    "operate": {
+      "continuity": 4.4,
+      "cta_clarity": 4.3
+    },
+    "observe": {
+      "continuity": 4.4,
+      "cta_clarity": 4.3
+    },
+    "manage": {
+      "continuity": 4.4,
+      "cta_clarity": 4.3
+    }
+  }
+}

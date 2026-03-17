@@ -1,0 +1,607 @@
+{
+  "schema_version": 1,
+  "status": "failed",
+  "checks": {
+    "setup_completed": true,
+    "landing_has_work": false,
+    "work_item_cta": true,
+    "task_cta": true,
+    "sprint_cta": true
+  },
+  "setup_status": {
+    "setup_ref": "9b339b2f-08a1-4428-9b65-9784f5d84d36",
+    "project_ref": "aad82f65-afba-4bc1-9b69-eef8eb62763c",
+    "status": "completed",
+    "current_stage": "completion",
+    "completed_stages": [
+      "project_bootstrap",
+      "starter_planning",
+      "environment_setup",
+      "integration_setup",
+      "validation",
+      "completion"
+    ],
+    "incomplete_stages": [
+      "policy_review"
+    ],
+    "readiness_state": "ready",
+    "reason_codes": [],
+    "next_required_action": "open_work_context",
+    "validation_posture": "valid",
+    "approval_posture": "not_required",
+    "activation_posture": "not_required",
+    "starter_package_refs": [
+      "starter-package:9b339b2f-08a1-4428-9b65-9784f5d84d36"
+    ],
+    "landing_refs": [
+      {
+        "center_ref": "/ou/platform/p/lifecycle-proof-s136/plane/center/project",
+        "work_ref": "/ou/platform/p/lifecycle-proof-s136/plane/work/overview",
+        "review_ref": "/ou/platform/p/lifecycle-proof-s136/plane/review/release-candidate",
+        "operate_ref": "/ou/platform/p/lifecycle-proof-s136/plane/operate/overview",
+        "manage_ref": "/ou/platform/p/lifecycle-proof-s136/plane/manage/credentials"
+      }
+    ],
+    "available_environment_refs": [
+      {
+        "ref": "aefe3874-8d08-468a-b3fa-37f849ff8158",
+        "label": "Local Ready Environment",
+        "readiness_state": "ready"
+      }
+    ],
+    "available_credential_refs": [
+      {
+        "ref": "60480479-f78e-48bf-baf8-a971bf2e4e9a",
+        "label": "planestack-bot",
+        "provider_key": "github"
+      },
+      {
+        "ref": "76144752-d914-4a93-8439-13456dcbb2f9",
+        "label": "S136 Invalid Credential",
+        "provider_key": "github"
+      },
+      {
+        "ref": "5801c20a-4e72-4831-9502-19f12058fc18",
+        "label": "S136 Valid Credential",
+        "provider_key": "github_app"
+      }
+    ],
+    "available_policy_refs": [
+      {
+        "ref": "a8e51032-e12c-41e0-8ddf-64fe271bf760",
+        "label": "Active writeback policy"
+      }
+    ],
+    "source_truth_refs": [
+      {
+        "ref": "7faf4a0b-02f1-46ef-9e3e-33134d06c64c",
+        "type": "project.scope",
+        "label": "Lifecycle Proof S136",
+        "url": "/ou/platform/p/lifecycle-proof-s136/artifacts/7faf4a0b-02f1-46ef-9e3e-33134d06c64c"
+      },
+      {
+        "ref": "e70efcdc-0ba9-4d5e-a25d-8ba1b407f1a2",
+        "type": "project.goal",
+        "label": "Ship lifecycle continuity",
+        "url": "/ou/platform/p/lifecycle-proof-s136/artifacts/e70efcdc-0ba9-4d5e-a25d-8ba1b407f1a2"
+      },
+      {
+        "ref": "8e9bf1ed-cad2-4aa9-83f1-f1accadc349e",
+        "type": "work.item",
+        "label": "Ship lifecycle continuity starter work",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/work/work-items"
+      }
+    ],
+    "incomplete_sections": [
+      {
+        "stage": "policy_review",
+        "reason": "incomplete"
+      }
+    ],
+    "created_starter_package": {
+      "setup_ref": "9b339b2f-08a1-4428-9b65-9784f5d84d36",
+      "package_ref": "starter-package:9b339b2f-08a1-4428-9b65-9784f5d84d36",
+      "project_ref": "aad82f65-afba-4bc1-9b69-eef8eb62763c",
+      "starter_mode": "guided",
+      "template_ref": null,
+      "provenance_label": "created_by_setup_wizard",
+      "created_goal_refs": [
+        "e70efcdc-0ba9-4d5e-a25d-8ba1b407f1a2"
+      ],
+      "created_task_refs": [
+        "3c105ec8-3bd5-4b0b-a6bc-d87e2b058088",
+        "f5225e26-4d0c-468f-a132-70f2931532b6",
+        "18c3397d-278a-4119-af5e-059f2b613c6d",
+        "ad98dd89-c517-45e4-9ba4-0d6b52ac00ef"
+      ],
+      "created_work_item_refs": [
+        "8e9bf1ed-cad2-4aa9-83f1-f1accadc349e"
+      ]
+    },
+    "bootstrap": {
+      "goal_ref": "e70efcdc-0ba9-4d5e-a25d-8ba1b407f1a2",
+      "idea_ref": "40ef407b-4c11-4298-b049-e728330f501b",
+      "scope_ref": "7faf4a0b-02f1-46ef-9e3e-33134d06c64c",
+      "goal_title": "Ship lifecycle continuity",
+      "goal_summary": "Prove setup to work to jobs to review to operate to manage continuity",
+      "project_name": "Lifecycle Proof S136",
+      "work_item_ref": "8e9bf1ed-cad2-4aa9-83f1-f1accadc349e",
+      "project_summary": "Cross-plane lifecycle proof project",
+      "starter_readiness_classification": "guided"
+    },
+    "environment_setup": {
+      "environment_ref": "aefe3874-8d08-468a-b3fa-37f849ff8158",
+      "readiness_state": "ready",
+      "reason_codes": [],
+      "next_required_action": "open_downstream_context",
+      "linked_admin_environment_ref": "/ou/platform/p/lifecycle-proof-s136/plane/admin/environments/aefe3874-8d08-468a-b3fa-37f849ff8158",
+      "linked_operate_environment_ref": "/ou/platform/p/lifecycle-proof-s136/plane/operate/environments?selected=aefe3874-8d08-468a-b3fa-37f849ff8158",
+      "return_url": "/ou/platform/p/lifecycle-proof-s136/plane/center/setup"
+    },
+    "integration_setup": {
+      "credential_ref": "5801c20a-4e72-4831-9502-19f12058fc18",
+      "validation_status": "valid",
+      "validation_reason_codes": [],
+      "policy_ref": "a8e51032-e12c-41e0-8ddf-64fe271bf760",
+      "approval_status": "not_required",
+      "activation_status": "not_required",
+      "next_required_action": "open_downstream_context",
+      "linked_manage_refs": [
+        "/ou/platform/p/lifecycle-proof-s136/plane/integrations/credentials/5801c20a-4e72-4831-9502-19f12058fc18",
+        "/ou/platform/p/lifecycle-proof-s136/plane/integrations/writeback-policy/a8e51032-e12c-41e0-8ddf-64fe271bf760"
+      ]
+    },
+    "policy_review": null,
+    "validation": {
+      "return_url": "/ou/platform/p/lifecycle-proof-s136/plane/center/setup",
+      "approval_status": "not_required",
+      "readiness_state": "ready",
+      "activation_status": "not_required",
+      "validation_status": "valid",
+      "blocking_context_refs": [
+        "/ou/platform/p/lifecycle-proof-s136/plane/integrations/credentials/5801c20a-4e72-4831-9502-19f12058fc18",
+        "/ou/platform/p/lifecycle-proof-s136/plane/admin/environments/aefe3874-8d08-468a-b3fa-37f849ff8158"
+      ],
+      "readiness_reason_codes": []
+    },
+    "completion_summary": {
+      "work_ref": "/ou/platform/p/lifecycle-proof-s136/plane/work/overview",
+      "center_ref": "/ou/platform/p/lifecycle-proof-s136/plane/center/project",
+      "manage_ref": "/ou/platform/p/lifecycle-proof-s136/plane/manage/credentials",
+      "review_ref": "/ou/platform/p/lifecycle-proof-s136/plane/review/release-candidate",
+      "operate_ref": "/ou/platform/p/lifecycle-proof-s136/plane/operate/overview",
+      "next_required_action": "open_downstream_context"
+    },
+    "no_data_state": "has_data",
+    "resumable": false,
+    "restartable": true,
+    "restart_warning": "Restart resets setup progression state only. Existing downstream records remain.",
+    "last_completed_stage": "completion",
+    "last_saved_at": "2026-03-16T23:53:44.766Z",
+    "updated_at": "2026-03-16T23:53:44.766Z",
+    "continuity_posture": "ready",
+    "source_context_refs": [
+      {
+        "type": "setup",
+        "ref": "9b339b2f-08a1-4428-9b65-9784f5d84d36",
+        "label": "Setup wizard",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/center/setup"
+      }
+    ],
+    "related_refs": [
+      {
+        "type": "related_work",
+        "ref": "starter-package:9b339b2f-08a1-4428-9b65-9784f5d84d36",
+        "label": "Starter package",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/work/work-items"
+      },
+      {
+        "type": "next_action",
+        "ref": "/ou/platform/p/lifecycle-proof-s136/plane/work/overview",
+        "label": "Open Work",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/work/overview"
+      },
+      {
+        "type": "related_operate",
+        "ref": "/ou/platform/p/lifecycle-proof-s136/plane/operate/overview",
+        "label": "Open Operate",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/operate/overview"
+      },
+      {
+        "type": "related_manage",
+        "ref": "/ou/platform/p/lifecycle-proof-s136/plane/manage/credentials",
+        "label": "Open Manage",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/manage/credentials"
+      }
+    ],
+    "return_url": "/ou/platform/p/lifecycle-proof-s136/plane/center/project"
+  },
+  "setup_landing": {
+    "setup_ref": "9b339b2f-08a1-4428-9b65-9784f5d84d36",
+    "status": "completed",
+    "landing_refs": {
+      "center_ref": "/ou/platform/p/lifecycle-proof-s136/plane/center/project",
+      "work_ref": "/ou/platform/p/lifecycle-proof-s136/plane/work/overview",
+      "review_ref": "/ou/platform/p/lifecycle-proof-s136/plane/review/release-candidate",
+      "operate_ref": "/ou/platform/p/lifecycle-proof-s136/plane/operate/overview",
+      "manage_ref": "/ou/platform/p/lifecycle-proof-s136/plane/manage/credentials"
+    },
+    "completion_summary": {
+      "work_ref": "/ou/platform/p/lifecycle-proof-s136/plane/work/overview",
+      "center_ref": "/ou/platform/p/lifecycle-proof-s136/plane/center/project",
+      "manage_ref": "/ou/platform/p/lifecycle-proof-s136/plane/manage/credentials",
+      "review_ref": "/ou/platform/p/lifecycle-proof-s136/plane/review/release-candidate",
+      "operate_ref": "/ou/platform/p/lifecycle-proof-s136/plane/operate/overview",
+      "next_required_action": "open_downstream_context"
+    },
+    "no_data_state": "has_data",
+    "continuity_posture": "ready",
+    "next_required_action": "open_work_context",
+    "reason_codes": [
+      "completed_upstream"
+    ],
+    "source_context_refs": [
+      {
+        "type": "setup",
+        "ref": "9b339b2f-08a1-4428-9b65-9784f5d84d36",
+        "label": "Setup wizard",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/center/setup"
+      }
+    ],
+    "related_refs": [
+      {
+        "type": "next_action",
+        "ref": "/ou/platform/p/lifecycle-proof-s136/plane/work/overview",
+        "label": "Open Work",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/work/overview"
+      },
+      {
+        "type": "related_operate",
+        "ref": "/ou/platform/p/lifecycle-proof-s136/plane/operate/overview",
+        "label": "Open Operate",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/operate/overview"
+      },
+      {
+        "type": "related_manage",
+        "ref": "/ou/platform/p/lifecycle-proof-s136/plane/manage/credentials",
+        "label": "Open Manage",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/manage/credentials"
+      }
+    ],
+    "return_url": "/ou/platform/p/lifecycle-proof-s136/plane/center/setup"
+  },
+  "work_item": {
+    "work_item": {
+      "id": "8e9bf1ed-cad2-4aa9-83f1-f1accadc349e",
+      "project_id": "aad82f65-afba-4bc1-9b69-eef8eb62763c",
+      "type": "work.item",
+      "key": null,
+      "component_id": null,
+      "data": {
+        "kind": "story",
+        "state": "open",
+        "title": "Ship lifecycle continuity starter work",
+        "summary": "Prove setup to work to jobs to review to operate to manage continuity",
+        "rationale": "Created during setup wizard bootstrap",
+        "setup_ref": "9b339b2f-08a1-4428-9b65-9784f5d84d36",
+        "generated_by": "center_project_setup",
+        "linked_goal_refs": [
+          "e70efcdc-0ba9-4d5e-a25d-8ba1b407f1a2"
+        ],
+        "promoted_from_idea_ref": "40ef407b-4c11-4298-b049-e728330f501b"
+      },
+      "external_links": [],
+      "created_at": "2026-03-16T23:53:44.314Z",
+      "updated_at": "2026-03-16T23:53:44.314Z"
+    },
+    "tasks": [
+      {
+        "id": "ad98dd89-c517-45e4-9ba4-0d6b52ac00ef",
+        "project_id": "aad82f65-afba-4bc1-9b69-eef8eb62763c",
+        "type": "work.task",
+        "key": null,
+        "component_id": null,
+        "data": {
+          "state": "open",
+          "title": "Define operate readiness",
+          "summary": "Capture environment, runbook, and handoff expectations for first execution.",
+          "setup_ref": "9b339b2f-08a1-4428-9b65-9784f5d84d36",
+          "starter_mode": "guided",
+          "linked_goal_refs": [
+            "e70efcdc-0ba9-4d5e-a25d-8ba1b407f1a2"
+          ],
+          "parent_work_item_ref": "8e9bf1ed-cad2-4aa9-83f1-f1accadc349e"
+        },
+        "external_links": [],
+        "created_at": "2026-03-16T23:53:44.379Z",
+        "updated_at": "2026-03-16T23:53:44.379Z"
+      },
+      {
+        "id": "3c105ec8-3bd5-4b0b-a6bc-d87e2b058088",
+        "project_id": "aad82f65-afba-4bc1-9b69-eef8eb62763c",
+        "type": "work.task",
+        "key": null,
+        "component_id": null,
+        "data": {
+          "state": "open",
+          "title": "Define implementation slice",
+          "summary": "Break the starter work into a requirement-grade implementation slice.",
+          "setup_ref": "9b339b2f-08a1-4428-9b65-9784f5d84d36",
+          "starter_mode": "guided",
+          "linked_goal_refs": [
+            "e70efcdc-0ba9-4d5e-a25d-8ba1b407f1a2"
+          ],
+          "parent_work_item_ref": "8e9bf1ed-cad2-4aa9-83f1-f1accadc349e"
+        },
+        "external_links": [],
+        "created_at": "2026-03-16T23:53:44.379Z",
+        "updated_at": "2026-03-16T23:53:44.379Z"
+      },
+      {
+        "id": "f5225e26-4d0c-468f-a132-70f2931532b6",
+        "project_id": "aad82f65-afba-4bc1-9b69-eef8eb62763c",
+        "type": "work.task",
+        "key": null,
+        "component_id": null,
+        "data": {
+          "state": "open",
+          "title": "Define validation plan",
+          "summary": "Capture tests, evidence, and acceptance checks for the starter slice.",
+          "setup_ref": "9b339b2f-08a1-4428-9b65-9784f5d84d36",
+          "starter_mode": "guided",
+          "linked_goal_refs": [
+            "e70efcdc-0ba9-4d5e-a25d-8ba1b407f1a2"
+          ],
+          "parent_work_item_ref": "8e9bf1ed-cad2-4aa9-83f1-f1accadc349e"
+        },
+        "external_links": [],
+        "created_at": "2026-03-16T23:53:44.379Z",
+        "updated_at": "2026-03-16T23:53:44.379Z"
+      },
+      {
+        "id": "18c3397d-278a-4119-af5e-059f2b613c6d",
+        "project_id": "aad82f65-afba-4bc1-9b69-eef8eb62763c",
+        "type": "work.task",
+        "key": null,
+        "component_id": null,
+        "data": {
+          "title": "Define governance and review path",
+          "status": "planned",
+          "summary": "Capture review, approval, and policy checkpoints for the starter slice.",
+          "owner_ref": null,
+          "sprint_ref": "837b88da-26a1-4f31-8582-be4dd39a61de",
+          "template_type": null,
+          "template_source": null,
+          "linked_goal_refs": [
+            "e70efcdc-0ba9-4d5e-a25d-8ba1b407f1a2"
+          ],
+          "inherited_rationale": null,
+          "parent_work_item_ref": "8e9bf1ed-cad2-4aa9-83f1-f1accadc349e",
+          "linked_component_refs": [],
+          "inherited_acceptance_criteria": []
+        },
+        "external_links": [],
+        "created_at": "2026-03-16T23:53:44.379Z",
+        "updated_at": "2026-03-16T23:53:44.597Z"
+      }
+    ],
+    "goals": [
+      {
+        "id": "e70efcdc-0ba9-4d5e-a25d-8ba1b407f1a2",
+        "project_id": "aad82f65-afba-4bc1-9b69-eef8eb62763c",
+        "type": "project.goal",
+        "key": null,
+        "component_id": null,
+        "data": {
+          "title": "Ship lifecycle continuity",
+          "status": "active",
+          "summary": "Prove setup to work to jobs to review to operate to manage continuity",
+          "setup_ref": "9b339b2f-08a1-4428-9b65-9784f5d84d36",
+          "generated_by": "center_project_setup"
+        },
+        "external_links": [],
+        "created_at": "2026-03-16T23:53:44.314Z",
+        "updated_at": "2026-03-16T23:53:44.314Z"
+      }
+    ],
+    "components": [],
+    "continuity_posture": "ready",
+    "next_required_action": "launch_job",
+    "reason_codes": [
+      "ready_for_next_stage"
+    ],
+    "source_context_refs": [
+      {
+        "type": "setup",
+        "ref": "9b339b2f-08a1-4428-9b65-9784f5d84d36",
+        "label": "Setup wizard",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/center/setup"
+      },
+      {
+        "type": "work_item",
+        "ref": "8e9bf1ed-cad2-4aa9-83f1-f1accadc349e",
+        "label": "Ship lifecycle continuity starter work",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/work/work-items"
+      }
+    ],
+    "related_refs": [],
+    "return_url": "/ou/platform/p/lifecycle-proof-s136/plane/work/overview"
+  },
+  "task": {
+    "task": {
+      "id": "18c3397d-278a-4119-af5e-059f2b613c6d",
+      "project_id": "aad82f65-afba-4bc1-9b69-eef8eb62763c",
+      "type": "work.task",
+      "key": null,
+      "component_id": null,
+      "data": {
+        "title": "Define governance and review path",
+        "status": "planned",
+        "summary": "Capture review, approval, and policy checkpoints for the starter slice.",
+        "owner_ref": null,
+        "sprint_ref": "837b88da-26a1-4f31-8582-be4dd39a61de",
+        "template_type": null,
+        "template_source": null,
+        "linked_goal_refs": [
+          "e70efcdc-0ba9-4d5e-a25d-8ba1b407f1a2"
+        ],
+        "inherited_rationale": null,
+        "parent_work_item_ref": "8e9bf1ed-cad2-4aa9-83f1-f1accadc349e",
+        "linked_component_refs": [],
+        "inherited_acceptance_criteria": []
+      },
+      "external_links": [],
+      "created_at": "2026-03-16T23:53:44.379Z",
+      "updated_at": "2026-03-16T23:53:44.597Z"
+    },
+    "work_item": {
+      "id": "8e9bf1ed-cad2-4aa9-83f1-f1accadc349e",
+      "project_id": "aad82f65-afba-4bc1-9b69-eef8eb62763c",
+      "type": "work.item",
+      "key": null,
+      "component_id": null,
+      "data": {
+        "kind": "story",
+        "state": "open",
+        "title": "Ship lifecycle continuity starter work",
+        "summary": "Prove setup to work to jobs to review to operate to manage continuity",
+        "rationale": "Created during setup wizard bootstrap",
+        "setup_ref": "9b339b2f-08a1-4428-9b65-9784f5d84d36",
+        "generated_by": "center_project_setup",
+        "linked_goal_refs": [
+          "e70efcdc-0ba9-4d5e-a25d-8ba1b407f1a2"
+        ],
+        "promoted_from_idea_ref": "40ef407b-4c11-4298-b049-e728330f501b"
+      },
+      "external_links": [],
+      "created_at": "2026-03-16T23:53:44.314Z",
+      "updated_at": "2026-03-16T23:53:44.314Z"
+    },
+    "sprint": {
+      "id": "837b88da-26a1-4f31-8582-be4dd39a61de",
+      "project_id": "aad82f65-afba-4bc1-9b69-eef8eb62763c",
+      "type": "work.sprint",
+      "key": null,
+      "component_id": null,
+      "data": {
+        "name": "S136 Lifecycle Sprint",
+        "status": "active",
+        "scope_summary": "Lifecycle continuity proof sprint",
+        "template_type": null,
+        "timeframe_end": null,
+        "template_source": null,
+        "timeframe_start": null,
+        "assigned_task_refs": [
+          "18c3397d-278a-4119-af5e-059f2b613c6d"
+        ],
+        "assigned_work_item_refs": []
+      },
+      "external_links": [],
+      "created_at": "2026-03-16T23:53:44.541Z",
+      "updated_at": "2026-03-16T23:53:44.596Z"
+    },
+    "continuity_posture": "ready",
+    "next_required_action": "inspect_run",
+    "reason_codes": [
+      "ready_for_next_stage"
+    ],
+    "source_context_refs": [
+      {
+        "type": "task",
+        "ref": "18c3397d-278a-4119-af5e-059f2b613c6d",
+        "label": "Define governance and review path",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/work/tasks"
+      }
+    ],
+    "related_refs": [
+      {
+        "type": "related_work",
+        "ref": "8e9bf1ed-cad2-4aa9-83f1-f1accadc349e",
+        "label": "Ship lifecycle continuity starter work",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/work/work-items"
+      },
+      {
+        "type": "related_work",
+        "ref": "837b88da-26a1-4f31-8582-be4dd39a61de",
+        "label": "S136 Lifecycle Sprint",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/work/sprints/837b88da-26a1-4f31-8582-be4dd39a61de"
+      },
+      {
+        "type": "related_jobs",
+        "ref": "df196f11-8556-4d1d-b1f9-a459bd12e0dd",
+        "label": "Latest run",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/runs/runs/df196f11-8556-4d1d-b1f9-a459bd12e0dd"
+      }
+    ],
+    "return_url": "/ou/platform/p/lifecycle-proof-s136/plane/work/work-items"
+  },
+  "sprint": {
+    "sprint": {
+      "id": "837b88da-26a1-4f31-8582-be4dd39a61de",
+      "project_id": "aad82f65-afba-4bc1-9b69-eef8eb62763c",
+      "type": "work.sprint",
+      "key": null,
+      "component_id": null,
+      "data": {
+        "name": "S136 Lifecycle Sprint",
+        "status": "active",
+        "scope_summary": "Lifecycle continuity proof sprint",
+        "template_type": null,
+        "timeframe_end": null,
+        "template_source": null,
+        "timeframe_start": null,
+        "assigned_task_refs": [
+          "18c3397d-278a-4119-af5e-059f2b613c6d"
+        ],
+        "assigned_work_item_refs": []
+      },
+      "external_links": [],
+      "created_at": "2026-03-16T23:53:44.541Z",
+      "updated_at": "2026-03-16T23:53:44.596Z"
+    },
+    "work_items": [],
+    "tasks": [
+      {
+        "id": "18c3397d-278a-4119-af5e-059f2b613c6d",
+        "project_id": "aad82f65-afba-4bc1-9b69-eef8eb62763c",
+        "type": "work.task",
+        "key": null,
+        "component_id": null,
+        "data": {
+          "title": "Define governance and review path",
+          "status": "planned",
+          "summary": "Capture review, approval, and policy checkpoints for the starter slice.",
+          "owner_ref": null,
+          "sprint_ref": "837b88da-26a1-4f31-8582-be4dd39a61de",
+          "template_type": null,
+          "template_source": null,
+          "linked_goal_refs": [
+            "e70efcdc-0ba9-4d5e-a25d-8ba1b407f1a2"
+          ],
+          "inherited_rationale": null,
+          "parent_work_item_ref": "8e9bf1ed-cad2-4aa9-83f1-f1accadc349e",
+          "linked_component_refs": [],
+          "inherited_acceptance_criteria": []
+        },
+        "external_links": [],
+        "created_at": "2026-03-16T23:53:44.379Z",
+        "updated_at": "2026-03-16T23:53:44.597Z"
+      }
+    ],
+    "continuity_posture": "ready",
+    "next_required_action": "launch_job",
+    "reason_codes": [
+      "ready_for_next_stage"
+    ],
+    "source_context_refs": [
+      {
+        "type": "sprint",
+        "ref": "837b88da-26a1-4f31-8582-be4dd39a61de",
+        "label": "S136 Lifecycle Sprint",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/work/sprints/837b88da-26a1-4f31-8582-be4dd39a61de"
+      }
+    ],
+    "related_refs": [],
+    "return_url": "/ou/platform/p/lifecycle-proof-s136/plane/work/overview"
+  }
+}

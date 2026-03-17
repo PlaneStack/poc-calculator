@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "status": "failed",
+  "checks": {
+    "session_cta": true,
+    "session_return": true,
+    "session_manage_link": false,
+    "env_manage_link": true
+  },
+  "session": {
+    "session_id": "20260316T235358Z_65a4daa1",
+    "env_key": "local",
+    "user_key": "u_6dceb7c90133",
+    "status": "planned",
+    "startup_profile_ref": {},
+    "runbook_refs": [],
+    "resolved_values_ref": null,
+    "polling": {
+      "enabled": false,
+      "interval_seconds": 10,
+      "consecutive_failures": 0,
+      "max_consecutive_failures": 3
+    },
+    "services": [],
+    "bridge_runtime_ref": {
+      "job_types": [
+        "health_check"
+      ],
+      "transport": "local_jobs",
+      "objective_refs": [],
+      "source_job_refs": [
+        "f183b3d9-a676-4152-b2a5-7f1ef566f788"
+      ],
+      "source_review_refs": [
+        "release-candidate:f183b3d9-a676-4152-b2a5-7f1ef566f788"
+      ],
+      "latest_execution_ref": null
+    },
+    "source_review_refs": [
+      "release-candidate:f183b3d9-a676-4152-b2a5-7f1ef566f788"
+    ],
+    "source_job_refs": [
+      "f183b3d9-a676-4152-b2a5-7f1ef566f788"
+    ],
+    "objective_refs": [],
+    "latest_execution_ref": null,
+    "actor": "edb5b5c2-1c35-4061-9145-0520f55f8853",
+    "started_at": "2026-03-16T23:53:58.878Z",
+    "updated_at": "2026-03-16T23:53:58.878Z",
+    "finished_at": null,
+    "continuity_posture": "degraded",
+    "next_required_action": "open_operate_context",
+    "reason_codes": [
+      "completed_upstream"
+    ],
+    "source_context_refs": [
+      {
+        "type": "release_candidate",
+        "ref": "release-candidate:f183b3d9-a676-4152-b2a5-7f1ef566f788",
+        "label": "Review source",
+        "url": null
+      },
+      {
+        "type": "run",
+        "ref": "f183b3d9-a676-4152-b2a5-7f1ef566f788",
+        "label": "Job source",
+        "url": null
+      },
+      {
+        "type": "session",
+        "ref": "20260316T235358Z_65a4daa1",
+        "label": "Operate session",
+        "url": null
+      }
+    ],
+    "related_refs": [
+      {
+        "type": "related_review",
+        "ref": "release-candidate:f183b3d9-a676-4152-b2a5-7f1ef566f788",
+        "label": "Open Review",
+        "url": "release-candidate:f183b3d9-a676-4152-b2a5-7f1ef566f788"
+      },
+      {
+        "type": "related_jobs",
+        "ref": "f183b3d9-a676-4152-b2a5-7f1ef566f788",
+        "label": "Open Jobs",
+        "url": "f183b3d9-a676-4152-b2a5-7f1ef566f788"
+      }
+    ],
+    "return_url": "release-candidate:f183b3d9-a676-4152-b2a5-7f1ef566f788"
+  },
+  "environment": {
+    "env_key": "local",
+    "display_name": "Local",
+    "kind": "local",
+    "mode": "local_readwrite",
+    "lifecycle_state": "active",
+    "status": "not_configured",
+    "description": "Default local environment",
+    "resource_refs": [],
+    "runbook_refs": [],
+    "checks": [],
+    "api_base_url": "http://ps-api-e2e:3000",
+    "web_base_url": "http://acme.app.local.planestack.ai:4173",
+    "auth_mode": "keycloak",
+    "auth_profile_ref": "local-org-admin",
+    "execution_enabled": true,
+    "monitoring_links": [],
+    "alerting_links": [],
+    "version": 1,
+    "created_at": "2026-03-16T23:51:01.188Z",
+    "updated_at": "2026-03-16T23:51:01.189Z",
+    "objective_refs": [
+      "local-pass-rate",
+      "api-health-stability"
+    ],
+    "objective_health": [
+      {
+        "objective_ref": "local-pass-rate",
+        "env_key": "local"
+      },
+      {
+        "objective_ref": "api-health-stability",
+        "env_key": "local"
+      }
+    ],
+    "readiness_state": "ready",
+    "continuity_posture": "ready",
+    "next_required_action": "open_manage_context",
+    "reason_codes": [
+      "ready_for_next_stage"
+    ],
+    "source_context_refs": [
+      {
+        "type": "environment",
+        "ref": "local",
+        "label": "Local",
+        "url": null
+      }
+    ],
+    "related_refs": [
+      {
+        "type": "related_manage",
+        "ref": "local",
+        "label": "Open Manage environment",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/admin/environments/local"
+      }
+    ],
+    "return_url": "/ou/platform/p/lifecycle-proof-s136/plane/operate/overview"
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "status": "failed",
+  "checks": {
+    "credentials_list": true,
+    "admin_env_cta": true,
+    "admin_env_return": false,
+    "admin_env_source": false
+  },
+  "credentials": {
+    "items": [
+      {
+        "credential_ref": "60480479-f78e-48bf-baf8-a971bf2e4e9a",
+        "provider_key": "github",
+        "display_name": "planestack-bot",
+        "auth_type": "bot_pat",
+        "identity_type": "bot",
+        "identity_label": "planestack-bot",
+        "posture_state": "configured",
+        "reason_codes": [],
+        "validation_status": "never_validated",
+        "last_validated_at": null,
+        "safe_error_code": null,
+        "next_required_action": "inspect_credential",
+        "downstream_usage_refs": [
+          {
+            "ref": "a8e51032-e12c-41e0-8ddf-64fe271bf760",
+            "type": "related_governance",
+            "label": "Writeback policy",
+            "url": "/ou/platform/p/lifecycle-proof-s136/plane/integrations/writeback-policy/a8e51032-e12c-41e0-8ddf-64fe271bf760"
+          }
+        ],
+        "drillthrough_refs": [
+          {
+            "ref": "a8e51032-e12c-41e0-8ddf-64fe271bf760",
+            "type": "related_governance",
+            "label": "Writeback policy",
+            "url": "/ou/platform/p/lifecycle-proof-s136/plane/integrations/writeback-policy/a8e51032-e12c-41e0-8ddf-64fe271bf760"
+          }
+        ],
+        "source_truth_ref": {
+          "ref": "60480479-f78e-48bf-baf8-a971bf2e4e9a",
+          "type": "source_truth",
+          "label": "planestack-bot",
+          "url": "/ou/platform/p/lifecycle-proof-s136/plane/integrations/credentials/60480479-f78e-48bf-baf8-a971bf2e4e9a"
+        },
+        "enabled_ops": [
+          "import",
+          "writeback"
+        ],
+        "allowed_repos": [
+          "PlaneStack/poc-calculator",
+          "sprint69-app",
+          "sprint72-next-time",
+          "sprint74-next-time",
+          "sprint75-next-time"
+        ],
+        "source_context_refs": [
+          {
+            "type": "run_ref",
+            "ref": "deae09d0-26f4-46cb-9537-10d69d32b59c"
+          }
+        ],
+        "return_url": "/jobs/runs/deae09d0-26f4-46cb-9537-10d69d32b59c"
+      },
+      {
+        "credential_ref": "7d44367c-e508-4ccd-9d3e-12f0e28a1ae5",
+        "provider_key": "github",
+        "display_name": "S136 Invalid Credential",
+        "auth_type": "token",
+        "identity_type": "service_account",
+        "identity_label": "S136 Invalid Credential",
+        "posture_state": "incomplete",
+        "reason_codes": [
+          "credential_missing"
+        ],
+        "validation_status": "invalid",
+        "last_validated_at": "2026-03-16 23:54:06.707292+00",
+        "safe_error_code": "missing_secret",
+        "next_required_action": "inspect_credential",
+        "downstream_usage_refs": [
+          {
+            "ref": "a8e51032-e12c-41e0-8ddf-64fe271bf760",
+            "type": "related_governance",
+            "label": "Writeback policy",
+            "url": "/ou/platform/p/lifecycle-proof-s136/plane/integrations/writeback-policy/a8e51032-e12c-41e0-8ddf-64fe271bf760"
+          }
+        ],
+        "drillthrough_refs": [
+          {
+            "ref": "a8e51032-e12c-41e0-8ddf-64fe271bf760",
+            "type": "related_governance",
+            "label": "Writeback policy",
+            "url": "/ou/platform/p/lifecycle-proof-s136/plane/integrations/writeback-policy/a8e51032-e12c-41e0-8ddf-64fe271bf760"
+          }
+        ],
+        "source_truth_ref": {
+          "ref": "7d44367c-e508-4ccd-9d3e-12f0e28a1ae5",
+          "type": "source_truth",
+          "label": "S136 Invalid Credential",
+          "url": "/ou/platform/p/lifecycle-proof-s136/plane/integrations/credentials/7d44367c-e508-4ccd-9d3e-12f0e28a1ae5"
+        },
+        "enabled_ops": [
+          "read"
+        ],
+        "allowed_repos": [
+          "PlaneStack/ps-web"
+        ],
+        "source_context_refs": [
+          {
+            "type": "run_ref",
+            "ref": "deae09d0-26f4-46cb-9537-10d69d32b59c"
+          }
+        ],
+        "return_url": "/jobs/runs/deae09d0-26f4-46cb-9537-10d69d32b59c"
+      },
+      {
+        "credential_ref": "e97a05ce-7c3f-4197-b594-504ba2e7a0b8",
+        "provider_key": "github_app",
+        "display_name": "S136 Valid Credential",
+        "auth_type": "app",
+        "identity_type": "service_account",
+        "identity_label": "S136 Valid Credential",
+        "posture_state": "usable",
+        "reason_codes": [],
+        "validation_status": "valid",
+        "last_validated_at": "2026-03-16 23:54:06.710332+00",
+        "safe_error_code": null,
+        "next_required_action": "inspect_downstream_usage",
+        "downstream_usage_refs": [
+          {
+            "ref": "a8e51032-e12c-41e0-8ddf-64fe271bf760",
+            "type": "related_governance",
+            "label": "Writeback policy",
+            "url": "/ou/platform/p/lifecycle-proof-s136/plane/integrations/writeback-policy/a8e51032-e12c-41e0-8ddf-64fe271bf760"
+          }
+        ],
+        "drillthrough_refs": [
+          {
+            "ref": "a8e51032-e12c-41e0-8ddf-64fe271bf760",
+            "type": "related_governance",
+            "label": "Writeback policy",
+            "url": "/ou/platform/p/lifecycle-proof-s136/plane/integrations/writeback-policy/a8e51032-e12c-41e0-8ddf-64fe271bf760"
+          }
+        ],
+        "source_truth_ref": {
+          "ref": "e97a05ce-7c3f-4197-b594-504ba2e7a0b8",
+          "type": "source_truth",
+          "label": "S136 Valid Credential",
+          "url": "/ou/platform/p/lifecycle-proof-s136/plane/integrations/credentials/e97a05ce-7c3f-4197-b594-504ba2e7a0b8"
+        },
+        "enabled_ops": [
+          "read",
+          "write"
+        ],
+        "allowed_repos": [
+          "PlaneStack/ps-web"
+        ],
+        "source_context_refs": [
+          {
+            "type": "run_ref",
+            "ref": "deae09d0-26f4-46cb-9537-10d69d32b59c"
+          }
+        ],
+        "return_url": "/jobs/runs/deae09d0-26f4-46cb-9537-10d69d32b59c"
+      }
+    ],
+    "groups": [
+      {
+        "group_key": "configured",
+        "label": "configured",
+        "count": 1
+      },
+      {
+        "group_key": "incomplete",
+        "label": "incomplete",
+        "count": 1
+      },
+      {
+        "group_key": "usable",
+        "label": "usable",
+        "count": 1
+      }
+    ],
+    "no_data_state": "has_data",
+    "source_context_refs": [
+      {
+        "type": "run_ref",
+        "ref": "deae09d0-26f4-46cb-9537-10d69d32b59c"
+      }
+    ],
+    "return_url": "/jobs/runs/deae09d0-26f4-46cb-9537-10d69d32b59c"
+  },
+  "admin_environment": {
+    "environment_ref": "a4c37ec8-3cb8-40a2-85f3-159f680a3988",
+    "display_name": "Local Ready Environment",
+    "readiness_state": "blocked",
+    "reason_codes": [
+      "environment_not_configured",
+      "credential_missing"
+    ],
+    "linked_operate_environment_ref": "a4c37ec8-3cb8-40a2-85f3-159f680a3988",
+    "linked_integration_refs": [
+      {
+        "ref": "60480479-f78e-48bf-baf8-a971bf2e4e9a",
+        "type": "related_jobs",
+        "label": "planestack-bot",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/integrations/credentials/60480479-f78e-48bf-baf8-a971bf2e4e9a"
+      },
+      {
+        "ref": "7d44367c-e508-4ccd-9d3e-12f0e28a1ae5",
+        "type": "related_jobs",
+        "label": "S136 Invalid Credential",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/integrations/credentials/7d44367c-e508-4ccd-9d3e-12f0e28a1ae5"
+      },
+      {
+        "ref": "e97a05ce-7c3f-4197-b594-504ba2e7a0b8",
+        "type": "related_jobs",
+        "label": "S136 Valid Credential",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/integrations/credentials/e97a05ce-7c3f-4197-b594-504ba2e7a0b8"
+      },
+      {
+        "ref": "a8e51032-e12c-41e0-8ddf-64fe271bf760",
+        "type": "related_governance",
+        "label": "Writeback policy",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/integrations/writeback-policy/a8e51032-e12c-41e0-8ddf-64fe271bf760"
+      }
+    ],
+    "linked_component_refs": [],
+    "drillthrough_refs": [
+      {
+        "ref": "a4c37ec8-3cb8-40a2-85f3-159f680a3988",
+        "type": "related_operate",
+        "label": "Local Ready Environment",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/operate/environments/a4c37ec8-3cb8-40a2-85f3-159f680a3988"
+      },
+      {
+        "ref": "60480479-f78e-48bf-baf8-a971bf2e4e9a",
+        "type": "related_jobs",
+        "label": "planestack-bot",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/integrations/credentials/60480479-f78e-48bf-baf8-a971bf2e4e9a"
+      },
+      {
+        "ref": "7d44367c-e508-4ccd-9d3e-12f0e28a1ae5",
+        "type": "related_jobs",
+        "label": "S136 Invalid Credential",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/integrations/credentials/7d44367c-e508-4ccd-9d3e-12f0e28a1ae5"
+      },
+      {
+        "ref": "e97a05ce-7c3f-4197-b594-504ba2e7a0b8",
+        "type": "related_jobs",
+        "label": "S136 Valid Credential",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/integrations/credentials/e97a05ce-7c3f-4197-b594-504ba2e7a0b8"
+      },
+      {
+        "ref": "a8e51032-e12c-41e0-8ddf-64fe271bf760",
+        "type": "related_governance",
+        "label": "Writeback policy",
+        "url": "/ou/platform/p/lifecycle-proof-s136/plane/integrations/writeback-policy/a8e51032-e12c-41e0-8ddf-64fe271bf760"
+      }
+    ],
+    "source_truth_ref": {
+      "ref": "a4c37ec8-3cb8-40a2-85f3-159f680a3988",
+      "type": "source_truth",
+      "label": "Local Ready Environment",
+      "url": "/ou/platform/p/lifecycle-proof-s136/artifacts/a4c37ec8-3cb8-40a2-85f3-159f680a3988"
+    },
+    "source_context_refs": [],
+    "return_url": null,
+    "next_required_action": "inspect_environment",
+    "data": {
+      "name": "Local Ready Environment",
+      "setup_seed": "s133",
+      "reason_codes": [],
+      "readiness_state": "ready"
+    }
+  }
+}
