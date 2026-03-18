@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "project_key": "s138-proof-project",
+  "surface": "review.reviews",
+  "checks": {
+    "queue_list_ok": true,
+    "shared_list_ok": true,
+    "release_candidate_list_ok": true,
+    "queue_detail_ok": true,
+    "shared_detail_ok": true,
+    "release_candidate_detail_ok": true,
+    "jobs_to_review_chain_ok": true,
+    "review_to_observe_chain_ok": true
+  },
+  "queue_items": 2,
+  "shared_items": 2,
+  "release_candidate_items": 2,
+  "queue_ref": "review-queue:1d7839d6-2266-4dd8-80a4-dcf58d78c83f",
+  "shared_review_ref": "shared-review:review-queue:1d7839d6-2266-4dd8-80a4-dcf58d78c83f",
+  "release_candidate_ref": "release-candidate:1d7839d6-2266-4dd8-80a4-dcf58d78c83f",
+  "run_ref": "1d7839d6-2266-4dd8-80a4-dcf58d78c83f"
+}

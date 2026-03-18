@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "project_key": "s138-proof-project",
+  "surface": "jobs.workflows",
+  "items_count": 1,
+  "groups_count": 1,
+  "workflow_ref": "33e845ab-7769-4b33-94c1-850dd39d30dc",
+  "run_ref": "8f4a4231-9b2a-472e-8c99-38191f1d5d47",
+  "list_ok": true,
+  "detail_ok": true,
+  "run_ok": "release-candidate:8f4a4231-9b2a-472e-8c99-38191f1d5d47",
+  "latest_run_cta_present": true,
+  "list_no_data_state": "has_data",
+  "detail_no_data_state": "has_data"
+}

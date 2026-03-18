@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "project_key": "s138-proof-project",
+  "surface": "observe",
+  "analytics_ok": true,
+  "analytics_groups_ok": true,
+  "analytics_export_ok": true,
+  "library_ok": true,
+  "library_detail_ok": true,
+  "observe_to_ai_management_ok": true,
+  "library_artifact_ref": "e43f4541-fc86-4aa6-a556-28e2ba4635de"
+}

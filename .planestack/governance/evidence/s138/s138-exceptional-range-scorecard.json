@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-18T05:14:44.910497+00:00",
+  "plane_scores": {
+    "jobs": {
+      "trust": 4.4,
+      "continuity": 4.4
+    },
+    "review": {
+      "trust": 4.4,
+      "continuity": 4.5
+    },
+    "observe": {
+      "trust": 4.4,
+      "continuity": 4.5
+    },
+    "manage": {
+      "trust": 4.3,
+      "continuity": 4.5
+    }
+  },
+  "cross_plane": {
+    "jobs_to_review": true,
+    "review_to_observe": true,
+    "observe_to_ai_management": true,
+    "library_detail_available": true,
+    "jobs_to_ai_management": true
+  }
+}

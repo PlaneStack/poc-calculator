@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-03-18T05:14:44.881562+00:00",
+  "status": "passed",
+  "operation": "sprint138-validate",
+  "chain": [
+    "governance-lock-check",
+    "contract-test-docker",
+    "s138-jobs-workflows-smoke",
+    "s138-reviews-trust-smoke",
+    "s138-observe-smoke",
+    "s138-ai-management-smoke",
+    "s138-cross-plane-closure-smoke",
+    "s138-ui-smoke",
+    "s138-truth-refresh",
+    "s138-write-validate-summary"
+  ],
+  "evidence_results": {
+    "jobs": {
+      "file": "jobs-workflows-trust-proof.json",
+      "status": "passed"
+    },
+    "reviews": {
+      "file": "reviews-trust-proof.json",
+      "status": "passed"
+    },
+    "observe": {
+      "file": "observe-trust-proof.json",
+      "status": "passed"
+    },
+    "ai_management": {
+      "file": "ai-management-trust-proof.json",
+      "status": "passed"
+    },
+    "cross_plane": {
+      "file": "cross-plane-closure-proof.json",
+      "status": "passed"
+    },
+    "ui": {
+      "file": "ui-smoke.json",
+      "status": "passed"
+    },
+    "truth_refresh": {
+      "file": "truth-refresh-summary.json",
+      "status": "passed"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "project_key": "s138-proof-project",
+  "surface": "cross-plane-closure",
+  "workflow_ref": "e3f00f57-6f25-4962-8ebc-bb1274b1a01f",
+  "run_ref": "326b7575-9ba3-4319-a3f4-e415a7d49f07",
+  "queue_ref": "review-queue:326b7575-9ba3-4319-a3f4-e415a7d49f07",
+  "release_candidate_ref": "release-candidate:326b7575-9ba3-4319-a3f4-e415a7d49f07",
+  "library_artifact_ref": "bf4abbf8-dfe8-4738-aa01-1159a7e5dfae",
+  "chains": {
+    "jobs_to_review": true,
+    "review_to_observe": true,
+    "observe_to_ai_management": true,
+    "library_detail_available": true,
+    "jobs_to_ai_management": true
+  },
+  "hard_bar": {
+    "jobs_to_review": true,
+    "review_to_observe": true,
+    "observe_to_ai_management": true,
+    "jobs_to_ai_management": true
+  }
+}

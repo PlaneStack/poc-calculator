@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "web_url": "http://localhost:4173",
+  "tenant_web_url": "http://acme.app.local.planestack.ai:4173",
+  "browser_spec_status": "passed",
+  "checks": [
+    {
+      "path": "/ou/platform/p/s138-proof-project/jobs/workflows",
+      "status": 200
+    },
+    {
+      "path": "/ou/platform/p/s138-proof-project/plane/reviews/queue",
+      "status": 200
+    },
+    {
+      "path": "/ou/platform/p/s138-proof-project/plane/analytics_reporting/overview",
+      "status": 200
+    },
+    {
+      "path": "/ou/platform/p/s138-proof-project/plane/library/browse",
+      "status": 200
+    },
+    {
+      "path": "/ou/platform/p/s138-proof-project/plane/ai-management/providers",
+      "status": 200
+    }
+  ]
+}
