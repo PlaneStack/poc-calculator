@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-03-09T01:15:08Z",
+  "generated_at": "2026-03-25T18:01:01Z",
   "operation": "governance-lock-check",
-  "runner": "s99-write-validate-summary.sh",
+  "runner": "bash",
   "status": "passed",
-  "sprint_code": "S99",
-  "work_producing": true,
+  "sprint_code": "s99",
+  "work_producing": false,
   "bucket_used": "s99",
-  "reason": null,
+  "reason": "adhoc_no_sprint_code",
   "project_root": "/Users/mklein/_Ventures/PlaneStack/repos/poc-calculator",
   "bridge_root": "/Users/mklein/_Ventures/PlaneStack/bridge_root",
   "evidence_targets": [
